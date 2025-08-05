@@ -1,0 +1,9 @@
+<!DOCTYPE RCC>
+<RCC version="1.0">    
+    <!-- Versión PNG (compatibilidad) -->
+    <qresource prefix="/icons">
+        <file alias="up-png">icons/up.png</file>
+        <file alias="down-png">icons/down.png</file>
+        <file alias="fill-down">icons/fill_down.png</file>
+    </qresource>
+</RCC>
