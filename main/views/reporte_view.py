@@ -28,6 +28,12 @@ from main.utils.resource_path import get_resource_path
 from main.utils.logger import Logger
 
 
+
+from reportlab.lib.units import inch, mm  # Añade esto con los otros imports
+from reportlab.lib.pagesizes import A4
+from reportlab.pdfgen import canvas
+from main.components.pdf_builder import PDFBuilder  # La clase que te proporcioné
+
 #--------------------------------------------------------------##
 
 ##-------------------------------------------------------------##
@@ -134,3 +140,51 @@ class ReporteView(BaseView):
          
 
     
+    def generate_pdf_report(self):
+        """Versión mejorada del generador de PDF"""
+        filename, _ = QFileDialog.getSaveFileName(
+            self, "Guardar Reporte PDF", 
+            "reporte_eventos.pdf", 
+            "PDF Files (*.pdf)")
+        
+        if not filename:
+            return
+            
+        if not filename.lower().endswith('.pdf'):
+            filename += '.pdf'
+        
+        try:
+            pdf = PDFBuilder(
+                title="Reporte de Eventos",
+                author="Sistema de Monitoreo",
+                page_size=A4
+            )
+            
+            # Configuración básica
+            pdf.set_header(text="Reporte de Eventos")
+            pdf.set_footer(text="Generado automáticamente")
+            
+            # Contenido del reporte
+            pdf.add_title("Reporte de Eventos del Sistema")
+            pdf.add_spacer(0.5*inch)
+            
+            # Añadir gráfico (versión en memoria)
+            pdf.add_section("Gráfico de Eventos")
+            pdf.add_widget_as_image(
+                self.pulse_graph,
+                width="10cm",  
+                height="10cm",
+                caption="Gráfico generado en tiempo real"
+            )
+            
+            # Generar PDF
+            pdf.build(filename)
+            
+            QMessageBox.information(
+                self, "Éxito", 
+                f"PDF generado correctamente:\n{filename}")
+                
+        except Exception as e:
+            QMessageBox.critical(
+                self, "Error", 
+                f"Error al generar PDF:\n{str(e)}")
