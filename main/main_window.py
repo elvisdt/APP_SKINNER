@@ -12,6 +12,7 @@ from main.components.side_menu import SideMenu
 from main.components.status_bar import CustomStatusBar
 from main.views.inicio_view import InicioView
 from main.views.pnl_ctrl import PanelControlView
+from main.views.reporte_view import ReporteView
 from main.enums.menu_sections import MenuSection
 
 from main.core.serial_port_model import SerialPortModel
@@ -108,7 +109,7 @@ class MainWindow(QMainWindow):
         self.views = {
             MenuSection.HOME: InicioView(),
             MenuSection.CONTROL: PanelControlView(self.serial_model),
-            # MenuSection.CALIBRATION: CalibracionView(),
+            MenuSection.REPORTS: ReporteView(),
         }
 
         for view in self.views.values():
@@ -144,7 +145,7 @@ class MainWindow(QMainWindow):
         """Conectar señales del modelo serial"""
         self.serial_model.connection_state_changed.connect(self._handle_serial_connection_change)
         self.serial_model.ports_list_updated.connect(self._update_serial_ports)
-        # self.serial_model.data_received.connect(self._handle_serial_data)
+        self.serial_model.data_received.connect(self._handle_serial_data)
         self.serial_model.error_occurred.connect(self._handle_serial_error)
         self.serial_model.port_disconnected.connect(self._handle_port_disconnection)
 

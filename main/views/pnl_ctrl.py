@@ -334,17 +334,7 @@ class PanelControlView(BaseView):
         self.worker_thread.processed_data.connect(self._on_data_processed)
         self.worker_thread.finished.connect(self._check_pending_data)
         self.worker_thread.start()
-    
-    # def handle_serial_data(self, data: str):
-    #     """Procesa cada línea recibida individualmente"""
-    #     self.logger.debug(f"RX: {repr(data)}")
         
-    #     try:
-    #         # Usar QTimer.singleShot para procesamiento asíncrono
-    #         QTimer.singleShot(0, lambda: self._process_single_line(data))
-    #     except Exception as e:
-    #         self.logger.error(f"Error al programar procesamiento: {str(e)}")
-            
     def _process_single_line(self, line: str):
         """Procesa una línea individual de datos"""
         try:
@@ -368,7 +358,7 @@ class PanelControlView(BaseView):
                 else:
                     self._process_command_block(block)
             except Exception as e:
-                self.logger.error(f"Error procesando bloque: {str(e)}")
+                self.logger.error(f"Error process block: {str(e)}")
                 
     def _check_pending_data(self):
         """Verifica si hay datos pendientes por procesar"""
