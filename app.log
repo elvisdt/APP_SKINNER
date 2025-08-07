@@ -2475,3 +2475,194 @@ P02:1
 2025-08-06 17:20:36,536 | main.views.pnl_ctrl | INFO | status uart Panel: False
 2025-08-06 17:20:56,301 | MainWindow | WARNING | [WARN] Vista no implementada: Configuración
 2025-08-06 17:21:00,884 | MainWindow | WARNING | [WARN] Vista no implementada: Configuración
+2025-08-06 17:26:35,784 | InicioView | INFO | Vista de inicio configurada correctamente
+2025-08-06 17:26:35,911 | PanelControlView | INFO | Vista de inicio configurada correctamente
+2025-08-06 17:26:35,955 | ReporteView | INFO | Vista de inicio configurada correctamente
+2025-08-06 17:26:35,980 | main.views.pnl_ctrl | INFO | status uart Panel: False
+2025-08-06 17:27:54,892 | InicioView | INFO | Vista de inicio configurada correctamente
+2025-08-06 17:27:55,003 | PanelControlView | INFO | Vista de inicio configurada correctamente
+2025-08-06 17:27:55,046 | ReporteView | INFO | Vista de inicio configurada correctamente
+2025-08-06 17:27:55,073 | main.views.pnl_ctrl | INFO | status uart Panel: False
+2025-08-06 17:54:59,541 | InicioView | INFO | Vista de inicio configurada correctamente
+2025-08-06 17:54:59,708 | PanelControlView | INFO | Vista de inicio configurada correctamente
+2025-08-06 17:54:59,773 | ReporteView | INFO | Vista de inicio configurada correctamente
+2025-08-06 17:54:59,825 | main.views.pnl_ctrl | INFO | status uart Panel: False
+2025-08-06 17:56:13,190 | InicioView | INFO | Vista de inicio configurada correctamente
+2025-08-06 17:56:13,485 | PanelControlView | INFO | Vista de inicio configurada correctamente
+2025-08-06 17:56:13,584 | ReporteView | INFO | Vista de inicio configurada correctamente
+2025-08-06 17:56:13,641 | main.views.pnl_ctrl | INFO | status uart Panel: False
+2025-08-06 17:59:09,365 | InicioView | INFO | Vista de inicio configurada correctamente
+2025-08-06 17:59:09,531 | PanelControlView | INFO | Vista de inicio configurada correctamente
+2025-08-06 17:59:09,609 | ReporteView | INFO | Vista de inicio configurada correctamente
+2025-08-06 17:59:09,661 | main.views.pnl_ctrl | INFO | status uart Panel: False
+2025-08-06 18:01:48,634 | main.views.pnl_ctrl | INFO | conectar
+2025-08-06 18:01:48,635 | MainWindow | ERROR | [18:01:48] Permisos denegados - puerto ocupado
+2025-08-06 18:01:49,925 | MainWindow | ERROR | Failed to open COM53: Acceso denegado.
+2025-08-06 18:02:10,641 | InicioView | INFO | Vista de inicio configurada correctamente
+2025-08-06 18:02:10,883 | PanelControlView | INFO | Vista de inicio configurada correctamente
+2025-08-06 18:02:10,972 | ReporteView | INFO | Vista de inicio configurada correctamente
+2025-08-06 18:02:11,033 | main.views.pnl_ctrl | INFO | status uart Panel: False
+2025-08-06 18:03:57,152 | main.views.pnl_ctrl | INFO | conectar
+2025-08-06 18:03:57,155 | main.views.pnl_ctrl | INFO | status uart Panel: True
+2025-08-06 18:03:58,342 | main.views.pnl_ctrl | INFO | Programa iniciado a las 18:03:58
+2025-08-06 18:03:58,343 | main.views.pnl_ctrl | DEBUG | TX: LED-STATUS -> 500
+2025-08-06 18:04:05,578 | main.views.pnl_ctrl | INFO | Programa detenido a las 18:04:05
+2025-08-06 18:04:06,412 | main.views.pnl_ctrl | INFO | Programa iniciado a las 18:04:06
+2025-08-06 18:04:06,413 | main.views.pnl_ctrl | DEBUG | TX: LED-STATUS -> 500
+2025-08-06 18:04:08,515 | main.views.pnl_ctrl | INFO | Programa detenido a las 18:04:08
+2025-08-06 18:04:09,185 | main.views.pnl_ctrl | INFO | Programa iniciado a las 18:04:09
+2025-08-06 18:04:09,186 | main.views.pnl_ctrl | DEBUG | TX: LED-STATUS -> 500
+2025-08-06 18:04:09,687 | main.views.pnl_ctrl | DEBUG | RX (crudo): 'I (273) gpio: GPIO[47]| InputEn: 1| OutputEn: 0| OpenDrain: 0| PL01:0\r\nL02:0\r\nLED-STATUS\nL01:0,L02:0\r\nP02:1\r\nP02:1\r\nP02:1\r\nP02:1\r\nP02:1\r\nP02:1\r\nP02:1\r\nP02:1\r\nP02:1\r\n'
+2025-08-06 18:04:09,688 | MainWindow | DEBUG | data RX: I (273) gpio: GPIO[47]| InputEn: 1| OutputEn: 0| OpenDrain: 0| PL01:0
+L02:0
+LED-STATUS
+L01:0,L02:0
+P02:1
+P02:1
+P02:1
+P02:1
+P02:1
+P02:1
+P02:1
+P02:1
+P02:1
+
+2025-08-06 18:04:09,691 | main.views.pnl_ctrl | DEBUG | cmd blok: ['I (273) gpio: GPIO[47]| InputEn: 1| OutputEn: 0| OpenDrain: 0| PL01:0']
+2025-08-06 18:04:09,691 | main.views.pnl_ctrl | DEBUG | cmd blok: ['L02:0']
+2025-08-06 18:04:09,692 | main.views.pnl_ctrl | DEBUG | cmd blok: ['LED-STATUS']
+2025-08-06 18:04:09,692 | main.views.pnl_ctrl | WARNING | Format invalid cmd: LED-STATUS
+2025-08-06 18:04:09,693 | main.views.pnl_ctrl | DEBUG | cmd blok: ['L01:0', 'L02:0']
+2025-08-06 18:04:09,694 | main.views.pnl_ctrl | DEBUG | cmd blok: ['P02:1']
+2025-08-06 18:04:09,697 | main.views.pnl_ctrl | DEBUG | cmd blok: ['P02:1']
+2025-08-06 18:04:09,699 | main.views.pnl_ctrl | DEBUG | cmd blok: ['P02:1']
+2025-08-06 18:04:09,701 | main.views.pnl_ctrl | DEBUG | cmd blok: ['P02:1']
+2025-08-06 18:04:09,702 | main.views.pnl_ctrl | DEBUG | cmd blok: ['P02:1']
+2025-08-06 18:04:09,704 | main.views.pnl_ctrl | DEBUG | cmd blok: ['P02:1']
+2025-08-06 18:04:09,705 | main.views.pnl_ctrl | DEBUG | cmd blok: ['P02:1']
+2025-08-06 18:04:09,706 | main.views.pnl_ctrl | DEBUG | cmd blok: ['P02:1']
+2025-08-06 18:04:09,708 | main.views.pnl_ctrl | DEBUG | cmd blok: ['P02:1']
+2025-08-06 18:04:13,634 | main.views.pnl_ctrl | INFO | Programa detenido a las 18:04:13
+2025-08-06 18:04:14,186 | main.views.pnl_ctrl | INFO | Programa iniciado a las 18:04:14
+2025-08-06 18:04:14,187 | main.views.pnl_ctrl | DEBUG | TX: LED-STATUS -> 500
+2025-08-06 18:04:14,688 | main.views.pnl_ctrl | DEBUG | RX (crudo): 'LED-STATUS\nL01:0,L02:0\r\nP02:1\r\n'
+2025-08-06 18:04:14,689 | MainWindow | DEBUG | data RX: LED-STATUS
+L01:0,L02:0
+P02:1
+
+2025-08-06 18:04:14,693 | main.views.pnl_ctrl | DEBUG | cmd blok: ['LED-STATUS']
+2025-08-06 18:04:14,694 | main.views.pnl_ctrl | WARNING | Format invalid cmd: LED-STATUS
+2025-08-06 18:04:14,694 | main.views.pnl_ctrl | DEBUG | cmd blok: ['L01:0', 'L02:0']
+2025-08-06 18:04:14,694 | main.views.pnl_ctrl | DEBUG | cmd blok: ['P02:1']
+2025-08-06 18:04:15,613 | main.views.pnl_ctrl | INFO | Programa detenido a las 18:04:15
+2025-08-06 18:04:16,110 | main.views.pnl_ctrl | INFO | Programa iniciado a las 18:04:16
+2025-08-06 18:04:16,110 | main.views.pnl_ctrl | DEBUG | TX: LED-STATUS -> 500
+2025-08-06 18:04:16,610 | main.views.pnl_ctrl | DEBUG | RX (crudo): 'LED-STATUS\nL01:0,L02:0\r\nLED-STATUS\nL01:0,L02:0\r\n'
+2025-08-06 18:04:16,611 | MainWindow | DEBUG | data RX: LED-STATUS
+L01:0,L02:0
+LED-STATUS
+L01:0,L02:0
+
+2025-08-06 18:04:16,613 | main.views.pnl_ctrl | DEBUG | cmd blok: ['LED-STATUS']
+2025-08-06 18:04:16,614 | main.views.pnl_ctrl | WARNING | Format invalid cmd: LED-STATUS
+2025-08-06 18:04:16,614 | main.views.pnl_ctrl | DEBUG | cmd blok: ['L01:0', 'L02:0']
+2025-08-06 18:04:16,615 | main.views.pnl_ctrl | DEBUG | cmd blok: ['LED-STATUS']
+2025-08-06 18:04:16,615 | main.views.pnl_ctrl | WARNING | Format invalid cmd: LED-STATUS
+2025-08-06 18:04:16,615 | main.views.pnl_ctrl | DEBUG | cmd blok: ['L01:0', 'L02:0']
+2025-08-06 18:04:19,574 | main.views.pnl_ctrl | INFO | Programa detenido a las 18:04:19
+2025-08-06 18:04:20,272 | main.views.pnl_ctrl | INFO | Programa iniciado a las 18:04:20
+2025-08-06 18:04:20,272 | main.views.pnl_ctrl | DEBUG | TX: LED-STATUS -> 500
+2025-08-06 18:04:21,734 | main.views.pnl_ctrl | INFO | Programa detenido a las 18:04:21
+2025-08-06 18:04:22,443 | main.views.pnl_ctrl | INFO | Programa iniciado a las 18:04:22
+2025-08-06 18:04:22,443 | main.views.pnl_ctrl | DEBUG | TX: LED-STATUS -> 500
+2025-08-06 18:04:22,944 | main.views.pnl_ctrl | DEBUG | RX (crudo): 'LED-STATUS\nL01:0,L02:0\r\nP02:1\r\nP02:1\r\nP02:1\r\n'
+2025-08-06 18:04:22,945 | MainWindow | DEBUG | data RX: LED-STATUS
+L01:0,L02:0
+P02:1
+P02:1
+P02:1
+
+2025-08-06 18:04:22,946 | main.views.pnl_ctrl | DEBUG | RX (crudo): 'LED-STATUS\nL01:0,L02:0\r\n'
+2025-08-06 18:04:22,946 | MainWindow | DEBUG | data RX: LED-STATUS
+L01:0,L02:0
+
+2025-08-06 18:04:22,949 | main.views.pnl_ctrl | DEBUG | cmd blok: ['LED-STATUS']
+2025-08-06 18:04:22,949 | main.views.pnl_ctrl | WARNING | Format invalid cmd: LED-STATUS
+2025-08-06 18:04:22,950 | main.views.pnl_ctrl | DEBUG | cmd blok: ['L01:0', 'L02:0']
+2025-08-06 18:04:22,951 | main.views.pnl_ctrl | DEBUG | cmd blok: ['P02:1']
+2025-08-06 18:04:22,953 | main.views.pnl_ctrl | DEBUG | cmd blok: ['P02:1']
+2025-08-06 18:04:22,956 | main.views.pnl_ctrl | DEBUG | cmd blok: ['P02:1']
+2025-08-06 18:04:22,957 | main.views.pnl_ctrl | DEBUG | RX (crudo): 'LED-STATUS\nL01:0,L02:0\r\n'
+2025-08-06 18:04:22,966 | main.views.pnl_ctrl | DEBUG | cmd blok: ['LED-STATUS']
+2025-08-06 18:04:22,967 | main.views.pnl_ctrl | WARNING | Format invalid cmd: LED-STATUS
+2025-08-06 18:04:22,967 | main.views.pnl_ctrl | DEBUG | cmd blok: ['L01:0', 'L02:0']
+2025-08-06 18:06:21,897 | InicioView | INFO | Vista de inicio configurada correctamente
+2025-08-06 18:06:22,066 | PanelControlView | INFO | Vista de inicio configurada correctamente
+2025-08-06 18:06:22,126 | ReporteView | INFO | Vista de inicio configurada correctamente
+2025-08-06 18:06:22,162 | main.views.pnl_ctrl | INFO | status uart Panel: False
+2025-08-06 18:07:26,568 | InicioView | INFO | Vista de inicio configurada correctamente
+2025-08-06 18:07:26,739 | PanelControlView | INFO | Vista de inicio configurada correctamente
+2025-08-06 18:07:26,802 | ReporteView | INFO | Vista de inicio configurada correctamente
+2025-08-06 18:07:26,839 | main.views.pnl_ctrl | INFO | status uart Panel: False
+2025-08-06 18:10:57,803 | InicioView | INFO | Vista de inicio configurada correctamente
+2025-08-06 18:10:58,065 | PanelControlView | INFO | Vista de inicio configurada correctamente
+2025-08-06 18:10:58,163 | ReporteView | INFO | Vista de inicio configurada correctamente
+2025-08-06 18:10:58,223 | main.views.pnl_ctrl | INFO | status uart Panel: False
+2025-08-06 18:11:57,560 | InicioView | INFO | Vista de inicio configurada correctamente
+2025-08-06 18:11:57,759 | PanelControlView | INFO | Vista de inicio configurada correctamente
+2025-08-06 18:11:57,823 | ReporteView | INFO | Vista de inicio configurada correctamente
+2025-08-06 18:11:57,864 | main.views.pnl_ctrl | INFO | status uart Panel: False
+2025-08-06 18:13:56,501 | InicioView | INFO | Vista de inicio configurada correctamente
+2025-08-06 18:13:56,720 | PanelControlView | INFO | Vista de inicio configurada correctamente
+2025-08-06 18:13:56,793 | ReporteView | INFO | Vista de inicio configurada correctamente
+2025-08-06 18:13:56,835 | main.views.pnl_ctrl | INFO | status uart Panel: False
+2025-08-06 18:14:50,014 | InicioView | INFO | Vista de inicio configurada correctamente
+2025-08-06 18:14:50,193 | PanelControlView | INFO | Vista de inicio configurada correctamente
+2025-08-06 18:14:50,255 | ReporteView | INFO | Vista de inicio configurada correctamente
+2025-08-06 18:14:50,300 | main.views.pnl_ctrl | INFO | status uart Panel: False
+2025-08-06 18:15:39,144 | InicioView | INFO | Vista de inicio configurada correctamente
+2025-08-06 18:15:39,365 | PanelControlView | INFO | Vista de inicio configurada correctamente
+2025-08-06 18:15:39,465 | ReporteView | INFO | Vista de inicio configurada correctamente
+2025-08-06 18:15:39,527 | main.views.pnl_ctrl | INFO | status uart Panel: False
+2025-08-06 18:16:12,035 | InicioView | INFO | Vista de inicio configurada correctamente
+2025-08-06 18:16:12,315 | PanelControlView | INFO | Vista de inicio configurada correctamente
+2025-08-06 18:16:12,470 | ReporteView | INFO | Vista de inicio configurada correctamente
+2025-08-06 18:16:12,589 | main.views.pnl_ctrl | INFO | status uart Panel: False
+2025-08-06 18:16:39,349 | InicioView | INFO | Vista de inicio configurada correctamente
+2025-08-06 18:16:39,532 | PanelControlView | INFO | Vista de inicio configurada correctamente
+2025-08-06 18:16:39,597 | ReporteView | INFO | Vista de inicio configurada correctamente
+2025-08-06 18:16:39,635 | main.views.pnl_ctrl | INFO | status uart Panel: False
+2025-08-06 18:17:45,307 | MainWindow | WARNING | [WARN] Vista no implementada: Configuración
+2025-08-06 18:18:07,935 | MainWindow | WARNING | [WARN] Vista no implementada: Configuración
+2025-08-06 18:19:10,714 | InicioView | INFO | Vista de inicio configurada correctamente
+2025-08-06 18:19:10,896 | PanelControlView | INFO | Vista de inicio configurada correctamente
+2025-08-06 18:19:10,964 | ReporteView | INFO | Vista de inicio configurada correctamente
+2025-08-06 18:19:11,010 | main.views.pnl_ctrl | INFO | status uart Panel: False
+2025-08-06 18:25:00,893 | InicioView | INFO | Vista de inicio configurada correctamente
+2025-08-06 18:25:01,086 | PanelControlView | INFO | Vista de inicio configurada correctamente
+2025-08-06 18:25:01,165 | ReporteView | INFO | Vista de inicio configurada correctamente
+2025-08-06 18:25:01,242 | main.views.pnl_ctrl | INFO | status uart Panel: False
+2025-08-06 18:26:09,580 | InicioView | INFO | Vista de inicio configurada correctamente
+2025-08-06 18:26:09,781 | PanelControlView | INFO | Vista de inicio configurada correctamente
+2025-08-06 18:26:09,853 | ReporteView | INFO | Vista de inicio configurada correctamente
+2025-08-06 18:26:09,891 | main.views.pnl_ctrl | INFO | status uart Panel: False
+2025-08-06 18:27:05,912 | InicioView | INFO | Vista de inicio configurada correctamente
+2025-08-06 18:27:06,122 | PanelControlView | INFO | Vista de inicio configurada correctamente
+2025-08-06 18:27:06,194 | ReporteView | INFO | Vista de inicio configurada correctamente
+2025-08-06 18:27:06,238 | main.views.pnl_ctrl | INFO | status uart Panel: False
+2025-08-06 18:27:14,736 | InicioView | INFO | Vista de inicio configurada correctamente
+2025-08-06 18:27:14,942 | PanelControlView | INFO | Vista de inicio configurada correctamente
+2025-08-06 18:27:15,020 | ReporteView | INFO | Vista de inicio configurada correctamente
+2025-08-06 18:27:15,067 | main.views.pnl_ctrl | INFO | status uart Panel: False
+2025-08-06 18:27:22,781 | main.views.reporte_view | ERROR | Error al generar PDF: "Style 'FormField' not found in stylesheet"
+2025-08-06 18:28:15,046 | InicioView | INFO | Vista de inicio configurada correctamente
+2025-08-06 18:28:15,260 | PanelControlView | INFO | Vista de inicio configurada correctamente
+2025-08-06 18:28:15,341 | ReporteView | INFO | Vista de inicio configurada correctamente
+2025-08-06 18:28:15,383 | main.views.pnl_ctrl | INFO | status uart Panel: False
+2025-08-06 18:33:08,387 | InicioView | INFO | Vista de inicio configurada correctamente
+2025-08-06 18:33:08,745 | PanelControlView | INFO | Vista de inicio configurada correctamente
+2025-08-06 18:33:08,875 | ReporteView | INFO | Vista de inicio configurada correctamente
+2025-08-06 18:33:08,935 | main.views.pnl_ctrl | INFO | status uart Panel: False
+2025-08-06 18:35:17,954 | InicioView | INFO | Vista de inicio configurada correctamente
+2025-08-06 18:35:18,144 | PanelControlView | INFO | Vista de inicio configurada correctamente
+2025-08-06 18:35:18,207 | ReporteView | INFO | Vista de inicio configurada correctamente
+2025-08-06 18:35:18,248 | main.views.pnl_ctrl | INFO | status uart Panel: False

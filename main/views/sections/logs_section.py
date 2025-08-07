@@ -16,20 +16,20 @@ class LogsSection(QGroupBox):
         layout = QHBoxLayout()
 
         self.logs_area = QTextEdit()
-        self.logs_area.setReadOnly(True)
+        #self.logs_area.setReadOnly(True)
         self.logs_area.setPlaceholderText("Escribir aquì su observaciòn o comentario...")
         self.logs_area.setStyleSheet(AppStyles.LOG_AREA_STYLE)
         self.logs_area.setMinimumHeight(100)
         self.logs_area.setSizePolicy(QSizePolicy.Policy.Preferred, QSizePolicy.Policy.Fixed)
 
         command_row = QVBoxLayout()
-        self.send_btn = QPushButton("Exportar PDF")
-        self.send_btn.setStyleSheet(AppStyles.ACTION_BUTTON)
-        self.clear_btn = QPushButton("Limpiar Logs")
-        self.clear_btn.setStyleSheet(AppStyles.ACTION_BUTTON)
+        self.btn_pdf = QPushButton("Exportar PDF")
+        self.btn_pdf.setStyleSheet(AppStyles.ACTION_BUTTON)
+        self.btn_clear = QPushButton("Limpiar Logs")
+        self.btn_clear.setStyleSheet(AppStyles.ACTION_BUTTON)
 
-        command_row.addWidget(self.send_btn)
-        command_row.addWidget(self.clear_btn)
+        command_row.addWidget(self.btn_pdf)
+        command_row.addWidget(self.btn_clear)
 
         layout.addWidget(self.logs_area)
         layout.addLayout(command_row)

@@ -5,7 +5,7 @@ from PyQt6.QtGui import QPixmap, QPainter, QPainterPath, QFont
 
 from fpdf import FPDF
 from PyQt6.QtCore import QTimer, QTime, QDateTime
-
+from reportlab.lib import colors  # Ya deberías tener este import
 
 import csv
 
@@ -41,8 +41,8 @@ class ReporteView(BaseView):
     def __init__(self, parent=None):
         super().__init__(parent)
         self.logger = Logger(__name__)
+        self.setup_connections()
         
-
     def setup_ui(self):
         """Configura la interfaz de usuario de la vista de inicio"""
         try:
@@ -58,6 +58,7 @@ class ReporteView(BaseView):
             self.logger.error(f"Error al configurar vista de inicio: {str(e)}")
             raise
         
+
     def setup_header(self):
         """Configura la sección del encabezado"""
         try:
@@ -136,10 +137,9 @@ class ReporteView(BaseView):
         except Exception as e:
                 self.logger.error(f"Error al configurar contenido: {str(e)}")
                 raise
-    
-         
-
-    
+    def setup_connections(self):
+        self.log_box.btn_pdf.clicked.connect(self.generate_pdf_report)
+        
     def generate_pdf_report(self):
         """Versión mejorada del generador de PDF"""
         filename, _ = QFileDialog.getSaveFileName(
@@ -160,22 +160,81 @@ class ReporteView(BaseView):
                 page_size=A4
             )
             
-            # Configuración básica
-            pdf.set_header(text="Reporte de Eventos")
-            pdf.set_footer(text="Generado automáticamente")
+
+
+ 
+            curr_date = QDateTime.currentDateTime()
+
+            # Formatear como "dd-MM-yyyy - HH:mm:ss"
+            txt_date_time = curr_date.toString("dd/MM/yyyy - HH:mm:ss")
+
+
+            pdf.set_header(text=txt_date_time)
+            pdf.set_footer(text="Skinner V02")
             
             # Contenido del reporte
             pdf.add_title("Reporte de Eventos del Sistema")
-            pdf.add_spacer(0.5*inch)
             
+            
+            pdf.add_section("Detalles de Configuración")
+            # pdf.add_text("Este reporte contiene los eventos registrados en el sistema.")
+            # Campos del formulario
+            pdf.add_form_field("Nombre Completo", "María García López")
+            pdf.add_form_field("ID de Usuario", "123456")
+            pdf.add_form_field("Àrea", "Psicología")
+            pdf.add_form_field("Prueba Realizado Palanca 01", "CRC")
+            pdf.add_form_field("Prueba Realizado Palanca 02", "CRC")
+            pdf.add_form_field("Fecha de Inicio", txt_date_time)
+
             # Añadir gráfico (versión en memoria)
             pdf.add_section("Gráfico de Eventos")
             pdf.add_widget_as_image(
-                self.pulse_graph,
-                width="10cm",  
-                height="10cm",
+                self.plot_g01,
+                width="16cm",  
+                height="8cm",
                 caption="Gráfico generado en tiempo real"
             )
+            
+            # Datos de ejemplo (lista de listas)
+            # 1. Preparar los datos de la tabla
+            indicadores = [
+                ["Indicador", "Valor"],  # Encabezados
+                ["ID de Sesión", "N/A"],
+                ["Hora de Inicio", ""],
+                ["Hora de Fin", ""],
+                ["Duración", "00:00:00"],
+                ["Latencia", "0 ms"],
+                ["Tasa de Respuesta", "0%"],
+                ["Palanca 01", "0"],
+                ["Palanca 02", "0"],
+                ["LED 01", "OFF"],
+                ["LED 02", "OFF"],
+                ["Recompensas", "0"],
+                ["Intentos", "0"]
+            ]
+
+            # 2. Crear el PDF y añadir la tabla
+            pdf.add_section("Indicadores del Sistema")
+
+            # Añadir tabla con estilo personalizado
+            pdf.add_table(
+                data=indicadores,
+                col_widths=["5cm", "3cm"],  # Anchos de columna
+                style=[
+                    ('BACKGROUND', (0, 0), (-1, 0), colors.HexColor('#005588')),  # Encabezado azul
+                    ('TEXTCOLOR', (0, 0), (-1, 0), colors.white),
+                    ('ALIGN', (0, 0), (-1, -1), 'LEFT'),
+                    ('GRID', (0, 0), (-1, -1), 0.5, colors.lightgrey),
+                    ('FONTNAME', (0, 0), (-1, 0), 'Helvetica-Bold'),
+                    ('FONTSIZE', (0, 0), (-1, -1), 10),
+                    ('LEFTPADDING', (0, 0), (-1, -1), 6),
+                    ('BOTTOMPADDING', (0, 0), (-1, 0), 6)  # Espacio para el encabezado
+                ]
+            )
+
+            
+            pdf.add_section("Observaciones")
+            pdf.add_text(self.log_box.logs_area.toPlainText())
             
             # Generar PDF
             pdf.build(filename)
@@ -188,3 +247,5 @@ class ReporteView(BaseView):
             QMessageBox.critical(
                 self, "Error", 
                 f"Error al generar PDF:\n{str(e)}")
+            self.logger.error(f"Error al generar PDF: {str(e)}")
+           

@@ -90,6 +90,15 @@ class PDFBuilder:
             fontName='Helvetica-Oblique'
         ))
         
+        styles.add(ParagraphStyle(
+            name='FormField',
+            parent=styles['Normal'],
+            fontSize=10,
+            textColor=colors.black,
+            leading=14,
+            spaceAfter=6,
+            leftIndent=10  # Sangría izquierda
+        ))
         return styles
     
     def set_header(self, text=None, image_path=None):
@@ -293,7 +302,21 @@ class PDFBuilder:
         table = Table(data, colWidths=col_widths)
         table.setStyle(TableStyle(style))
         self.elements.append(table)
-    
+        
+    def add_form_field(self, name, value, style='FormField', name_color='#005588', value_color='#333333'):
+        """
+        Versión con colores personalizables
+        
+        Args:
+            name_color (str): Color hexadecimal para el nombre (ej. '#005588')
+            value_color (str): Color hexadecimal para el valor (ej. '#333333')
+        """
+        text = (
+            f"<font color='{name_color}'><b>{name}:</b></font> "
+            f"<font color='{value_color}'>{value}</font>"
+        )
+        self.elements.append(Paragraph(text, self.styles[style]))
+        
     def build(self, filename):
         """
         Genera el documento PDF
