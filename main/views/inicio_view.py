@@ -9,12 +9,12 @@ from main.styles.styles import AppStyles
 from main.views.base_view import BaseView
 from main.components.header_view import HeaderWidget
 from main.utils.resource_path import get_resource_path
-from main.utils.logger import Logger
+#from main.utils.logger import Logger
 
 class InicioView(BaseView):
-    def __init__(self, parent=None):
-        super().__init__(parent)
-        self.logger = Logger(__name__)
+    def __init__(self, serial_manager=None, parent=None):
+        super().__init__(serial_manager=serial_manager, parent=parent)
+        #self.logger = Logger(__name__)
         
 
     def setup_ui(self):

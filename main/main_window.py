@@ -15,7 +15,7 @@ from main.views.pnl_ctrl import PanelControlView
 from main.views.reporte_view import ReporteView
 from main.enums.menu_sections import MenuSection
 
-from main.core.serial_port_model import SerialPortModel
+from main.core.serial_manager import SerialManager
 
 
 class MainWindow(QMainWindow):
@@ -23,7 +23,7 @@ class MainWindow(QMainWindow):
         super().__init__()
         self.logger = Logger("MainWindow")
 
-        self.serial_model = SerialPortModel()
+        self.serial_model = SerialManager()
          
         self.views = {}
         self.view_titles = {
@@ -39,7 +39,7 @@ class MainWindow(QMainWindow):
         self._init_views()
         self._connect_signals()
         
-        self._connect_serial_signals()
+        #self._connect_serial_signals()
         
 
     def _configure_window(self):
@@ -143,11 +143,11 @@ class MainWindow(QMainWindow):
 
     def _connect_serial_signals(self):
         """Conectar señales del modelo serial"""
-        self.serial_model.connection_state_changed.connect(self._handle_serial_connection_change)
-        self.serial_model.ports_list_updated.connect(self._update_serial_ports)
+        # self.serial_model.connection_state_changed.connect(self._handle_serial_connection_change)
+        # self.serial_model.ports_list_updated.connect(self._update_serial_ports)
         self.serial_model.data_received.connect(self._handle_serial_data)
         self.serial_model.error_occurred.connect(self._handle_serial_error)
-        self.serial_model.port_disconnected.connect(self._handle_port_disconnection)
+        # self.serial_model.port_disconnected.connect(self._handle_port_disconnection)
 
     def _handle_serial_connection_change(self, connected: bool):
         """Manejar cambios en el estado de conexión"""

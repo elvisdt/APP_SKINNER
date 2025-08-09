@@ -161,3 +161,63 @@ class ProgramControlBox(QGroupBox):
         layout.addWidget(spbox,alignment=Qt.AlignmentFlag.AlignLeft)
         layout.addStretch()
         return layout
+
+    def disable_config(self):
+        """Deshabilita todos los controles de configuración."""
+        self.cmb_mode_l1.setEnabled(False)
+        self.spbox_l1.setEnabled(False)
+        self.cmb_mode_l2.setEnabled(False)
+        self.spbox_l2.setEnabled(False)
+        self.cmb_mode_p1.setEnabled(False)
+        self.spbox_p1.setEnabled(False)
+        self.cmb_mode_p2.setEnabled(False)
+        self.spbox_p2.setEnabled(False)
+    
+    def enable_config(self):
+        """Habilita todos los controles de configuración."""
+        self.cmb_mode_l1.setEnabled(True)
+        self.spbox_l1.setEnabled(True)
+        self.cmb_mode_l2.setEnabled(True)
+        self.spbox_l2.setEnabled(True)
+        self.cmb_mode_p1.setEnabled(True)
+        self.spbox_p1.setEnabled(True)
+        self.cmb_mode_p2.setEnabled(True)
+        self.spbox_p2.setEnabled(True)
+    
+    
+    def get_led1_mode(self) -> ModoLuz:
+        """Obtiene el modo seleccionado para el Led-01 como Enum"""
+        current_text = self.cmb_mode_l1.currentText()
+        return ModoLuz(current_text)
+
+    def get_led2_mode(self) -> ModoLuz:
+        """Obtiene el modo seleccionado para el Led-02 como Enum"""
+        current_text = self.cmb_mode_l2.currentText()
+        return ModoLuz(current_text)
+
+    def get_pal1_mode(self) -> ModoPalanca:
+        """Obtiene el modo seleccionado para la Palanca-01 como Enum"""
+        current_text = self.cmb_mode_p1.currentText()
+        return ModoPalanca(current_text)
+
+    def get_pal2_mode(self) -> ModoPalanca:
+        """Obtiene el modo seleccionado para la Palanca-02 como Enum"""
+        current_text = self.cmb_mode_p2.currentText()
+        return ModoPalanca(current_text)
+
+    #---------------------------------------------------------#
+    def get_led1_time(self) -> int:
+        """Obtiene el tiempo configurado para el Led-01"""
+        return self.spbox_l1.value()
+
+    def get_led2_time(self) -> int:
+        """Obtiene el tiempo configurado para el Led-02"""
+        return self.spbox_l2.value()
+
+    def get_pal1_time(self) -> int:
+        """Obtiene el tiempo/configuración para la Palanca-01"""
+        return self.spbox_p1.value()
+
+    def get_pal2_time(self) -> int:
+        """Obtiene el tiempo/configuración para la Palanca-02"""
+        return self.spbox_p2.value()

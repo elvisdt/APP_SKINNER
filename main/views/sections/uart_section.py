@@ -7,11 +7,18 @@ from main.styles.styles import AppStyles
 
 
 class UartSection(QGroupBox):
-    def __init__(self):
+    def __init__(self, ports: list[str] = None):
         super().__init__("Conexión UART: Desconectado")
         self.setStyleSheet(AppStyles.groupbox_style("#3498db"))
         self._init_ui()
-        self.update_list_port([])
+        if ports:
+            self.update_list_port(ports)
+            self.port_input.setEnabled(True)
+            self.connect_btn.setEnabled(True)
+        else:
+            self.port_input.setEnabled(False)
+            self.connect_btn.setEnabled(False)
+        
         
     def _init_ui(self):
         layout = QVBoxLayout()

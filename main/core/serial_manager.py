@@ -45,7 +45,7 @@ class SerialManager(QObject):
         self._scan_timer.start(2000)
 
     def __del__(self):
-        self.disconnect_serial()
+        self.close_port()
         self._scan_timer.stop()
 
     def scan_ports(self):
@@ -53,7 +53,12 @@ class SerialManager(QObject):
         if ports != self._last_ports:
             self._last_ports = ports
             self.ports_updated.emit(ports)
+            
+    def get_list_ports(self) -> list:
+        """Devuelve una lista de puertos seriales disponibles."""
+        return [port.portName() for port in QSerialPortInfo.availablePorts()]
 
+        
     def get_port_info(self, port_name: str) -> Dict[str, Any]:
         for port in QSerialPortInfo.availablePorts():
             if port.portName() == port_name:
@@ -67,14 +72,14 @@ class SerialManager(QObject):
                 }
         return {}
 
-    def connect_serial(self, port_name: str, settings: Optional[Dict] = None):
+    def open_port(self, port_name: str, settings: Optional[Dict] = None):
         if self.serial is None:
             self.serial = QSerialPort()
             self.serial.readyRead.connect(self._handle_ready_read)
             self.serial.errorOccurred.connect(self._handle_error)
 
         if self.serial.isOpen():
-            self.disconnect_serial()
+            self.close_port()
 
         self.serial.setPortName(port_name)
         self.port_name = port_name
@@ -95,7 +100,7 @@ class SerialManager(QObject):
             self.error_occurred.emit(f"Error al abrir {port_name}", port_name)
             self.serial.close()
 
-    def disconnect_serial(self):
+    def close_port(self):
         if self.serial and self.serial.isOpen():
             port_name = self.port_name
             self.serial.close()
@@ -103,19 +108,47 @@ class SerialManager(QObject):
             self.connection_changed.emit(False, port_name)
             self._scan_timer.start(2000)
 
-    def send_data(self, data: bytes):
-        if self.serial and self.serial.isOpen():
-            bytes_written = self.serial.write(data)
-            if bytes_written == -1:
-                self.error_occurred.emit("Error al escribir datos", self.port_name)
-            elif bytes_written == len(data):
-                self.data_sent.emit(data, self.port_name)
-            else:
-                self.error_occurred.emit(
-                    f"Datos enviados parcialmente ({bytes_written}/{len(data)})",
-                    self.port_name
-                )
+    # def send_data(self, data: bytes):
+    #     if self.serial and self.serial.isOpen():
+    #         bytes_written = self.serial.write(data)
+    #         if bytes_written == -1:
+    #             self.error_occurred.emit("Error al escribir datos", self.port_name)
+    #         elif bytes_written == len(data):
+    #             self.data_sent.emit(data, self.port_name)
+    #         else:
+    #             self.error_occurred.emit(
+    #                 f"Datos enviados parcialmente ({bytes_written}/{len(data)})",
+    #                 self.port_name
+    #             )
+    def send_data_str(self, data: str) -> None:
+        """Envía un string con salto de línea automático (\\n) por el puerto serial."""
+        if not self.serial or not self.serial.isOpen():
+            return
 
+        if not data.endswith('\n'):
+            data += '\n'  # Añade salto de línea si no existe
+        
+        self.send_data_bytes(data.encode('utf-8'))  # Reutiliza el método de bytes
+
+    def send_data_bytes(self, data: bytes) -> None:
+        """Envía datos en formato bytes (sin modificación) por el puerto serial."""
+        if not self.serial or not self.serial.isOpen():
+            return
+
+        bytes_written = self.serial.write(data)
+        
+        if bytes_written == -1:
+            self.error_occurred.emit("Error al escribir datos", self.port_name)
+        elif bytes_written == len(data):
+            # Emite bytes o str según el método llamado
+            if isinstance(data, bytes):
+                self.data_sent.emit(data, self.port_name)
+        else:
+            self.error_occurred.emit(
+                f"Datos enviados parcialmente ({bytes_written}/{len(data)})",
+                self.port_name
+            )
+            
     def _handle_ready_read(self):
         if self.serial and self.serial.isOpen():
             data = bytes(self.serial.readAll())

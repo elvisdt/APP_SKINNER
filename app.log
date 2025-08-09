@@ -2951,3 +2951,564 @@ L01:0,L02:0
 2025-08-09 09:25:45,946 | MainWindow | DEBUG | data RX: MV:512-F
 
 2025-08-09 09:25:45,949 | main.views.pnl_ctrl | DEBUG | cmd blok: ['MV:512-F']
+2025-08-09 10:38:46,506 | InicioView | INFO | Vista de inicio configurada correctamente
+2025-08-09 10:38:46,712 | PanelControlView | INFO | Vista de inicio configurada correctamente
+2025-08-09 10:38:46,804 | ReporteView | INFO | Vista de inicio configurada correctamente
+2025-08-09 10:40:52,194 | InicioView | INFO | Vista de inicio configurada correctamente
+2025-08-09 10:40:52,643 | PanelControlView | INFO | Vista de inicio configurada correctamente
+2025-08-09 10:40:52,761 | ReporteView | INFO | Vista de inicio configurada correctamente
+2025-08-09 10:57:41,248 | InicioView | INFO | Vista de inicio configurada correctamente
+2025-08-09 10:57:41,518 | PanelControlView | INFO | Vista de inicio configurada correctamente
+2025-08-09 10:57:41,686 | ReporteView | INFO | Vista de inicio configurada correctamente
+2025-08-09 11:01:14,759 | InicioView | INFO | Vista de inicio configurada correctamente
+2025-08-09 11:01:15,018 | PanelControlView | INFO | Vista de inicio configurada correctamente
+2025-08-09 11:01:15,115 | ReporteView | INFO | Vista de inicio configurada correctamente
+2025-08-09 11:01:41,108 | InicioView | INFO | Vista de inicio configurada correctamente
+2025-08-09 11:01:41,427 | PanelControlView | INFO | Vista de inicio configurada correctamente
+2025-08-09 11:01:41,509 | ReporteView | INFO | Vista de inicio configurada correctamente
+2025-08-09 11:02:44,365 | InicioView | INFO | Vista de inicio configurada correctamente
+2025-08-09 11:02:44,648 | PanelControlView | INFO | Vista de inicio configurada correctamente
+2025-08-09 11:02:44,779 | ReporteView | INFO | Vista de inicio configurada correctamente
+2025-08-09 11:21:24,313 | InicioView | INFO | Vista de inicio configurada correctamente
+2025-08-09 11:21:24,906 | PanelControlView | INFO | Vista de inicio configurada correctamente
+2025-08-09 11:21:24,996 | ReporteView | INFO | Vista de inicio configurada correctamente
+2025-08-09 12:40:16,946 | InicioView | INFO | Vista de inicio configurada correctamente
+2025-08-09 12:40:17,241 | PanelControlView | INFO | Vista de inicio configurada correctamente
+2025-08-09 12:40:17,282 | ReporteView | INFO | Vista de inicio configurada correctamente
+2025-08-09 12:41:43,946 | InicioView | INFO | Vista de inicio configurada correctamente
+2025-08-09 12:41:44,068 | PanelControlView | INFO | Vista de inicio configurada correctamente
+2025-08-09 12:41:44,106 | ReporteView | INFO | Vista de inicio configurada correctamente
+2025-08-09 12:41:52,593 | PanelControlView | INFO | Programa iniciado a las 12:41:52
+2025-08-09 12:41:52,613 | PanelControlView | DEBUG | RX (crudo): b'ESP-ROM:esp32s3-20210327\r\nL01:0\r\nL02:0\r\nLED-STATUS\nL01:0,L02:0\r\n'
+2025-08-09 12:44:52,695 | InicioView | INFO | Vista de inicio configurada correctamente
+2025-08-09 12:44:52,817 | PanelControlView | INFO | Vista de inicio configurada correctamente
+2025-08-09 12:44:52,854 | ReporteView | INFO | Vista de inicio configurada correctamente
+2025-08-09 12:45:18,531 | PanelControlView | INFO | Programa iniciado a las 12:45:18
+2025-08-09 12:45:18,543 | PanelControlView | DEBUG | RX: ESP-ROM:esp32s3-20210327
+L01:0
+L02:0
+LED-STATUS
+L01:0,L02:0
+
+2025-08-09 12:45:25,644 | PanelControlView | INFO | Programa detenido a las 12:45:25
+2025-08-09 12:45:26,377 | PanelControlView | INFO | Programa iniciado a las 12:45:26
+2025-08-09 12:45:26,383 | PanelControlView | DEBUG | RX: LED-STATUS
+L01:0,L02:0
+
+2025-08-09 12:45:27,523 | PanelControlView | INFO | Programa detenido a las 12:45:27
+2025-08-09 12:45:28,155 | PanelControlView | INFO | Programa iniciado a las 12:45:28
+2025-08-09 12:45:28,161 | PanelControlView | DEBUG | RX: LED-STATUS
+
+2025-08-09 12:45:28,162 | PanelControlView | DEBUG | RX: L01:0,L02:0
+
+2025-08-09 12:45:36,690 | PanelControlView | INFO | Programa detenido a las 12:45:36
+2025-08-09 12:45:37,569 | PanelControlView | INFO | Programa iniciado a las 12:45:37
+2025-08-09 12:45:37,573 | PanelControlView | DEBUG | RX: LED-STATUS
+L01:0,L02:0
+
+2025-08-09 12:45:48,448 | PanelControlView | INFO | Programa detenido a las 12:45:48
+2025-08-09 12:45:49,350 | PanelControlView | INFO | Programa iniciado a las 12:45:49
+2025-08-09 12:45:49,356 | PanelControlView | DEBUG | RX: LED-STATUS
+L01:0,L02:0
+
+2025-08-09 12:45:59,788 | PanelControlView | INFO | Programa detenido a las 12:45:59
+2025-08-09 12:46:00,824 | PanelControlView | INFO | Programa iniciado a las 12:46:00
+2025-08-09 12:46:00,829 | PanelControlView | DEBUG | RX: LED-STATUS
+L01:0,L02:0
+
+2025-08-09 12:46:01,373 | PanelControlView | INFO | Programa detenido a las 12:46:01
+2025-08-09 12:46:01,871 | PanelControlView | INFO | Programa iniciado a las 12:46:01
+2025-08-09 12:46:01,877 | PanelControlView | DEBUG | RX: LED-STATUS
+L01:0,L02:0
+
+2025-08-09 12:46:02,419 | PanelControlView | INFO | Programa detenido a las 12:46:02
+2025-08-09 12:46:02,906 | PanelControlView | INFO | Programa iniciado a las 12:46:02
+2025-08-09 12:46:02,913 | PanelControlView | DEBUG | RX: LED-STATUS
+L01:0,L02:0
+
+2025-08-09 12:46:03,353 | PanelControlView | INFO | Programa detenido a las 12:46:03
+2025-08-09 12:46:03,828 | PanelControlView | INFO | Programa iniciado a las 12:46:03
+2025-08-09 12:46:03,835 | PanelControlView | DEBUG | RX: LED-STATUS
+L01:0,L02:0
+
+2025-08-09 12:46:04,253 | PanelControlView | INFO | Programa detenido a las 12:46:04
+2025-08-09 12:46:04,681 | PanelControlView | INFO | Programa iniciado a las 12:46:04
+2025-08-09 12:46:04,684 | PanelControlView | DEBUG | RX: LED-STATUS
+
+2025-08-09 12:46:04,685 | PanelControlView | DEBUG | RX: L01:0,L02:0
+
+2025-08-09 12:46:05,108 | PanelControlView | INFO | Programa detenido a las 12:46:05
+2025-08-09 12:46:05,528 | PanelControlView | INFO | Programa iniciado a las 12:46:05
+2025-08-09 12:46:05,532 | PanelControlView | DEBUG | RX: LED-STATUS
+L01:0,L02:0
+
+2025-08-09 12:46:06,043 | PanelControlView | INFO | Programa detenido a las 12:46:06
+2025-08-09 12:46:06,537 | PanelControlView | INFO | Programa iniciado a las 12:46:06
+2025-08-09 12:46:06,541 | PanelControlView | DEBUG | RX: LED-STATUS
+L01:0,L02:0
+
+2025-08-09 12:46:07,032 | PanelControlView | INFO | Programa detenido a las 12:46:07
+2025-08-09 12:46:07,493 | PanelControlView | INFO | Programa iniciado a las 12:46:07
+2025-08-09 12:46:07,497 | PanelControlView | DEBUG | RX: LED-STATUS
+L01:0,L02:0
+
+2025-08-09 12:46:07,943 | PanelControlView | INFO | Programa detenido a las 12:46:07
+2025-08-09 12:46:08,371 | PanelControlView | INFO | Programa iniciado a las 12:46:08
+2025-08-09 12:46:08,375 | PanelControlView | DEBUG | RX: LED-STATUS
+L01:0,L02:0
+
+2025-08-09 12:46:08,764 | PanelControlView | INFO | Programa detenido a las 12:46:08
+2025-08-09 12:46:09,227 | PanelControlView | INFO | Programa iniciado a las 12:46:09
+2025-08-09 12:46:09,230 | PanelControlView | DEBUG | RX: LED-STATUS
+L01:0,L02:0
+
+2025-08-09 12:46:09,710 | PanelControlView | INFO | Programa detenido a las 12:46:09
+2025-08-09 12:46:10,240 | PanelControlView | INFO | Programa iniciado a las 12:46:10
+2025-08-09 12:46:10,244 | PanelControlView | DEBUG | RX: LED-STATUS
+L01:0,L02:0
+
+2025-08-09 14:45:58,917 | InicioView | INFO | Vista de inicio configurada correctamente
+2025-08-09 14:45:59,650 | PanelControlView | INFO | Vista de inicio configurada correctamente
+2025-08-09 14:45:59,771 | ReporteView | INFO | Vista de inicio configurada correctamente
+2025-08-09 14:46:26,639 | PanelControlView | INFO | Programa iniciado a las 14:46:26
+2025-08-09 14:46:26,683 | PanelControlView | DEBUG | RX (crudo): b'L02:0\r\nLED-STATUS\nL01:0,L02:0\r\n'
+2025-08-09 14:46:37,168 | PanelControlView | INFO | Programa detenido a las 14:46:37
+2025-08-09 14:46:38,261 | PanelControlView | INFO | Programa iniciado a las 14:46:38
+2025-08-09 14:46:38,273 | PanelControlView | DEBUG | RX (crudo): b'LED-STATUS\nL01:0,L02:0\r\n'
+2025-08-09 14:57:13,336 | InicioView | INFO | Vista de inicio configurada correctamente
+2025-08-09 14:57:13,563 | PanelControlView | INFO | Vista de inicio configurada correctamente
+2025-08-09 14:57:13,655 | ReporteView | INFO | Vista de inicio configurada correctamente
+2025-08-09 14:57:41,900 | PanelControlView | INFO | Programa iniciado a las 14:57:41
+2025-08-09 14:57:41,926 | PanelControlView | DEBUG | RX COM53-> ESP-ROM:esp32s3-20210327
+L01:0
+L02:0
+LED-STATUS
+L01:0,L02:0
+2025-08-09 14:57:41,928 | PanelControlView | DEBUG | Procesando: ESP-ROM:esp32s3-20210327
+2025-08-09 14:57:41,928 | PanelControlView | DEBUG | Procesando: L01:0
+2025-08-09 14:57:41,929 | PanelControlView | DEBUG | Procesando: L02:0
+2025-08-09 14:57:41,929 | PanelControlView | DEBUG | Procesando: LED-STATUS
+2025-08-09 14:57:41,930 | PanelControlView | DEBUG | Procesando: L01:0,L02:0
+2025-08-09 14:58:58,725 | InicioView | INFO | Vista de inicio configurada correctamente
+2025-08-09 14:58:58,985 | PanelControlView | INFO | Vista de inicio configurada correctamente
+2025-08-09 14:58:59,059 | ReporteView | INFO | Vista de inicio configurada correctamente
+2025-08-09 14:59:03,417 | PanelControlView | INFO | Programa iniciado a las 14:59:03
+2025-08-09 15:00:32,765 | InicioView | INFO | Vista de inicio configurada correctamente
+2025-08-09 15:00:33,027 | PanelControlView | INFO | Vista de inicio configurada correctamente
+2025-08-09 15:00:33,105 | ReporteView | INFO | Vista de inicio configurada correctamente
+2025-08-09 15:00:37,660 | PanelControlView | INFO | Programa iniciado a las 15:00:37
+2025-08-09 15:00:37,682 | PanelControlView | DEBUG | RX COM53-> b'ESP-ROM:esp32s3-20210327\r\nL01:0\r\nL02:0\r\nLED-STATUS\nL01:0,L02:0'
+2025-08-09 15:00:37,683 | PanelControlView | DEBUG | Procesando: ESP-ROM:esp32s3-20210327
+2025-08-09 15:00:37,683 | PanelControlView | DEBUG | Procesando: L01:0
+2025-08-09 15:00:37,684 | PanelControlView | DEBUG | Procesando: L02:0
+2025-08-09 15:00:37,684 | PanelControlView | DEBUG | Procesando: LED-STATUS
+2025-08-09 15:00:37,685 | PanelControlView | DEBUG | Procesando: L01:0,L02:0
+2025-08-09 15:00:59,630 | PanelControlView | INFO | Programa detenido a las 15:00:59
+2025-08-09 15:01:00,567 | PanelControlView | INFO | Programa iniciado a las 15:01:00
+2025-08-09 15:01:00,574 | PanelControlView | DEBUG | RX COM53-> b'ESP-ROM:esp32s3-20210327\r\nL01:0\r\nL02:0\r\nLED-STATUS\nL01:0,L02:0'
+2025-08-09 15:01:00,574 | PanelControlView | DEBUG | Procesando: ESP-ROM:esp32s3-20210327
+2025-08-09 15:01:00,575 | PanelControlView | DEBUG | Procesando: L01:0
+2025-08-09 15:01:00,575 | PanelControlView | DEBUG | Procesando: L02:0
+2025-08-09 15:01:00,576 | PanelControlView | DEBUG | Procesando: LED-STATUS
+2025-08-09 15:01:00,576 | PanelControlView | DEBUG | Procesando: L01:0,L02:0
+2025-08-09 15:01:05,470 | PanelControlView | INFO | Programa detenido a las 15:01:05
+2025-08-09 15:01:06,202 | PanelControlView | INFO | Programa iniciado a las 15:01:06
+2025-08-09 15:01:06,209 | PanelControlView | DEBUG | RX COM53-> b'LED-STATUS\nL01:0,L02:0'
+2025-08-09 15:01:06,209 | PanelControlView | DEBUG | Procesando: LED-STATUS
+2025-08-09 15:01:06,210 | PanelControlView | DEBUG | Procesando: L01:0,L02:0
+2025-08-09 15:01:12,490 | PanelControlView | INFO | Programa detenido a las 15:01:12
+2025-08-09 15:01:13,211 | PanelControlView | INFO | Programa iniciado a las 15:01:13
+2025-08-09 15:01:13,217 | PanelControlView | DEBUG | RX COM53-> b'LED-STATUS\nL01:0,L02:0'
+2025-08-09 15:01:13,218 | PanelControlView | DEBUG | Procesando: LED-STATUS
+2025-08-09 15:01:13,218 | PanelControlView | DEBUG | Procesando: L01:0,L02:0
+2025-08-09 15:01:14,481 | PanelControlView | INFO | Programa detenido a las 15:01:14
+2025-08-09 15:01:15,405 | PanelControlView | INFO | Programa iniciado a las 15:01:15
+2025-08-09 15:01:15,412 | PanelControlView | DEBUG | RX COM53-> b'LED-STATUS\nL01:0,L02:0'
+2025-08-09 15:01:15,413 | PanelControlView | DEBUG | Procesando: LED-STATUS
+2025-08-09 15:01:15,413 | PanelControlView | DEBUG | Procesando: L01:0,L02:0
+2025-08-09 15:01:16,359 | PanelControlView | INFO | Programa detenido a las 15:01:16
+2025-08-09 15:01:17,171 | PanelControlView | INFO | Programa iniciado a las 15:01:17
+2025-08-09 15:01:17,179 | PanelControlView | DEBUG | RX COM53-> b'LED-STATUS\nL01:0,L02:0'
+2025-08-09 15:01:17,179 | PanelControlView | DEBUG | Procesando: LED-STATUS
+2025-08-09 15:01:17,180 | PanelControlView | DEBUG | Procesando: L01:0,L02:0
+2025-08-09 15:01:18,012 | PanelControlView | INFO | Programa detenido a las 15:01:18
+2025-08-09 15:01:18,678 | PanelControlView | INFO | Programa iniciado a las 15:01:18
+2025-08-09 15:01:18,685 | PanelControlView | DEBUG | RX COM53-> b'LED-STATUS\nL01:0,L02:0'
+2025-08-09 15:01:18,686 | PanelControlView | DEBUG | Procesando: LED-STATUS
+2025-08-09 15:01:18,686 | PanelControlView | DEBUG | Procesando: L01:0,L02:0
+2025-08-09 15:01:19,295 | PanelControlView | INFO | Programa detenido a las 15:01:19
+2025-08-09 15:01:19,882 | PanelControlView | INFO | Programa iniciado a las 15:01:19
+2025-08-09 15:01:19,889 | PanelControlView | DEBUG | RX COM53-> b'LED-STATUS\nL01:0,L02:0'
+2025-08-09 15:01:19,890 | PanelControlView | DEBUG | Procesando: LED-STATUS
+2025-08-09 15:01:19,890 | PanelControlView | DEBUG | Procesando: L01:0,L02:0
+2025-08-09 15:01:20,533 | PanelControlView | INFO | Programa detenido a las 15:01:20
+2025-08-09 15:01:21,007 | PanelControlView | INFO | Programa iniciado a las 15:01:21
+2025-08-09 15:01:21,014 | PanelControlView | DEBUG | RX COM53-> b'LED-STATUS\nL01:0,L02:0'
+2025-08-09 15:01:21,014 | PanelControlView | DEBUG | Procesando: LED-STATUS
+2025-08-09 15:01:21,015 | PanelControlView | DEBUG | Procesando: L01:0,L02:0
+2025-08-09 15:01:21,512 | PanelControlView | INFO | Programa detenido a las 15:01:21
+2025-08-09 15:01:21,975 | PanelControlView | INFO | Programa iniciado a las 15:01:21
+2025-08-09 15:01:21,981 | PanelControlView | DEBUG | RX COM53-> b'LED-STATUS\nL01:0,L02:0'
+2025-08-09 15:01:21,982 | PanelControlView | DEBUG | Procesando: LED-STATUS
+2025-08-09 15:01:21,982 | PanelControlView | DEBUG | Procesando: L01:0,L02:0
+2025-08-09 15:01:22,537 | PanelControlView | INFO | Programa detenido a las 15:01:22
+2025-08-09 15:01:23,043 | PanelControlView | INFO | Programa iniciado a las 15:01:23
+2025-08-09 15:01:23,050 | PanelControlView | DEBUG | RX COM53-> b'LED-STATUS\nL01:0,L02:0'
+2025-08-09 15:01:23,051 | PanelControlView | DEBUG | Procesando: LED-STATUS
+2025-08-09 15:01:23,051 | PanelControlView | DEBUG | Procesando: L01:0,L02:0
+2025-08-09 15:01:23,762 | PanelControlView | INFO | Programa detenido a las 15:01:23
+2025-08-09 15:01:24,236 | PanelControlView | INFO | Programa iniciado a las 15:01:24
+2025-08-09 15:01:24,242 | PanelControlView | DEBUG | RX COM53-> b'LED-STATUS\nL01:0,L02:0'
+2025-08-09 15:01:24,242 | PanelControlView | DEBUG | Procesando: LED-STATUS
+2025-08-09 15:01:24,243 | PanelControlView | DEBUG | Procesando: L01:0,L02:0
+2025-08-09 15:02:27,152 | InicioView | INFO | Vista de inicio configurada correctamente
+2025-08-09 15:02:27,395 | PanelControlView | INFO | Vista de inicio configurada correctamente
+2025-08-09 15:02:27,468 | ReporteView | INFO | Vista de inicio configurada correctamente
+2025-08-09 15:02:50,292 | PanelControlView | INFO | Programa iniciado a las 15:02:50
+2025-08-09 15:02:50,321 | PanelControlView | DEBUG | RX COM53-> b'ESP-ROM:esp32s3-20210327\r\nL01:0\r\nL02:0\r\nLED-STATUS\nL01:0,L02:0'
+2025-08-09 15:02:50,322 | PanelControlView | DEBUG | Procesando: ESP-ROM:esp32s3-20210327
+2025-08-09 15:02:50,323 | PanelControlView | DEBUG | cmd blok: ['ESP-ROM:esp32s3-20210327']
+2025-08-09 15:02:50,324 | PanelControlView | DEBUG | Procesando: L01:0
+2025-08-09 15:02:50,324 | PanelControlView | DEBUG | cmd blok: ['L01:0']
+2025-08-09 15:02:50,325 | PanelControlView | DEBUG | Procesando: L02:0
+2025-08-09 15:02:50,326 | PanelControlView | DEBUG | cmd blok: ['L02:0']
+2025-08-09 15:02:50,327 | PanelControlView | DEBUG | Procesando: LED-STATUS
+2025-08-09 15:02:50,328 | PanelControlView | DEBUG | cmd blok: ['LED-STATUS']
+2025-08-09 15:02:50,328 | PanelControlView | WARNING | Format invalid cmd: LED-STATUS
+2025-08-09 15:02:50,329 | PanelControlView | DEBUG | Procesando: L01:0,L02:0
+2025-08-09 15:02:50,330 | PanelControlView | DEBUG | cmd blok: ['L01:0', 'L02:0']
+2025-08-09 15:12:25,858 | PanelControlView | INFO | Programa detenido a las 15:12:25
+2025-08-09 15:12:37,133 | PanelControlView | INFO | Programa iniciado a las 15:12:37
+2025-08-09 15:12:37,139 | PanelControlView | DEBUG | RX COM3-> b'I (243) gpio: GPIO[14]| InputEn: 1| OutputEn: 0| OpenDrain: 0| PL01:0\r\nL02:0\r\nLED-STATUS\nL01:0,L02:0'
+2025-08-09 15:12:37,140 | PanelControlView | DEBUG | Procesando: I
+2025-08-09 15:12:37,140 | PanelControlView | DEBUG | cmd blok: ['I']
+2025-08-09 15:12:37,141 | PanelControlView | WARNING | Format invalid cmd: I
+2025-08-09 15:12:37,141 | PanelControlView | DEBUG | Procesando: (243)
+2025-08-09 15:12:37,142 | PanelControlView | DEBUG | cmd blok: ['(243)']
+2025-08-09 15:12:37,142 | PanelControlView | WARNING | Format invalid cmd: (243)
+2025-08-09 15:12:37,143 | PanelControlView | DEBUG | Procesando: gpio:
+2025-08-09 15:12:37,143 | PanelControlView | DEBUG | cmd blok: ['gpio:']
+2025-08-09 15:12:37,144 | PanelControlView | DEBUG | Procesando: GPIO[14]|
+2025-08-09 15:12:37,144 | PanelControlView | DEBUG | cmd blok: ['GPIO[14]|']
+2025-08-09 15:12:37,145 | PanelControlView | WARNING | Format invalid cmd: GPIO[14]|
+2025-08-09 15:12:37,145 | PanelControlView | DEBUG | Procesando: InputEn:
+2025-08-09 15:12:37,145 | PanelControlView | DEBUG | cmd blok: ['InputEn:']
+2025-08-09 15:12:37,146 | PanelControlView | DEBUG | Procesando: 1|
+2025-08-09 15:12:37,146 | PanelControlView | DEBUG | cmd blok: ['1|']
+2025-08-09 15:12:37,147 | PanelControlView | WARNING | Format invalid cmd: 1|
+2025-08-09 15:12:37,147 | PanelControlView | DEBUG | Procesando: OutputEn:
+2025-08-09 15:12:37,148 | PanelControlView | DEBUG | cmd blok: ['OutputEn:']
+2025-08-09 15:12:37,148 | PanelControlView | DEBUG | Procesando: 0|
+2025-08-09 15:12:37,148 | PanelControlView | DEBUG | cmd blok: ['0|']
+2025-08-09 15:12:37,149 | PanelControlView | WARNING | Format invalid cmd: 0|
+2025-08-09 15:12:37,149 | PanelControlView | DEBUG | Procesando: OpenDrain:
+2025-08-09 15:12:37,150 | PanelControlView | DEBUG | cmd blok: ['OpenDrain:']
+2025-08-09 15:12:37,150 | PanelControlView | DEBUG | Procesando: 0|
+2025-08-09 15:12:37,150 | PanelControlView | DEBUG | cmd blok: ['0|']
+2025-08-09 15:12:37,151 | PanelControlView | WARNING | Format invalid cmd: 0|
+2025-08-09 15:12:37,151 | PanelControlView | DEBUG | Procesando: PL01:0
+2025-08-09 15:12:37,152 | PanelControlView | DEBUG | cmd blok: ['PL01:0']
+2025-08-09 15:12:37,152 | PanelControlView | DEBUG | Procesando: L02:0
+2025-08-09 15:12:37,153 | PanelControlView | DEBUG | cmd blok: ['L02:0']
+2025-08-09 15:12:37,154 | PanelControlView | DEBUG | Procesando: LED-STATUS
+2025-08-09 15:12:37,154 | PanelControlView | DEBUG | cmd blok: ['LED-STATUS']
+2025-08-09 15:12:37,155 | PanelControlView | WARNING | Format invalid cmd: LED-STATUS
+2025-08-09 15:12:37,155 | PanelControlView | DEBUG | Procesando: L01:0,L02:0
+2025-08-09 15:12:37,156 | PanelControlView | DEBUG | cmd blok: ['L01:0', 'L02:0']
+2025-08-09 15:12:48,119 | PanelControlView | DEBUG | RX COM3-> b'P02:1'
+2025-08-09 15:12:48,120 | PanelControlView | DEBUG | Procesando: P02:1
+2025-08-09 15:12:48,121 | PanelControlView | DEBUG | cmd blok: ['P02:1']
+2025-08-09 15:12:50,074 | PanelControlView | DEBUG | RX COM3-> b'P02:1'
+2025-08-09 15:12:50,075 | PanelControlView | DEBUG | Procesando: P02:1
+2025-08-09 15:12:50,076 | PanelControlView | DEBUG | cmd blok: ['P02:1']
+2025-08-09 15:12:50,789 | PanelControlView | DEBUG | RX COM3-> b'P02:1'
+2025-08-09 15:12:50,790 | PanelControlView | DEBUG | Procesando: P02:1
+2025-08-09 15:12:50,791 | PanelControlView | DEBUG | cmd blok: ['P02:1']
+2025-08-09 15:12:51,394 | PanelControlView | DEBUG | RX COM3-> b'P02:1'
+2025-08-09 15:12:51,395 | PanelControlView | DEBUG | Procesando: P02:1
+2025-08-09 15:12:51,396 | PanelControlView | DEBUG | cmd blok: ['P02:1']
+2025-08-09 15:12:52,088 | PanelControlView | DEBUG | RX COM3-> b'P02:1'
+2025-08-09 15:12:52,090 | PanelControlView | DEBUG | Procesando: P02:1
+2025-08-09 15:12:52,091 | PanelControlView | DEBUG | cmd blok: ['P02:1']
+2025-08-09 15:12:52,629 | PanelControlView | DEBUG | RX COM3-> b'P02:1'
+2025-08-09 15:12:52,630 | PanelControlView | DEBUG | Procesando: P02:1
+2025-08-09 15:12:52,631 | PanelControlView | DEBUG | cmd blok: ['P02:1']
+2025-08-09 15:12:52,994 | PanelControlView | DEBUG | RX COM3-> b'P02:1'
+2025-08-09 15:12:52,995 | PanelControlView | DEBUG | Procesando: P02:1
+2025-08-09 15:12:52,996 | PanelControlView | DEBUG | cmd blok: ['P02:1']
+2025-08-09 15:12:53,389 | PanelControlView | DEBUG | RX COM3-> b'P02:1'
+2025-08-09 15:12:53,390 | PanelControlView | DEBUG | Procesando: P02:1
+2025-08-09 15:12:53,391 | PanelControlView | DEBUG | cmd blok: ['P02:1']
+2025-08-09 15:12:53,809 | PanelControlView | DEBUG | RX COM3-> b'P02:1'
+2025-08-09 15:12:53,810 | PanelControlView | DEBUG | Procesando: P02:1
+2025-08-09 15:12:53,811 | PanelControlView | DEBUG | cmd blok: ['P02:1']
+2025-08-09 15:12:56,279 | PanelControlView | DEBUG | RX COM3-> b'P01:1'
+2025-08-09 15:12:56,280 | PanelControlView | DEBUG | Procesando: P01:1
+2025-08-09 15:12:56,281 | PanelControlView | DEBUG | cmd blok: ['P01:1']
+2025-08-09 15:12:56,734 | PanelControlView | DEBUG | RX COM3-> b'P01:1'
+2025-08-09 15:12:56,735 | PanelControlView | DEBUG | Procesando: P01:1
+2025-08-09 15:12:56,736 | PanelControlView | DEBUG | cmd blok: ['P01:1']
+2025-08-09 15:12:57,114 | PanelControlView | DEBUG | RX COM3-> b'P01:1'
+2025-08-09 15:12:57,115 | PanelControlView | DEBUG | Procesando: P01:1
+2025-08-09 15:12:57,116 | PanelControlView | DEBUG | cmd blok: ['P01:1']
+2025-08-09 15:13:02,969 | PanelControlView | DEBUG | RX COM3-> b'P02:1'
+2025-08-09 15:13:02,970 | PanelControlView | DEBUG | Procesando: P02:1
+2025-08-09 15:13:02,971 | PanelControlView | DEBUG | cmd blok: ['P02:1']
+2025-08-09 15:13:03,586 | PanelControlView | DEBUG | RX COM3-> b'P02:1'
+2025-08-09 15:13:03,587 | PanelControlView | DEBUG | Procesando: P02:1
+2025-08-09 15:13:03,588 | PanelControlView | DEBUG | cmd blok: ['P02:1']
+2025-08-09 15:13:04,069 | PanelControlView | DEBUG | RX COM3-> b'P02:1'
+2025-08-09 15:13:04,070 | PanelControlView | DEBUG | Procesando: P02:1
+2025-08-09 15:13:04,071 | PanelControlView | DEBUG | cmd blok: ['P02:1']
+2025-08-09 15:13:05,629 | PanelControlView | DEBUG | RX COM3-> b'P01:1'
+2025-08-09 15:13:05,630 | PanelControlView | DEBUG | Procesando: P01:1
+2025-08-09 15:13:05,631 | PanelControlView | DEBUG | cmd blok: ['P01:1']
+2025-08-09 15:13:06,069 | PanelControlView | DEBUG | RX COM3-> b'P01:1'
+2025-08-09 15:13:06,070 | PanelControlView | DEBUG | Procesando: P01:1
+2025-08-09 15:13:06,071 | PanelControlView | DEBUG | cmd blok: ['P01:1']
+2025-08-09 15:13:06,459 | PanelControlView | DEBUG | RX COM3-> b'P01:1'
+2025-08-09 15:13:06,460 | PanelControlView | DEBUG | Procesando: P01:1
+2025-08-09 15:13:06,461 | PanelControlView | DEBUG | cmd blok: ['P01:1']
+2025-08-09 15:13:06,859 | PanelControlView | DEBUG | RX COM3-> b'P01:1'
+2025-08-09 15:13:06,860 | PanelControlView | DEBUG | Procesando: P01:1
+2025-08-09 15:13:06,861 | PanelControlView | DEBUG | cmd blok: ['P01:1']
+2025-08-09 15:13:07,363 | PanelControlView | DEBUG | RX COM3-> b'P02:1'
+2025-08-09 15:13:07,364 | PanelControlView | DEBUG | Procesando: P02:1
+2025-08-09 15:13:07,365 | PanelControlView | DEBUG | cmd blok: ['P02:1']
+2025-08-09 15:13:07,873 | PanelControlView | DEBUG | RX COM3-> b'P02:1'
+2025-08-09 15:13:07,874 | PanelControlView | DEBUG | Procesando: P02:1
+2025-08-09 15:13:07,875 | PanelControlView | DEBUG | cmd blok: ['P02:1']
+2025-08-09 15:13:08,234 | PanelControlView | DEBUG | RX COM3-> b'P02:1'
+2025-08-09 15:13:08,235 | PanelControlView | DEBUG | Procesando: P02:1
+2025-08-09 15:13:08,236 | PanelControlView | DEBUG | cmd blok: ['P02:1']
+2025-08-09 15:13:08,539 | PanelControlView | DEBUG | RX COM3-> b'P02:1'
+2025-08-09 15:13:08,540 | PanelControlView | DEBUG | Procesando: P02:1
+2025-08-09 15:13:08,541 | PanelControlView | DEBUG | cmd blok: ['P02:1']
+2025-08-09 15:13:09,183 | PanelControlView | DEBUG | RX COM3-> b'P02:1'
+2025-08-09 15:13:09,184 | PanelControlView | DEBUG | Procesando: P02:1
+2025-08-09 15:13:09,185 | PanelControlView | DEBUG | cmd blok: ['P02:1']
+2025-08-09 15:13:09,569 | PanelControlView | DEBUG | RX COM3-> b'P02:1'
+2025-08-09 15:13:09,570 | PanelControlView | DEBUG | Procesando: P02:1
+2025-08-09 15:13:09,571 | PanelControlView | DEBUG | cmd blok: ['P02:1']
+2025-08-09 15:13:09,864 | PanelControlView | DEBUG | RX COM3-> b'P02:1'
+2025-08-09 15:13:09,865 | PanelControlView | DEBUG | Procesando: P02:1
+2025-08-09 15:13:09,866 | PanelControlView | DEBUG | cmd blok: ['P02:1']
+2025-08-09 15:13:16,292 | PanelControlView | INFO | Programa detenido a las 15:13:16
+2025-08-09 15:13:18,668 | PanelControlView | DEBUG | RX COM3-> b'P02:1'
+2025-08-09 15:13:18,670 | PanelControlView | DEBUG | Procesando: P02:1
+2025-08-09 15:13:18,671 | PanelControlView | DEBUG | cmd blok: ['P02:1']
+2025-08-09 15:13:18,998 | PanelControlView | DEBUG | RX COM3-> b'P02:1'
+2025-08-09 15:13:19,000 | PanelControlView | DEBUG | Procesando: P02:1
+2025-08-09 15:13:19,000 | PanelControlView | DEBUG | cmd blok: ['P02:1']
+2025-08-09 15:13:19,263 | PanelControlView | DEBUG | RX COM3-> b'P02:1'
+2025-08-09 15:13:19,265 | PanelControlView | DEBUG | Procesando: P02:1
+2025-08-09 15:13:19,266 | PanelControlView | DEBUG | cmd blok: ['P02:1']
+2025-08-09 15:13:19,503 | PanelControlView | DEBUG | RX COM3-> b'P02:1'
+2025-08-09 15:13:19,505 | PanelControlView | DEBUG | Procesando: P02:1
+2025-08-09 15:13:19,505 | PanelControlView | DEBUG | cmd blok: ['P02:1']
+2025-08-09 15:13:19,708 | PanelControlView | DEBUG | RX COM3-> b'P02:1'
+2025-08-09 15:13:19,710 | PanelControlView | DEBUG | Procesando: P02:1
+2025-08-09 15:13:19,711 | PanelControlView | DEBUG | cmd blok: ['P02:1']
+2025-08-09 15:13:20,423 | PanelControlView | DEBUG | RX COM3-> b'P02:1'
+2025-08-09 15:13:20,425 | PanelControlView | DEBUG | Procesando: P02:1
+2025-08-09 15:13:20,425 | PanelControlView | DEBUG | cmd blok: ['P02:1']
+2025-08-09 15:13:20,638 | PanelControlView | DEBUG | RX COM3-> b'P02:1'
+2025-08-09 15:13:20,640 | PanelControlView | DEBUG | Procesando: P02:1
+2025-08-09 15:13:20,641 | PanelControlView | DEBUG | cmd blok: ['P02:1']
+2025-08-09 15:13:20,828 | PanelControlView | DEBUG | RX COM3-> b'P02:1'
+2025-08-09 15:13:20,829 | PanelControlView | DEBUG | Procesando: P02:1
+2025-08-09 15:13:20,830 | PanelControlView | DEBUG | cmd blok: ['P02:1']
+2025-08-09 15:13:21,063 | PanelControlView | DEBUG | RX COM3-> b'P02:1'
+2025-08-09 15:13:21,065 | PanelControlView | DEBUG | Procesando: P02:1
+2025-08-09 15:13:21,065 | PanelControlView | DEBUG | cmd blok: ['P02:1']
+2025-08-09 15:13:21,268 | PanelControlView | DEBUG | RX COM3-> b'P02:1'
+2025-08-09 15:13:21,269 | PanelControlView | DEBUG | Procesando: P02:1
+2025-08-09 15:13:21,270 | PanelControlView | DEBUG | cmd blok: ['P02:1']
+2025-08-09 15:13:21,518 | PanelControlView | DEBUG | RX COM3-> b'P02:1'
+2025-08-09 15:13:21,520 | PanelControlView | DEBUG | Procesando: P02:1
+2025-08-09 15:13:21,521 | PanelControlView | DEBUG | cmd blok: ['P02:1']
+2025-08-09 15:13:21,703 | PanelControlView | DEBUG | RX COM3-> b'P02:1'
+2025-08-09 15:13:21,705 | PanelControlView | DEBUG | Procesando: P02:1
+2025-08-09 15:13:21,705 | PanelControlView | DEBUG | cmd blok: ['P02:1']
+2025-08-09 15:15:57,645 | PanelControlView | INFO | Programa iniciado a las 15:15:57
+2025-08-09 15:15:57,670 | PanelControlView | DEBUG | RX COM3-> b'LED-STATUS\nL01:0,L02:0'
+2025-08-09 15:15:57,670 | PanelControlView | DEBUG | Procesando: LED-STATUS
+2025-08-09 15:15:57,671 | PanelControlView | DEBUG | cmd blok: ['LED-STATUS']
+2025-08-09 15:15:57,672 | PanelControlView | WARNING | Format invalid cmd: LED-STATUS
+2025-08-09 15:15:57,672 | PanelControlView | DEBUG | Procesando: L01:0,L02:0
+2025-08-09 15:15:57,672 | PanelControlView | DEBUG | cmd blok: ['L01:0', 'L02:0']
+2025-08-09 15:16:00,419 | PanelControlView | INFO | Programa detenido a las 15:16:00
+2025-08-09 15:17:04,152 | InicioView | INFO | Vista de inicio configurada correctamente
+2025-08-09 15:17:04,385 | PanelControlView | INFO | Vista de inicio configurada correctamente
+2025-08-09 15:17:04,501 | ReporteView | INFO | Vista de inicio configurada correctamente
+2025-08-09 15:19:09,907 | InicioView | INFO | Vista de inicio configurada correctamente
+2025-08-09 15:19:10,197 | PanelControlView | INFO | Vista de inicio configurada correctamente
+2025-08-09 15:19:10,279 | ReporteView | INFO | Vista de inicio configurada correctamente
+2025-08-09 15:19:16,788 | PanelControlView | INFO | Programa iniciado a las 15:19:16
+2025-08-09 15:19:16,814 | PanelControlView | DEBUG | RX COM3-> b'ESP-ROM:esp32s3-20210327\r\nL01:0\r\nL02:0\r\nLED-STATUS\nL01:0,L02:0'
+2025-08-09 15:19:16,815 | PanelControlView | DEBUG | Procesando: ESP-ROM:esp32s3-20210327
+2025-08-09 15:19:16,815 | PanelControlView | DEBUG | cmd blok: ['ESP-ROM:esp32s3-20210327']
+2025-08-09 15:19:16,816 | PanelControlView | DEBUG | Procesando: L01:0
+2025-08-09 15:19:16,816 | PanelControlView | DEBUG | cmd blok: ['L01:0']
+2025-08-09 15:19:16,817 | PanelControlView | DEBUG | Procesando: L02:0
+2025-08-09 15:19:16,818 | PanelControlView | DEBUG | cmd blok: ['L02:0']
+2025-08-09 15:19:16,819 | PanelControlView | DEBUG | Procesando: LED-STATUS
+2025-08-09 15:19:16,820 | PanelControlView | DEBUG | cmd blok: ['LED-STATUS']
+2025-08-09 15:19:16,820 | PanelControlView | WARNING | Format invalid cmd: LED-STATUS
+2025-08-09 15:19:16,821 | PanelControlView | DEBUG | Procesando: L01:0,L02:0
+2025-08-09 15:19:16,822 | PanelControlView | DEBUG | cmd blok: ['L01:0', 'L02:0']
+2025-08-09 15:20:46,348 | PanelControlView | DEBUG | RX COM3-> b'P02:1'
+2025-08-09 15:20:46,349 | PanelControlView | DEBUG | Procesando: P02:1
+2025-08-09 15:20:46,350 | PanelControlView | DEBUG | cmd blok: ['P02:1']
+2025-08-09 15:20:50,223 | PanelControlView | DEBUG | RX COM3-> b'P02:1'
+2025-08-09 15:20:50,224 | PanelControlView | DEBUG | Procesando: P02:1
+2025-08-09 15:20:50,225 | PanelControlView | DEBUG | cmd blok: ['P02:1']
+2025-08-09 15:20:52,388 | PanelControlView | DEBUG | RX COM3-> b'P02:1'
+2025-08-09 15:20:52,389 | PanelControlView | DEBUG | Procesando: P02:1
+2025-08-09 15:20:52,390 | PanelControlView | DEBUG | cmd blok: ['P02:1']
+2025-08-09 15:25:24,974 | PanelControlView | DEBUG | RX COM3-> b'P02:1'
+2025-08-09 15:25:24,976 | PanelControlView | DEBUG | Procesando: P02:1
+2025-08-09 15:25:24,977 | PanelControlView | DEBUG | cmd blok: ['P02:1']
+2025-08-09 15:25:26,583 | PanelControlView | DEBUG | RX COM3-> b'P02:1'
+2025-08-09 15:25:26,584 | PanelControlView | DEBUG | Procesando: P02:1
+2025-08-09 15:25:26,584 | PanelControlView | DEBUG | cmd blok: ['P02:1']
+2025-08-09 15:25:27,744 | PanelControlView | DEBUG | RX COM3-> b'P02:1'
+2025-08-09 15:25:27,746 | PanelControlView | DEBUG | Procesando: P02:1
+2025-08-09 15:25:27,747 | PanelControlView | DEBUG | cmd blok: ['P02:1']
+2025-08-09 15:25:28,451 | PanelControlView | DEBUG | RX COM3-> b'P02:1'
+2025-08-09 15:25:28,452 | PanelControlView | DEBUG | Procesando: P02:1
+2025-08-09 15:25:28,453 | PanelControlView | DEBUG | cmd blok: ['P02:1']
+2025-08-09 15:25:29,214 | PanelControlView | DEBUG | RX COM3-> b'P02:1'
+2025-08-09 15:25:29,216 | PanelControlView | DEBUG | Procesando: P02:1
+2025-08-09 15:25:29,216 | PanelControlView | DEBUG | cmd blok: ['P02:1']
+2025-08-09 15:25:30,084 | PanelControlView | DEBUG | RX COM3-> b'P02:1'
+2025-08-09 15:25:30,085 | PanelControlView | DEBUG | Procesando: P02:1
+2025-08-09 15:25:30,086 | PanelControlView | DEBUG | cmd blok: ['P02:1']
+2025-08-09 15:25:30,809 | PanelControlView | DEBUG | RX COM3-> b'P02:1'
+2025-08-09 15:25:30,811 | PanelControlView | DEBUG | Procesando: P02:1
+2025-08-09 15:25:30,811 | PanelControlView | DEBUG | cmd blok: ['P02:1']
+2025-08-09 15:25:31,433 | PanelControlView | DEBUG | RX COM3-> b'P02:1'
+2025-08-09 15:25:31,434 | PanelControlView | DEBUG | Procesando: P02:1
+2025-08-09 15:25:31,434 | PanelControlView | DEBUG | cmd blok: ['P02:1']
+2025-08-09 15:25:32,525 | PanelControlView | DEBUG | RX COM3-> b'P02:1'
+2025-08-09 15:25:32,526 | PanelControlView | DEBUG | Procesando: P02:1
+2025-08-09 15:25:32,527 | PanelControlView | DEBUG | cmd blok: ['P02:1']
+2025-08-09 15:35:06,785 | PanelControlView | INFO | Programa detenido a las 15:35:06
+2025-08-09 15:35:12,503 | PanelControlView | INFO | Programa iniciado a las 15:35:12
+2025-08-09 15:35:12,520 | PanelControlView | DEBUG | RX COM3-> b'LED-STATUS\nL01:0,L02:0'
+2025-08-09 15:35:12,521 | PanelControlView | DEBUG | Procesando: LED-STATUS
+2025-08-09 15:35:12,521 | PanelControlView | DEBUG | cmd blok: ['LED-STATUS']
+2025-08-09 15:35:12,522 | PanelControlView | WARNING | Format invalid cmd: LED-STATUS
+2025-08-09 15:35:12,522 | PanelControlView | DEBUG | Procesando: L01:0,L02:0
+2025-08-09 15:35:12,522 | PanelControlView | DEBUG | cmd blok: ['L01:0', 'L02:0']
+2025-08-09 15:35:16,941 | PanelControlView | DEBUG | RX COM3-> b'P02:1'
+2025-08-09 15:35:16,942 | PanelControlView | DEBUG | Procesando: P02:1
+2025-08-09 15:35:16,943 | PanelControlView | DEBUG | cmd blok: ['P02:1']
+2025-08-09 15:35:22,047 | PanelControlView | DEBUG | RX COM3-> b'P02:1'
+2025-08-09 15:35:22,049 | PanelControlView | DEBUG | Procesando: P02:1
+2025-08-09 15:35:22,050 | PanelControlView | DEBUG | cmd blok: ['P02:1']
+2025-08-09 15:35:23,890 | PanelControlView | DEBUG | RX COM3-> b'P02:1'
+2025-08-09 15:35:23,891 | PanelControlView | DEBUG | Procesando: P02:1
+2025-08-09 15:35:23,892 | PanelControlView | DEBUG | cmd blok: ['P02:1']
+2025-08-09 15:35:26,431 | PanelControlView | DEBUG | RX COM3-> b'P02:1'
+2025-08-09 15:35:26,433 | PanelControlView | DEBUG | Procesando: P02:1
+2025-08-09 15:35:26,433 | PanelControlView | DEBUG | cmd blok: ['P02:1']
+2025-08-09 15:35:28,231 | PanelControlView | DEBUG | RX COM3-> b'P02:1'
+2025-08-09 15:35:28,232 | PanelControlView | DEBUG | Procesando: P02:1
+2025-08-09 15:35:28,233 | PanelControlView | DEBUG | cmd blok: ['P02:1']
+2025-08-09 15:35:29,766 | PanelControlView | DEBUG | RX COM3-> b'P02:1'
+2025-08-09 15:35:29,768 | PanelControlView | DEBUG | Procesando: P02:1
+2025-08-09 15:35:29,769 | PanelControlView | DEBUG | cmd blok: ['P02:1']
+2025-08-09 15:42:19,266 | PanelControlView | DEBUG | RX COM3-> b'P02:1'
+2025-08-09 15:42:19,268 | PanelControlView | DEBUG | Procesando: P02:1
+2025-08-09 15:42:19,268 | PanelControlView | DEBUG | cmd blok: ['P02:1']
+2025-08-09 15:48:22,593 | InicioView | INFO | Vista de inicio configurada correctamente
+2025-08-09 15:48:22,790 | PanelControlView | INFO | Vista de inicio configurada correctamente
+2025-08-09 15:48:22,850 | ReporteView | INFO | Vista de inicio configurada correctamente
+2025-08-09 15:48:26,797 | PanelControlView | INFO | Programa iniciado a las 15:48:26
+2025-08-09 15:49:24,276 | InicioView | INFO | Vista de inicio configurada correctamente
+2025-08-09 15:49:24,621 | PanelControlView | INFO | Vista de inicio configurada correctamente
+2025-08-09 15:49:24,685 | ReporteView | INFO | Vista de inicio configurada correctamente
+2025-08-09 15:49:32,620 | PanelControlView | INFO | Programa iniciado a las 15:49:32
+2025-08-09 15:49:32,621 | PanelControlView | INFO | Config Led-01: Apagado, Led-02: Apagado
+2025-08-09 15:49:32,621 | PanelControlView | INFO | Config Pal-01: CRF, Pal-02: CRF
+2025-08-09 15:51:30,411 | InicioView | INFO | Vista de inicio configurada correctamente
+2025-08-09 15:51:30,649 | PanelControlView | INFO | Vista de inicio configurada correctamente
+2025-08-09 15:51:30,706 | ReporteView | INFO | Vista de inicio configurada correctamente
+2025-08-09 15:51:36,574 | PanelControlView | INFO | Programa iniciado a las 15:51:36
+2025-08-09 15:51:36,574 | PanelControlView | INFO | Config Led-01: Apagado, Led-02: Apagado
+2025-08-09 15:51:36,575 | PanelControlView | INFO | Config Pal-01: CRF, Pal-02: CRF
+2025-08-09 15:51:46,911 | PanelControlView | INFO | Programa detenido a las 15:51:46
+2025-08-09 15:51:48,184 | PanelControlView | INFO | Programa iniciado a las 15:51:48
+2025-08-09 15:51:48,185 | PanelControlView | INFO | Config Led-01: Apagado, Led-02: Apagado
+2025-08-09 15:51:48,185 | PanelControlView | INFO | Config Pal-01: CRF, Pal-02: CRF
+2025-08-09 15:51:58,014 | InicioView | INFO | Vista de inicio configurada correctamente
+2025-08-09 15:51:58,544 | PanelControlView | INFO | Vista de inicio configurada correctamente
+2025-08-09 15:51:58,711 | ReporteView | INFO | Vista de inicio configurada correctamente
+2025-08-09 15:52:07,736 | PanelControlView | INFO | Programa iniciado a las 15:52:07
+2025-08-09 15:52:07,736 | PanelControlView | INFO | Config Led-01: Apagado, Led-02: Apagado
+2025-08-09 15:52:07,737 | PanelControlView | INFO | Config Pal-01: CRF, Pal-02: CRF
+2025-08-09 15:52:43,565 | InicioView | INFO | Vista de inicio configurada correctamente
+2025-08-09 15:52:43,840 | PanelControlView | INFO | Vista de inicio configurada correctamente
+2025-08-09 15:52:43,905 | ReporteView | INFO | Vista de inicio configurada correctamente
+2025-08-09 15:52:50,363 | PanelControlView | INFO | Programa iniciado a las 15:52:50
+2025-08-09 15:52:50,364 | PanelControlView | INFO | Config Led-01: Encendido, Led-02: Apagado
+2025-08-09 15:52:50,364 | PanelControlView | INFO | Config Pal-01: CRF, Pal-02: CRF
+2025-08-09 16:07:11,383 | InicioView | INFO | Vista de inicio configurada correctamente
+2025-08-09 16:07:11,608 | PanelControlView | INFO | Vista de inicio configurada correctamente
+2025-08-09 16:07:11,679 | ReporteView | INFO | Vista de inicio configurada correctamente
+2025-08-09 16:07:22,363 | PanelControlView | INFO | Programa iniciado a las 16:07:22
+2025-08-09 16:07:26,370 | PanelControlView | INFO | Programa detenido a las 16:07:26
+2025-08-09 16:07:29,777 | PanelControlView | INFO | Programa iniciado a las 16:07:29
+2025-08-09 16:07:41,138 | PanelControlView | INFO | Programa detenido a las 16:07:41
+2025-08-09 16:07:42,692 | PanelControlView | INFO | Programa iniciado a las 16:07:42
+2025-08-09 16:08:08,039 | InicioView | INFO | Vista de inicio configurada correctamente
+2025-08-09 16:08:08,294 | PanelControlView | INFO | Vista de inicio configurada correctamente
+2025-08-09 16:08:08,383 | ReporteView | INFO | Vista de inicio configurada correctamente
+2025-08-09 16:08:17,814 | PanelControlView | INFO | Programa iniciado a las 16:08:17
+2025-08-09 16:09:03,754 | InicioView | INFO | Vista de inicio configurada correctamente
+2025-08-09 16:09:03,988 | PanelControlView | INFO | Vista de inicio configurada correctamente
+2025-08-09 16:09:04,057 | ReporteView | INFO | Vista de inicio configurada correctamente
+2025-08-09 16:09:13,512 | PanelControlView | INFO | Programa iniciado a las 16:09:13
+2025-08-09 16:09:13,513 | PanelControlView | INFO | Config Led-01: ModoLuz.APAGADO, Led-02: ModoLuz.APAGADO
+2025-08-09 16:09:13,514 | PanelControlView | INFO | Config Pal-01: ModoPalanca.CRF, Pal-02: ModoPalanca.CRF
+2025-08-09 16:09:13,541 | PanelControlView | DEBUG | RX COM3-> b'ESP-ROM:esp32s3-20210327\r\nL01:0\r\nL02:0\r\nL01:0\nL02:0\nERROR:Unrecognized command:Unrecognized command: L01:0'
+2025-08-09 16:09:13,542 | PanelControlView | DEBUG | Procesando: ESP-ROM:esp32s3-20210327
+2025-08-09 16:09:13,542 | PanelControlView | DEBUG | Procesando: L01:0
+2025-08-09 16:09:13,543 | PanelControlView | DEBUG | Procesando: L02:0
+2025-08-09 16:09:13,544 | PanelControlView | DEBUG | Procesando: L01:0
+2025-08-09 16:09:13,545 | PanelControlView | DEBUG | Procesando: L02:0
+2025-08-09 16:09:13,546 | PanelControlView | DEBUG | Procesando: ERROR:Unrecognized
+2025-08-09 16:09:13,547 | PanelControlView | DEBUG | Procesando: command:Unrecognized
+2025-08-09 16:09:13,548 | PanelControlView | DEBUG | Procesando: command:
+2025-08-09 16:09:13,548 | PanelControlView | DEBUG | Procesando: L01:0
+2025-08-09 16:09:31,017 | PanelControlView | INFO | Programa detenido a las 16:09:31
+2025-08-09 16:12:52,333 | InicioView | INFO | Vista de inicio configurada correctamente
+2025-08-09 16:12:52,763 | PanelControlView | INFO | Vista de inicio configurada correctamente
+2025-08-09 16:12:52,998 | ReporteView | INFO | Vista de inicio configurada correctamente
+2025-08-09 16:12:56,995 | PanelControlView | INFO | Programa iniciado a las 16:12:56
+2025-08-09 16:12:56,996 | PanelControlView | INFO | Config Led-01: ModoLuz.APAGADO, Led-02: ModoLuz.APAGADO
+2025-08-09 16:12:56,996 | PanelControlView | INFO | Config Pal-01: ModoPalanca.CRF, Pal-02: ModoPalanca.CRF
+2025-08-09 16:12:57,022 | PanelControlView | DEBUG | RX COM3-> b'ESP-ROM:esp32s3-20210327\r\nL01:0\r\nL02:0\r\nLED1:OFF\nLED2:OFF\nL01:0'
+2025-08-09 16:12:57,023 | PanelControlView | DEBUG | Procesando: ESP-ROM:esp32s3-20210327
+2025-08-09 16:12:57,023 | PanelControlView | DEBUG | Procesando: L01:0
+2025-08-09 16:12:57,024 | PanelControlView | DEBUG | Procesando: L02:0
+2025-08-09 16:12:57,025 | PanelControlView | DEBUG | Procesando: LED1:OFF
+2025-08-09 16:12:57,025 | PanelControlView | DEBUG | Procesando: LED2:OFF
+2025-08-09 16:12:57,026 | PanelControlView | DEBUG | Procesando: L01:0
+2025-08-09 16:13:09,707 | PanelControlView | INFO | Programa detenido a las 16:13:09
+2025-08-09 16:13:16,615 | PanelControlView | INFO | Programa iniciado a las 16:13:16
+2025-08-09 16:13:16,616 | PanelControlView | INFO | Config Led-01: ModoLuz.ENCENDIDO, Led-02: ModoLuz.ENCENDIDO
+2025-08-09 16:13:16,616 | PanelControlView | INFO | Config Pal-01: ModoPalanca.CRF, Pal-02: ModoPalanca.CRF
+2025-08-09 16:13:16,624 | PanelControlView | DEBUG | RX COM3-> b'LED1:ON\nLED2:ON\nL01:1'
+2025-08-09 16:13:16,624 | PanelControlView | DEBUG | Procesando: LED1:ON
+2025-08-09 16:13:16,624 | PanelControlView | DEBUG | Procesando: LED2:ON
+2025-08-09 16:13:16,625 | PanelControlView | DEBUG | Procesando: L01:1
+2025-08-09 16:14:03,706 | PanelControlView | INFO | Programa detenido a las 16:14:03
+2025-08-09 16:14:05,026 | PanelControlView | INFO | Programa iniciado a las 16:14:05
+2025-08-09 16:14:05,027 | PanelControlView | INFO | Config Led-01: ModoLuz.ENCENDIDO, Led-02: ModoLuz.ENCENDIDO
+2025-08-09 16:14:05,027 | PanelControlView | INFO | Config Pal-01: ModoPalanca.CRF, Pal-02: ModoPalanca.CRF
+2025-08-09 16:14:05,035 | PanelControlView | DEBUG | RX COM3-> b'LED1:ON\nLED2:ON\nL01:1'
+2025-08-09 16:14:05,036 | PanelControlView | DEBUG | Procesando: LED1:ON
+2025-08-09 16:14:05,036 | PanelControlView | DEBUG | Procesando: LED2:ON
+2025-08-09 16:14:05,037 | PanelControlView | DEBUG | Procesando: L01:1

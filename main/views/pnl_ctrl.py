@@ -25,7 +25,9 @@ from main.views.sections.uart_section import UartSection
 
 from main.components.header_view import HeaderWidget
 from main.utils.resource_path import get_resource_path
-from main.utils.logger import Logger
+
+from main.core.serial_manager import SerialManager
+from main.enums.program_enums import ModoLuz, ModoPalanca
 
 
 #--------------------------------------------------------------##
@@ -48,46 +50,17 @@ palanca_keys = {
 }
 
 
-from PyQt6.QtCore import QThread, pyqtSignal
-
-class SerialDataWorker(QThread):
-    """Hilo para procesamiento pesado de datos seriales"""
-    processed_data = pyqtSignal(dict)  # Emite datos procesados
-    
-    def __init__(self, raw_data: str, parent=None):
-        super().__init__(parent)
-        self.raw_data = raw_data
-        
-    def run(self):
-        """Procesa los datos en el hilo secundario"""
-        try:
-            # Normalización de delimitadores
-            normalized_data = self.raw_data.replace('\r\n', '\n').replace('\r', '\n')
-            
-            # Procesamiento inicial (puede ser costoso)
-            result = {
-                'blocks': [block.strip() for block in normalized_data.split('\n') if block.strip()],
-                'timestamp': QDateTime.currentDateTime().toString('hh:mm:ss.zzz')
-            }
-            
-            self.processed_data.emit(result)
-            
-        except Exception as e:
-            self.processed_data.emit({'error': str(e)})
-            
 
 
 ##-------------------------------------------------------------##
 class PanelControlView(BaseView):
-    def __init__(self, serial_model: SerialPortModel, parent=None):
-        super().__init__(parent)
-        self.logger = Logger(__name__)
-        self.serial_model = serial_model
-        self.is_prog_running = False
+    """Vista principal del panel de control"""
+    
+    def __init__(self, serial_manager: SerialManager = None, parent=None):
+        super().__init__(serial_manager=serial_manager, parent=parent)
         
-        self.worker_thread = None
-        self.pending_data = []
 
+        self.is_prog_running = False
         
         self.timer = QTimer(self)
         self.timer.timeout.connect(self._actualizar_duracion)
@@ -147,7 +120,7 @@ class PanelControlView(BaseView):
             top_layout.setContentsMargins(0, 0, 0, 0)
             top_layout.setSpacing(5)
             
-            self.uart_section = UartSection()
+            self.uart_section = UartSection(self.serial_manager.get_list_ports())
             self.prog_section = ProgramControlBox()
             self.actions_group = AcctionsSectionBox()
 
@@ -213,39 +186,78 @@ class PanelControlView(BaseView):
     
     def _setup_connections(self):
         """Conectar señales internas del widget"""
-        self.uart_section.connect_btn.clicked.connect(self._handle_connect_btn_uart)
-        
-        # Conectar señales del serial model
-        self.serial_model.ports_list_updated.connect(self.uart_section.update_list_port)
-        self.serial_model.connection_state_changed.connect(self.update_uart_status)
-        self.serial_model.data_received.connect(self.handle_serial_data)
-
+        self.uart_section.connect_btn.clicked.connect(self._toggle_uart)
         self.prog_section.btn_start.clicked.connect(self.start_program)
         self.prog_section.btn_stop.clicked.connect(self.stop_program)
+        
+        # Conectar señales del serial manager
+        self.serial_manager.ports_updated.connect(self._on_ports_updated)
+        self.serial_manager.data_received.connect(self.handle_serial_data)
+        # self.uart_section.connect_btn.clicked.connect(self._handle_connect_btn_uart)
+        
+        # # Conectar señales del serial model
+        # self.serial_model.ports_list_updated.connect(self.uart_section.update_list_port)
+        # self.serial_model.connection_state_changed.connect(self.update_uart_status)
+        # self.serial_model.data_received.connect(self.handle_serial_data)
+
+        # self.prog_section.btn_start.clicked.connect(self.start_program)
+        # self.prog_section.btn_stop.clicked.connect(self.stop_program)
 
         
-        self.prog_section.btn_start.setEnabled(False)
-        self.prog_section.btn_stop.setEnabled(False)
-        
-    def _handle_connect_btn_uart(self):
+        # self.prog_section.btn_start.setEnabled(False)
+        # self.prog_section.btn_stop.setEnabled(False)
+    
+    #--------------------------------------------------------
+    def _toggle_uart(self):
         """Manejar clic en el botón de conexión"""
-        text = self.uart_section.connect_btn.text().lower()
-        self.logger.info(text)
-        if "desconectar" == text:
-            self.serial_model.close_port()
+        if self.serial_manager.is_connected():
+            self.serial_manager.close_port()
+            self.uart_section.update_uart_status(False)
         else:
             port = self.uart_section.port_input.currentText()
             if port:
-                 config = {
-                    'port_name': port,
-                    'baud_rate': 115200,
-                    'data_bits': QSerialPort.DataBits.Data8,
-                    'parity': QSerialPort.Parity.NoParity,
-                    'stop_bits': QSerialPort.StopBits.OneStop,
-                    'flow_control': QSerialPort.FlowControl.NoFlowControl
-                 }
-                 self.serial_model.configure_port(config)
-                 
+                self.serial_manager.open_port(port)
+                self.uart_section.update_uart_status(True)
+                
+    def _on_ports_updated(self, ports: list[str]):
+        """Actualiza la lista de puertos en la UI."""
+        self.uart_section.update_list_port(ports)
+    
+    def _send_current_config(self):
+        #------------------------------------#
+        
+        # config led 01 mode
+        led_01_tx = self.prog_section.get_led1_mode()
+        if led_01_tx == ModoLuz.APAGADO:
+            self.serial_manager.send_data_str("LED1:OFF")
+        elif led_01_tx == ModoLuz.ENCENDIDO:
+            self.serial_manager.send_data_str("LED1:ON")
+        elif led_01_tx == ModoLuz.INTERMITENTE:
+            l01_time = self.prog_section.get_led1_time()
+            pass
+        
+        #config led 02 mode
+        led_02_tx = self.prog_section.get_led2_mode()
+        if led_02_tx == ModoLuz.APAGADO:
+            self.serial_manager.send_data_str("LED2:OFF")
+        elif led_02_tx == ModoLuz.ENCENDIDO:
+            self.serial_manager.send_data_str("LED2:ON")
+        elif led_02_tx == ModoLuz.INTERMITENTE:
+            l02_time = self.prog_section.get_led2_time()
+            pass
+        
+        #config palanca 01 mode
+        pal_01_tx = self.prog_section.get_pal1_mode()
+        pal_02_tx = self.prog_section.get_pal2_mode()
+        self.logger.info(f"Config Led-01: {led_01_tx}, Led-02: {led_02_tx}")
+        self.logger.info(f"Config Pal-01: {pal_01_tx}, Pal-02: {pal_02_tx}")
+        
+        
+        
+        # self.serial_model.write_data("LED-STATUS")
+        # self.serial_manager.send_data_str("LED-STATUS")
+        
+          
     #--------------------------------------------------------
     def start_program(self):
         if self.is_prog_running:
@@ -277,10 +289,9 @@ class PanelControlView(BaseView):
         
         self.prog_section.btn_start.setEnabled(False)
         self.prog_section.btn_stop.setEnabled(True)
-        
-        # PEDIR INFORMACION DE LOS LEDS
-        #self.serial_model.write_data("LED-STATUS")
-        self.send_command_with_delay("LED-STATUS",500)
+        self._send_current_config()
+       
+        self.prog_section.disable_config()
         # self.serial_model.write_data("IR-STATUS")
 
     def stop_program(self):
@@ -290,13 +301,14 @@ class PanelControlView(BaseView):
         self.end_time = QDateTime.currentDateTime()
         self.info_group.set_end_time(self.end_time)
         
+        
         self.logger.info(f"Programa detenido a las {self.end_time.toString('hh:mm:ss')}")
 
         self.timer.stop()
         self._actualizar_duracion(final=True)
-
         self.prog_section.btn_start.setEnabled(True)
         self.prog_section.btn_stop.setEnabled(False)
+        self.prog_section.enable_config()
 
     def _actualizar_duracion(self, final=False):
         if self.start_time:
@@ -315,25 +327,31 @@ class PanelControlView(BaseView):
         """Envía un comando con un delay mínimo"""
         self.logger.debug(f"TX: {command} -> {delay_ms}")
         
-        if not self.serial_model.is_connected():
-            return
-            
-        QTimer.singleShot(delay_ms, lambda: self.serial_model.write_data(command))
         
-    def handle_serial_data(self, data: str):
+        
+    def handle_serial_data(self, data: bytes, port_name: str):
         """Inicia el procesamiento en otro hilo"""
-        self.logger.debug(f"RX (crudo): {repr(data)}")
-        
-        # Si hay un hilo trabajando, guarda los datos para después
-        if self.worker_thread and self.worker_thread.isRunning():
-            self.pending_data.append(data)
+        #self.logger.debug(f"RX (crudo): {repr(data)}")
+        data_rx =  data.decode(errors='ignore').strip()
+        if not data_rx:
+            self.logger.warning(f"Data null en: {port_name}")
             return
-            
+        
+        self.logger.debug(f"RX {port_name}-> {bytes(data_rx, 'utf-8')}")
+        
+        if not self.is_prog_running:
+            self.logger.warning("Program not runing, ignore all data")
+            return
+        # Procesar datos en un hilo separado
+        palabras = data_rx.split()
+        
+        # Procesar cada palabra
+        for palabra in palabras:
+            self.logger.debug(f"Procesando: {palabra}")
+            # procesar cada palabra
+            self._process_single_line(palabra)
         # Crea y configura el worker
-        self.worker_thread = SerialDataWorker(data)
-        self.worker_thread.processed_data.connect(self._on_data_processed)
-        self.worker_thread.finished.connect(self._check_pending_data)
-        self.worker_thread.start()
+        
         
     def _process_single_line(self, line: str):
         """Procesa una línea individual de datos"""
@@ -362,15 +380,15 @@ class PanelControlView(BaseView):
                 
     def _check_pending_data(self):
         """Verifica si hay datos pendientes por procesar"""
-        if self.pending_data:
-            next_data = self.pending_data.pop(0)
-            self.handle_serial_data(next_data)
+        # if self.pending_data:
+        #     next_data = self.pending_data.pop(0)
+        #     self.handle_serial_data(next_data)
             
             
     def _process_command_block(self, block: str):
         """Procesa bloques de comandos como 'L01:1,L02:0'"""
         items = [item.strip() for item in block.split(',') if item.strip()]
-        self.logger.debug(f"cmd blok: {items}")
+        #self.logger.debug(f"cmd blok: {items}")
         
         for item in items:
             try:

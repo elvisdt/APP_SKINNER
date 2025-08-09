@@ -5,6 +5,7 @@ from PyQt6.QtWidgets import QWidget, QVBoxLayout
 from PyQt6.QtCore import pyqtSignal
 from main.utils.logger import Logger  # Asegúrate de que exista este archivo
 
+from main.core.serial_manager import SerialManager  # Asegúrate de que exista este archivo
 
 class BaseView(QWidget):
     """Clase base para todas las vistas"""
@@ -13,13 +14,16 @@ class BaseView(QWidget):
     data_changed = pyqtSignal(dict)
     action_requested = pyqtSignal(str, dict)
     
-    def __init__(self, parent=None):
+    def __init__(self, serial_manager: SerialManager = None, parent=None):
         super().__init__(parent)
         
-        # ✅ Inicializa logger con el nombre de la clase hija
+        #logger
         self.logger = Logger(self.__class__.__name__)
         
+        # Serial manager opcional
+        self.serial_manager = serial_manager
         self.layout = QVBoxLayout(self)
+        
         self.setup_ui()
 
     def setup_ui(self):
