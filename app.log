@@ -2666,3 +2666,288 @@ L01:0,L02:0
 2025-08-06 18:35:18,144 | PanelControlView | INFO | Vista de inicio configurada correctamente
 2025-08-06 18:35:18,207 | ReporteView | INFO | Vista de inicio configurada correctamente
 2025-08-06 18:35:18,248 | main.views.pnl_ctrl | INFO | status uart Panel: False
+2025-08-09 09:23:00,328 | InicioView | INFO | Vista de inicio configurada correctamente
+2025-08-09 09:23:00,949 | PanelControlView | INFO | Vista de inicio configurada correctamente
+2025-08-09 09:23:01,035 | ReporteView | INFO | Vista de inicio configurada correctamente
+2025-08-09 09:23:01,116 | main.views.pnl_ctrl | INFO | status uart Panel: False
+2025-08-09 09:23:28,243 | main.views.pnl_ctrl | INFO | conectar
+2025-08-09 09:23:28,253 | main.views.pnl_ctrl | INFO | status uart Panel: True
+2025-08-09 09:23:29,776 | main.views.pnl_ctrl | INFO | Programa iniciado a las 09:23:29
+2025-08-09 09:23:29,777 | main.views.pnl_ctrl | DEBUG | TX: LED-STATUS -> 500
+2025-08-09 09:23:55,920 | main.views.pnl_ctrl | INFO | Programa detenido a las 09:23:55
+2025-08-09 09:23:57,350 | main.views.pnl_ctrl | INFO | Programa iniciado a las 09:23:57
+2025-08-09 09:23:57,351 | main.views.pnl_ctrl | DEBUG | TX: LED-STATUS -> 500
+2025-08-09 09:24:05,755 | main.views.pnl_ctrl | DEBUG | RX (crudo): 'IR-STATUS\r\n'
+2025-08-09 09:24:05,759 | MainWindow | DEBUG | data RX: IR-STATUS
+
+2025-08-09 09:24:05,767 | main.views.pnl_ctrl | DEBUG | cmd blok: ['IR-STATUS']
+2025-08-09 09:24:05,769 | main.views.pnl_ctrl | WARNING | Format invalid cmd: IR-STATUS
+2025-08-09 09:24:06,624 | main.views.pnl_ctrl | DEBUG | RX (crudo): 'LED-STATUS\r\n'
+2025-08-09 09:24:06,625 | MainWindow | DEBUG | data RX: LED-STATUS
+
+2025-08-09 09:24:06,629 | main.views.pnl_ctrl | DEBUG | cmd blok: ['LED-STATUS']
+2025-08-09 09:24:06,630 | main.views.pnl_ctrl | WARNING | Format invalid cmd: LED-STATUS
+2025-08-09 09:24:17,009 | main.views.pnl_ctrl | DEBUG | RX (crudo): 'LED1:OFF\r\n'
+2025-08-09 09:24:17,011 | MainWindow | DEBUG | data RX: LED1:OFF
+
+2025-08-09 09:24:17,017 | main.views.pnl_ctrl | DEBUG | cmd blok: ['LED1:OFF']
+2025-08-09 09:24:17,388 | main.views.pnl_ctrl | DEBUG | RX (crudo): 'LED2:ON\r\n'
+2025-08-09 09:24:17,389 | MainWindow | DEBUG | data RX: LED2:ON
+
+2025-08-09 09:24:17,393 | main.views.pnl_ctrl | DEBUG | cmd blok: ['LED2:ON']
+2025-08-09 09:24:17,786 | main.views.pnl_ctrl | DEBUG | RX (crudo): 'XL01:ON\r\n'
+2025-08-09 09:24:17,787 | MainWindow | DEBUG | data RX: XL01:ON
+
+2025-08-09 09:24:17,795 | main.views.pnl_ctrl | DEBUG | cmd blok: ['XL01:ON']
+2025-08-09 09:24:18,180 | main.views.pnl_ctrl | DEBUG | RX (crudo): '\r\n'
+2025-08-09 09:24:18,182 | MainWindow | DEBUG | data RX: 
+
+2025-08-09 09:24:18,521 | main.views.pnl_ctrl | DEBUG | RX (crudo): '\r\n'
+2025-08-09 09:24:18,522 | MainWindow | DEBUG | data RX: 
+
+2025-08-09 09:24:18,940 | main.views.pnl_ctrl | DEBUG | RX (crudo): '\r\n'
+2025-08-09 09:24:18,942 | MainWindow | DEBUG | data RX: 
+
+2025-08-09 09:24:27,785 | main.views.pnl_ctrl | DEBUG | RX (crudo): 'LED2:ON\r\n'
+2025-08-09 09:24:27,786 | MainWindow | DEBUG | data RX: LED2:ON
+
+2025-08-09 09:24:27,789 | main.views.pnl_ctrl | DEBUG | cmd blok: ['LED2:ON']
+2025-08-09 09:24:28,270 | main.views.pnl_ctrl | DEBUG | RX (crudo): 'LED2:ON\r\n'
+2025-08-09 09:24:28,270 | MainWindow | DEBUG | data RX: LED2:ON
+
+2025-08-09 09:24:28,274 | main.views.pnl_ctrl | DEBUG | cmd blok: ['LED2:ON']
+2025-08-09 09:24:28,886 | main.views.pnl_ctrl | DEBUG | RX (crudo): 'XL01:ON\r\n'
+2025-08-09 09:24:28,887 | MainWindow | DEBUG | data RX: XL01:ON
+
+2025-08-09 09:24:28,894 | main.views.pnl_ctrl | DEBUG | cmd blok: ['XL01:ON']
+2025-08-09 09:24:29,245 | main.views.pnl_ctrl | DEBUG | RX (crudo): 'XL01:ON\r\n'
+2025-08-09 09:24:29,246 | MainWindow | DEBUG | data RX: XL01:ON
+
+2025-08-09 09:24:29,252 | main.views.pnl_ctrl | DEBUG | cmd blok: ['XL01:ON']
+2025-08-09 09:24:32,301 | main.views.pnl_ctrl | INFO | Programa detenido a las 09:24:32
+2025-08-09 09:24:33,563 | main.views.pnl_ctrl | INFO | Programa iniciado a las 09:24:33
+2025-08-09 09:24:33,564 | main.views.pnl_ctrl | DEBUG | TX: LED-STATUS -> 500
+2025-08-09 09:24:38,379 | main.views.pnl_ctrl | DEBUG | RX (crudo): '\r\n'
+2025-08-09 09:24:38,380 | MainWindow | DEBUG | data RX: 
+
+2025-08-09 09:24:38,910 | main.views.pnl_ctrl | DEBUG | RX (crudo): 'MV:8-F\r\n'
+2025-08-09 09:24:38,911 | MainWindow | DEBUG | data RX: MV:8-F
+
+2025-08-09 09:24:38,915 | main.views.pnl_ctrl | DEBUG | cmd blok: ['MV:8-F']
+2025-08-09 09:24:54,183 | main.views.pnl_ctrl | DEBUG | RX (crudo): 'HELLO\r\n'
+2025-08-09 09:24:54,184 | MainWindow | DEBUG | data RX: HELLO
+
+2025-08-09 09:24:54,192 | main.views.pnl_ctrl | DEBUG | cmd blok: ['HELLO']
+2025-08-09 09:24:54,193 | main.views.pnl_ctrl | WARNING | Format invalid cmd: HELLO
+2025-08-09 09:24:54,798 | main.views.pnl_ctrl | DEBUG | RX (crudo): 'HELLO\r\n'
+2025-08-09 09:24:54,800 | MainWindow | DEBUG | data RX: HELLO
+
+2025-08-09 09:24:54,805 | main.views.pnl_ctrl | DEBUG | cmd blok: ['HELLO']
+2025-08-09 09:24:54,806 | main.views.pnl_ctrl | WARNING | Format invalid cmd: HELLO
+2025-08-09 09:24:55,678 | main.views.pnl_ctrl | DEBUG | RX (crudo): 'HELLO\r\n'
+2025-08-09 09:24:55,679 | MainWindow | DEBUG | data RX: HELLO
+
+2025-08-09 09:24:55,682 | main.views.pnl_ctrl | DEBUG | cmd blok: ['HELLO']
+2025-08-09 09:24:55,683 | main.views.pnl_ctrl | WARNING | Format invalid cmd: HELLO
+2025-08-09 09:24:56,880 | main.views.pnl_ctrl | DEBUG | RX (crudo): '\r\n'
+2025-08-09 09:24:56,881 | MainWindow | DEBUG | data RX: 
+
+2025-08-09 09:24:57,678 | main.views.pnl_ctrl | DEBUG | RX (crudo): '\r\n'
+2025-08-09 09:24:57,679 | MainWindow | DEBUG | data RX: 
+
+2025-08-09 09:24:58,360 | main.views.pnl_ctrl | DEBUG | RX (crudo): 'MV:8-F\r\n'
+2025-08-09 09:24:58,361 | MainWindow | DEBUG | data RX: MV:8-F
+
+2025-08-09 09:24:58,369 | main.views.pnl_ctrl | DEBUG | cmd blok: ['MV:8-F']
+2025-08-09 09:24:58,821 | main.views.pnl_ctrl | DEBUG | RX (crudo): 'MV:512-F\r\n'
+2025-08-09 09:24:58,822 | MainWindow | DEBUG | data RX: MV:512-F
+
+2025-08-09 09:24:58,825 | main.views.pnl_ctrl | DEBUG | cmd blok: ['MV:512-F']
+2025-08-09 09:25:00,250 | main.views.pnl_ctrl | DEBUG | RX (crudo): 'IR STATUS\r\n'
+2025-08-09 09:25:00,252 | MainWindow | DEBUG | data RX: IR STATUS
+
+2025-08-09 09:25:00,256 | main.views.pnl_ctrl | DEBUG | cmd blok: ['IR STATUS']
+2025-08-09 09:25:00,257 | main.views.pnl_ctrl | WARNING | Format invalid cmd: IR STATUS
+2025-08-09 09:25:00,709 | main.views.pnl_ctrl | DEBUG | RX (crudo): 'L01:ON\r\n'
+2025-08-09 09:25:00,710 | MainWindow | DEBUG | data RX: L01:ON
+
+2025-08-09 09:25:00,712 | main.views.pnl_ctrl | DEBUG | cmd blok: ['L01:ON']
+2025-08-09 09:25:01,434 | main.views.pnl_ctrl | DEBUG | RX (crudo): 'L02:On\r\n'
+2025-08-09 09:25:01,436 | MainWindow | DEBUG | data RX: L02:On
+
+2025-08-09 09:25:01,439 | main.views.pnl_ctrl | DEBUG | cmd blok: ['L02:On']
+2025-08-09 09:25:02,249 | main.views.pnl_ctrl | DEBUG | RX (crudo): 'L02:On\r\n'
+2025-08-09 09:25:02,249 | MainWindow | DEBUG | data RX: L02:On
+
+2025-08-09 09:25:02,253 | main.views.pnl_ctrl | DEBUG | cmd blok: ['L02:On']
+2025-08-09 09:25:06,282 | main.views.pnl_ctrl | DEBUG | RX (crudo): 'P01:1\r\n'
+2025-08-09 09:25:06,283 | MainWindow | DEBUG | data RX: P01:1
+
+2025-08-09 09:25:06,288 | main.views.pnl_ctrl | DEBUG | cmd blok: ['P01:1']
+2025-08-09 09:25:06,783 | main.views.pnl_ctrl | DEBUG | RX (crudo): 'L01:ON\r\n'
+2025-08-09 09:25:06,784 | MainWindow | DEBUG | data RX: L01:ON
+
+2025-08-09 09:25:06,788 | main.views.pnl_ctrl | DEBUG | cmd blok: ['L01:ON']
+2025-08-09 09:25:07,179 | main.views.pnl_ctrl | DEBUG | RX (crudo): 'L01:ON\r\n'
+2025-08-09 09:25:07,180 | MainWindow | DEBUG | data RX: L01:ON
+
+2025-08-09 09:25:07,183 | main.views.pnl_ctrl | DEBUG | cmd blok: ['L01:ON']
+2025-08-09 09:25:07,544 | main.views.pnl_ctrl | DEBUG | RX (crudo): '\r\n'
+2025-08-09 09:25:07,545 | MainWindow | DEBUG | data RX: 
+
+2025-08-09 09:25:10,597 | main.views.pnl_ctrl | INFO | Programa detenido a las 09:25:10
+2025-08-09 09:25:13,161 | main.views.pnl_ctrl | INFO | desconectar
+2025-08-09 09:25:13,169 | main.views.pnl_ctrl | INFO | status uart Panel: False
+2025-08-09 09:25:16,750 | main.views.pnl_ctrl | INFO | conectar
+2025-08-09 09:25:16,757 | main.views.pnl_ctrl | INFO | status uart Panel: True
+2025-08-09 09:25:18,193 | main.views.pnl_ctrl | INFO | Programa iniciado a las 09:25:18
+2025-08-09 09:25:18,194 | main.views.pnl_ctrl | DEBUG | TX: LED-STATUS -> 500
+2025-08-09 09:25:29,982 | main.views.pnl_ctrl | DEBUG | RX (crudo): 'L01:ON\r\n'
+2025-08-09 09:25:29,983 | MainWindow | DEBUG | data RX: L01:ON
+
+2025-08-09 09:25:29,986 | main.views.pnl_ctrl | DEBUG | cmd blok: ['L01:ON']
+2025-08-09 09:25:30,719 | main.views.pnl_ctrl | DEBUG | RX (crudo): 'L02:On\r\n'
+2025-08-09 09:25:30,722 | MainWindow | DEBUG | data RX: L02:On
+
+2025-08-09 09:25:30,730 | main.views.pnl_ctrl | DEBUG | cmd blok: ['L02:On']
+2025-08-09 09:25:31,485 | main.views.pnl_ctrl | DEBUG | RX (crudo): 'L02:On\r\n'
+2025-08-09 09:25:31,487 | MainWindow | DEBUG | data RX: L02:On
+
+2025-08-09 09:25:31,492 | main.views.pnl_ctrl | DEBUG | cmd blok: ['L02:On']
+2025-08-09 09:25:32,091 | main.views.pnl_ctrl | DEBUG | RX (crudo): 'L01:ON\r\n'
+2025-08-09 09:25:32,092 | MainWindow | DEBUG | data RX: L01:ON
+
+2025-08-09 09:25:32,098 | main.views.pnl_ctrl | DEBUG | cmd blok: ['L01:ON']
+2025-08-09 09:25:32,342 | main.views.pnl_ctrl | DEBUG | RX (crudo): 'IR STATUS\r\n'
+2025-08-09 09:25:32,343 | MainWindow | DEBUG | data RX: IR STATUS
+
+2025-08-09 09:25:32,349 | main.views.pnl_ctrl | DEBUG | cmd blok: ['IR STATUS']
+2025-08-09 09:25:32,350 | main.views.pnl_ctrl | WARNING | Format invalid cmd: IR STATUS
+2025-08-09 09:25:33,809 | main.views.pnl_ctrl | DEBUG | RX (crudo): 'LED1:OFF\r\n'
+2025-08-09 09:25:33,810 | MainWindow | DEBUG | data RX: LED1:OFF
+
+2025-08-09 09:25:33,816 | main.views.pnl_ctrl | DEBUG | cmd blok: ['LED1:OFF']
+2025-08-09 09:25:34,051 | main.views.pnl_ctrl | DEBUG | RX (crudo): 'LED1:OFF\r\n'
+2025-08-09 09:25:34,052 | MainWindow | DEBUG | data RX: LED1:OFF
+
+2025-08-09 09:25:34,057 | main.views.pnl_ctrl | DEBUG | cmd blok: ['LED1:OFF']
+2025-08-09 09:25:34,277 | main.views.pnl_ctrl | DEBUG | RX (crudo): 'LED1:OFF\r\n'
+2025-08-09 09:25:34,278 | MainWindow | DEBUG | data RX: LED1:OFF
+
+2025-08-09 09:25:34,285 | main.views.pnl_ctrl | DEBUG | cmd blok: ['LED1:OFF']
+2025-08-09 09:25:34,517 | main.views.pnl_ctrl | DEBUG | RX (crudo): 'LED2:ON\r\n'
+2025-08-09 09:25:34,518 | MainWindow | DEBUG | data RX: LED2:ON
+
+2025-08-09 09:25:34,524 | main.views.pnl_ctrl | DEBUG | cmd blok: ['LED2:ON']
+2025-08-09 09:25:34,777 | main.views.pnl_ctrl | DEBUG | RX (crudo): 'LED2:ON\r\n'
+2025-08-09 09:25:34,778 | MainWindow | DEBUG | data RX: LED2:ON
+
+2025-08-09 09:25:34,781 | main.views.pnl_ctrl | DEBUG | cmd blok: ['LED2:ON']
+2025-08-09 09:25:35,035 | main.views.pnl_ctrl | DEBUG | RX (crudo): 'LED2:ON\r\n'
+2025-08-09 09:25:35,036 | MainWindow | DEBUG | data RX: LED2:ON
+
+2025-08-09 09:25:35,041 | main.views.pnl_ctrl | DEBUG | cmd blok: ['LED2:ON']
+2025-08-09 09:25:35,341 | main.views.pnl_ctrl | DEBUG | RX (crudo): 'XL01:ON\r\n'
+2025-08-09 09:25:35,342 | MainWindow | DEBUG | data RX: XL01:ON
+
+2025-08-09 09:25:35,346 | main.views.pnl_ctrl | DEBUG | cmd blok: ['XL01:ON']
+2025-08-09 09:25:35,630 | main.views.pnl_ctrl | DEBUG | RX (crudo): 'XL01:ON\r\n'
+2025-08-09 09:25:35,631 | MainWindow | DEBUG | data RX: XL01:ON
+
+2025-08-09 09:25:35,639 | main.views.pnl_ctrl | DEBUG | cmd blok: ['XL01:ON']
+2025-08-09 09:25:35,910 | main.views.pnl_ctrl | DEBUG | RX (crudo): '\r\n'
+2025-08-09 09:25:35,911 | MainWindow | DEBUG | data RX: 
+
+2025-08-09 09:25:36,167 | main.views.pnl_ctrl | DEBUG | RX (crudo): '\r\n'
+2025-08-09 09:25:36,167 | MainWindow | DEBUG | data RX: 
+
+2025-08-09 09:25:36,632 | main.views.pnl_ctrl | DEBUG | RX (crudo): '\r\n'
+2025-08-09 09:25:36,633 | MainWindow | DEBUG | data RX: 
+
+2025-08-09 09:25:36,866 | main.views.pnl_ctrl | DEBUG | RX (crudo): 'HELLO\r\n'
+2025-08-09 09:25:36,867 | MainWindow | DEBUG | data RX: HELLO
+
+2025-08-09 09:25:36,872 | main.views.pnl_ctrl | DEBUG | cmd blok: ['HELLO']
+2025-08-09 09:25:36,872 | main.views.pnl_ctrl | WARNING | Format invalid cmd: HELLO
+2025-08-09 09:25:37,115 | main.views.pnl_ctrl | DEBUG | RX (crudo): 'HELLO\r\n'
+2025-08-09 09:25:37,116 | MainWindow | DEBUG | data RX: HELLO
+
+2025-08-09 09:25:37,122 | main.views.pnl_ctrl | DEBUG | cmd blok: ['HELLO']
+2025-08-09 09:25:37,122 | main.views.pnl_ctrl | WARNING | Format invalid cmd: HELLO
+2025-08-09 09:25:37,897 | main.views.pnl_ctrl | DEBUG | RX (crudo): 'MV:16-R\r\n'
+2025-08-09 09:25:37,898 | MainWindow | DEBUG | data RX: MV:16-R
+
+2025-08-09 09:25:37,902 | main.views.pnl_ctrl | DEBUG | cmd blok: ['MV:16-R']
+2025-08-09 09:25:38,264 | main.views.pnl_ctrl | DEBUG | RX (crudo): 'MV:512-F\r\n'
+2025-08-09 09:25:38,265 | MainWindow | DEBUG | data RX: MV:512-F
+
+2025-08-09 09:25:38,271 | main.views.pnl_ctrl | DEBUG | cmd blok: ['MV:512-F']
+2025-08-09 09:25:38,544 | main.views.pnl_ctrl | DEBUG | RX (crudo): 'MV:256-R\r\n'
+2025-08-09 09:25:38,544 | MainWindow | DEBUG | data RX: MV:256-R
+
+2025-08-09 09:25:38,547 | main.views.pnl_ctrl | DEBUG | cmd blok: ['MV:256-R']
+2025-08-09 09:25:38,787 | main.views.pnl_ctrl | DEBUG | RX (crudo): 'MV:256-R\r\n'
+2025-08-09 09:25:38,788 | MainWindow | DEBUG | data RX: MV:256-R
+
+2025-08-09 09:25:38,795 | main.views.pnl_ctrl | DEBUG | cmd blok: ['MV:256-R']
+2025-08-09 09:25:39,106 | main.views.pnl_ctrl | DEBUG | RX (crudo): 'LED-STATUS\r\n'
+2025-08-09 09:25:39,107 | MainWindow | DEBUG | data RX: LED-STATUS
+
+2025-08-09 09:25:39,118 | main.views.pnl_ctrl | DEBUG | cmd blok: ['LED-STATUS']
+2025-08-09 09:25:39,118 | main.views.pnl_ctrl | WARNING | Format invalid cmd: LED-STATUS
+2025-08-09 09:25:39,537 | main.views.pnl_ctrl | DEBUG | RX (crudo): 'IR-STATUS\r\n'
+2025-08-09 09:25:39,539 | MainWindow | DEBUG | data RX: IR-STATUS
+
+2025-08-09 09:25:39,543 | main.views.pnl_ctrl | DEBUG | cmd blok: ['IR-STATUS']
+2025-08-09 09:25:39,544 | main.views.pnl_ctrl | WARNING | Format invalid cmd: IR-STATUS
+2025-08-09 09:25:39,958 | main.views.pnl_ctrl | DEBUG | RX (crudo): '\r\n'
+2025-08-09 09:25:39,959 | MainWindow | DEBUG | data RX: 
+
+2025-08-09 09:25:40,620 | main.views.pnl_ctrl | DEBUG | RX (crudo): 'CALIBRATE\r\n'
+2025-08-09 09:25:40,622 | MainWindow | DEBUG | data RX: CALIBRATE
+
+2025-08-09 09:25:40,632 | main.views.pnl_ctrl | DEBUG | cmd blok: ['CALIBRATE']
+2025-08-09 09:25:40,633 | main.views.pnl_ctrl | WARNING | Format invalid cmd: CALIBRATE
+2025-08-09 09:25:41,120 | main.views.pnl_ctrl | DEBUG | RX (crudo): 'STOP\r\n'
+2025-08-09 09:25:41,122 | MainWindow | DEBUG | data RX: STOP
+
+2025-08-09 09:25:41,133 | main.views.pnl_ctrl | DEBUG | cmd blok: ['STOP']
+2025-08-09 09:25:41,134 | main.views.pnl_ctrl | WARNING | Format invalid cmd: STOP
+2025-08-09 09:25:41,601 | main.views.pnl_ctrl | DEBUG | RX (crudo): 'DISP:36\r\n'
+2025-08-09 09:25:41,603 | MainWindow | DEBUG | data RX: DISP:36
+
+2025-08-09 09:25:41,607 | main.views.pnl_ctrl | DEBUG | cmd blok: ['DISP:36']
+2025-08-09 09:25:42,496 | main.views.pnl_ctrl | DEBUG | RX (crudo): 'STOP\r\n'
+2025-08-09 09:25:42,497 | MainWindow | DEBUG | data RX: STOP
+
+2025-08-09 09:25:42,502 | main.views.pnl_ctrl | DEBUG | cmd blok: ['STOP']
+2025-08-09 09:25:42,502 | main.views.pnl_ctrl | WARNING | Format invalid cmd: STOP
+2025-08-09 09:25:43,196 | main.views.pnl_ctrl | DEBUG | RX (crudo): 'CALIBRATE\r\n'
+2025-08-09 09:25:43,197 | MainWindow | DEBUG | data RX: CALIBRATE
+
+2025-08-09 09:25:43,203 | main.views.pnl_ctrl | DEBUG | cmd blok: ['CALIBRATE']
+2025-08-09 09:25:43,203 | main.views.pnl_ctrl | WARNING | Format invalid cmd: CALIBRATE
+2025-08-09 09:25:43,689 | main.views.pnl_ctrl | DEBUG | RX (crudo): '\r\n'
+2025-08-09 09:25:43,689 | MainWindow | DEBUG | data RX: 
+
+2025-08-09 09:25:43,942 | main.views.pnl_ctrl | DEBUG | RX (crudo): '\r\n'
+2025-08-09 09:25:43,943 | MainWindow | DEBUG | data RX: 
+
+2025-08-09 09:25:44,573 | main.views.pnl_ctrl | DEBUG | RX (crudo): 'IR-STATUS\r\n'
+2025-08-09 09:25:44,574 | MainWindow | DEBUG | data RX: IR-STATUS
+
+2025-08-09 09:25:44,580 | main.views.pnl_ctrl | DEBUG | cmd blok: ['IR-STATUS']
+2025-08-09 09:25:44,581 | main.views.pnl_ctrl | WARNING | Format invalid cmd: IR-STATUS
+2025-08-09 09:25:45,106 | main.views.pnl_ctrl | DEBUG | RX (crudo): 'LED-STATUS\r\n'
+2025-08-09 09:25:45,107 | MainWindow | DEBUG | data RX: LED-STATUS
+
+2025-08-09 09:25:45,113 | main.views.pnl_ctrl | DEBUG | cmd blok: ['LED-STATUS']
+2025-08-09 09:25:45,114 | main.views.pnl_ctrl | WARNING | Format invalid cmd: LED-STATUS
+2025-08-09 09:25:45,616 | main.views.pnl_ctrl | DEBUG | RX (crudo): 'MV:512-F\r\n'
+2025-08-09 09:25:45,617 | MainWindow | DEBUG | data RX: MV:512-F
+
+2025-08-09 09:25:45,622 | main.views.pnl_ctrl | DEBUG | cmd blok: ['MV:512-F']
+2025-08-09 09:25:45,945 | main.views.pnl_ctrl | DEBUG | RX (crudo): 'MV:512-F\r\n'
+2025-08-09 09:25:45,946 | MainWindow | DEBUG | data RX: MV:512-F
+
+2025-08-09 09:25:45,949 | main.views.pnl_ctrl | DEBUG | cmd blok: ['MV:512-F']
