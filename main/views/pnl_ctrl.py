@@ -168,20 +168,6 @@ class PanelControlView(BaseView):
                 self.logger.error(f"Error al configurar contenido: {str(e)}")
                 raise
     
-         
-    def update_uart_status(self, connected: bool):
-        """Actualiza la UI según el estado de conexión"""
-        self.logger.info(f"status uart Panel: {connected}")
-        self.uart_section.update_uart_status(connected)
-        
-        if connected:
-            self.prog_section.btn_start.setEnabled(True)   
-        else :
-            self.stop_program()
-            
-            self.prog_section.btn_start.setEnabled(False) 
-            list_ports = self.serial_model.get_port_names()
-            self.uart_section.update_list_port(list_ports)
             
     
     def _setup_connections(self):
@@ -193,6 +179,8 @@ class PanelControlView(BaseView):
         # Conectar señales del serial manager
         self.serial_manager.ports_updated.connect(self._on_ports_updated)
         self.serial_manager.data_received.connect(self.handle_serial_data)
+        self.serial_manager.connection_changed.connect(self.update_uart_status)
+        
         # self.uart_section.connect_btn.clicked.connect(self._handle_connect_btn_uart)
         
         # # Conectar señales del serial model
@@ -208,6 +196,21 @@ class PanelControlView(BaseView):
         # self.prog_section.btn_stop.setEnabled(False)
     
     #--------------------------------------------------------
+    def update_uart_status(self, connected: bool, port_name: str = ""):
+        """Actualiza la UI según el estado de conexión"""
+        self.logger.info(f"status uart Panel: {connected}")
+        self.uart_section.update_uart_status(connected)
+        if connected:
+            self.prog_section.enable_config()
+            self.prog_section.btn_start.setEnabled(True)
+            self.prog_section.btn_stop.setEnabled(False)
+            
+        else :
+            self.stop_program()
+            
+            self.prog_section.disable_config()
+            self.prog_section.btn_start.setEnabled(False)
+            self.prog_section.btn_stop.setEnabled(False)
     def _toggle_uart(self):
         """Manejar clic en el botón de conexión"""
         if self.serial_manager.is_connected():
@@ -229,9 +232,9 @@ class PanelControlView(BaseView):
         # config led 01 mode
         led_01_tx = self.prog_section.get_led1_mode()
         if led_01_tx == ModoLuz.APAGADO:
-            self.serial_manager.send_data_str("LED1:OFF")
+            self.send_uart_cmd("LED1:OFF",50)
         elif led_01_tx == ModoLuz.ENCENDIDO:
-            self.serial_manager.send_data_str("LED1:ON")
+            self.send_uart_cmd("LED1:ON",50)
         elif led_01_tx == ModoLuz.INTERMITENTE:
             l01_time = self.prog_section.get_led1_time()
             pass
@@ -239,9 +242,9 @@ class PanelControlView(BaseView):
         #config led 02 mode
         led_02_tx = self.prog_section.get_led2_mode()
         if led_02_tx == ModoLuz.APAGADO:
-            self.serial_manager.send_data_str("LED2:OFF")
+            self.send_uart_cmd("LED2:OFF",100)
         elif led_02_tx == ModoLuz.ENCENDIDO:
-            self.serial_manager.send_data_str("LED2:ON")
+            self.send_uart_cmd("LED2:ON",100)
         elif led_02_tx == ModoLuz.INTERMITENTE:
             l02_time = self.prog_section.get_led2_time()
             pass
@@ -263,6 +266,14 @@ class PanelControlView(BaseView):
         if self.is_prog_running:
             return  # Ya está en ejecución
 
+        self.info_group.reset_all()
+        self.info_group.start_session({
+            'experiment': 'Experimento Skinner',
+            'config': "test config",
+            'time': QDateTime.currentDateTime().toString("dd/MM/yyyy HH:mm:ss"),
+        })
+        
+        
         # LIMPIAR LABELS
         self.info_group.reset_all()
         self.plt_group.graph_left.reset_graph()
@@ -297,6 +308,9 @@ class PanelControlView(BaseView):
     def stop_program(self):
         if not self.is_prog_running:
             return  # Ya está detenido
+        
+        self.info_group.end_session()
+        
         self.is_prog_running = False
         self.end_time = QDateTime.currentDateTime()
         self.info_group.set_end_time(self.end_time)
@@ -309,6 +323,15 @@ class PanelControlView(BaseView):
         self.prog_section.btn_start.setEnabled(True)
         self.prog_section.btn_stop.setEnabled(False)
         self.prog_section.enable_config()
+        
+        self.serial_manager.send_data_str("LED1:OFF")
+        self.send_uart_cmd("LED2:OFF")
+        
+        timestamp = QDateTime.currentDateTime().toString("yyyyMMdd_hhmmss")
+        filename = f"sesion_{timestamp}.csv"
+        self.info_group.save_to_csv(filename)
+        
+        self.logger.info(f"Registro de sesión guardado en {filename}")
 
     def _actualizar_duracion(self, final=False):
         if self.start_time:
@@ -321,12 +344,15 @@ class PanelControlView(BaseView):
 
             time_str = f"{horas:02}:{minutos:02}:{segundos:02}"
             # self.logger.info(time_str)
-            self.info_group.update_run_time(time_str)
+            self.info_group.set_run_time(time_str)
     
-    def send_command_with_delay(self, command: str, delay_ms: int = 100):
+    def send_uart_cmd(self, command: str, delay_ms: int = 50):
         """Envía un comando con un delay mínimo"""
         self.logger.debug(f"TX: {command} -> {delay_ms}")
-        
+        if not self.serial_manager or not self.serial_manager.is_connected():
+            return
+            
+        QTimer.singleShot(delay_ms, lambda: self.serial_manager.send_data_str(command))
         
         
     def handle_serial_data(self, data: bytes, port_name: str):
@@ -406,6 +432,7 @@ class PanelControlView(BaseView):
                 elif key in palanca_keys:
                     self._handle_palanca(key, value)
                     
+                    
             except Exception as e:
                 self.logger.error(f"Error procesando comando '{item}': {str(e)}")
 
@@ -433,16 +460,20 @@ class PanelControlView(BaseView):
         if key in led_keys:
             value = value_led_map.get(value.strip().upper(), value)
             if value in ["ON", "OFF"]:
-                self.info_group.update_value(led_keys[key], value)
+                self.info_group.update_value(led_keys[key], value, increment=False)
                 
     def _handle_palanca(self,key,value):
         if key in palanca_keys:            
             if key == "P01":
                 if value.isdigit():
                     self.plt_group.graph_right.register_pulse(self.name_plt_lf_l1)
-                    self.info_group.update_value(palanca_keys[key], value)
-                    
+                    self.info_group.update_value(palanca_keys[key], value, increment=True)
+                    if self.prog_section.get_pal1_mode() == ModoPalanca.CRF:
+                        self.send_uart_cmd("DISP:1",50)
             elif key == "P02":
                 if value.isdigit():
                     self.plt_group.graph_left.register_pulse(self.name_plt_rh_l1)
-                    self.info_group.update_value(palanca_keys[key], value)
+                    self.info_group.update_value(palanca_keys[key], value, increment=True)
+                    if self.prog_section.get_pal2_mode() == ModoPalanca.CRF:
+                        self.send_uart_cmd("DISP:1",50)
+                        

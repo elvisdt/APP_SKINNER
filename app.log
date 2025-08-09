@@ -3512,3 +3512,2190 @@ L01:0,L02:0
 2025-08-09 16:14:05,036 | PanelControlView | DEBUG | Procesando: LED1:ON
 2025-08-09 16:14:05,036 | PanelControlView | DEBUG | Procesando: LED2:ON
 2025-08-09 16:14:05,037 | PanelControlView | DEBUG | Procesando: L01:1
+2025-08-09 16:19:27,706 | InicioView | INFO | Vista de inicio configurada correctamente
+2025-08-09 16:19:28,063 | PanelControlView | INFO | Vista de inicio configurada correctamente
+2025-08-09 16:19:28,187 | ReporteView | INFO | Vista de inicio configurada correctamente
+2025-08-09 16:19:34,221 | PanelControlView | INFO | Programa iniciado a las 16:19:34
+2025-08-09 16:19:34,222 | PanelControlView | DEBUG | TX: LED2:OFF -> 100
+2025-08-09 16:19:34,223 | PanelControlView | INFO | Config Led-01: ModoLuz.APAGADO, Led-02: ModoLuz.APAGADO
+2025-08-09 16:19:34,223 | PanelControlView | INFO | Config Pal-01: ModoPalanca.CRF, Pal-02: ModoPalanca.CRF
+2025-08-09 16:19:34,261 | PanelControlView | DEBUG | RX COM3-> b'ESP-ROM:esp32s3-20210327\r\nL01:0\r\nL02:0\r\nLED1:OFF\nL01:0'
+2025-08-09 16:19:34,262 | PanelControlView | DEBUG | Procesando: ESP-ROM:esp32s3-20210327
+2025-08-09 16:19:34,263 | PanelControlView | DEBUG | Procesando: L01:0
+2025-08-09 16:19:34,269 | PanelControlView | DEBUG | Procesando: L02:0
+2025-08-09 16:19:34,271 | PanelControlView | DEBUG | Procesando: LED1:OFF
+2025-08-09 16:19:34,272 | PanelControlView | DEBUG | Procesando: L01:0
+2025-08-09 16:19:34,325 | PanelControlView | DEBUG | RX COM3-> b'LED2:OFF\nL02:0'
+2025-08-09 16:19:34,326 | PanelControlView | DEBUG | Procesando: LED2:OFF
+2025-08-09 16:19:34,328 | PanelControlView | DEBUG | Procesando: L02:0
+2025-08-09 16:19:40,330 | PanelControlView | INFO | Programa detenido a las 16:19:40
+2025-08-09 16:19:47,601 | PanelControlView | INFO | Programa iniciado a las 16:19:47
+2025-08-09 16:19:47,602 | PanelControlView | DEBUG | TX: LED2:ON -> 100
+2025-08-09 16:19:47,602 | PanelControlView | INFO | Config Led-01: ModoLuz.ENCENDIDO, Led-02: ModoLuz.ENCENDIDO
+2025-08-09 16:19:47,603 | PanelControlView | INFO | Config Pal-01: ModoPalanca.CRF, Pal-02: ModoPalanca.CRF
+2025-08-09 16:19:47,630 | PanelControlView | DEBUG | RX COM3-> b'LED1:ON\nL01:1'
+2025-08-09 16:19:47,630 | PanelControlView | DEBUG | Procesando: LED1:ON
+2025-08-09 16:19:47,631 | PanelControlView | DEBUG | Procesando: L01:1
+2025-08-09 16:19:47,698 | PanelControlView | DEBUG | RX COM3-> b'LED2:ON\nL02:1'
+2025-08-09 16:19:47,700 | PanelControlView | DEBUG | Procesando: LED2:ON
+2025-08-09 16:19:47,701 | PanelControlView | DEBUG | Procesando: L02:1
+2025-08-09 16:20:32,901 | PanelControlView | INFO | Programa detenido a las 16:20:32
+2025-08-09 16:20:42,859 | PanelControlView | INFO | Programa iniciado a las 16:20:42
+2025-08-09 16:20:42,860 | PanelControlView | DEBUG | TX: LED2:OFF -> 100
+2025-08-09 16:20:42,860 | PanelControlView | INFO | Config Led-01: ModoLuz.ENCENDIDO, Led-02: ModoLuz.APAGADO
+2025-08-09 16:20:42,861 | PanelControlView | INFO | Config Pal-01: ModoPalanca.CRF, Pal-02: ModoPalanca.CRF
+2025-08-09 16:20:42,868 | PanelControlView | DEBUG | RX COM3-> b'LED1:ON\nL01:1'
+2025-08-09 16:20:42,869 | PanelControlView | DEBUG | Procesando: LED1:ON
+2025-08-09 16:20:42,869 | PanelControlView | DEBUG | Procesando: L01:1
+2025-08-09 16:20:42,957 | PanelControlView | DEBUG | RX COM3-> b'LED2:OFF\nL02:0'
+2025-08-09 16:20:42,959 | PanelControlView | DEBUG | Procesando: LED2:OFF
+2025-08-09 16:20:42,960 | PanelControlView | DEBUG | Procesando: L02:0
+2025-08-09 16:21:14,481 | PanelControlView | INFO | Programa detenido a las 16:21:14
+2025-08-09 16:21:22,684 | PanelControlView | INFO | Programa iniciado a las 16:21:22
+2025-08-09 16:21:22,685 | PanelControlView | DEBUG | TX: LED2:ON -> 100
+2025-08-09 16:21:22,685 | PanelControlView | INFO | Config Led-01: ModoLuz.ENCENDIDO, Led-02: ModoLuz.ENCENDIDO
+2025-08-09 16:21:22,686 | PanelControlView | INFO | Config Pal-01: ModoPalanca.CRF, Pal-02: ModoPalanca.CRF
+2025-08-09 16:21:22,693 | PanelControlView | DEBUG | RX COM3-> b'LED1:ON\nL01:1'
+2025-08-09 16:21:22,694 | PanelControlView | DEBUG | Procesando: LED1:ON
+2025-08-09 16:21:22,694 | PanelControlView | DEBUG | Procesando: L01:1
+2025-08-09 16:21:22,785 | PanelControlView | DEBUG | RX COM3-> b'LED2:ON\nL02:1'
+2025-08-09 16:21:22,786 | PanelControlView | DEBUG | Procesando: LED2:ON
+2025-08-09 16:21:22,787 | PanelControlView | DEBUG | Procesando: L02:1
+2025-08-09 16:21:31,152 | PanelControlView | DEBUG | RX COM3-> b'P02:1'
+2025-08-09 16:21:31,153 | PanelControlView | DEBUG | Procesando: P02:1
+2025-08-09 16:25:31,536 | InicioView | INFO | Vista de inicio configurada correctamente
+2025-08-09 16:25:31,743 | PanelControlView | INFO | Vista de inicio configurada correctamente
+2025-08-09 16:25:31,801 | ReporteView | INFO | Vista de inicio configurada correctamente
+2025-08-09 16:33:07,220 | InicioView | INFO | Vista de inicio configurada correctamente
+2025-08-09 16:33:07,572 | PanelControlView | INFO | Vista de inicio configurada correctamente
+2025-08-09 16:33:07,662 | ReporteView | INFO | Vista de inicio configurada correctamente
+2025-08-09 16:33:14,506 | PanelControlView | INFO | Programa iniciado a las 16:33:14
+2025-08-09 16:33:14,507 | PanelControlView | DEBUG | TX: LED2:OFF -> 100
+2025-08-09 16:33:14,507 | PanelControlView | INFO | Config Led-01: ModoLuz.APAGADO, Led-02: ModoLuz.APAGADO
+2025-08-09 16:33:14,508 | PanelControlView | INFO | Config Pal-01: ModoPalanca.CRF, Pal-02: ModoPalanca.CRF
+2025-08-09 16:33:14,537 | PanelControlView | DEBUG | RX COM3-> b'ESP-ROM:esp32s3-20210327\r\nL01:0\r\nL02:0\r\nLED1:OFF\nL01:0'
+2025-08-09 16:33:14,538 | PanelControlView | DEBUG | Procesando: ESP-ROM:esp32s3-20210327
+2025-08-09 16:33:14,538 | PanelControlView | DEBUG | Procesando: L01:0
+2025-08-09 16:33:14,539 | PanelControlView | DEBUG | Procesando: L02:0
+2025-08-09 16:33:14,540 | PanelControlView | DEBUG | Procesando: LED1:OFF
+2025-08-09 16:33:14,540 | PanelControlView | DEBUG | Procesando: L01:0
+2025-08-09 16:33:14,604 | PanelControlView | DEBUG | RX COM3-> b'LED2:OFF\nL02:0'
+2025-08-09 16:33:14,604 | PanelControlView | DEBUG | Procesando: LED2:OFF
+2025-08-09 16:33:14,605 | PanelControlView | DEBUG | Procesando: L02:0
+2025-08-09 16:33:21,839 | PanelControlView | DEBUG | RX COM3-> b'P02:1'
+2025-08-09 16:33:21,840 | PanelControlView | DEBUG | Procesando: P02:1
+2025-08-09 16:33:21,852 | PanelControlView | DEBUG | TX: DISP:1 -> 50
+2025-08-09 16:33:21,944 | PanelControlView | DEBUG | RX COM3-> b'DISP:1\nOK:DISP:1'
+2025-08-09 16:33:21,945 | PanelControlView | DEBUG | Procesando: DISP:1
+2025-08-09 16:33:21,946 | PanelControlView | DEBUG | Procesando: OK:DISP:1
+2025-08-09 16:33:27,388 | PanelControlView | DEBUG | RX COM3-> b'P02:1'
+2025-08-09 16:33:27,389 | PanelControlView | DEBUG | Procesando: P02:1
+2025-08-09 16:33:27,396 | PanelControlView | DEBUG | TX: DISP:1 -> 50
+2025-08-09 16:33:27,452 | PanelControlView | DEBUG | RX COM3-> b'DISP:1\nOK:DISP:1'
+2025-08-09 16:33:27,453 | PanelControlView | DEBUG | Procesando: DISP:1
+2025-08-09 16:33:27,454 | PanelControlView | DEBUG | Procesando: OK:DISP:1
+2025-08-09 16:33:32,453 | PanelControlView | DEBUG | RX COM3-> b'P02:1'
+2025-08-09 16:33:32,455 | PanelControlView | DEBUG | Procesando: P02:1
+2025-08-09 16:33:32,460 | PanelControlView | DEBUG | TX: DISP:1 -> 50
+2025-08-09 16:33:32,517 | PanelControlView | DEBUG | RX COM3-> b'DISP:1\nOK:DISP:1'
+2025-08-09 16:33:32,518 | PanelControlView | DEBUG | Procesando: DISP:1
+2025-08-09 16:33:32,519 | PanelControlView | DEBUG | Procesando: OK:DISP:1
+2025-08-09 16:33:35,059 | PanelControlView | DEBUG | RX COM3-> b'P02:1'
+2025-08-09 16:33:35,060 | PanelControlView | DEBUG | Procesando: P02:1
+2025-08-09 16:33:35,065 | PanelControlView | DEBUG | TX: DISP:1 -> 50
+2025-08-09 16:33:35,124 | PanelControlView | DEBUG | RX COM3-> b'DISP:1\nOK:DISP:1'
+2025-08-09 16:33:35,125 | PanelControlView | DEBUG | Procesando: DISP:1
+2025-08-09 16:33:35,126 | PanelControlView | DEBUG | Procesando: OK:DISP:1
+2025-08-09 16:33:36,753 | PanelControlView | DEBUG | RX COM3-> b'P02:1'
+2025-08-09 16:33:36,754 | PanelControlView | DEBUG | Procesando: P02:1
+2025-08-09 16:33:36,759 | PanelControlView | DEBUG | TX: DISP:1 -> 50
+2025-08-09 16:33:36,808 | PanelControlView | DEBUG | RX COM3-> b'DISP:1\nOK:DISP:1'
+2025-08-09 16:33:36,809 | PanelControlView | DEBUG | Procesando: DISP:1
+2025-08-09 16:33:36,810 | PanelControlView | DEBUG | Procesando: OK:DISP:1
+2025-08-09 16:33:38,533 | PanelControlView | DEBUG | RX COM3-> b'P02:1'
+2025-08-09 16:33:38,534 | PanelControlView | DEBUG | Procesando: P02:1
+2025-08-09 16:33:38,540 | PanelControlView | DEBUG | TX: DISP:1 -> 50
+2025-08-09 16:33:38,589 | PanelControlView | DEBUG | RX COM3-> b'DISP:1\nOK:DISP:1'
+2025-08-09 16:33:38,590 | PanelControlView | DEBUG | Procesando: DISP:1
+2025-08-09 16:33:38,591 | PanelControlView | DEBUG | Procesando: OK:DISP:1
+2025-08-09 16:33:39,623 | PanelControlView | DEBUG | RX COM3-> b'P02:1'
+2025-08-09 16:33:39,624 | PanelControlView | DEBUG | Procesando: P02:1
+2025-08-09 16:33:39,629 | PanelControlView | DEBUG | TX: DISP:1 -> 50
+2025-08-09 16:33:39,687 | PanelControlView | DEBUG | RX COM3-> b'DISP:1\nOK:DISP:1'
+2025-08-09 16:33:39,688 | PanelControlView | DEBUG | Procesando: DISP:1
+2025-08-09 16:33:39,689 | PanelControlView | DEBUG | Procesando: OK:DISP:1
+2025-08-09 16:33:40,495 | PanelControlView | DEBUG | RX COM3-> b'P02:1'
+2025-08-09 16:33:40,496 | PanelControlView | DEBUG | Procesando: P02:1
+2025-08-09 16:33:40,501 | PanelControlView | DEBUG | TX: DISP:1 -> 50
+2025-08-09 16:33:40,553 | PanelControlView | DEBUG | RX COM3-> b'DISP:1\nOK:DISP:1'
+2025-08-09 16:33:40,555 | PanelControlView | DEBUG | Procesando: DISP:1
+2025-08-09 16:33:40,555 | PanelControlView | DEBUG | Procesando: OK:DISP:1
+2025-08-09 16:33:41,263 | PanelControlView | DEBUG | RX COM3-> b'P02:1'
+2025-08-09 16:33:41,264 | PanelControlView | DEBUG | Procesando: P02:1
+2025-08-09 16:33:41,269 | PanelControlView | DEBUG | TX: DISP:1 -> 50
+2025-08-09 16:33:41,322 | PanelControlView | DEBUG | RX COM3-> b'DISP:1\nOK:DISP:1'
+2025-08-09 16:33:41,323 | PanelControlView | DEBUG | Procesando: DISP:1
+2025-08-09 16:33:41,324 | PanelControlView | DEBUG | Procesando: OK:DISP:1
+2025-08-09 16:33:42,038 | PanelControlView | DEBUG | RX COM3-> b'P02:1'
+2025-08-09 16:33:42,039 | PanelControlView | DEBUG | Procesando: P02:1
+2025-08-09 16:33:42,044 | PanelControlView | DEBUG | TX: DISP:1 -> 50
+2025-08-09 16:33:42,097 | PanelControlView | DEBUG | RX COM3-> b'DISP:1\nOK:DISP:1'
+2025-08-09 16:33:42,098 | PanelControlView | DEBUG | Procesando: DISP:1
+2025-08-09 16:33:42,099 | PanelControlView | DEBUG | Procesando: OK:DISP:1
+2025-08-09 16:33:42,763 | PanelControlView | DEBUG | RX COM3-> b'P02:1'
+2025-08-09 16:33:42,764 | PanelControlView | DEBUG | Procesando: P02:1
+2025-08-09 16:33:42,771 | PanelControlView | DEBUG | TX: DISP:1 -> 50
+2025-08-09 16:33:42,829 | PanelControlView | DEBUG | RX COM3-> b'DISP:1\nOK:DISP:1'
+2025-08-09 16:33:42,830 | PanelControlView | DEBUG | Procesando: DISP:1
+2025-08-09 16:33:42,831 | PanelControlView | DEBUG | Procesando: OK:DISP:1
+2025-08-09 16:34:06,434 | PanelControlView | INFO | Programa detenido a las 16:34:06
+2025-08-09 16:34:06,435 | PanelControlView | DEBUG | TX: LED2:OFF -> 100
+2025-08-09 16:34:13,411 | PanelControlView | INFO | Programa iniciado a las 16:34:13
+2025-08-09 16:34:13,412 | PanelControlView | DEBUG | TX: LED2:OFF -> 100
+2025-08-09 16:34:13,413 | PanelControlView | INFO | Config Led-01: ModoLuz.APAGADO, Led-02: ModoLuz.APAGADO
+2025-08-09 16:34:13,413 | PanelControlView | INFO | Config Pal-01: ModoPalanca.CRF, Pal-02: ModoPalanca.CRF
+2025-08-09 16:34:13,428 | PanelControlView | DEBUG | RX COM3-> b'LED1:OFF\nL01:0'
+2025-08-09 16:34:13,428 | PanelControlView | DEBUG | Procesando: LED1:OFF
+2025-08-09 16:34:13,429 | PanelControlView | DEBUG | Procesando: L01:0
+2025-08-09 16:34:13,514 | PanelControlView | DEBUG | RX COM3-> b'LED2:OFF\nL02:0'
+2025-08-09 16:34:13,515 | PanelControlView | DEBUG | Procesando: LED2:OFF
+2025-08-09 16:34:13,516 | PanelControlView | DEBUG | Procesando: L02:0
+2025-08-09 16:34:24,479 | PanelControlView | DEBUG | RX COM3-> b'P02:1'
+2025-08-09 16:34:24,480 | PanelControlView | DEBUG | Procesando: P02:1
+2025-08-09 16:34:24,485 | PanelControlView | DEBUG | TX: DISP:1 -> 50
+2025-08-09 16:34:24,538 | PanelControlView | DEBUG | RX COM3-> b'DISP:1\nOK:DISP:1'
+2025-08-09 16:34:24,540 | PanelControlView | DEBUG | Procesando: DISP:1
+2025-08-09 16:34:24,541 | PanelControlView | DEBUG | Procesando: OK:DISP:1
+2025-08-09 16:34:25,457 | PanelControlView | DEBUG | RX COM3-> b'P02:1'
+2025-08-09 16:34:25,458 | PanelControlView | DEBUG | Procesando: P02:1
+2025-08-09 16:34:25,463 | PanelControlView | DEBUG | TX: DISP:1 -> 50
+2025-08-09 16:34:25,507 | PanelControlView | DEBUG | RX COM3-> b'DISP:1\nOK:DISP:1'
+2025-08-09 16:34:25,509 | PanelControlView | DEBUG | Procesando: DISP:1
+2025-08-09 16:34:25,510 | PanelControlView | DEBUG | Procesando: OK:DISP:1
+2025-08-09 16:34:26,268 | PanelControlView | DEBUG | RX COM3-> b'P02:1'
+2025-08-09 16:34:26,269 | PanelControlView | DEBUG | Procesando: P02:1
+2025-08-09 16:34:26,274 | PanelControlView | DEBUG | TX: DISP:1 -> 50
+2025-08-09 16:34:26,322 | PanelControlView | DEBUG | RX COM3-> b'DISP:1\nOK:DISP:1'
+2025-08-09 16:34:26,323 | PanelControlView | DEBUG | Procesando: DISP:1
+2025-08-09 16:34:26,324 | PanelControlView | DEBUG | Procesando: OK:DISP:1
+2025-08-09 16:34:27,092 | PanelControlView | DEBUG | RX COM3-> b'P02:1'
+2025-08-09 16:34:27,094 | PanelControlView | DEBUG | Procesando: P02:1
+2025-08-09 16:34:27,099 | PanelControlView | DEBUG | TX: DISP:1 -> 50
+2025-08-09 16:34:27,153 | PanelControlView | DEBUG | RX COM3-> b'DISP:1\nOK:DISP:1'
+2025-08-09 16:34:27,154 | PanelControlView | DEBUG | Procesando: DISP:1
+2025-08-09 16:34:27,155 | PanelControlView | DEBUG | Procesando: OK:DISP:1
+2025-08-09 16:34:28,037 | PanelControlView | DEBUG | RX COM3-> b'P02:1'
+2025-08-09 16:34:28,038 | PanelControlView | DEBUG | Procesando: P02:1
+2025-08-09 16:34:28,044 | PanelControlView | DEBUG | TX: DISP:1 -> 50
+2025-08-09 16:34:28,095 | PanelControlView | DEBUG | RX COM3-> b'DISP:1\nOK:DISP:1'
+2025-08-09 16:34:28,096 | PanelControlView | DEBUG | Procesando: DISP:1
+2025-08-09 16:34:28,097 | PanelControlView | DEBUG | Procesando: OK:DISP:1
+2025-08-09 16:34:29,297 | PanelControlView | DEBUG | RX COM3-> b'P02:1'
+2025-08-09 16:34:29,299 | PanelControlView | DEBUG | Procesando: P02:1
+2025-08-09 16:34:29,304 | PanelControlView | DEBUG | TX: DISP:1 -> 50
+2025-08-09 16:34:29,354 | PanelControlView | DEBUG | RX COM3-> b'DISP:1\nOK:DISP:1'
+2025-08-09 16:34:29,356 | PanelControlView | DEBUG | Procesando: DISP:1
+2025-08-09 16:34:29,356 | PanelControlView | DEBUG | Procesando: OK:DISP:1
+2025-08-09 16:34:29,983 | PanelControlView | DEBUG | RX COM3-> b'P02:1'
+2025-08-09 16:34:29,984 | PanelControlView | DEBUG | Procesando: P02:1
+2025-08-09 16:34:29,989 | PanelControlView | DEBUG | TX: DISP:1 -> 50
+2025-08-09 16:34:30,029 | PanelControlView | DEBUG | RX COM3-> b'DISP:1\nOK:DISP:1'
+2025-08-09 16:34:30,031 | PanelControlView | DEBUG | Procesando: DISP:1
+2025-08-09 16:34:30,032 | PanelControlView | DEBUG | Procesando: OK:DISP:1
+2025-08-09 16:34:31,438 | PanelControlView | DEBUG | RX COM3-> b'P01:1'
+2025-08-09 16:34:31,439 | PanelControlView | DEBUG | Procesando: P01:1
+2025-08-09 16:34:31,445 | PanelControlView | DEBUG | TX: DISP:1 -> 50
+2025-08-09 16:34:31,505 | PanelControlView | DEBUG | RX COM3-> b'DISP:1\nOK:DISP:1'
+2025-08-09 16:34:31,506 | PanelControlView | DEBUG | Procesando: DISP:1
+2025-08-09 16:34:31,507 | PanelControlView | DEBUG | Procesando: OK:DISP:1
+2025-08-09 16:34:32,182 | PanelControlView | DEBUG | RX COM3-> b'P01:1'
+2025-08-09 16:34:32,184 | PanelControlView | DEBUG | Procesando: P01:1
+2025-08-09 16:34:32,190 | PanelControlView | DEBUG | TX: DISP:1 -> 50
+2025-08-09 16:34:32,241 | PanelControlView | DEBUG | RX COM3-> b'DISP:1\nOK:DISP:1'
+2025-08-09 16:34:32,242 | PanelControlView | DEBUG | Procesando: DISP:1
+2025-08-09 16:34:32,243 | PanelControlView | DEBUG | Procesando: OK:DISP:1
+2025-08-09 16:34:32,945 | PanelControlView | DEBUG | RX COM3-> b'P01:1'
+2025-08-09 16:34:32,947 | PanelControlView | DEBUG | Procesando: P01:1
+2025-08-09 16:34:32,952 | PanelControlView | DEBUG | TX: DISP:1 -> 50
+2025-08-09 16:34:32,998 | PanelControlView | DEBUG | RX COM3-> b'DISP:1\nOK:DISP:1'
+2025-08-09 16:34:32,999 | PanelControlView | DEBUG | Procesando: DISP:1
+2025-08-09 16:34:33,000 | PanelControlView | DEBUG | Procesando: OK:DISP:1
+2025-08-09 16:34:33,586 | PanelControlView | DEBUG | RX COM3-> b'P01:1'
+2025-08-09 16:34:33,587 | PanelControlView | DEBUG | Procesando: P01:1
+2025-08-09 16:34:33,590 | PanelControlView | DEBUG | TX: DISP:1 -> 50
+2025-08-09 16:34:33,645 | PanelControlView | DEBUG | RX COM3-> b'DISP:1\nOK:DISP:1'
+2025-08-09 16:34:33,646 | PanelControlView | DEBUG | Procesando: DISP:1
+2025-08-09 16:34:33,646 | PanelControlView | DEBUG | Procesando: OK:DISP:1
+2025-08-09 16:34:34,347 | PanelControlView | DEBUG | RX COM3-> b'P01:1'
+2025-08-09 16:34:34,348 | PanelControlView | DEBUG | Procesando: P01:1
+2025-08-09 16:34:34,353 | PanelControlView | DEBUG | TX: DISP:1 -> 50
+2025-08-09 16:34:34,396 | PanelControlView | DEBUG | RX COM3-> b'DISP:1\nOK:DISP:1'
+2025-08-09 16:34:34,397 | PanelControlView | DEBUG | Procesando: DISP:1
+2025-08-09 16:34:34,398 | PanelControlView | DEBUG | Procesando: OK:DISP:1
+2025-08-09 16:34:34,897 | PanelControlView | DEBUG | RX COM3-> b'P01:1'
+2025-08-09 16:34:34,898 | PanelControlView | DEBUG | Procesando: P01:1
+2025-08-09 16:34:34,904 | PanelControlView | DEBUG | TX: DISP:1 -> 50
+2025-08-09 16:34:34,952 | PanelControlView | DEBUG | RX COM3-> b'DISP:1\nOK:DISP:1'
+2025-08-09 16:34:34,954 | PanelControlView | DEBUG | Procesando: DISP:1
+2025-08-09 16:34:34,955 | PanelControlView | DEBUG | Procesando: OK:DISP:1
+2025-08-09 16:34:36,338 | PanelControlView | DEBUG | RX COM3-> b'P02:1'
+2025-08-09 16:34:36,340 | PanelControlView | DEBUG | Procesando: P02:1
+2025-08-09 16:34:36,345 | PanelControlView | DEBUG | TX: DISP:1 -> 50
+2025-08-09 16:34:36,397 | PanelControlView | DEBUG | RX COM3-> b'DISP:1\nOK:DISP:1'
+2025-08-09 16:34:36,398 | PanelControlView | DEBUG | Procesando: DISP:1
+2025-08-09 16:34:36,399 | PanelControlView | DEBUG | Procesando: OK:DISP:1
+2025-08-09 16:34:37,552 | PanelControlView | DEBUG | RX COM3-> b'P02:1'
+2025-08-09 16:34:37,554 | PanelControlView | DEBUG | Procesando: P02:1
+2025-08-09 16:34:37,560 | PanelControlView | DEBUG | TX: DISP:1 -> 50
+2025-08-09 16:34:37,609 | PanelControlView | DEBUG | RX COM3-> b'DISP:1\nOK:DISP:1'
+2025-08-09 16:34:37,610 | PanelControlView | DEBUG | Procesando: DISP:1
+2025-08-09 16:34:37,611 | PanelControlView | DEBUG | Procesando: OK:DISP:1
+2025-08-09 16:34:37,982 | PanelControlView | DEBUG | RX COM3-> b'P02:1'
+2025-08-09 16:34:37,983 | PanelControlView | DEBUG | Procesando: P02:1
+2025-08-09 16:34:37,989 | PanelControlView | DEBUG | TX: DISP:1 -> 50
+2025-08-09 16:34:38,032 | PanelControlView | DEBUG | RX COM3-> b'DISP:1\nOK:DISP:1'
+2025-08-09 16:34:38,033 | PanelControlView | DEBUG | Procesando: DISP:1
+2025-08-09 16:34:38,034 | PanelControlView | DEBUG | Procesando: OK:DISP:1
+2025-08-09 16:34:38,655 | PanelControlView | DEBUG | RX COM3-> b'P02:1'
+2025-08-09 16:34:38,658 | PanelControlView | DEBUG | Procesando: P02:1
+2025-08-09 16:34:38,666 | PanelControlView | DEBUG | TX: DISP:1 -> 50
+2025-08-09 16:34:38,720 | PanelControlView | DEBUG | RX COM3-> b'DISP:1\nOK:DISP:1'
+2025-08-09 16:34:38,722 | PanelControlView | DEBUG | Procesando: DISP:1
+2025-08-09 16:34:38,723 | PanelControlView | DEBUG | Procesando: OK:DISP:1
+2025-08-09 16:34:39,382 | PanelControlView | DEBUG | RX COM3-> b'P02:1'
+2025-08-09 16:34:39,383 | PanelControlView | DEBUG | Procesando: P02:1
+2025-08-09 16:34:39,390 | PanelControlView | DEBUG | TX: DISP:1 -> 50
+2025-08-09 16:34:39,441 | PanelControlView | DEBUG | RX COM3-> b'DISP:1\nOK:DISP:1'
+2025-08-09 16:34:39,442 | PanelControlView | DEBUG | Procesando: DISP:1
+2025-08-09 16:34:39,443 | PanelControlView | DEBUG | Procesando: OK:DISP:1
+2025-08-09 16:34:40,747 | PanelControlView | DEBUG | RX COM3-> b'P02:1'
+2025-08-09 16:34:40,748 | PanelControlView | DEBUG | Procesando: P02:1
+2025-08-09 16:34:40,755 | PanelControlView | DEBUG | TX: DISP:1 -> 50
+2025-08-09 16:34:40,806 | PanelControlView | DEBUG | RX COM3-> b'DISP:1\nOK:DISP:1'
+2025-08-09 16:34:40,807 | PanelControlView | DEBUG | Procesando: DISP:1
+2025-08-09 16:34:40,808 | PanelControlView | DEBUG | Procesando: OK:DISP:1
+2025-08-09 16:34:41,582 | PanelControlView | DEBUG | RX COM3-> b'P02:1'
+2025-08-09 16:34:41,584 | PanelControlView | DEBUG | Procesando: P02:1
+2025-08-09 16:34:41,590 | PanelControlView | DEBUG | TX: DISP:1 -> 50
+2025-08-09 16:34:41,638 | PanelControlView | DEBUG | RX COM3-> b'DISP:1\nOK:DISP:1'
+2025-08-09 16:34:41,638 | PanelControlView | DEBUG | Procesando: DISP:1
+2025-08-09 16:34:41,639 | PanelControlView | DEBUG | Procesando: OK:DISP:1
+2025-08-09 16:34:42,019 | PanelControlView | DEBUG | RX COM3-> b'P02:1'
+2025-08-09 16:34:42,020 | PanelControlView | DEBUG | Procesando: P02:1
+2025-08-09 16:34:42,025 | PanelControlView | DEBUG | TX: DISP:1 -> 50
+2025-08-09 16:34:42,079 | PanelControlView | DEBUG | RX COM3-> b'DISP:1\nOK:DISP:1'
+2025-08-09 16:34:42,080 | PanelControlView | DEBUG | Procesando: DISP:1
+2025-08-09 16:34:42,081 | PanelControlView | DEBUG | Procesando: OK:DISP:1
+2025-08-09 16:34:42,509 | PanelControlView | DEBUG | RX COM3-> b'P02:1'
+2025-08-09 16:34:42,510 | PanelControlView | DEBUG | Procesando: P02:1
+2025-08-09 16:34:42,516 | PanelControlView | DEBUG | TX: DISP:1 -> 50
+2025-08-09 16:34:42,569 | PanelControlView | DEBUG | RX COM3-> b'DISP:1\nOK:DISP:1'
+2025-08-09 16:34:42,570 | PanelControlView | DEBUG | Procesando: DISP:1
+2025-08-09 16:34:42,571 | PanelControlView | DEBUG | Procesando: OK:DISP:1
+2025-08-09 16:34:42,806 | PanelControlView | DEBUG | RX COM3-> b'P02:1'
+2025-08-09 16:34:42,807 | PanelControlView | DEBUG | Procesando: P02:1
+2025-08-09 16:34:42,811 | PanelControlView | DEBUG | TX: DISP:1 -> 50
+2025-08-09 16:34:42,862 | PanelControlView | DEBUG | RX COM3-> b'DISP:1\nOK:DISP:1'
+2025-08-09 16:34:42,862 | PanelControlView | DEBUG | Procesando: DISP:1
+2025-08-09 16:34:42,863 | PanelControlView | DEBUG | Procesando: OK:DISP:1
+2025-08-09 16:34:43,056 | PanelControlView | DEBUG | RX COM3-> b'P02:1'
+2025-08-09 16:34:43,057 | PanelControlView | DEBUG | Procesando: P02:1
+2025-08-09 16:34:43,061 | PanelControlView | DEBUG | TX: DISP:1 -> 50
+2025-08-09 16:34:43,114 | PanelControlView | DEBUG | RX COM3-> b'DISP:1\nOK:DISP:1'
+2025-08-09 16:34:43,114 | PanelControlView | DEBUG | Procesando: DISP:1
+2025-08-09 16:34:43,116 | PanelControlView | DEBUG | Procesando: OK:DISP:1
+2025-08-09 16:34:43,322 | PanelControlView | DEBUG | RX COM3-> b'P02:1'
+2025-08-09 16:34:43,323 | PanelControlView | DEBUG | Procesando: P02:1
+2025-08-09 16:34:43,330 | PanelControlView | DEBUG | TX: DISP:1 -> 50
+2025-08-09 16:34:43,382 | PanelControlView | DEBUG | RX COM3-> b'DISP:1\nOK:DISP:1'
+2025-08-09 16:34:43,383 | PanelControlView | DEBUG | Procesando: DISP:1
+2025-08-09 16:34:43,384 | PanelControlView | DEBUG | Procesando: OK:DISP:1
+2025-08-09 16:34:43,528 | PanelControlView | DEBUG | RX COM3-> b'P02:1'
+2025-08-09 16:34:43,529 | PanelControlView | DEBUG | Procesando: P02:1
+2025-08-09 16:34:43,535 | PanelControlView | DEBUG | TX: DISP:1 -> 50
+2025-08-09 16:34:43,583 | PanelControlView | DEBUG | RX COM3-> b'DISP:1\nOK:DISP:1'
+2025-08-09 16:34:43,585 | PanelControlView | DEBUG | Procesando: DISP:1
+2025-08-09 16:34:43,586 | PanelControlView | DEBUG | Procesando: OK:DISP:1
+2025-08-09 16:34:46,249 | PanelControlView | DEBUG | RX COM3-> b'P01:1'
+2025-08-09 16:34:46,250 | PanelControlView | DEBUG | Procesando: P01:1
+2025-08-09 16:34:46,256 | PanelControlView | DEBUG | TX: DISP:1 -> 50
+2025-08-09 16:34:46,299 | PanelControlView | DEBUG | RX COM3-> b'DISP:1\nOK:DISP:1'
+2025-08-09 16:34:46,300 | PanelControlView | DEBUG | Procesando: DISP:1
+2025-08-09 16:34:46,301 | PanelControlView | DEBUG | Procesando: OK:DISP:1
+2025-08-09 16:34:46,382 | PanelControlView | DEBUG | RX COM3-> b'P01:1'
+2025-08-09 16:34:46,383 | PanelControlView | DEBUG | Procesando: P01:1
+2025-08-09 16:34:46,389 | PanelControlView | DEBUG | TX: DISP:1 -> 50
+2025-08-09 16:34:46,437 | PanelControlView | DEBUG | RX COM3-> b'DISP:1\nOK:DISP:1'
+2025-08-09 16:34:46,438 | PanelControlView | DEBUG | Procesando: DISP:1
+2025-08-09 16:34:46,439 | PanelControlView | DEBUG | Procesando: OK:DISP:1
+2025-08-09 16:34:46,657 | PanelControlView | DEBUG | RX COM3-> b'P01:1'
+2025-08-09 16:34:46,659 | PanelControlView | DEBUG | Procesando: P01:1
+2025-08-09 16:34:46,664 | PanelControlView | DEBUG | TX: DISP:1 -> 50
+2025-08-09 16:34:46,715 | PanelControlView | DEBUG | RX COM3-> b'DISP:1\nOK:DISP:1'
+2025-08-09 16:34:46,716 | PanelControlView | DEBUG | Procesando: DISP:1
+2025-08-09 16:34:46,717 | PanelControlView | DEBUG | Procesando: OK:DISP:1
+2025-08-09 16:34:46,979 | PanelControlView | DEBUG | RX COM3-> b'P01:1'
+2025-08-09 16:34:46,980 | PanelControlView | DEBUG | Procesando: P01:1
+2025-08-09 16:34:46,986 | PanelControlView | DEBUG | TX: DISP:1 -> 50
+2025-08-09 16:34:47,029 | PanelControlView | DEBUG | RX COM3-> b'DISP:1\nOK:DISP:1'
+2025-08-09 16:34:47,030 | PanelControlView | DEBUG | Procesando: DISP:1
+2025-08-09 16:34:47,031 | PanelControlView | DEBUG | Procesando: OK:DISP:1
+2025-08-09 16:34:51,637 | PanelControlView | INFO | Programa detenido a las 16:34:51
+2025-08-09 16:34:51,638 | PanelControlView | DEBUG | TX: LED2:OFF -> 100
+2025-08-09 16:34:51,643 | PanelControlView | DEBUG | RX COM3-> b'LED1:OFF\nL01:0'
+2025-08-09 16:34:51,644 | PanelControlView | WARNING | Program not runing, ignore all data
+2025-08-09 16:34:51,736 | PanelControlView | DEBUG | RX COM3-> b'LED2:OFF\nL02:0'
+2025-08-09 16:34:51,737 | PanelControlView | WARNING | Program not runing, ignore all data
+2025-08-09 16:34:55,173 | PanelControlView | INFO | Programa iniciado a las 16:34:55
+2025-08-09 16:34:55,174 | PanelControlView | DEBUG | TX: LED2:ON -> 100
+2025-08-09 16:34:55,175 | PanelControlView | INFO | Config Led-01: ModoLuz.ENCENDIDO, Led-02: ModoLuz.ENCENDIDO
+2025-08-09 16:34:55,176 | PanelControlView | INFO | Config Pal-01: ModoPalanca.CRF, Pal-02: ModoPalanca.CRF
+2025-08-09 16:34:55,215 | PanelControlView | DEBUG | RX COM3-> b'LED1:ON\nL01:1'
+2025-08-09 16:34:55,217 | PanelControlView | DEBUG | Procesando: LED1:ON
+2025-08-09 16:34:55,219 | PanelControlView | DEBUG | Procesando: L01:1
+2025-08-09 16:34:55,274 | PanelControlView | DEBUG | RX COM3-> b'LED2:ON\nL02:1'
+2025-08-09 16:34:55,275 | PanelControlView | DEBUG | Procesando: LED2:ON
+2025-08-09 16:34:55,276 | PanelControlView | DEBUG | Procesando: L02:1
+2025-08-09 16:35:00,942 | PanelControlView | DEBUG | RX COM3-> b'P02:1'
+2025-08-09 16:35:00,943 | PanelControlView | DEBUG | Procesando: P02:1
+2025-08-09 16:35:00,950 | PanelControlView | DEBUG | TX: DISP:1 -> 50
+2025-08-09 16:35:01,004 | PanelControlView | DEBUG | RX COM3-> b'DISP:1\nOK:DISP:1'
+2025-08-09 16:35:01,005 | PanelControlView | DEBUG | Procesando: DISP:1
+2025-08-09 16:35:01,006 | PanelControlView | DEBUG | Procesando: OK:DISP:1
+2025-08-09 16:35:02,592 | PanelControlView | DEBUG | RX COM3-> b'P02:1'
+2025-08-09 16:35:02,594 | PanelControlView | DEBUG | Procesando: P02:1
+2025-08-09 16:35:02,599 | PanelControlView | DEBUG | TX: DISP:1 -> 50
+2025-08-09 16:35:02,650 | PanelControlView | DEBUG | RX COM3-> b'DISP:1\nOK:DISP:1'
+2025-08-09 16:35:02,651 | PanelControlView | DEBUG | Procesando: DISP:1
+2025-08-09 16:35:02,652 | PanelControlView | DEBUG | Procesando: OK:DISP:1
+2025-08-09 16:35:03,633 | PanelControlView | DEBUG | RX COM3-> b'P02:1'
+2025-08-09 16:35:03,635 | PanelControlView | DEBUG | Procesando: P02:1
+2025-08-09 16:35:03,639 | PanelControlView | DEBUG | TX: DISP:1 -> 50
+2025-08-09 16:35:03,696 | PanelControlView | DEBUG | RX COM3-> b'DISP:1\nOK:DISP:1'
+2025-08-09 16:35:03,697 | PanelControlView | DEBUG | Procesando: DISP:1
+2025-08-09 16:35:03,698 | PanelControlView | DEBUG | Procesando: OK:DISP:1
+2025-08-09 16:35:04,523 | PanelControlView | DEBUG | RX COM3-> b'P02:1'
+2025-08-09 16:35:04,525 | PanelControlView | DEBUG | Procesando: P02:1
+2025-08-09 16:35:04,531 | PanelControlView | DEBUG | TX: DISP:1 -> 50
+2025-08-09 16:35:04,583 | PanelControlView | DEBUG | RX COM3-> b'DISP:1\nOK:DISP:1'
+2025-08-09 16:35:04,584 | PanelControlView | DEBUG | Procesando: DISP:1
+2025-08-09 16:35:04,585 | PanelControlView | DEBUG | Procesando: OK:DISP:1
+2025-08-09 16:35:05,432 | PanelControlView | DEBUG | RX COM3-> b'P02:1'
+2025-08-09 16:35:05,433 | PanelControlView | DEBUG | Procesando: P02:1
+2025-08-09 16:35:05,438 | PanelControlView | DEBUG | TX: DISP:1 -> 50
+2025-08-09 16:35:05,487 | PanelControlView | DEBUG | RX COM3-> b'DISP:1\nOK:DISP:1'
+2025-08-09 16:35:05,489 | PanelControlView | DEBUG | Procesando: DISP:1
+2025-08-09 16:35:05,490 | PanelControlView | DEBUG | Procesando: OK:DISP:1
+2025-08-09 16:35:06,162 | PanelControlView | DEBUG | RX COM3-> b'P02:1'
+2025-08-09 16:35:06,163 | PanelControlView | DEBUG | Procesando: P02:1
+2025-08-09 16:35:06,168 | PanelControlView | DEBUG | TX: DISP:1 -> 50
+2025-08-09 16:35:06,211 | PanelControlView | DEBUG | RX COM3-> b'DISP:1\nOK:DISP:1'
+2025-08-09 16:35:06,212 | PanelControlView | DEBUG | Procesando: DISP:1
+2025-08-09 16:35:06,213 | PanelControlView | DEBUG | Procesando: OK:DISP:1
+2025-08-09 16:35:06,782 | PanelControlView | DEBUG | RX COM3-> b'P02:1'
+2025-08-09 16:35:06,783 | PanelControlView | DEBUG | Procesando: P02:1
+2025-08-09 16:35:06,788 | PanelControlView | DEBUG | TX: DISP:1 -> 50
+2025-08-09 16:35:06,837 | PanelControlView | DEBUG | RX COM3-> b'DISP:1\nOK:DISP:1'
+2025-08-09 16:35:06,838 | PanelControlView | DEBUG | Procesando: DISP:1
+2025-08-09 16:35:06,839 | PanelControlView | DEBUG | Procesando: OK:DISP:1
+2025-08-09 16:35:07,267 | PanelControlView | DEBUG | RX COM3-> b'P02:1'
+2025-08-09 16:35:07,269 | PanelControlView | DEBUG | Procesando: P02:1
+2025-08-09 16:35:07,275 | PanelControlView | DEBUG | TX: DISP:1 -> 50
+2025-08-09 16:35:07,325 | PanelControlView | DEBUG | RX COM3-> b'DISP:1\nOK:DISP:1'
+2025-08-09 16:35:07,327 | PanelControlView | DEBUG | Procesando: DISP:1
+2025-08-09 16:35:07,328 | PanelControlView | DEBUG | Procesando: OK:DISP:1
+2025-08-09 16:35:07,733 | PanelControlView | DEBUG | RX COM3-> b'P02:1'
+2025-08-09 16:35:07,735 | PanelControlView | DEBUG | Procesando: P02:1
+2025-08-09 16:35:07,739 | PanelControlView | DEBUG | TX: DISP:1 -> 50
+2025-08-09 16:35:07,789 | PanelControlView | DEBUG | RX COM3-> b'DISP:1\nOK:DISP:1'
+2025-08-09 16:35:07,790 | PanelControlView | DEBUG | Procesando: DISP:1
+2025-08-09 16:35:07,792 | PanelControlView | DEBUG | Procesando: OK:DISP:1
+2025-08-09 16:35:08,267 | PanelControlView | DEBUG | RX COM3-> b'P02:1'
+2025-08-09 16:35:08,268 | PanelControlView | DEBUG | Procesando: P02:1
+2025-08-09 16:35:08,273 | PanelControlView | DEBUG | TX: DISP:1 -> 50
+2025-08-09 16:35:08,313 | PanelControlView | DEBUG | RX COM3-> b'DISP:1\nOK:DISP:1'
+2025-08-09 16:35:08,325 | PanelControlView | DEBUG | Procesando: DISP:1
+2025-08-09 16:35:08,326 | PanelControlView | DEBUG | Procesando: OK:DISP:1
+2025-08-09 16:35:08,667 | PanelControlView | DEBUG | RX COM3-> b'P02:1'
+2025-08-09 16:35:08,669 | PanelControlView | DEBUG | Procesando: P02:1
+2025-08-09 16:35:08,674 | PanelControlView | DEBUG | TX: DISP:1 -> 50
+2025-08-09 16:35:08,725 | PanelControlView | DEBUG | RX COM3-> b'DISP:1\nOK:DISP:1'
+2025-08-09 16:35:08,726 | PanelControlView | DEBUG | Procesando: DISP:1
+2025-08-09 16:35:08,727 | PanelControlView | DEBUG | Procesando: OK:DISP:1
+2025-08-09 16:35:08,972 | PanelControlView | DEBUG | RX COM3-> b'P02:1'
+2025-08-09 16:35:08,973 | PanelControlView | DEBUG | Procesando: P02:1
+2025-08-09 16:35:08,979 | PanelControlView | DEBUG | TX: DISP:1 -> 50
+2025-08-09 16:35:09,032 | PanelControlView | DEBUG | RX COM3-> b'DISP:1\nOK:DISP:1'
+2025-08-09 16:35:09,033 | PanelControlView | DEBUG | Procesando: DISP:1
+2025-08-09 16:35:09,034 | PanelControlView | DEBUG | Procesando: OK:DISP:1
+2025-08-09 16:35:09,227 | PanelControlView | DEBUG | RX COM3-> b'P02:1'
+2025-08-09 16:35:09,228 | PanelControlView | DEBUG | Procesando: P02:1
+2025-08-09 16:35:09,233 | PanelControlView | DEBUG | TX: DISP:1 -> 50
+2025-08-09 16:35:09,278 | PanelControlView | DEBUG | RX COM3-> b'DISP:1\nOK:DISP:1'
+2025-08-09 16:35:09,279 | PanelControlView | DEBUG | Procesando: DISP:1
+2025-08-09 16:35:09,280 | PanelControlView | DEBUG | Procesando: OK:DISP:1
+2025-08-09 16:35:09,537 | PanelControlView | DEBUG | RX COM3-> b'P02:1'
+2025-08-09 16:35:09,538 | PanelControlView | DEBUG | Procesando: P02:1
+2025-08-09 16:35:09,543 | PanelControlView | DEBUG | TX: DISP:1 -> 50
+2025-08-09 16:35:09,596 | PanelControlView | DEBUG | RX COM3-> b'DISP:1\nOK:DISP:1'
+2025-08-09 16:35:09,597 | PanelControlView | DEBUG | Procesando: DISP:1
+2025-08-09 16:35:09,599 | PanelControlView | DEBUG | Procesando: OK:DISP:1
+2025-08-09 16:35:09,842 | PanelControlView | DEBUG | RX COM3-> b'P02:1'
+2025-08-09 16:35:09,843 | PanelControlView | DEBUG | Procesando: P02:1
+2025-08-09 16:35:09,848 | PanelControlView | DEBUG | TX: DISP:1 -> 50
+2025-08-09 16:35:09,899 | PanelControlView | DEBUG | RX COM3-> b'DISP:1\nOK:DISP:1'
+2025-08-09 16:35:09,900 | PanelControlView | DEBUG | Procesando: DISP:1
+2025-08-09 16:35:09,901 | PanelControlView | DEBUG | Procesando: OK:DISP:1
+2025-08-09 16:35:10,372 | PanelControlView | DEBUG | RX COM3-> b'P02:1'
+2025-08-09 16:35:10,373 | PanelControlView | DEBUG | Procesando: P02:1
+2025-08-09 16:35:10,378 | PanelControlView | DEBUG | TX: DISP:1 -> 50
+2025-08-09 16:35:10,427 | PanelControlView | DEBUG | RX COM3-> b'DISP:1\nOK:DISP:1'
+2025-08-09 16:35:10,428 | PanelControlView | DEBUG | Procesando: DISP:1
+2025-08-09 16:35:10,429 | PanelControlView | DEBUG | Procesando: OK:DISP:1
+2025-08-09 16:35:10,647 | PanelControlView | DEBUG | RX COM3-> b'P02:1'
+2025-08-09 16:35:10,648 | PanelControlView | DEBUG | Procesando: P02:1
+2025-08-09 16:35:10,655 | PanelControlView | DEBUG | TX: DISP:1 -> 50
+2025-08-09 16:35:10,705 | PanelControlView | DEBUG | RX COM3-> b'DISP:1\nOK:DISP:1'
+2025-08-09 16:35:10,706 | PanelControlView | DEBUG | Procesando: DISP:1
+2025-08-09 16:35:10,707 | PanelControlView | DEBUG | Procesando: OK:DISP:1
+2025-08-09 16:35:10,927 | PanelControlView | DEBUG | RX COM3-> b'P02:1'
+2025-08-09 16:35:10,928 | PanelControlView | DEBUG | Procesando: P02:1
+2025-08-09 16:35:10,933 | PanelControlView | DEBUG | TX: DISP:1 -> 50
+2025-08-09 16:35:10,984 | PanelControlView | DEBUG | RX COM3-> b'DISP:1\nOK:DISP:1'
+2025-08-09 16:35:10,985 | PanelControlView | DEBUG | Procesando: DISP:1
+2025-08-09 16:35:10,986 | PanelControlView | DEBUG | Procesando: OK:DISP:1
+2025-08-09 16:35:11,203 | PanelControlView | DEBUG | RX COM3-> b'P02:1'
+2025-08-09 16:35:11,204 | PanelControlView | DEBUG | Procesando: P02:1
+2025-08-09 16:35:11,210 | PanelControlView | DEBUG | TX: DISP:1 -> 50
+2025-08-09 16:35:11,249 | PanelControlView | DEBUG | RX COM3-> b'DISP:1\nOK:DISP:1'
+2025-08-09 16:35:11,251 | PanelControlView | DEBUG | Procesando: DISP:1
+2025-08-09 16:35:11,252 | PanelControlView | DEBUG | Procesando: OK:DISP:1
+2025-08-09 16:35:11,472 | PanelControlView | DEBUG | RX COM3-> b'P02:1'
+2025-08-09 16:35:11,473 | PanelControlView | DEBUG | Procesando: P02:1
+2025-08-09 16:35:11,478 | PanelControlView | DEBUG | TX: DISP:1 -> 50
+2025-08-09 16:35:11,519 | PanelControlView | DEBUG | RX COM3-> b'DISP:1\nOK:DISP:1'
+2025-08-09 16:35:11,520 | PanelControlView | DEBUG | Procesando: DISP:1
+2025-08-09 16:35:11,521 | PanelControlView | DEBUG | Procesando: OK:DISP:1
+2025-08-09 16:35:11,727 | PanelControlView | DEBUG | RX COM3-> b'P02:1'
+2025-08-09 16:35:11,728 | PanelControlView | DEBUG | Procesando: P02:1
+2025-08-09 16:35:11,734 | PanelControlView | DEBUG | TX: DISP:1 -> 50
+2025-08-09 16:35:11,793 | PanelControlView | DEBUG | RX COM3-> b'DISP:1\nOK:DISP:1'
+2025-08-09 16:35:11,794 | PanelControlView | DEBUG | Procesando: DISP:1
+2025-08-09 16:35:11,795 | PanelControlView | DEBUG | Procesando: OK:DISP:1
+2025-08-09 16:35:12,002 | PanelControlView | DEBUG | RX COM3-> b'P02:1'
+2025-08-09 16:35:12,003 | PanelControlView | DEBUG | Procesando: P02:1
+2025-08-09 16:35:12,008 | PanelControlView | DEBUG | TX: DISP:1 -> 50
+2025-08-09 16:35:12,056 | PanelControlView | DEBUG | RX COM3-> b'DISP:1\nERROR:Command queue full:\r\nERROR:Unrecognized command:Unrecognized command: DISP:1'
+2025-08-09 16:35:12,058 | PanelControlView | DEBUG | Procesando: DISP:1
+2025-08-09 16:35:12,059 | PanelControlView | DEBUG | Procesando: ERROR:Command
+2025-08-09 16:35:12,060 | PanelControlView | DEBUG | Procesando: queue
+2025-08-09 16:35:12,060 | PanelControlView | WARNING | Format invalid cmd: queue
+2025-08-09 16:35:12,061 | PanelControlView | DEBUG | Procesando: full:
+2025-08-09 16:35:12,062 | PanelControlView | DEBUG | Procesando: ERROR:Unrecognized
+2025-08-09 16:35:12,063 | PanelControlView | DEBUG | Procesando: command:Unrecognized
+2025-08-09 16:35:12,064 | PanelControlView | DEBUG | Procesando: command:
+2025-08-09 16:35:12,065 | PanelControlView | DEBUG | Procesando: DISP:1
+2025-08-09 16:35:12,268 | PanelControlView | DEBUG | RX COM3-> b'P02:1'
+2025-08-09 16:35:12,269 | PanelControlView | DEBUG | Procesando: P02:1
+2025-08-09 16:35:12,274 | PanelControlView | DEBUG | TX: DISP:1 -> 50
+2025-08-09 16:35:12,320 | PanelControlView | DEBUG | RX COM3-> b'DISP:1\nOK:DISP:1'
+2025-08-09 16:35:12,321 | PanelControlView | DEBUG | Procesando: DISP:1
+2025-08-09 16:35:12,322 | PanelControlView | DEBUG | Procesando: OK:DISP:1
+2025-08-09 16:35:12,532 | PanelControlView | DEBUG | RX COM3-> b'P02:1'
+2025-08-09 16:35:12,534 | PanelControlView | DEBUG | Procesando: P02:1
+2025-08-09 16:35:12,539 | PanelControlView | DEBUG | TX: DISP:1 -> 50
+2025-08-09 16:35:12,591 | PanelControlView | DEBUG | RX COM3-> b'DISP:1\nERROR:Command queue full:\r\nERROR:Unrecognized command:Unrecognized command: DISP:1'
+2025-08-09 16:35:12,592 | PanelControlView | DEBUG | Procesando: DISP:1
+2025-08-09 16:35:12,593 | PanelControlView | DEBUG | Procesando: ERROR:Command
+2025-08-09 16:35:12,594 | PanelControlView | DEBUG | Procesando: queue
+2025-08-09 16:35:12,595 | PanelControlView | WARNING | Format invalid cmd: queue
+2025-08-09 16:35:12,596 | PanelControlView | DEBUG | Procesando: full:
+2025-08-09 16:35:12,597 | PanelControlView | DEBUG | Procesando: ERROR:Unrecognized
+2025-08-09 16:35:12,598 | PanelControlView | DEBUG | Procesando: command:Unrecognized
+2025-08-09 16:35:12,600 | PanelControlView | DEBUG | Procesando: command:
+2025-08-09 16:35:12,601 | PanelControlView | DEBUG | Procesando: DISP:1
+2025-08-09 16:35:12,807 | PanelControlView | DEBUG | RX COM3-> b'P02:1'
+2025-08-09 16:35:12,808 | PanelControlView | DEBUG | Procesando: P02:1
+2025-08-09 16:35:12,814 | PanelControlView | DEBUG | TX: DISP:1 -> 50
+2025-08-09 16:35:12,866 | PanelControlView | DEBUG | RX COM3-> b'DISP:1\nOK:DISP:1'
+2025-08-09 16:35:12,868 | PanelControlView | DEBUG | Procesando: DISP:1
+2025-08-09 16:35:12,869 | PanelControlView | DEBUG | Procesando: OK:DISP:1
+2025-08-09 16:35:13,072 | PanelControlView | DEBUG | RX COM3-> b'P02:1'
+2025-08-09 16:35:13,073 | PanelControlView | DEBUG | Procesando: P02:1
+2025-08-09 16:35:13,078 | PanelControlView | DEBUG | TX: DISP:1 -> 50
+2025-08-09 16:35:13,132 | PanelControlView | DEBUG | RX COM3-> b'DISP:1\nERROR:Command queue full:\r\nERROR:Unrecognized command:Unrecognized command: DISP:1'
+2025-08-09 16:35:13,133 | PanelControlView | DEBUG | Procesando: DISP:1
+2025-08-09 16:35:13,134 | PanelControlView | DEBUG | Procesando: ERROR:Command
+2025-08-09 16:35:13,135 | PanelControlView | DEBUG | Procesando: queue
+2025-08-09 16:35:13,136 | PanelControlView | WARNING | Format invalid cmd: queue
+2025-08-09 16:35:13,138 | PanelControlView | DEBUG | Procesando: full:
+2025-08-09 16:35:13,139 | PanelControlView | DEBUG | Procesando: ERROR:Unrecognized
+2025-08-09 16:35:13,140 | PanelControlView | DEBUG | Procesando: command:Unrecognized
+2025-08-09 16:35:13,141 | PanelControlView | DEBUG | Procesando: command:
+2025-08-09 16:35:13,142 | PanelControlView | DEBUG | Procesando: DISP:1
+2025-08-09 16:35:13,357 | PanelControlView | DEBUG | RX COM3-> b'P02:1'
+2025-08-09 16:35:13,358 | PanelControlView | DEBUG | Procesando: P02:1
+2025-08-09 16:35:13,364 | PanelControlView | DEBUG | TX: DISP:1 -> 50
+2025-08-09 16:35:13,417 | PanelControlView | DEBUG | RX COM3-> b'DISP:1\nOK:DISP:1'
+2025-08-09 16:35:13,418 | PanelControlView | DEBUG | Procesando: DISP:1
+2025-08-09 16:35:13,419 | PanelControlView | DEBUG | Procesando: OK:DISP:1
+2025-08-09 16:35:13,627 | PanelControlView | DEBUG | RX COM3-> b'P02:1'
+2025-08-09 16:35:13,628 | PanelControlView | DEBUG | Procesando: P02:1
+2025-08-09 16:35:13,633 | PanelControlView | DEBUG | TX: DISP:1 -> 50
+2025-08-09 16:35:13,688 | PanelControlView | DEBUG | RX COM3-> b'DISP:1\nERROR:Command queue full:\r\nERROR:Unrecognized command:Unrecognized command: DISP:1'
+2025-08-09 16:35:13,689 | PanelControlView | DEBUG | Procesando: DISP:1
+2025-08-09 16:35:13,690 | PanelControlView | DEBUG | Procesando: ERROR:Command
+2025-08-09 16:35:13,691 | PanelControlView | DEBUG | Procesando: queue
+2025-08-09 16:35:13,692 | PanelControlView | WARNING | Format invalid cmd: queue
+2025-08-09 16:35:13,693 | PanelControlView | DEBUG | Procesando: full:
+2025-08-09 16:35:13,694 | PanelControlView | DEBUG | Procesando: ERROR:Unrecognized
+2025-08-09 16:35:13,694 | PanelControlView | DEBUG | Procesando: command:Unrecognized
+2025-08-09 16:35:13,696 | PanelControlView | DEBUG | Procesando: command:
+2025-08-09 16:35:13,697 | PanelControlView | DEBUG | Procesando: DISP:1
+2025-08-09 16:35:13,897 | PanelControlView | DEBUG | RX COM3-> b'P02:1'
+2025-08-09 16:35:13,898 | PanelControlView | DEBUG | Procesando: P02:1
+2025-08-09 16:35:13,903 | PanelControlView | DEBUG | TX: DISP:1 -> 50
+2025-08-09 16:35:13,951 | PanelControlView | DEBUG | RX COM3-> b'DISP:1'
+2025-08-09 16:35:13,952 | PanelControlView | DEBUG | Procesando: DISP:1
+2025-08-09 16:35:13,954 | PanelControlView | DEBUG | RX COM3-> b'OK:DISP:1'
+2025-08-09 16:35:13,955 | PanelControlView | DEBUG | Procesando: OK:DISP:1
+2025-08-09 16:35:14,152 | PanelControlView | DEBUG | RX COM3-> b'P02:1'
+2025-08-09 16:35:14,153 | PanelControlView | DEBUG | Procesando: P02:1
+2025-08-09 16:35:14,158 | PanelControlView | DEBUG | TX: DISP:1 -> 50
+2025-08-09 16:35:14,199 | PanelControlView | DEBUG | RX COM3-> b'DISP:1\nERROR:Command queue full:\r\nERROR:Unrecognized command:Unrecognized command: DISP:1'
+2025-08-09 16:35:14,201 | PanelControlView | DEBUG | Procesando: DISP:1
+2025-08-09 16:35:14,202 | PanelControlView | DEBUG | Procesando: ERROR:Command
+2025-08-09 16:35:14,203 | PanelControlView | DEBUG | Procesando: queue
+2025-08-09 16:35:14,204 | PanelControlView | WARNING | Format invalid cmd: queue
+2025-08-09 16:35:14,205 | PanelControlView | DEBUG | Procesando: full:
+2025-08-09 16:35:14,206 | PanelControlView | DEBUG | Procesando: ERROR:Unrecognized
+2025-08-09 16:35:14,207 | PanelControlView | DEBUG | Procesando: command:Unrecognized
+2025-08-09 16:35:14,208 | PanelControlView | DEBUG | Procesando: command:
+2025-08-09 16:35:14,209 | PanelControlView | DEBUG | Procesando: DISP:1
+2025-08-09 16:35:14,392 | PanelControlView | DEBUG | RX COM3-> b'P02:1'
+2025-08-09 16:35:14,393 | PanelControlView | DEBUG | Procesando: P02:1
+2025-08-09 16:35:14,398 | PanelControlView | DEBUG | TX: DISP:1 -> 50
+2025-08-09 16:35:14,455 | PanelControlView | DEBUG | RX COM3-> b'DISP:1\nOK:DISP:1'
+2025-08-09 16:35:14,457 | PanelControlView | DEBUG | Procesando: DISP:1
+2025-08-09 16:35:14,458 | PanelControlView | DEBUG | Procesando: OK:DISP:1
+2025-08-09 16:35:14,966 | PanelControlView | DEBUG | RX COM3-> b'P01:1'
+2025-08-09 16:35:14,968 | PanelControlView | DEBUG | Procesando: P01:1
+2025-08-09 16:35:14,973 | PanelControlView | DEBUG | TX: DISP:1 -> 50
+2025-08-09 16:35:15,017 | PanelControlView | DEBUG | RX COM3-> b'DISP:1\nOK:DISP:1'
+2025-08-09 16:35:15,018 | PanelControlView | DEBUG | Procesando: DISP:1
+2025-08-09 16:35:15,019 | PanelControlView | DEBUG | Procesando: OK:DISP:1
+2025-08-09 16:35:15,568 | PanelControlView | DEBUG | RX COM3-> b'P01:1'
+2025-08-09 16:35:15,569 | PanelControlView | DEBUG | Procesando: P01:1
+2025-08-09 16:35:15,575 | PanelControlView | DEBUG | TX: DISP:1 -> 50
+2025-08-09 16:35:15,630 | PanelControlView | DEBUG | RX COM3-> b'DISP:1\nOK:DISP:1'
+2025-08-09 16:35:15,631 | PanelControlView | DEBUG | Procesando: DISP:1
+2025-08-09 16:35:15,632 | PanelControlView | DEBUG | Procesando: OK:DISP:1
+2025-08-09 16:35:15,937 | PanelControlView | DEBUG | RX COM3-> b'P01:1'
+2025-08-09 16:35:15,938 | PanelControlView | DEBUG | Procesando: P01:1
+2025-08-09 16:35:15,945 | PanelControlView | DEBUG | TX: DISP:1 -> 50
+2025-08-09 16:35:15,992 | PanelControlView | DEBUG | RX COM3-> b'DISP:1\nERROR:Command queue full:\r\nERROR:Unrecognized command:Unrecognized command: DISP:1'
+2025-08-09 16:35:15,993 | PanelControlView | DEBUG | Procesando: DISP:1
+2025-08-09 16:35:15,994 | PanelControlView | DEBUG | Procesando: ERROR:Command
+2025-08-09 16:35:15,995 | PanelControlView | DEBUG | Procesando: queue
+2025-08-09 16:35:15,997 | PanelControlView | WARNING | Format invalid cmd: queue
+2025-08-09 16:35:15,998 | PanelControlView | DEBUG | Procesando: full:
+2025-08-09 16:35:15,999 | PanelControlView | DEBUG | Procesando: ERROR:Unrecognized
+2025-08-09 16:35:16,000 | PanelControlView | DEBUG | Procesando: command:Unrecognized
+2025-08-09 16:35:16,001 | PanelControlView | DEBUG | Procesando: command:
+2025-08-09 16:35:16,002 | PanelControlView | DEBUG | Procesando: DISP:1
+2025-08-09 16:35:16,272 | PanelControlView | DEBUG | RX COM3-> b'P01:1'
+2025-08-09 16:35:16,273 | PanelControlView | DEBUG | Procesando: P01:1
+2025-08-09 16:35:16,279 | PanelControlView | DEBUG | TX: DISP:1 -> 50
+2025-08-09 16:35:16,334 | PanelControlView | DEBUG | RX COM3-> b'DISP:1\nOK:DISP:1'
+2025-08-09 16:35:16,335 | PanelControlView | DEBUG | Procesando: DISP:1
+2025-08-09 16:35:16,336 | PanelControlView | DEBUG | Procesando: OK:DISP:1
+2025-08-09 16:35:16,637 | PanelControlView | DEBUG | RX COM3-> b'P01:1'
+2025-08-09 16:35:16,638 | PanelControlView | DEBUG | Procesando: P01:1
+2025-08-09 16:35:16,644 | PanelControlView | DEBUG | TX: DISP:1 -> 50
+2025-08-09 16:35:16,698 | PanelControlView | DEBUG | RX COM3-> b'DISP:1\nOK:DISP:1'
+2025-08-09 16:35:16,699 | PanelControlView | DEBUG | Procesando: DISP:1
+2025-08-09 16:35:16,700 | PanelControlView | DEBUG | Procesando: OK:DISP:1
+2025-08-09 16:35:16,991 | PanelControlView | DEBUG | RX COM3-> b'P01:1'
+2025-08-09 16:35:16,993 | PanelControlView | DEBUG | Procesando: P01:1
+2025-08-09 16:35:16,998 | PanelControlView | DEBUG | TX: DISP:1 -> 50
+2025-08-09 16:35:17,049 | PanelControlView | DEBUG | RX COM3-> b'DISP:1\nERROR:Command queue full:\r\nERROR:Unrecognized command:Unrecognized command: DISP:1'
+2025-08-09 16:35:17,050 | PanelControlView | DEBUG | Procesando: DISP:1
+2025-08-09 16:35:17,051 | PanelControlView | DEBUG | Procesando: ERROR:Command
+2025-08-09 16:35:17,052 | PanelControlView | DEBUG | Procesando: queue
+2025-08-09 16:35:17,053 | PanelControlView | WARNING | Format invalid cmd: queue
+2025-08-09 16:35:17,054 | PanelControlView | DEBUG | Procesando: full:
+2025-08-09 16:35:17,055 | PanelControlView | DEBUG | Procesando: ERROR:Unrecognized
+2025-08-09 16:35:17,056 | PanelControlView | DEBUG | Procesando: command:Unrecognized
+2025-08-09 16:35:17,057 | PanelControlView | DEBUG | Procesando: command:
+2025-08-09 16:35:17,058 | PanelControlView | DEBUG | Procesando: DISP:1
+2025-08-09 16:35:17,302 | PanelControlView | DEBUG | RX COM3-> b'P01:1'
+2025-08-09 16:35:17,303 | PanelControlView | DEBUG | Procesando: P01:1
+2025-08-09 16:35:17,309 | PanelControlView | DEBUG | TX: DISP:1 -> 50
+2025-08-09 16:35:17,360 | PanelControlView | DEBUG | RX COM3-> b'DISP:1\nOK:DISP:1'
+2025-08-09 16:35:17,362 | PanelControlView | DEBUG | Procesando: DISP:1
+2025-08-09 16:35:17,363 | PanelControlView | DEBUG | Procesando: OK:DISP:1
+2025-08-09 16:35:17,622 | PanelControlView | DEBUG | RX COM3-> b'P01:1'
+2025-08-09 16:35:17,624 | PanelControlView | DEBUG | Procesando: P01:1
+2025-08-09 16:35:17,629 | PanelControlView | DEBUG | TX: DISP:1 -> 50
+2025-08-09 16:35:17,682 | PanelControlView | DEBUG | RX COM3-> b'DISP:1\nOK:DISP:1'
+2025-08-09 16:35:17,683 | PanelControlView | DEBUG | Procesando: DISP:1
+2025-08-09 16:35:17,684 | PanelControlView | DEBUG | Procesando: OK:DISP:1
+2025-08-09 16:35:17,927 | PanelControlView | DEBUG | RX COM3-> b'P01:1'
+2025-08-09 16:35:17,928 | PanelControlView | DEBUG | Procesando: P01:1
+2025-08-09 16:35:17,933 | PanelControlView | DEBUG | TX: DISP:1 -> 50
+2025-08-09 16:35:17,984 | PanelControlView | DEBUG | RX COM3-> b'DISP:1\nERROR:Command queue full:\r\nERROR:Unrecognized command:Unrecognized command: DISP:1'
+2025-08-09 16:35:17,985 | PanelControlView | DEBUG | Procesando: DISP:1
+2025-08-09 16:35:17,986 | PanelControlView | DEBUG | Procesando: ERROR:Command
+2025-08-09 16:35:17,987 | PanelControlView | DEBUG | Procesando: queue
+2025-08-09 16:35:17,988 | PanelControlView | WARNING | Format invalid cmd: queue
+2025-08-09 16:35:17,988 | PanelControlView | DEBUG | Procesando: full:
+2025-08-09 16:35:17,989 | PanelControlView | DEBUG | Procesando: ERROR:Unrecognized
+2025-08-09 16:35:17,990 | PanelControlView | DEBUG | Procesando: command:Unrecognized
+2025-08-09 16:35:17,991 | PanelControlView | DEBUG | Procesando: command:
+2025-08-09 16:35:17,992 | PanelControlView | DEBUG | Procesando: DISP:1
+2025-08-09 16:35:18,202 | PanelControlView | DEBUG | RX COM3-> b'P01:1'
+2025-08-09 16:35:18,203 | PanelControlView | DEBUG | Procesando: P01:1
+2025-08-09 16:35:18,209 | PanelControlView | DEBUG | TX: DISP:1 -> 50
+2025-08-09 16:35:18,258 | PanelControlView | DEBUG | RX COM3-> b'DISP:1\nOK:DISP:1'
+2025-08-09 16:35:18,259 | PanelControlView | DEBUG | Procesando: DISP:1
+2025-08-09 16:35:18,260 | PanelControlView | DEBUG | Procesando: OK:DISP:1
+2025-08-09 16:35:18,872 | PanelControlView | DEBUG | RX COM3-> b'P02:1'
+2025-08-09 16:35:18,873 | PanelControlView | DEBUG | Procesando: P02:1
+2025-08-09 16:35:18,882 | PanelControlView | DEBUG | TX: DISP:1 -> 50
+2025-08-09 16:35:18,933 | PanelControlView | DEBUG | RX COM3-> b'DISP:1\nOK:DISP:1'
+2025-08-09 16:35:18,934 | PanelControlView | DEBUG | Procesando: DISP:1
+2025-08-09 16:35:18,935 | PanelControlView | DEBUG | Procesando: OK:DISP:1
+2025-08-09 16:35:19,486 | PanelControlView | DEBUG | RX COM3-> b'P01:1'
+2025-08-09 16:35:19,488 | PanelControlView | DEBUG | Procesando: P01:1
+2025-08-09 16:35:19,495 | PanelControlView | DEBUG | TX: DISP:1 -> 50
+2025-08-09 16:35:19,548 | PanelControlView | DEBUG | RX COM3-> b'DISP:1\nOK:DISP:1'
+2025-08-09 16:35:19,550 | PanelControlView | DEBUG | Procesando: DISP:1
+2025-08-09 16:35:19,551 | PanelControlView | DEBUG | Procesando: OK:DISP:1
+2025-08-09 16:35:20,133 | PanelControlView | DEBUG | RX COM3-> b'P02:1'
+2025-08-09 16:35:20,134 | PanelControlView | DEBUG | Procesando: P02:1
+2025-08-09 16:35:20,140 | PanelControlView | DEBUG | TX: DISP:1 -> 50
+2025-08-09 16:35:20,199 | PanelControlView | DEBUG | RX COM3-> b'DISP:1\nOK:DISP:1'
+2025-08-09 16:35:20,201 | PanelControlView | DEBUG | Procesando: DISP:1
+2025-08-09 16:35:20,202 | PanelControlView | DEBUG | Procesando: OK:DISP:1
+2025-08-09 16:35:21,263 | PanelControlView | DEBUG | RX COM3-> b'BTN2:1'
+2025-08-09 16:35:21,265 | PanelControlView | DEBUG | Procesando: BTN2:1
+2025-08-09 16:35:21,582 | PanelControlView | DEBUG | RX COM3-> b'BTN3:1'
+2025-08-09 16:35:21,583 | PanelControlView | DEBUG | Procesando: BTN3:1
+2025-08-09 16:35:21,952 | PanelControlView | DEBUG | RX COM3-> b'BTN2:1'
+2025-08-09 16:35:21,953 | PanelControlView | DEBUG | Procesando: BTN2:1
+2025-08-09 16:35:22,258 | PanelControlView | DEBUG | RX COM3-> b'BTN3:1'
+2025-08-09 16:35:22,259 | PanelControlView | DEBUG | Procesando: BTN3:1
+2025-08-09 16:35:22,584 | PanelControlView | DEBUG | RX COM3-> b'BTN2:1'
+2025-08-09 16:35:22,586 | PanelControlView | DEBUG | Procesando: BTN2:1
+2025-08-09 16:35:22,897 | PanelControlView | DEBUG | RX COM3-> b'BTN3:1'
+2025-08-09 16:35:22,898 | PanelControlView | DEBUG | Procesando: BTN3:1
+2025-08-09 16:35:23,337 | PanelControlView | DEBUG | RX COM3-> b'BTN2:1'
+2025-08-09 16:35:23,338 | PanelControlView | DEBUG | Procesando: BTN2:1
+2025-08-09 16:38:30,475 | InicioView | INFO | Vista de inicio configurada correctamente
+2025-08-09 16:38:30,763 | PanelControlView | INFO | Vista de inicio configurada correctamente
+2025-08-09 16:38:30,858 | ReporteView | INFO | Vista de inicio configurada correctamente
+2025-08-09 16:38:43,985 | PanelControlView | INFO | Programa iniciado a las 16:38:43
+2025-08-09 16:38:43,985 | PanelControlView | DEBUG | TX: LED1:ON -> 10
+2025-08-09 16:38:43,986 | PanelControlView | DEBUG | TX: LED2:ON -> 50
+2025-08-09 16:38:43,986 | PanelControlView | INFO | Config Led-01: ModoLuz.ENCENDIDO, Led-02: ModoLuz.ENCENDIDO
+2025-08-09 16:38:43,987 | PanelControlView | INFO | Config Pal-01: ModoPalanca.CRF, Pal-02: ModoPalanca.CRF
+2025-08-09 16:38:44,017 | PanelControlView | DEBUG | RX COM3-> b'ESP-ROM:esp32s3-20210327\r\nL01:0\r\nL02:0\r\nLED1:ON\nL01:1'
+2025-08-09 16:38:44,018 | PanelControlView | DEBUG | Procesando: ESP-ROM:esp32s3-20210327
+2025-08-09 16:38:44,019 | PanelControlView | DEBUG | Procesando: L01:0
+2025-08-09 16:38:44,020 | PanelControlView | DEBUG | Procesando: L02:0
+2025-08-09 16:38:44,021 | PanelControlView | DEBUG | Procesando: LED1:ON
+2025-08-09 16:38:44,022 | PanelControlView | DEBUG | Procesando: L01:1
+2025-08-09 16:38:44,040 | PanelControlView | DEBUG | RX COM3-> b'LED2:ON\nL02:1'
+2025-08-09 16:38:44,040 | PanelControlView | DEBUG | Procesando: LED2:ON
+2025-08-09 16:38:44,041 | PanelControlView | DEBUG | Procesando: L02:1
+2025-08-09 16:39:15,001 | PanelControlView | INFO | Programa detenido a las 16:39:14
+2025-08-09 16:39:15,002 | PanelControlView | DEBUG | TX: LED2:OFF -> 50
+2025-08-09 16:39:15,007 | PanelControlView | DEBUG | RX COM3-> b'LED1:OFF\nL01:0'
+2025-08-09 16:39:15,007 | PanelControlView | WARNING | Program not runing, ignore all data
+2025-08-09 16:39:15,053 | PanelControlView | DEBUG | RX COM3-> b'LED2:OFF\nL02:0'
+2025-08-09 16:39:15,054 | PanelControlView | WARNING | Program not runing, ignore all data
+2025-08-09 16:39:48,601 | InicioView | INFO | Vista de inicio configurada correctamente
+2025-08-09 16:39:48,866 | PanelControlView | INFO | Vista de inicio configurada correctamente
+2025-08-09 16:39:48,931 | ReporteView | INFO | Vista de inicio configurada correctamente
+2025-08-09 16:39:54,207 | PanelControlView | INFO | Programa iniciado a las 16:39:54
+2025-08-09 16:39:54,208 | PanelControlView | DEBUG | TX: LED1:OFF -> 10
+2025-08-09 16:39:54,208 | PanelControlView | DEBUG | TX: LED2:OFF -> 50
+2025-08-09 16:39:54,209 | PanelControlView | INFO | Config Led-01: ModoLuz.APAGADO, Led-02: ModoLuz.APAGADO
+2025-08-09 16:39:54,209 | PanelControlView | INFO | Config Pal-01: ModoPalanca.CRF, Pal-02: ModoPalanca.CRF
+2025-08-09 16:39:57,525 | PanelControlView | INFO | Programa detenido a las 16:39:57
+2025-08-09 16:39:57,526 | PanelControlView | DEBUG | TX: LED2:OFF -> 50
+2025-08-09 16:40:00,002 | PanelControlView | INFO | Programa iniciado a las 16:39:59
+2025-08-09 16:40:00,002 | PanelControlView | DEBUG | TX: LED1:OFF -> 10
+2025-08-09 16:40:00,003 | PanelControlView | DEBUG | TX: LED2:OFF -> 50
+2025-08-09 16:40:00,004 | PanelControlView | INFO | Config Led-01: ModoLuz.APAGADO, Led-02: ModoLuz.APAGADO
+2025-08-09 16:40:00,004 | PanelControlView | INFO | Config Pal-01: ModoPalanca.CRF, Pal-02: ModoPalanca.CRF
+2025-08-09 16:40:00,014 | PanelControlView | DEBUG | RX COM3-> b'ESP-ROM:esp32s3-20210327\r\nL01:0\r\nL02:0\r\nLED1:OFF\nL01:0'
+2025-08-09 16:40:00,014 | PanelControlView | DEBUG | Procesando: ESP-ROM:esp32s3-20210327
+2025-08-09 16:40:00,015 | PanelControlView | DEBUG | Procesando: L01:0
+2025-08-09 16:40:00,016 | PanelControlView | DEBUG | Procesando: L02:0
+2025-08-09 16:40:00,017 | PanelControlView | DEBUG | Procesando: LED1:OFF
+2025-08-09 16:40:00,018 | PanelControlView | DEBUG | Procesando: L01:0
+2025-08-09 16:40:00,055 | PanelControlView | DEBUG | RX COM3-> b'LED2:OFF\nL02:0'
+2025-08-09 16:40:00,056 | PanelControlView | DEBUG | Procesando: LED2:OFF
+2025-08-09 16:40:00,056 | PanelControlView | DEBUG | Procesando: L02:0
+2025-08-09 16:43:56,465 | InicioView | INFO | Vista de inicio configurada correctamente
+2025-08-09 16:43:56,795 | PanelControlView | INFO | Vista de inicio configurada correctamente
+2025-08-09 16:43:56,896 | ReporteView | INFO | Vista de inicio configurada correctamente
+2025-08-09 16:44:00,022 | PanelControlView | INFO | status uart Panel: True
+2025-08-09 16:44:01,958 | PanelControlView | INFO | Programa iniciado a las 16:44:01
+2025-08-09 16:44:01,959 | PanelControlView | DEBUG | TX: LED1:OFF -> 10
+2025-08-09 16:44:01,959 | PanelControlView | DEBUG | TX: LED2:OFF -> 50
+2025-08-09 16:44:01,960 | PanelControlView | INFO | Config Led-01: ModoLuz.APAGADO, Led-02: ModoLuz.APAGADO
+2025-08-09 16:44:01,961 | PanelControlView | INFO | Config Pal-01: ModoPalanca.CRF, Pal-02: ModoPalanca.CRF
+2025-08-09 16:44:01,989 | PanelControlView | DEBUG | RX COM3-> b'ESP-ROM:esp32s3-20210327\r\nL01:0\r\nL02:0\r\nIR1:1\r\nIR1:1\r\nIR1:1\r\nLED1:OFF\nL01:0'
+2025-08-09 16:44:01,990 | PanelControlView | DEBUG | Procesando: ESP-ROM:esp32s3-20210327
+2025-08-09 16:44:01,990 | PanelControlView | DEBUG | Procesando: L01:0
+2025-08-09 16:44:01,991 | PanelControlView | DEBUG | Procesando: L02:0
+2025-08-09 16:44:01,992 | PanelControlView | DEBUG | Procesando: IR1:1
+2025-08-09 16:44:01,992 | PanelControlView | DEBUG | Procesando: IR1:1
+2025-08-09 16:44:01,993 | PanelControlView | DEBUG | Procesando: IR1:1
+2025-08-09 16:44:01,993 | PanelControlView | DEBUG | Procesando: LED1:OFF
+2025-08-09 16:44:01,994 | PanelControlView | DEBUG | Procesando: L01:0
+2025-08-09 16:44:02,012 | PanelControlView | DEBUG | RX COM3-> b'LED2:OFF\nL02:0'
+2025-08-09 16:44:02,013 | PanelControlView | DEBUG | Procesando: LED2:OFF
+2025-08-09 16:44:02,013 | PanelControlView | DEBUG | Procesando: L02:0
+2025-08-09 16:44:12,488 | PanelControlView | INFO | status uart Panel: False
+2025-08-09 16:44:12,491 | PanelControlView | INFO | Programa detenido a las 16:44:12
+2025-08-09 16:44:12,492 | PanelControlView | DEBUG | TX: LED2:OFF -> 50
+2025-08-09 16:44:22,950 | PanelControlView | INFO | status uart Panel: True
+2025-08-09 16:44:30,239 | PanelControlView | INFO | Programa iniciado a las 16:44:30
+2025-08-09 16:44:30,240 | PanelControlView | DEBUG | TX: LED1:OFF -> 10
+2025-08-09 16:44:30,240 | PanelControlView | DEBUG | TX: LED2:OFF -> 50
+2025-08-09 16:44:30,241 | PanelControlView | INFO | Config Led-01: ModoLuz.APAGADO, Led-02: ModoLuz.APAGADO
+2025-08-09 16:44:30,241 | PanelControlView | INFO | Config Pal-01: ModoPalanca.CRF, Pal-02: ModoPalanca.CRF
+2025-08-09 16:44:30,250 | PanelControlView | DEBUG | RX COM3-> b'ESP-ROM:esp32s3-20210327\r\nL01:0\r\nL02:0\r\nLED1:OFF\nL01:0'
+2025-08-09 16:44:30,250 | PanelControlView | DEBUG | Procesando: ESP-ROM:esp32s3-20210327
+2025-08-09 16:44:30,251 | PanelControlView | DEBUG | Procesando: L01:0
+2025-08-09 16:44:30,252 | PanelControlView | DEBUG | Procesando: L02:0
+2025-08-09 16:44:30,253 | PanelControlView | DEBUG | Procesando: LED1:OFF
+2025-08-09 16:44:30,253 | PanelControlView | DEBUG | Procesando: L01:0
+2025-08-09 16:44:30,293 | PanelControlView | DEBUG | RX COM3-> b'LED2:OFF\nL02:0'
+2025-08-09 16:44:30,294 | PanelControlView | DEBUG | Procesando: LED2:OFF
+2025-08-09 16:44:30,294 | PanelControlView | DEBUG | Procesando: L02:0
+2025-08-09 16:44:38,045 | PanelControlView | INFO | Programa detenido a las 16:44:38
+2025-08-09 16:44:38,046 | PanelControlView | DEBUG | TX: LED2:OFF -> 50
+2025-08-09 16:44:38,050 | PanelControlView | DEBUG | RX COM3-> b'LED1:OFF\nL01:0'
+2025-08-09 16:44:38,051 | PanelControlView | WARNING | Program not runing, ignore all data
+2025-08-09 16:44:38,098 | PanelControlView | DEBUG | RX COM3-> b'LED2:OFF\nL02:0'
+2025-08-09 16:44:38,102 | PanelControlView | WARNING | Program not runing, ignore all data
+2025-08-09 16:44:40,768 | PanelControlView | INFO | Programa iniciado a las 16:44:40
+2025-08-09 16:44:40,769 | PanelControlView | DEBUG | TX: LED1:OFF -> 10
+2025-08-09 16:44:40,770 | PanelControlView | DEBUG | TX: LED2:OFF -> 50
+2025-08-09 16:44:40,770 | PanelControlView | INFO | Config Led-01: ModoLuz.APAGADO, Led-02: ModoLuz.APAGADO
+2025-08-09 16:44:40,770 | PanelControlView | INFO | Config Pal-01: ModoPalanca.CRF, Pal-02: ModoPalanca.CRF
+2025-08-09 16:44:40,778 | PanelControlView | DEBUG | RX COM3-> b'LED1:OFF\nL01:0'
+2025-08-09 16:44:40,779 | PanelControlView | DEBUG | Procesando: LED1:OFF
+2025-08-09 16:44:40,779 | PanelControlView | DEBUG | Procesando: L01:0
+2025-08-09 16:44:40,823 | PanelControlView | DEBUG | RX COM3-> b'LED2:OFF\nL02:0'
+2025-08-09 16:44:40,823 | PanelControlView | DEBUG | Procesando: LED2:OFF
+2025-08-09 16:44:40,824 | PanelControlView | DEBUG | Procesando: L02:0
+2025-08-09 16:44:41,948 | PanelControlView | INFO | Programa detenido a las 16:44:41
+2025-08-09 16:44:41,949 | PanelControlView | DEBUG | TX: LED2:OFF -> 50
+2025-08-09 16:44:41,954 | PanelControlView | DEBUG | RX COM3-> b'LED1:OFF\nL01:0'
+2025-08-09 16:44:41,954 | PanelControlView | WARNING | Program not runing, ignore all data
+2025-08-09 16:44:41,995 | PanelControlView | DEBUG | RX COM3-> b'LED2:OFF\nL02:0'
+2025-08-09 16:44:41,996 | PanelControlView | WARNING | Program not runing, ignore all data
+2025-08-09 16:44:42,727 | PanelControlView | INFO | Programa iniciado a las 16:44:42
+2025-08-09 16:44:42,728 | PanelControlView | DEBUG | TX: LED1:OFF -> 10
+2025-08-09 16:44:42,728 | PanelControlView | DEBUG | TX: LED2:OFF -> 50
+2025-08-09 16:44:42,729 | PanelControlView | INFO | Config Led-01: ModoLuz.APAGADO, Led-02: ModoLuz.APAGADO
+2025-08-09 16:44:42,729 | PanelControlView | INFO | Config Pal-01: ModoPalanca.CRF, Pal-02: ModoPalanca.CRF
+2025-08-09 16:44:42,738 | PanelControlView | DEBUG | RX COM3-> b'LED1:OFF\nL01:0'
+2025-08-09 16:44:42,738 | PanelControlView | DEBUG | Procesando: LED1:OFF
+2025-08-09 16:44:42,739 | PanelControlView | DEBUG | Procesando: L01:0
+2025-08-09 16:44:42,786 | PanelControlView | DEBUG | RX COM3-> b'LED2:OFF\nL02:0'
+2025-08-09 16:44:42,787 | PanelControlView | DEBUG | Procesando: LED2:OFF
+2025-08-09 16:44:42,788 | PanelControlView | DEBUG | Procesando: L02:0
+2025-08-09 16:44:45,076 | PanelControlView | INFO | Programa detenido a las 16:44:45
+2025-08-09 16:44:45,077 | PanelControlView | DEBUG | TX: LED2:OFF -> 50
+2025-08-09 16:44:45,082 | PanelControlView | DEBUG | RX COM3-> b'LED1:OFF\nL01:0'
+2025-08-09 16:44:45,082 | PanelControlView | WARNING | Program not runing, ignore all data
+2025-08-09 16:44:45,128 | PanelControlView | DEBUG | RX COM3-> b'LED2:OFF\nL02:0'
+2025-08-09 16:44:45,129 | PanelControlView | WARNING | Program not runing, ignore all data
+2025-08-09 16:49:24,230 | InicioView | INFO | Vista de inicio configurada correctamente
+2025-08-09 16:49:24,503 | PanelControlView | INFO | Vista de inicio configurada correctamente
+2025-08-09 16:49:24,599 | ReporteView | INFO | Vista de inicio configurada correctamente
+2025-08-09 16:49:28,455 | PanelControlView | INFO | status uart Panel: True
+2025-08-09 16:49:33,010 | PanelControlView | INFO | Programa iniciado a las 16:49:33
+2025-08-09 16:49:33,010 | PanelControlView | DEBUG | TX: LED1:OFF -> 10
+2025-08-09 16:49:33,011 | PanelControlView | DEBUG | TX: LED2:OFF -> 50
+2025-08-09 16:49:33,012 | PanelControlView | INFO | Config Led-01: ModoLuz.APAGADO, Led-02: ModoLuz.APAGADO
+2025-08-09 16:49:33,012 | PanelControlView | INFO | Config Pal-01: ModoPalanca.CRF, Pal-02: ModoPalanca.CRF
+2025-08-09 16:49:33,054 | PanelControlView | DEBUG | RX COM3-> b'ESP-ROM:esp32s3-20210327\r\nL01:0\r\nL02:0\r\nLED1:OFF\nL01:0'
+2025-08-09 16:49:33,054 | PanelControlView | DEBUG | Procesando: ESP-ROM:esp32s3-20210327
+2025-08-09 16:49:33,055 | PanelControlView | DEBUG | Procesando: L01:0
+2025-08-09 16:49:33,057 | PanelControlView | DEBUG | Procesando: L02:0
+2025-08-09 16:49:33,058 | PanelControlView | DEBUG | Procesando: LED1:OFF
+2025-08-09 16:49:33,059 | PanelControlView | DEBUG | Procesando: L01:0
+2025-08-09 16:49:33,064 | PanelControlView | DEBUG | RX COM3-> b'LED2:OFF\nL02:0'
+2025-08-09 16:49:33,065 | PanelControlView | DEBUG | Procesando: LED2:OFF
+2025-08-09 16:49:33,066 | PanelControlView | DEBUG | Procesando: L02:0
+2025-08-09 16:49:39,995 | PanelControlView | INFO | Programa detenido a las 16:49:39
+2025-08-09 16:49:40,004 | PanelControlView | DEBUG | TX: LED2:OFF -> 50
+2025-08-09 16:49:40,053 | PanelControlView | DEBUG | RX COM3-> b'LED1:OFF\nL01:0'
+2025-08-09 16:49:40,067 | PanelControlView | WARNING | Program not runing, ignore all data
+2025-08-09 16:49:40,070 | PanelControlView | DEBUG | RX COM3-> b'LED2:OFF\nL02:0'
+2025-08-09 16:49:40,073 | PanelControlView | WARNING | Program not runing, ignore all data
+2025-08-09 16:49:42,596 | PanelControlView | INFO | Programa iniciado a las 16:49:42
+2025-08-09 16:49:42,597 | PanelControlView | DEBUG | TX: LED1:OFF -> 10
+2025-08-09 16:49:42,597 | PanelControlView | DEBUG | TX: LED2:OFF -> 50
+2025-08-09 16:49:42,598 | PanelControlView | INFO | Config Led-01: ModoLuz.APAGADO, Led-02: ModoLuz.APAGADO
+2025-08-09 16:49:42,599 | PanelControlView | INFO | Config Pal-01: ModoPalanca.CRF, Pal-02: ModoPalanca.CRF
+2025-08-09 16:49:42,616 | PanelControlView | DEBUG | RX COM3-> b'LED1:OFF\nL01:0'
+2025-08-09 16:49:42,617 | PanelControlView | DEBUG | Procesando: LED1:OFF
+2025-08-09 16:49:42,617 | PanelControlView | DEBUG | Procesando: L01:0
+2025-08-09 16:49:42,651 | PanelControlView | DEBUG | RX COM3-> b'LED2:OFF\nL02:0'
+2025-08-09 16:49:42,652 | PanelControlView | DEBUG | Procesando: LED2:OFF
+2025-08-09 16:49:42,653 | PanelControlView | DEBUG | Procesando: L02:0
+2025-08-09 16:49:44,191 | PanelControlView | INFO | Programa detenido a las 16:49:44
+2025-08-09 16:49:44,200 | PanelControlView | DEBUG | TX: LED2:OFF -> 50
+2025-08-09 16:49:44,232 | PanelControlView | DEBUG | RX COM3-> b'LED1:OFF\nL01:0'
+2025-08-09 16:49:44,233 | PanelControlView | WARNING | Program not runing, ignore all data
+2025-08-09 16:49:44,239 | PanelControlView | DEBUG | RX COM3-> b'LED2:OFF\nL02:0'
+2025-08-09 16:49:44,240 | PanelControlView | WARNING | Program not runing, ignore all data
+2025-08-09 16:49:45,667 | PanelControlView | INFO | Programa iniciado a las 16:49:45
+2025-08-09 16:49:45,667 | PanelControlView | DEBUG | TX: LED1:OFF -> 10
+2025-08-09 16:49:45,668 | PanelControlView | DEBUG | TX: LED2:OFF -> 50
+2025-08-09 16:49:45,669 | PanelControlView | INFO | Config Led-01: ModoLuz.APAGADO, Led-02: ModoLuz.APAGADO
+2025-08-09 16:49:45,669 | PanelControlView | INFO | Config Pal-01: ModoPalanca.CRF, Pal-02: ModoPalanca.CRF
+2025-08-09 16:49:45,688 | PanelControlView | DEBUG | RX COM3-> b'LED1:OFF\nL01:0'
+2025-08-09 16:49:45,688 | PanelControlView | DEBUG | Procesando: LED1:OFF
+2025-08-09 16:49:45,689 | PanelControlView | DEBUG | Procesando: L01:0
+2025-08-09 16:49:45,721 | PanelControlView | DEBUG | RX COM3-> b'LED2:OFF\nL02:0'
+2025-08-09 16:49:45,722 | PanelControlView | DEBUG | Procesando: LED2:OFF
+2025-08-09 16:49:45,723 | PanelControlView | DEBUG | Procesando: L02:0
+2025-08-09 16:49:46,812 | PanelControlView | INFO | Programa detenido a las 16:49:46
+2025-08-09 16:49:46,821 | PanelControlView | DEBUG | TX: LED2:OFF -> 50
+2025-08-09 16:49:46,856 | PanelControlView | DEBUG | RX COM3-> b'LED1:OFF\nL01:0'
+2025-08-09 16:49:46,857 | PanelControlView | WARNING | Program not runing, ignore all data
+2025-08-09 16:49:46,874 | PanelControlView | DEBUG | RX COM3-> b'LED2:OFF\nL02:0'
+2025-08-09 16:49:46,874 | PanelControlView | WARNING | Program not runing, ignore all data
+2025-08-09 16:49:47,545 | PanelControlView | INFO | Programa iniciado a las 16:49:47
+2025-08-09 16:49:47,546 | PanelControlView | DEBUG | TX: LED1:OFF -> 10
+2025-08-09 16:49:47,546 | PanelControlView | DEBUG | TX: LED2:OFF -> 50
+2025-08-09 16:49:47,547 | PanelControlView | INFO | Config Led-01: ModoLuz.APAGADO, Led-02: ModoLuz.APAGADO
+2025-08-09 16:49:47,547 | PanelControlView | INFO | Config Pal-01: ModoPalanca.CRF, Pal-02: ModoPalanca.CRF
+2025-08-09 16:49:47,565 | PanelControlView | DEBUG | RX COM3-> b'LED1:OFF\nL01:0'
+2025-08-09 16:49:47,565 | PanelControlView | DEBUG | Procesando: LED1:OFF
+2025-08-09 16:49:47,566 | PanelControlView | DEBUG | Procesando: L01:0
+2025-08-09 16:49:47,598 | PanelControlView | DEBUG | RX COM3-> b'LED2:OFF\nL02:0'
+2025-08-09 16:49:47,599 | PanelControlView | DEBUG | Procesando: LED2:OFF
+2025-08-09 16:49:47,600 | PanelControlView | DEBUG | Procesando: L02:0
+2025-08-09 16:49:48,737 | PanelControlView | INFO | Programa detenido a las 16:49:48
+2025-08-09 16:49:48,746 | PanelControlView | DEBUG | TX: LED2:OFF -> 50
+2025-08-09 16:49:48,780 | PanelControlView | DEBUG | RX COM3-> b'LED1:OFF\nL01:0'
+2025-08-09 16:49:48,781 | PanelControlView | WARNING | Program not runing, ignore all data
+2025-08-09 16:49:48,798 | PanelControlView | DEBUG | RX COM3-> b'LED2:OFF\nL02:0'
+2025-08-09 16:49:48,799 | PanelControlView | WARNING | Program not runing, ignore all data
+2025-08-09 16:54:45,551 | InicioView | INFO | Vista de inicio configurada correctamente
+2025-08-09 16:54:45,673 | PanelControlView | INFO | Vista de inicio configurada correctamente
+2025-08-09 16:54:45,716 | ReporteView | INFO | Vista de inicio configurada correctamente
+2025-08-09 16:54:50,252 | PanelControlView | INFO | status uart Panel: True
+2025-08-09 16:56:56,312 | InicioView | INFO | Vista de inicio configurada correctamente
+2025-08-09 16:56:56,441 | PanelControlView | INFO | Vista de inicio configurada correctamente
+2025-08-09 16:56:56,478 | ReporteView | INFO | Vista de inicio configurada correctamente
+2025-08-09 16:56:59,469 | PanelControlView | INFO | status uart Panel: True
+2025-08-09 16:57:02,460 | PanelControlView | INFO | Programa iniciado a las 16:57:02
+2025-08-09 16:57:02,461 | PanelControlView | DEBUG | TX: LED1:OFF -> 10
+2025-08-09 16:57:02,461 | PanelControlView | DEBUG | TX: LED2:OFF -> 50
+2025-08-09 16:57:02,462 | PanelControlView | INFO | Config Led-01: ModoLuz.APAGADO, Led-02: ModoLuz.APAGADO
+2025-08-09 16:57:02,462 | PanelControlView | INFO | Config Pal-01: ModoPalanca.CRF, Pal-02: ModoPalanca.CRF
+2025-08-09 16:57:02,490 | PanelControlView | DEBUG | RX COM3-> b'ESP-ROM:esp32s3-20210327\r\nL01:0\r\nL02:0\r\nLED1:OFF\nL01:0'
+2025-08-09 16:57:02,491 | PanelControlView | DEBUG | Procesando: ESP-ROM:esp32s3-20210327
+2025-08-09 16:57:02,491 | PanelControlView | DEBUG | Procesando: L01:0
+2025-08-09 16:57:02,491 | PanelControlView | DEBUG | Procesando: L02:0
+2025-08-09 16:57:02,492 | PanelControlView | DEBUG | Procesando: LED1:OFF
+2025-08-09 16:57:02,492 | PanelControlView | DEBUG | Procesando: L01:0
+2025-08-09 16:57:02,513 | PanelControlView | DEBUG | RX COM3-> b'LED2:OFF\nL02:0'
+2025-08-09 16:57:02,513 | PanelControlView | DEBUG | Procesando: LED2:OFF
+2025-08-09 16:57:02,513 | PanelControlView | DEBUG | Procesando: L02:0
+2025-08-09 16:57:09,029 | PanelControlView | INFO | Programa detenido a las 16:57:09
+2025-08-09 16:57:09,036 | PanelControlView | DEBUG | TX: LED2:OFF -> 50
+2025-08-09 16:57:09,055 | PanelControlView | DEBUG | RX COM3-> b'LED1:OFF\nL01:0'
+2025-08-09 16:57:09,055 | PanelControlView | WARNING | Program not runing, ignore all data
+2025-08-09 16:57:09,081 | PanelControlView | DEBUG | RX COM3-> b'LED2:OFF\nL02:0'
+2025-08-09 16:57:09,081 | PanelControlView | WARNING | Program not runing, ignore all data
+2025-08-09 16:57:23,118 | PanelControlView | INFO | Programa iniciado a las 16:57:23
+2025-08-09 16:57:23,118 | PanelControlView | DEBUG | TX: LED1:OFF -> 10
+2025-08-09 16:57:23,119 | PanelControlView | INFO | Config Led-01: ModoLuz.APAGADO, Led-02: ModoLuz.INTERMITENTE
+2025-08-09 16:57:23,119 | PanelControlView | INFO | Config Pal-01: ModoPalanca.VR, Pal-02: ModoPalanca.CRF
+2025-08-09 16:57:23,147 | PanelControlView | DEBUG | RX COM3-> b'LED1:OFF\nL01:0'
+2025-08-09 16:57:23,147 | PanelControlView | DEBUG | Procesando: LED1:OFF
+2025-08-09 16:57:23,147 | PanelControlView | DEBUG | Procesando: L01:0
+2025-08-09 17:00:57,290 | PanelControlView | INFO | Programa detenido a las 17:00:57
+2025-08-09 17:00:57,296 | PanelControlView | DEBUG | TX: LED2:OFF -> 50
+2025-08-09 17:00:57,317 | PanelControlView | DEBUG | RX COM3-> b'LED1:OFF\nL01:0'
+2025-08-09 17:00:57,318 | PanelControlView | WARNING | Program not runing, ignore all data
+2025-08-09 17:00:57,354 | PanelControlView | DEBUG | RX COM3-> b'LED2:OFF\nL02:0'
+2025-08-09 17:00:57,354 | PanelControlView | WARNING | Program not runing, ignore all data
+2025-08-09 17:00:58,788 | PanelControlView | INFO | Programa iniciado a las 17:00:58
+2025-08-09 17:00:58,788 | PanelControlView | DEBUG | TX: LED1:OFF -> 10
+2025-08-09 17:00:58,788 | PanelControlView | INFO | Config Led-01: ModoLuz.APAGADO, Led-02: ModoLuz.INTERMITENTE
+2025-08-09 17:00:58,789 | PanelControlView | INFO | Config Pal-01: ModoPalanca.VR, Pal-02: ModoPalanca.CRF
+2025-08-09 17:00:58,799 | PanelControlView | DEBUG | RX COM3-> b'LED1:OFF\nL01:0'
+2025-08-09 17:00:58,799 | PanelControlView | DEBUG | Procesando: LED1:OFF
+2025-08-09 17:00:58,799 | PanelControlView | DEBUG | Procesando: L01:0
+2025-08-09 17:01:08,563 | PanelControlView | INFO | Programa detenido a las 17:01:08
+2025-08-09 17:01:08,568 | PanelControlView | DEBUG | TX: LED2:OFF -> 50
+2025-08-09 17:01:08,587 | PanelControlView | DEBUG | RX COM3-> b'LED1:OFF\nL01:0'
+2025-08-09 17:01:08,587 | PanelControlView | WARNING | Program not runing, ignore all data
+2025-08-09 17:01:08,619 | PanelControlView | DEBUG | RX COM3-> b'LED2:OFF\nL02:0'
+2025-08-09 17:01:08,620 | PanelControlView | WARNING | Program not runing, ignore all data
+2025-08-09 17:01:09,846 | PanelControlView | INFO | Programa iniciado a las 17:01:09
+2025-08-09 17:01:09,846 | PanelControlView | DEBUG | TX: LED1:OFF -> 10
+2025-08-09 17:01:09,847 | PanelControlView | INFO | Config Led-01: ModoLuz.APAGADO, Led-02: ModoLuz.INTERMITENTE
+2025-08-09 17:01:09,847 | PanelControlView | INFO | Config Pal-01: ModoPalanca.VR, Pal-02: ModoPalanca.CRF
+2025-08-09 17:01:09,858 | PanelControlView | DEBUG | RX COM3-> b'LED1:OFF\nL01:0'
+2025-08-09 17:01:09,858 | PanelControlView | DEBUG | Procesando: LED1:OFF
+2025-08-09 17:01:09,858 | PanelControlView | DEBUG | Procesando: L01:0
+2025-08-09 17:01:11,612 | PanelControlView | INFO | Programa detenido a las 17:01:11
+2025-08-09 17:01:11,616 | PanelControlView | DEBUG | TX: LED2:OFF -> 50
+2025-08-09 17:01:11,636 | PanelControlView | DEBUG | RX COM3-> b'LED1:OFF\nL01:0'
+2025-08-09 17:01:11,637 | PanelControlView | WARNING | Program not runing, ignore all data
+2025-08-09 17:01:11,666 | PanelControlView | DEBUG | RX COM3-> b'LED2:OFF\nL02:0'
+2025-08-09 17:01:11,667 | PanelControlView | WARNING | Program not runing, ignore all data
+2025-08-09 17:02:24,328 | InicioView | INFO | Vista de inicio configurada correctamente
+2025-08-09 17:02:24,470 | PanelControlView | INFO | Vista de inicio configurada correctamente
+2025-08-09 17:02:24,511 | ReporteView | INFO | Vista de inicio configurada correctamente
+2025-08-09 17:02:27,758 | PanelControlView | INFO | status uart Panel: True
+2025-08-09 17:02:32,388 | PanelControlView | INFO | Programa iniciado a las 17:02:32
+2025-08-09 17:02:32,389 | PanelControlView | DEBUG | TX: LED1:OFF -> 10
+2025-08-09 17:02:32,389 | PanelControlView | INFO | Config Led-01: ModoLuz.APAGADO, Led-02: ModoLuz.INTERMITENTE
+2025-08-09 17:02:32,389 | PanelControlView | INFO | Config Pal-01: ModoPalanca.CRF, Pal-02: ModoPalanca.CRF
+2025-08-09 17:02:32,417 | PanelControlView | DEBUG | RX COM3-> b'ESP-ROM:esp32s3-20210327\r\nL01:0\r\nL02:0\r\nLED1:OFF'
+2025-08-09 17:02:32,417 | PanelControlView | DEBUG | Procesando: ESP-ROM:esp32s3-20210327
+2025-08-09 17:02:32,417 | PanelControlView | DEBUG | Procesando: L01:0
+2025-08-09 17:02:32,418 | PanelControlView | DEBUG | Procesando: L02:0
+2025-08-09 17:02:32,418 | PanelControlView | DEBUG | Procesando: LED1:OFF
+2025-08-09 17:02:32,419 | PanelControlView | DEBUG | RX COM3-> b'L01:0'
+2025-08-09 17:02:32,419 | PanelControlView | DEBUG | Procesando: L01:0
+2025-08-09 17:02:40,949 | PanelControlView | INFO | Programa detenido a las 17:02:40
+2025-08-09 17:02:40,956 | PanelControlView | DEBUG | TX: LED2:OFF -> 50
+2025-08-09 17:02:40,980 | PanelControlView | DEBUG | RX COM3-> b'LED1:OFF\nL01:0'
+2025-08-09 17:02:40,980 | PanelControlView | WARNING | Program not runing, ignore all data
+2025-08-09 17:02:40,995 | PanelControlView | DEBUG | RX COM3-> b'LED2:OFF\nL02:0'
+2025-08-09 17:02:40,995 | PanelControlView | WARNING | Program not runing, ignore all data
+2025-08-09 17:02:42,675 | PanelControlView | INFO | Programa iniciado a las 17:02:42
+2025-08-09 17:02:42,676 | PanelControlView | DEBUG | TX: LED1:OFF -> 10
+2025-08-09 17:02:42,676 | PanelControlView | INFO | Config Led-01: ModoLuz.APAGADO, Led-02: ModoLuz.INTERMITENTE
+2025-08-09 17:02:42,677 | PanelControlView | INFO | Config Pal-01: ModoPalanca.CRF, Pal-02: ModoPalanca.CRF
+2025-08-09 17:02:42,705 | PanelControlView | DEBUG | RX COM3-> b'LED1:OFF\nL01:0'
+2025-08-09 17:02:42,705 | PanelControlView | DEBUG | Procesando: LED1:OFF
+2025-08-09 17:02:42,706 | PanelControlView | DEBUG | Procesando: L01:0
+2025-08-09 17:02:44,314 | PanelControlView | INFO | Programa detenido a las 17:02:44
+2025-08-09 17:02:44,322 | PanelControlView | DEBUG | TX: LED2:OFF -> 50
+2025-08-09 17:02:44,340 | PanelControlView | DEBUG | RX COM3-> b'LED1:OFF\nL01:0'
+2025-08-09 17:02:44,340 | PanelControlView | WARNING | Program not runing, ignore all data
+2025-08-09 17:02:44,362 | PanelControlView | DEBUG | RX COM3-> b'LED2:OFF\nL02:0'
+2025-08-09 17:02:44,363 | PanelControlView | WARNING | Program not runing, ignore all data
+2025-08-09 17:02:49,457 | PanelControlView | INFO | Programa iniciado a las 17:02:49
+2025-08-09 17:02:49,458 | PanelControlView | DEBUG | TX: LED1:OFF -> 10
+2025-08-09 17:02:49,458 | PanelControlView | INFO | Config Led-01: ModoLuz.APAGADO, Led-02: ModoLuz.INTERMITENTE
+2025-08-09 17:02:49,459 | PanelControlView | INFO | Config Pal-01: ModoPalanca.EXTINCION, Pal-02: ModoPalanca.VI
+2025-08-09 17:02:49,477 | PanelControlView | DEBUG | RX COM3-> b'LED1:OFF\nL01:0'
+2025-08-09 17:02:49,477 | PanelControlView | DEBUG | Procesando: LED1:OFF
+2025-08-09 17:02:49,477 | PanelControlView | DEBUG | Procesando: L01:0
+2025-08-09 17:02:57,601 | PanelControlView | INFO | Programa detenido a las 17:02:57
+2025-08-09 17:02:57,610 | PanelControlView | DEBUG | TX: LED2:OFF -> 50
+2025-08-09 17:02:57,636 | PanelControlView | DEBUG | RX COM3-> b'LED1:OFF\nL01:0'
+2025-08-09 17:02:57,636 | PanelControlView | WARNING | Program not runing, ignore all data
+2025-08-09 17:02:57,654 | PanelControlView | DEBUG | RX COM3-> b'LED2:OFF\nL02:0'
+2025-08-09 17:02:57,655 | PanelControlView | WARNING | Program not runing, ignore all data
+2025-08-09 17:02:58,905 | PanelControlView | INFO | Programa iniciado a las 17:02:58
+2025-08-09 17:02:58,906 | PanelControlView | DEBUG | TX: LED1:OFF -> 10
+2025-08-09 17:02:58,906 | PanelControlView | INFO | Config Led-01: ModoLuz.APAGADO, Led-02: ModoLuz.INTERMITENTE
+2025-08-09 17:02:58,907 | PanelControlView | INFO | Config Pal-01: ModoPalanca.EXTINCION, Pal-02: ModoPalanca.VI
+2025-08-09 17:02:58,917 | PanelControlView | DEBUG | RX COM3-> b'LED1:OFF\nL01:0'
+2025-08-09 17:02:58,918 | PanelControlView | DEBUG | Procesando: LED1:OFF
+2025-08-09 17:02:58,918 | PanelControlView | DEBUG | Procesando: L01:0
+2025-08-09 17:03:00,547 | PanelControlView | INFO | Programa detenido a las 17:03:00
+2025-08-09 17:03:00,553 | PanelControlView | DEBUG | TX: LED2:OFF -> 50
+2025-08-09 17:03:00,571 | PanelControlView | DEBUG | RX COM3-> b'LED1:OFF\nL01:0'
+2025-08-09 17:03:00,571 | PanelControlView | WARNING | Program not runing, ignore all data
+2025-08-09 17:03:00,606 | PanelControlView | DEBUG | RX COM3-> b'LED2:OFF\nL02:0'
+2025-08-09 17:03:00,607 | PanelControlView | WARNING | Program not runing, ignore all data
+2025-08-09 17:03:01,458 | PanelControlView | INFO | Programa iniciado a las 17:03:01
+2025-08-09 17:03:01,458 | PanelControlView | DEBUG | TX: LED1:OFF -> 10
+2025-08-09 17:03:01,459 | PanelControlView | INFO | Config Led-01: ModoLuz.APAGADO, Led-02: ModoLuz.INTERMITENTE
+2025-08-09 17:03:01,459 | PanelControlView | INFO | Config Pal-01: ModoPalanca.EXTINCION, Pal-02: ModoPalanca.VI
+2025-08-09 17:03:01,470 | PanelControlView | DEBUG | RX COM3-> b'LED1:OFF\nL01:0'
+2025-08-09 17:03:01,470 | PanelControlView | DEBUG | Procesando: LED1:OFF
+2025-08-09 17:03:01,471 | PanelControlView | DEBUG | Procesando: L01:0
+2025-08-09 17:03:03,011 | PanelControlView | INFO | Programa detenido a las 17:03:03
+2025-08-09 17:03:03,016 | PanelControlView | DEBUG | TX: LED2:OFF -> 50
+2025-08-09 17:03:03,033 | PanelControlView | DEBUG | RX COM3-> b'LED1:OFF\nL01:0'
+2025-08-09 17:03:03,034 | PanelControlView | WARNING | Program not runing, ignore all data
+2025-08-09 17:03:03,055 | PanelControlView | DEBUG | RX COM3-> b'LED2:OFF\nL02:0'
+2025-08-09 17:03:03,056 | PanelControlView | WARNING | Program not runing, ignore all data
+2025-08-09 17:03:03,835 | PanelControlView | INFO | Programa iniciado a las 17:03:03
+2025-08-09 17:03:03,835 | PanelControlView | DEBUG | TX: LED1:OFF -> 10
+2025-08-09 17:03:03,836 | PanelControlView | INFO | Config Led-01: ModoLuz.APAGADO, Led-02: ModoLuz.INTERMITENTE
+2025-08-09 17:03:03,836 | PanelControlView | INFO | Config Pal-01: ModoPalanca.EXTINCION, Pal-02: ModoPalanca.VI
+2025-08-09 17:03:03,854 | PanelControlView | DEBUG | RX COM3-> b'LED1:OFF\nL01:0'
+2025-08-09 17:03:03,854 | PanelControlView | DEBUG | Procesando: LED1:OFF
+2025-08-09 17:03:03,855 | PanelControlView | DEBUG | Procesando: L01:0
+2025-08-09 17:03:04,732 | PanelControlView | INFO | Programa detenido a las 17:03:04
+2025-08-09 17:03:04,741 | PanelControlView | DEBUG | TX: LED2:OFF -> 50
+2025-08-09 17:03:04,759 | PanelControlView | DEBUG | RX COM3-> b'LED1:OFF\nL01:0'
+2025-08-09 17:03:04,759 | PanelControlView | WARNING | Program not runing, ignore all data
+2025-08-09 17:03:04,782 | PanelControlView | DEBUG | RX COM3-> b'LED2:OFF\nL02:0'
+2025-08-09 17:03:04,783 | PanelControlView | WARNING | Program not runing, ignore all data
+2025-08-09 17:03:05,567 | PanelControlView | INFO | Programa iniciado a las 17:03:05
+2025-08-09 17:03:05,568 | PanelControlView | DEBUG | TX: LED1:OFF -> 10
+2025-08-09 17:03:05,568 | PanelControlView | INFO | Config Led-01: ModoLuz.APAGADO, Led-02: ModoLuz.INTERMITENTE
+2025-08-09 17:03:05,569 | PanelControlView | INFO | Config Pal-01: ModoPalanca.EXTINCION, Pal-02: ModoPalanca.VI
+2025-08-09 17:03:05,587 | PanelControlView | DEBUG | RX COM3-> b'LED1:OFF\nL01:0'
+2025-08-09 17:03:05,587 | PanelControlView | DEBUG | Procesando: LED1:OFF
+2025-08-09 17:03:05,588 | PanelControlView | DEBUG | Procesando: L01:0
+2025-08-09 17:03:06,545 | PanelControlView | INFO | Programa detenido a las 17:03:06
+2025-08-09 17:03:06,553 | PanelControlView | DEBUG | TX: LED2:OFF -> 50
+2025-08-09 17:03:06,573 | PanelControlView | DEBUG | RX COM3-> b'LED1:OFF\nL01:0'
+2025-08-09 17:03:06,573 | PanelControlView | WARNING | Program not runing, ignore all data
+2025-08-09 17:03:06,595 | PanelControlView | DEBUG | RX COM3-> b'LED2:OFF\nL02:0'
+2025-08-09 17:03:06,596 | PanelControlView | WARNING | Program not runing, ignore all data
+2025-08-09 17:05:03,038 | InicioView | INFO | Vista de inicio configurada correctamente
+2025-08-09 17:05:03,171 | PanelControlView | INFO | Vista de inicio configurada correctamente
+2025-08-09 17:05:03,210 | ReporteView | INFO | Vista de inicio configurada correctamente
+2025-08-09 17:06:56,416 | InicioView | INFO | Vista de inicio configurada correctamente
+2025-08-09 17:06:56,545 | PanelControlView | INFO | Vista de inicio configurada correctamente
+2025-08-09 17:06:56,583 | ReporteView | INFO | Vista de inicio configurada correctamente
+2025-08-09 17:07:10,140 | InicioView | INFO | Vista de inicio configurada correctamente
+2025-08-09 17:07:10,277 | PanelControlView | INFO | Vista de inicio configurada correctamente
+2025-08-09 17:07:10,323 | ReporteView | INFO | Vista de inicio configurada correctamente
+2025-08-09 17:07:20,920 | PanelControlView | INFO | status uart Panel: True
+2025-08-09 17:07:22,502 | PanelControlView | INFO | Programa iniciado a las 17:07:22
+2025-08-09 17:07:22,503 | PanelControlView | DEBUG | TX: LED1:OFF -> 10
+2025-08-09 17:07:22,503 | PanelControlView | DEBUG | TX: LED2:OFF -> 50
+2025-08-09 17:07:22,504 | PanelControlView | INFO | Config Led-01: ModoLuz.APAGADO, Led-02: ModoLuz.APAGADO
+2025-08-09 17:07:22,504 | PanelControlView | INFO | Config Pal-01: ModoPalanca.CRF, Pal-02: ModoPalanca.CRF
+2025-08-09 17:07:22,523 | PanelControlView | DEBUG | RX COM3-> b'ESP-ROM:esp32s3-20210327\r\nL01:0\r\nL02:0\r\nLED1:OFF\nL01:0'
+2025-08-09 17:07:22,524 | PanelControlView | DEBUG | Procesando: ESP-ROM:esp32s3-20210327
+2025-08-09 17:07:22,524 | PanelControlView | DEBUG | Procesando: L01:0
+2025-08-09 17:07:22,524 | PanelControlView | DEBUG | Procesando: L02:0
+2025-08-09 17:07:22,525 | PanelControlView | DEBUG | Procesando: LED1:OFF
+2025-08-09 17:07:22,525 | PanelControlView | DEBUG | Procesando: L01:0
+2025-08-09 17:07:22,556 | PanelControlView | DEBUG | RX COM3-> b'LED2:OFF'
+2025-08-09 17:07:22,556 | PanelControlView | DEBUG | Procesando: LED2:OFF
+2025-08-09 17:07:22,556 | PanelControlView | DEBUG | RX COM3-> b'L02:0'
+2025-08-09 17:07:22,557 | PanelControlView | DEBUG | Procesando: L02:0
+2025-08-09 17:07:25,554 | PanelControlView | INFO | Programa detenido a las 17:07:25
+2025-08-09 17:07:25,562 | PanelControlView | DEBUG | TX: LED2:OFF -> 50
+2025-08-09 17:07:25,585 | PanelControlView | DEBUG | RX COM3-> b'LED1:OFF\nL01:0'
+2025-08-09 17:07:25,585 | PanelControlView | WARNING | Program not runing, ignore all data
+2025-08-09 17:07:25,601 | PanelControlView | DEBUG | RX COM3-> b'LED2:OFF\nL02:0'
+2025-08-09 17:07:25,602 | PanelControlView | WARNING | Program not runing, ignore all data
+2025-08-09 17:07:27,334 | PanelControlView | INFO | Programa iniciado a las 17:07:27
+2025-08-09 17:07:27,335 | PanelControlView | DEBUG | TX: LED1:OFF -> 10
+2025-08-09 17:07:27,335 | PanelControlView | DEBUG | TX: LED2:OFF -> 50
+2025-08-09 17:07:27,336 | PanelControlView | INFO | Config Led-01: ModoLuz.APAGADO, Led-02: ModoLuz.APAGADO
+2025-08-09 17:07:27,336 | PanelControlView | INFO | Config Pal-01: ModoPalanca.CRF, Pal-02: ModoPalanca.CRF
+2025-08-09 17:07:27,351 | PanelControlView | DEBUG | RX COM3-> b'LED1:OFF\nL01:0'
+2025-08-09 17:07:27,352 | PanelControlView | DEBUG | Procesando: LED1:OFF
+2025-08-09 17:07:27,352 | PanelControlView | DEBUG | Procesando: L01:0
+2025-08-09 17:07:27,386 | PanelControlView | DEBUG | RX COM3-> b'LED2:OFF\nL02:0'
+2025-08-09 17:07:27,387 | PanelControlView | DEBUG | Procesando: LED2:OFF
+2025-08-09 17:07:27,387 | PanelControlView | DEBUG | Procesando: L02:0
+2025-08-09 17:49:57,332 | InicioView | INFO | Vista de inicio configurada correctamente
+2025-08-09 17:49:57,424 | PanelControlView | ERROR | Error al configurar contenido: 'IndicatorsSectionBox' object has no attribute 'indicator_map'
+2025-08-09 17:49:57,425 | PanelControlView | ERROR | Error al configurar vista de inicio: 'IndicatorsSectionBox' object has no attribute 'indicator_map'
+2025-08-09 17:56:17,180 | InicioView | INFO | Vista de inicio configurada correctamente
+2025-08-09 17:56:17,317 | PanelControlView | INFO | Vista de inicio configurada correctamente
+2025-08-09 17:56:17,356 | ReporteView | INFO | Vista de inicio configurada correctamente
+2025-08-09 17:56:21,705 | PanelControlView | INFO | status uart Panel: True
+2025-08-09 17:56:30,864 | PanelControlView | INFO | Programa iniciado a las 17:56:30
+2025-08-09 17:56:30,864 | PanelControlView | DEBUG | TX: LED1:ON -> 10
+2025-08-09 17:56:30,865 | PanelControlView | DEBUG | TX: LED2:ON -> 50
+2025-08-09 17:56:30,865 | PanelControlView | INFO | Config Led-01: ModoLuz.ENCENDIDO, Led-02: ModoLuz.ENCENDIDO
+2025-08-09 17:56:30,865 | PanelControlView | INFO | Config Pal-01: ModoPalanca.CRF, Pal-02: ModoPalanca.CRF
+2025-08-09 17:56:30,886 | PanelControlView | DEBUG | RX COM3-> b'ESP-ROM:esp32s3-20210327\r\nL01:0\r\nL02:0\r\nLED1:ON\nL01:1'
+2025-08-09 17:56:30,886 | PanelControlView | DEBUG | Procesando: ESP-ROM:esp32s3-20210327
+2025-08-09 17:56:30,887 | PanelControlView | DEBUG | Procesando: L01:0
+2025-08-09 17:56:30,888 | PanelControlView | DEBUG | Procesando: L02:0
+2025-08-09 17:56:30,889 | PanelControlView | DEBUG | Procesando: LED1:ON
+2025-08-09 17:56:30,889 | PanelControlView | DEBUG | Procesando: L01:1
+2025-08-09 17:56:30,916 | PanelControlView | DEBUG | RX COM3-> b'LED2:ON\nL02:1'
+2025-08-09 17:56:30,916 | PanelControlView | DEBUG | Procesando: LED2:ON
+2025-08-09 17:56:30,916 | PanelControlView | DEBUG | Procesando: L02:1
+2025-08-09 18:00:24,536 | InicioView | INFO | Vista de inicio configurada correctamente
+2025-08-09 18:00:24,688 | PanelControlView | INFO | Vista de inicio configurada correctamente
+2025-08-09 18:00:24,725 | ReporteView | INFO | Vista de inicio configurada correctamente
+2025-08-09 18:00:27,348 | PanelControlView | INFO | status uart Panel: True
+2025-08-09 18:00:28,950 | PanelControlView | INFO | Programa iniciado a las 18:00:28
+2025-08-09 18:00:28,951 | PanelControlView | DEBUG | TX: LED1:OFF -> 10
+2025-08-09 18:00:28,951 | PanelControlView | DEBUG | TX: LED2:OFF -> 50
+2025-08-09 18:00:28,951 | PanelControlView | INFO | Config Led-01: ModoLuz.APAGADO, Led-02: ModoLuz.APAGADO
+2025-08-09 18:00:28,952 | PanelControlView | INFO | Config Pal-01: ModoPalanca.CRF, Pal-02: ModoPalanca.CRF
+2025-08-09 18:00:28,971 | PanelControlView | DEBUG | RX COM3-> b'ESP-ROM:esp32s3-20210327\r\nL01:0\r\nL02:0\r\nLED1:OFF'
+2025-08-09 18:00:28,971 | PanelControlView | DEBUG | Procesando: ESP-ROM:esp32s3-20210327
+2025-08-09 18:00:28,972 | PanelControlView | DEBUG | Procesando: L01:0
+2025-08-09 18:00:28,973 | PanelControlView | DEBUG | Procesando: L02:0
+2025-08-09 18:00:28,974 | PanelControlView | DEBUG | Procesando: LED1:OFF
+2025-08-09 18:00:28,974 | PanelControlView | DEBUG | RX COM3-> b'L01:0'
+2025-08-09 18:00:28,974 | PanelControlView | DEBUG | Procesando: L01:0
+2025-08-09 18:00:29,003 | PanelControlView | DEBUG | RX COM3-> b'LED2:OFF'
+2025-08-09 18:00:29,003 | PanelControlView | DEBUG | Procesando: LED2:OFF
+2025-08-09 18:00:29,004 | PanelControlView | DEBUG | RX COM3-> b'L02:0'
+2025-08-09 18:00:29,004 | PanelControlView | DEBUG | Procesando: L02:0
+2025-08-09 18:01:47,519 | InicioView | INFO | Vista de inicio configurada correctamente
+2025-08-09 18:01:47,649 | PanelControlView | INFO | Vista de inicio configurada correctamente
+2025-08-09 18:01:47,689 | ReporteView | INFO | Vista de inicio configurada correctamente
+2025-08-09 18:01:50,686 | PanelControlView | INFO | status uart Panel: True
+2025-08-09 18:01:51,851 | PanelControlView | INFO | Programa iniciado a las 18:01:51
+2025-08-09 18:01:51,851 | PanelControlView | DEBUG | TX: LED1:OFF -> 10
+2025-08-09 18:01:51,852 | PanelControlView | DEBUG | TX: LED2:OFF -> 50
+2025-08-09 18:01:51,852 | PanelControlView | INFO | Config Led-01: ModoLuz.APAGADO, Led-02: ModoLuz.APAGADO
+2025-08-09 18:01:51,852 | PanelControlView | INFO | Config Pal-01: ModoPalanca.CRF, Pal-02: ModoPalanca.CRF
+2025-08-09 18:01:51,873 | PanelControlView | DEBUG | RX COM3-> b'ESP-ROM:esp32s3-20210327\r\nL01:0\r\nL02:0\r\nLED1:OFF\nL01:0'
+2025-08-09 18:01:51,874 | PanelControlView | DEBUG | Procesando: ESP-ROM:esp32s3-20210327
+2025-08-09 18:01:51,874 | PanelControlView | DEBUG | Procesando: L01:0
+2025-08-09 18:01:51,876 | PanelControlView | DEBUG | Procesando: L02:0
+2025-08-09 18:01:51,876 | PanelControlView | DEBUG | Procesando: LED1:OFF
+2025-08-09 18:01:51,876 | PanelControlView | DEBUG | Procesando: L01:0
+2025-08-09 18:01:51,902 | PanelControlView | DEBUG | RX COM3-> b'LED2:OFF\nL02:0'
+2025-08-09 18:01:51,903 | PanelControlView | DEBUG | Procesando: LED2:OFF
+2025-08-09 18:01:51,903 | PanelControlView | DEBUG | Procesando: L02:0
+2025-08-09 18:03:18,809 | PanelControlView | DEBUG | RX COM3-> b'P02:1'
+2025-08-09 18:03:18,810 | PanelControlView | DEBUG | Procesando: P02:1
+2025-08-09 18:03:18,813 | PanelControlView | DEBUG | TX: DISP:1 -> 50
+2025-08-09 18:03:18,878 | PanelControlView | DEBUG | RX COM3-> b'DISP:1'
+2025-08-09 18:03:18,878 | PanelControlView | DEBUG | Procesando: DISP:1
+2025-08-09 18:03:18,879 | PanelControlView | DEBUG | RX COM3-> b'OK:DISP:1'
+2025-08-09 18:03:18,879 | PanelControlView | DEBUG | Procesando: OK:DISP:1
+2025-08-09 18:03:20,284 | PanelControlView | DEBUG | RX COM3-> b'P02:1'
+2025-08-09 18:03:20,286 | PanelControlView | DEBUG | Procesando: P02:1
+2025-08-09 18:03:20,292 | PanelControlView | DEBUG | TX: DISP:1 -> 50
+2025-08-09 18:03:20,358 | PanelControlView | DEBUG | RX COM3-> b'DISP:1\nOK:DISP:1'
+2025-08-09 18:03:20,359 | PanelControlView | DEBUG | Procesando: DISP:1
+2025-08-09 18:03:20,359 | PanelControlView | DEBUG | Procesando: OK:DISP:1
+2025-08-09 18:03:21,936 | PanelControlView | DEBUG | RX COM3-> b'P02:1'
+2025-08-09 18:03:21,937 | PanelControlView | DEBUG | Procesando: P02:1
+2025-08-09 18:03:21,943 | PanelControlView | DEBUG | TX: DISP:1 -> 50
+2025-08-09 18:03:21,984 | PanelControlView | DEBUG | RX COM3-> b'DISP:1\nOK:DISP:1'
+2025-08-09 18:03:21,984 | PanelControlView | DEBUG | Procesando: DISP:1
+2025-08-09 18:03:21,984 | PanelControlView | DEBUG | Procesando: OK:DISP:1
+2025-08-09 18:03:23,259 | PanelControlView | DEBUG | RX COM3-> b'P02:1'
+2025-08-09 18:03:23,260 | PanelControlView | DEBUG | Procesando: P02:1
+2025-08-09 18:03:23,265 | PanelControlView | DEBUG | TX: DISP:1 -> 50
+2025-08-09 18:03:23,309 | PanelControlView | DEBUG | RX COM3-> b'DISP:1\nOK:DISP:1'
+2025-08-09 18:03:23,309 | PanelControlView | DEBUG | Procesando: DISP:1
+2025-08-09 18:03:23,310 | PanelControlView | DEBUG | Procesando: OK:DISP:1
+2025-08-09 18:03:24,470 | PanelControlView | DEBUG | RX COM3-> b'P02:1'
+2025-08-09 18:03:24,471 | PanelControlView | DEBUG | Procesando: P02:1
+2025-08-09 18:03:24,478 | PanelControlView | DEBUG | TX: DISP:1 -> 50
+2025-08-09 18:03:24,523 | PanelControlView | DEBUG | RX COM3-> b'DISP:1\nOK:DISP:1'
+2025-08-09 18:03:24,523 | PanelControlView | DEBUG | Procesando: DISP:1
+2025-08-09 18:03:24,524 | PanelControlView | DEBUG | Procesando: OK:DISP:1
+2025-08-09 18:03:25,464 | PanelControlView | DEBUG | RX COM3-> b'P02:1'
+2025-08-09 18:03:25,465 | PanelControlView | DEBUG | Procesando: P02:1
+2025-08-09 18:03:25,470 | PanelControlView | DEBUG | TX: DISP:1 -> 50
+2025-08-09 18:03:25,521 | PanelControlView | DEBUG | RX COM3-> b'DISP:1\nOK:DISP:1'
+2025-08-09 18:03:25,521 | PanelControlView | DEBUG | Procesando: DISP:1
+2025-08-09 18:03:25,521 | PanelControlView | DEBUG | Procesando: OK:DISP:1
+2025-08-09 18:03:26,480 | PanelControlView | DEBUG | RX COM3-> b'P02:1'
+2025-08-09 18:03:26,481 | PanelControlView | DEBUG | Procesando: P02:1
+2025-08-09 18:03:26,489 | PanelControlView | DEBUG | TX: DISP:1 -> 50
+2025-08-09 18:03:26,538 | PanelControlView | DEBUG | RX COM3-> b'DISP:1\nOK:DISP:1'
+2025-08-09 18:03:26,538 | PanelControlView | DEBUG | Procesando: DISP:1
+2025-08-09 18:03:26,538 | PanelControlView | DEBUG | Procesando: OK:DISP:1
+2025-08-09 18:03:27,515 | PanelControlView | DEBUG | RX COM3-> b'P02:1'
+2025-08-09 18:03:27,516 | PanelControlView | DEBUG | Procesando: P02:1
+2025-08-09 18:03:27,523 | PanelControlView | DEBUG | TX: DISP:1 -> 50
+2025-08-09 18:03:27,569 | PanelControlView | DEBUG | RX COM3-> b'DISP:1\nOK:DISP:1'
+2025-08-09 18:03:27,569 | PanelControlView | DEBUG | Procesando: DISP:1
+2025-08-09 18:03:27,570 | PanelControlView | DEBUG | Procesando: OK:DISP:1
+2025-08-09 18:03:28,358 | PanelControlView | DEBUG | RX COM3-> b'P02:1'
+2025-08-09 18:03:28,358 | PanelControlView | DEBUG | Procesando: P02:1
+2025-08-09 18:03:28,360 | PanelControlView | DEBUG | TX: DISP:1 -> 50
+2025-08-09 18:03:28,412 | PanelControlView | DEBUG | RX COM3-> b'DISP:1\nOK:DISP:1'
+2025-08-09 18:03:28,412 | PanelControlView | DEBUG | Procesando: DISP:1
+2025-08-09 18:03:28,412 | PanelControlView | DEBUG | Procesando: OK:DISP:1
+2025-08-09 18:03:29,174 | PanelControlView | DEBUG | RX COM3-> b'P02:1'
+2025-08-09 18:03:29,175 | PanelControlView | DEBUG | Procesando: P02:1
+2025-08-09 18:03:29,180 | PanelControlView | DEBUG | TX: DISP:1 -> 50
+2025-08-09 18:03:29,231 | PanelControlView | DEBUG | RX COM3-> b'DISP:1\nOK:DISP:1'
+2025-08-09 18:03:29,232 | PanelControlView | DEBUG | Procesando: DISP:1
+2025-08-09 18:03:29,232 | PanelControlView | DEBUG | Procesando: OK:DISP:1
+2025-08-09 18:03:29,990 | PanelControlView | DEBUG | RX COM3-> b'P02:1'
+2025-08-09 18:03:29,991 | PanelControlView | DEBUG | Procesando: P02:1
+2025-08-09 18:03:29,997 | PanelControlView | DEBUG | TX: DISP:1 -> 50
+2025-08-09 18:03:30,050 | PanelControlView | DEBUG | RX COM3-> b'DISP:1\nOK:DISP:1'
+2025-08-09 18:03:30,050 | PanelControlView | DEBUG | Procesando: DISP:1
+2025-08-09 18:03:30,050 | PanelControlView | DEBUG | Procesando: OK:DISP:1
+2025-08-09 18:03:30,803 | PanelControlView | DEBUG | RX COM3-> b'P02:1'
+2025-08-09 18:03:30,804 | PanelControlView | DEBUG | Procesando: P02:1
+2025-08-09 18:03:30,805 | PanelControlView | DEBUG | TX: DISP:1 -> 50
+2025-08-09 18:03:30,844 | PanelControlView | DEBUG | RX COM3-> b'DISP:1\nOK:DISP:1'
+2025-08-09 18:03:30,844 | PanelControlView | DEBUG | Procesando: DISP:1
+2025-08-09 18:03:30,844 | PanelControlView | DEBUG | Procesando: OK:DISP:1
+2025-08-09 18:03:31,641 | PanelControlView | DEBUG | RX COM3-> b'P02:1'
+2025-08-09 18:03:31,642 | PanelControlView | DEBUG | Procesando: P02:1
+2025-08-09 18:03:31,648 | PanelControlView | DEBUG | TX: DISP:1 -> 50
+2025-08-09 18:03:31,699 | PanelControlView | DEBUG | RX COM3-> b'DISP:1'
+2025-08-09 18:03:31,700 | PanelControlView | DEBUG | Procesando: DISP:1
+2025-08-09 18:03:31,700 | PanelControlView | DEBUG | RX COM3-> b'OK:DISP:1'
+2025-08-09 18:03:31,700 | PanelControlView | DEBUG | Procesando: OK:DISP:1
+2025-08-09 18:03:32,476 | PanelControlView | DEBUG | RX COM3-> b'P02:1'
+2025-08-09 18:03:32,477 | PanelControlView | DEBUG | Procesando: P02:1
+2025-08-09 18:03:32,484 | PanelControlView | DEBUG | TX: DISP:1 -> 50
+2025-08-09 18:03:32,523 | PanelControlView | DEBUG | RX COM3-> b'DISP:1\nOK:DISP:1'
+2025-08-09 18:03:32,523 | PanelControlView | DEBUG | Procesando: DISP:1
+2025-08-09 18:03:32,524 | PanelControlView | DEBUG | Procesando: OK:DISP:1
+2025-08-09 18:03:33,274 | PanelControlView | DEBUG | RX COM3-> b'P02:1'
+2025-08-09 18:03:33,275 | PanelControlView | DEBUG | Procesando: P02:1
+2025-08-09 18:03:33,277 | PanelControlView | DEBUG | TX: DISP:1 -> 50
+2025-08-09 18:03:33,322 | PanelControlView | DEBUG | RX COM3-> b'DISP:1\nOK:DISP:1'
+2025-08-09 18:03:33,322 | PanelControlView | DEBUG | Procesando: DISP:1
+2025-08-09 18:03:33,323 | PanelControlView | DEBUG | Procesando: OK:DISP:1
+2025-08-09 18:03:34,054 | PanelControlView | DEBUG | RX COM3-> b'P02:1'
+2025-08-09 18:03:34,055 | PanelControlView | DEBUG | Procesando: P02:1
+2025-08-09 18:03:34,062 | PanelControlView | DEBUG | TX: DISP:1 -> 50
+2025-08-09 18:03:34,112 | PanelControlView | DEBUG | RX COM3-> b'DISP:1\nOK:DISP:1'
+2025-08-09 18:03:34,112 | PanelControlView | DEBUG | Procesando: DISP:1
+2025-08-09 18:03:34,113 | PanelControlView | DEBUG | Procesando: OK:DISP:1
+2025-08-09 18:03:34,784 | PanelControlView | DEBUG | RX COM3-> b'P02:1'
+2025-08-09 18:03:34,784 | PanelControlView | DEBUG | Procesando: P02:1
+2025-08-09 18:03:34,788 | PanelControlView | DEBUG | TX: DISP:1 -> 50
+2025-08-09 18:03:34,838 | PanelControlView | DEBUG | RX COM3-> b'DISP:1\nOK:DISP:1'
+2025-08-09 18:03:34,839 | PanelControlView | DEBUG | Procesando: DISP:1
+2025-08-09 18:03:34,839 | PanelControlView | DEBUG | Procesando: OK:DISP:1
+2025-08-09 18:03:35,449 | PanelControlView | DEBUG | RX COM3-> b'P02:1'
+2025-08-09 18:03:35,449 | PanelControlView | DEBUG | Procesando: P02:1
+2025-08-09 18:03:35,452 | PanelControlView | DEBUG | TX: DISP:1 -> 50
+2025-08-09 18:03:35,493 | PanelControlView | DEBUG | RX COM3-> b'DISP:1'
+2025-08-09 18:03:35,493 | PanelControlView | DEBUG | Procesando: DISP:1
+2025-08-09 18:03:35,494 | PanelControlView | DEBUG | RX COM3-> b'OK:DISP:1'
+2025-08-09 18:03:35,494 | PanelControlView | DEBUG | Procesando: OK:DISP:1
+2025-08-09 18:03:35,883 | PanelControlView | DEBUG | RX COM3-> b'P02:1'
+2025-08-09 18:03:35,884 | PanelControlView | DEBUG | Procesando: P02:1
+2025-08-09 18:03:35,886 | PanelControlView | DEBUG | TX: DISP:1 -> 50
+2025-08-09 18:03:35,937 | PanelControlView | DEBUG | RX COM3-> b'DISP:1'
+2025-08-09 18:03:35,937 | PanelControlView | DEBUG | Procesando: DISP:1
+2025-08-09 18:03:35,938 | PanelControlView | DEBUG | RX COM3-> b'OK:DISP:1'
+2025-08-09 18:03:35,938 | PanelControlView | DEBUG | Procesando: OK:DISP:1
+2025-08-09 18:03:36,265 | PanelControlView | DEBUG | RX COM3-> b'P02:1'
+2025-08-09 18:03:36,266 | PanelControlView | DEBUG | Procesando: P02:1
+2025-08-09 18:03:36,273 | PanelControlView | DEBUG | TX: DISP:1 -> 50
+2025-08-09 18:03:36,321 | PanelControlView | DEBUG | RX COM3-> b'DISP:1\nOK:DISP:1'
+2025-08-09 18:03:36,321 | PanelControlView | DEBUG | Procesando: DISP:1
+2025-08-09 18:03:36,321 | PanelControlView | DEBUG | Procesando: OK:DISP:1
+2025-08-09 18:03:36,605 | PanelControlView | DEBUG | RX COM3-> b'P02:1'
+2025-08-09 18:03:36,607 | PanelControlView | DEBUG | Procesando: P02:1
+2025-08-09 18:03:36,613 | PanelControlView | DEBUG | TX: DISP:1 -> 50
+2025-08-09 18:03:36,651 | PanelControlView | DEBUG | RX COM3-> b'DISP:1\nOK:DISP:1'
+2025-08-09 18:03:36,652 | PanelControlView | DEBUG | Procesando: DISP:1
+2025-08-09 18:03:36,652 | PanelControlView | DEBUG | Procesando: OK:DISP:1
+2025-08-09 18:05:54,348 | InicioView | INFO | Vista de inicio configurada correctamente
+2025-08-09 18:05:54,488 | PanelControlView | INFO | Vista de inicio configurada correctamente
+2025-08-09 18:05:54,529 | ReporteView | INFO | Vista de inicio configurada correctamente
+2025-08-09 18:06:02,081 | PanelControlView | INFO | status uart Panel: True
+2025-08-09 18:06:03,506 | PanelControlView | INFO | Programa iniciado a las 18:06:03
+2025-08-09 18:06:03,506 | PanelControlView | DEBUG | TX: LED1:OFF -> 10
+2025-08-09 18:06:03,507 | PanelControlView | DEBUG | TX: LED2:OFF -> 50
+2025-08-09 18:06:03,507 | PanelControlView | INFO | Config Led-01: ModoLuz.APAGADO, Led-02: ModoLuz.APAGADO
+2025-08-09 18:06:03,508 | PanelControlView | INFO | Config Pal-01: ModoPalanca.CRF, Pal-02: ModoPalanca.CRF
+2025-08-09 18:06:03,529 | PanelControlView | DEBUG | RX COM3-> b'ESP-ROM:esp32s3-20210327\r\nL01:0\r\nL02:0\r\nLED1:OFF\nL01:0'
+2025-08-09 18:06:03,529 | PanelControlView | DEBUG | Procesando: ESP-ROM:esp32s3-20210327
+2025-08-09 18:06:03,530 | PanelControlView | DEBUG | Procesando: L01:0
+2025-08-09 18:06:03,532 | PanelControlView | DEBUG | Procesando: L02:0
+2025-08-09 18:06:03,532 | PanelControlView | DEBUG | Procesando: LED1:OFF
+2025-08-09 18:06:03,533 | PanelControlView | DEBUG | Procesando: L01:0
+2025-08-09 18:06:03,559 | PanelControlView | DEBUG | RX COM3-> b'LED2:OFF\nL02:0'
+2025-08-09 18:06:03,559 | PanelControlView | DEBUG | Procesando: LED2:OFF
+2025-08-09 18:06:03,559 | PanelControlView | DEBUG | Procesando: L02:0
+2025-08-09 18:06:08,101 | PanelControlView | DEBUG | RX COM3-> b'P02:1'
+2025-08-09 18:06:08,101 | PanelControlView | DEBUG | Procesando: P02:1
+2025-08-09 18:06:08,103 | PanelControlView | DEBUG | TX: DISP:1 -> 50
+2025-08-09 18:06:08,155 | PanelControlView | DEBUG | RX COM3-> b'DISP:1\nOK:DISP:1'
+2025-08-09 18:06:08,156 | PanelControlView | DEBUG | Procesando: DISP:1
+2025-08-09 18:06:08,156 | PanelControlView | DEBUG | Procesando: OK:DISP:1
+2025-08-09 18:08:26,586 | InicioView | INFO | Vista de inicio configurada correctamente
+2025-08-09 18:08:26,747 | PanelControlView | INFO | Vista de inicio configurada correctamente
+2025-08-09 18:08:26,791 | ReporteView | INFO | Vista de inicio configurada correctamente
+2025-08-09 18:10:07,245 | InicioView | INFO | Vista de inicio configurada correctamente
+2025-08-09 18:10:07,439 | PanelControlView | INFO | Vista de inicio configurada correctamente
+2025-08-09 18:10:07,505 | ReporteView | INFO | Vista de inicio configurada correctamente
+2025-08-09 18:10:13,237 | PanelControlView | INFO | status uart Panel: True
+2025-08-09 18:10:21,616 | PanelControlView | INFO | Programa iniciado a las 18:10:21
+2025-08-09 18:10:21,617 | PanelControlView | DEBUG | TX: LED1:OFF -> 10
+2025-08-09 18:10:21,617 | PanelControlView | DEBUG | TX: LED2:OFF -> 50
+2025-08-09 18:10:21,618 | PanelControlView | INFO | Config Led-01: ModoLuz.APAGADO, Led-02: ModoLuz.APAGADO
+2025-08-09 18:10:21,618 | PanelControlView | INFO | Config Pal-01: ModoPalanca.CRF, Pal-02: ModoPalanca.CRF
+2025-08-09 18:10:21,640 | PanelControlView | DEBUG | RX COM3-> b'ESP-ROM:esp32s3-20210327\r\nL01:0\r\nL02:0\r\nLED1:OFF\nL01:0'
+2025-08-09 18:10:21,640 | PanelControlView | DEBUG | Procesando: ESP-ROM:esp32s3-20210327
+2025-08-09 18:10:21,641 | PanelControlView | DEBUG | Procesando: L01:0
+2025-08-09 18:10:21,642 | PanelControlView | DEBUG | Procesando: L02:0
+2025-08-09 18:10:21,643 | PanelControlView | DEBUG | Procesando: LED1:OFF
+2025-08-09 18:10:21,643 | PanelControlView | DEBUG | Procesando: L01:0
+2025-08-09 18:10:21,668 | PanelControlView | DEBUG | RX COM3-> b'LED2:OFF\nL02:0'
+2025-08-09 18:10:21,668 | PanelControlView | DEBUG | Procesando: LED2:OFF
+2025-08-09 18:10:21,669 | PanelControlView | DEBUG | Procesando: L02:0
+2025-08-09 18:10:26,997 | PanelControlView | DEBUG | RX COM3-> b'P02:1'
+2025-08-09 18:10:26,997 | PanelControlView | DEBUG | Procesando: P02:1
+2025-08-09 18:10:27,001 | PanelControlView | DEBUG | TX: DISP:1 -> 50
+2025-08-09 18:10:27,045 | PanelControlView | DEBUG | RX COM3-> b'DISP:1'
+2025-08-09 18:10:27,045 | PanelControlView | DEBUG | Procesando: DISP:1
+2025-08-09 18:10:27,046 | PanelControlView | DEBUG | RX COM3-> b'OK:DISP:1'
+2025-08-09 18:10:27,046 | PanelControlView | DEBUG | Procesando: OK:DISP:1
+2025-08-09 18:10:27,601 | PanelControlView | DEBUG | RX COM3-> b'P02:1'
+2025-08-09 18:10:27,602 | PanelControlView | DEBUG | Procesando: P02:1
+2025-08-09 18:10:27,605 | PanelControlView | DEBUG | TX: DISP:1 -> 50
+2025-08-09 18:10:27,658 | PanelControlView | DEBUG | RX COM3-> b'DISP:1'
+2025-08-09 18:10:27,658 | PanelControlView | DEBUG | Procesando: DISP:1
+2025-08-09 18:10:27,659 | PanelControlView | DEBUG | RX COM3-> b'OK:DISP:1'
+2025-08-09 18:10:27,659 | PanelControlView | DEBUG | Procesando: OK:DISP:1
+2025-08-09 18:10:28,467 | PanelControlView | DEBUG | RX COM3-> b'P02:1'
+2025-08-09 18:10:28,467 | PanelControlView | DEBUG | Procesando: P02:1
+2025-08-09 18:10:28,471 | PanelControlView | DEBUG | TX: DISP:1 -> 50
+2025-08-09 18:10:28,523 | PanelControlView | DEBUG | RX COM3-> b'DISP:1\nOK:DISP:1'
+2025-08-09 18:10:28,523 | PanelControlView | DEBUG | Procesando: DISP:1
+2025-08-09 18:10:28,523 | PanelControlView | DEBUG | Procesando: OK:DISP:1
+2025-08-09 18:10:29,187 | PanelControlView | DEBUG | RX COM3-> b'P02:1'
+2025-08-09 18:10:29,187 | PanelControlView | DEBUG | Procesando: P02:1
+2025-08-09 18:10:29,191 | PanelControlView | DEBUG | TX: DISP:1 -> 50
+2025-08-09 18:10:29,238 | PanelControlView | DEBUG | RX COM3-> b'DISP:1'
+2025-08-09 18:10:29,238 | PanelControlView | DEBUG | Procesando: DISP:1
+2025-08-09 18:10:29,239 | PanelControlView | DEBUG | RX COM3-> b'OK:DISP:1'
+2025-08-09 18:10:29,239 | PanelControlView | DEBUG | Procesando: OK:DISP:1
+2025-08-09 18:10:29,962 | PanelControlView | DEBUG | RX COM3-> b'P02:1'
+2025-08-09 18:10:29,962 | PanelControlView | DEBUG | Procesando: P02:1
+2025-08-09 18:10:29,966 | PanelControlView | DEBUG | TX: DISP:1 -> 50
+2025-08-09 18:10:30,006 | PanelControlView | DEBUG | RX COM3-> b'DISP:1\nOK:DISP:1'
+2025-08-09 18:10:30,007 | PanelControlView | DEBUG | Procesando: DISP:1
+2025-08-09 18:10:30,007 | PanelControlView | DEBUG | Procesando: OK:DISP:1
+2025-08-09 18:10:30,821 | PanelControlView | DEBUG | RX COM3-> b'P02:1'
+2025-08-09 18:10:30,822 | PanelControlView | DEBUG | Procesando: P02:1
+2025-08-09 18:10:30,825 | PanelControlView | DEBUG | TX: DISP:1 -> 50
+2025-08-09 18:10:30,869 | PanelControlView | DEBUG | RX COM3-> b'DISP:1\nOK:DISP:1'
+2025-08-09 18:10:30,869 | PanelControlView | DEBUG | Procesando: DISP:1
+2025-08-09 18:10:30,869 | PanelControlView | DEBUG | Procesando: OK:DISP:1
+2025-08-09 18:10:34,936 | PanelControlView | DEBUG | RX COM3-> b'P02:1'
+2025-08-09 18:10:34,936 | PanelControlView | DEBUG | Procesando: P02:1
+2025-08-09 18:10:34,939 | PanelControlView | DEBUG | TX: DISP:1 -> 50
+2025-08-09 18:10:34,990 | PanelControlView | DEBUG | RX COM3-> b'DISP:1'
+2025-08-09 18:10:34,991 | PanelControlView | DEBUG | Procesando: DISP:1
+2025-08-09 18:10:34,991 | PanelControlView | DEBUG | RX COM3-> b'OK:DISP:1'
+2025-08-09 18:10:34,991 | PanelControlView | DEBUG | Procesando: OK:DISP:1
+2025-08-09 18:10:44,721 | PanelControlView | DEBUG | RX COM3-> b'P02:1'
+2025-08-09 18:10:44,721 | PanelControlView | DEBUG | Procesando: P02:1
+2025-08-09 18:10:44,724 | PanelControlView | DEBUG | TX: DISP:1 -> 50
+2025-08-09 18:10:44,774 | PanelControlView | DEBUG | RX COM3-> b'DISP:1\nOK:DISP:1'
+2025-08-09 18:10:44,774 | PanelControlView | DEBUG | Procesando: DISP:1
+2025-08-09 18:10:44,775 | PanelControlView | DEBUG | Procesando: OK:DISP:1
+2025-08-09 18:10:45,836 | PanelControlView | DEBUG | RX COM3-> b'P02:1'
+2025-08-09 18:10:45,836 | PanelControlView | DEBUG | Procesando: P02:1
+2025-08-09 18:10:45,839 | PanelControlView | DEBUG | TX: DISP:1 -> 50
+2025-08-09 18:10:45,886 | PanelControlView | DEBUG | RX COM3-> b'DISP:1\nOK:DISP:1'
+2025-08-09 18:10:45,887 | PanelControlView | DEBUG | Procesando: DISP:1
+2025-08-09 18:10:45,887 | PanelControlView | DEBUG | Procesando: OK:DISP:1
+2025-08-09 18:10:46,956 | PanelControlView | DEBUG | RX COM3-> b'P02:1'
+2025-08-09 18:10:46,956 | PanelControlView | DEBUG | Procesando: P02:1
+2025-08-09 18:10:46,959 | PanelControlView | DEBUG | TX: DISP:1 -> 50
+2025-08-09 18:10:47,020 | PanelControlView | DEBUG | RX COM3-> b'DISP:1\nOK:DISP:1'
+2025-08-09 18:10:47,020 | PanelControlView | DEBUG | Procesando: DISP:1
+2025-08-09 18:10:47,021 | PanelControlView | DEBUG | Procesando: OK:DISP:1
+2025-08-09 18:10:47,886 | PanelControlView | DEBUG | RX COM3-> b'P02:1'
+2025-08-09 18:10:47,886 | PanelControlView | DEBUG | Procesando: P02:1
+2025-08-09 18:10:47,889 | PanelControlView | DEBUG | TX: DISP:1 -> 50
+2025-08-09 18:10:47,933 | PanelControlView | DEBUG | RX COM3-> b'DISP:1\nOK:DISP:1'
+2025-08-09 18:10:47,934 | PanelControlView | DEBUG | Procesando: DISP:1
+2025-08-09 18:10:47,935 | PanelControlView | DEBUG | Procesando: OK:DISP:1
+2025-08-09 18:10:48,791 | PanelControlView | DEBUG | RX COM3-> b'P02:1'
+2025-08-09 18:10:48,791 | PanelControlView | DEBUG | Procesando: P02:1
+2025-08-09 18:10:48,794 | PanelControlView | DEBUG | TX: DISP:1 -> 50
+2025-08-09 18:10:48,850 | PanelControlView | DEBUG | RX COM3-> b'DISP:1'
+2025-08-09 18:10:48,850 | PanelControlView | DEBUG | Procesando: DISP:1
+2025-08-09 18:10:48,851 | PanelControlView | DEBUG | RX COM3-> b'OK:DISP:1'
+2025-08-09 18:10:48,851 | PanelControlView | DEBUG | Procesando: OK:DISP:1
+2025-08-09 18:10:49,761 | PanelControlView | DEBUG | RX COM3-> b'P02:1'
+2025-08-09 18:10:49,762 | PanelControlView | DEBUG | Procesando: P02:1
+2025-08-09 18:10:49,767 | PanelControlView | DEBUG | TX: DISP:1 -> 50
+2025-08-09 18:10:49,831 | PanelControlView | DEBUG | RX COM3-> b'DISP:1\nOK:DISP:1'
+2025-08-09 18:10:49,832 | PanelControlView | DEBUG | Procesando: DISP:1
+2025-08-09 18:10:49,832 | PanelControlView | DEBUG | Procesando: OK:DISP:1
+2025-08-09 18:10:50,596 | PanelControlView | DEBUG | RX COM3-> b'P02:1'
+2025-08-09 18:10:50,597 | PanelControlView | DEBUG | Procesando: P02:1
+2025-08-09 18:10:50,604 | PanelControlView | DEBUG | TX: DISP:1 -> 50
+2025-08-09 18:10:50,664 | PanelControlView | DEBUG | RX COM3-> b'DISP:1\nOK:DISP:1'
+2025-08-09 18:10:50,664 | PanelControlView | DEBUG | Procesando: DISP:1
+2025-08-09 18:10:50,664 | PanelControlView | DEBUG | Procesando: OK:DISP:1
+2025-08-09 18:10:51,221 | PanelControlView | DEBUG | RX COM3-> b'P02:1'
+2025-08-09 18:10:51,222 | PanelControlView | DEBUG | Procesando: P02:1
+2025-08-09 18:10:51,228 | PanelControlView | DEBUG | TX: DISP:1 -> 50
+2025-08-09 18:10:51,281 | PanelControlView | DEBUG | RX COM3-> b'DISP:1\nOK:DISP:1'
+2025-08-09 18:10:51,282 | PanelControlView | DEBUG | Procesando: DISP:1
+2025-08-09 18:10:51,282 | PanelControlView | DEBUG | Procesando: OK:DISP:1
+2025-08-09 18:10:51,944 | PanelControlView | DEBUG | RX COM3-> b'P02:1'
+2025-08-09 18:10:51,944 | PanelControlView | DEBUG | Procesando: P02:1
+2025-08-09 18:10:51,952 | PanelControlView | DEBUG | TX: DISP:1 -> 50
+2025-08-09 18:10:51,997 | PanelControlView | DEBUG | RX COM3-> b'DISP:1\nOK:DISP:1'
+2025-08-09 18:10:51,998 | PanelControlView | DEBUG | Procesando: DISP:1
+2025-08-09 18:10:51,998 | PanelControlView | DEBUG | Procesando: OK:DISP:1
+2025-08-09 18:10:52,782 | PanelControlView | DEBUG | RX COM3-> b'P02:1'
+2025-08-09 18:10:52,782 | PanelControlView | DEBUG | Procesando: P02:1
+2025-08-09 18:10:52,788 | PanelControlView | DEBUG | TX: DISP:1 -> 50
+2025-08-09 18:10:52,847 | PanelControlView | DEBUG | RX COM3-> b'DISP:1'
+2025-08-09 18:10:52,847 | PanelControlView | DEBUG | Procesando: DISP:1
+2025-08-09 18:10:52,847 | PanelControlView | DEBUG | RX COM3-> b'OK:DISP:1'
+2025-08-09 18:10:52,848 | PanelControlView | DEBUG | Procesando: OK:DISP:1
+2025-08-09 18:10:53,646 | PanelControlView | DEBUG | RX COM3-> b'P02:1'
+2025-08-09 18:10:53,646 | PanelControlView | DEBUG | Procesando: P02:1
+2025-08-09 18:10:53,650 | PanelControlView | DEBUG | TX: DISP:1 -> 50
+2025-08-09 18:10:53,698 | PanelControlView | DEBUG | RX COM3-> b'DISP:1\nOK:DISP:1'
+2025-08-09 18:10:53,699 | PanelControlView | DEBUG | Procesando: DISP:1
+2025-08-09 18:10:53,699 | PanelControlView | DEBUG | Procesando: OK:DISP:1
+2025-08-09 18:10:54,346 | PanelControlView | DEBUG | RX COM3-> b'P02:1'
+2025-08-09 18:10:54,347 | PanelControlView | DEBUG | Procesando: P02:1
+2025-08-09 18:10:54,350 | PanelControlView | DEBUG | TX: DISP:1 -> 50
+2025-08-09 18:10:54,411 | PanelControlView | DEBUG | RX COM3-> b'DISP:1'
+2025-08-09 18:10:54,411 | PanelControlView | DEBUG | Procesando: DISP:1
+2025-08-09 18:10:54,412 | PanelControlView | DEBUG | RX COM3-> b'OK:DISP:1'
+2025-08-09 18:10:54,412 | PanelControlView | DEBUG | Procesando: OK:DISP:1
+2025-08-09 18:10:55,056 | PanelControlView | DEBUG | RX COM3-> b'P02:1'
+2025-08-09 18:10:55,057 | PanelControlView | DEBUG | Procesando: P02:1
+2025-08-09 18:10:55,060 | PanelControlView | DEBUG | TX: DISP:1 -> 50
+2025-08-09 18:10:55,110 | PanelControlView | DEBUG | RX COM3-> b'DISP:1'
+2025-08-09 18:10:55,111 | PanelControlView | DEBUG | Procesando: DISP:1
+2025-08-09 18:10:55,111 | PanelControlView | DEBUG | RX COM3-> b'OK:DISP:1'
+2025-08-09 18:10:55,112 | PanelControlView | DEBUG | Procesando: OK:DISP:1
+2025-08-09 18:10:55,911 | PanelControlView | DEBUG | RX COM3-> b'P02:1'
+2025-08-09 18:10:55,911 | PanelControlView | DEBUG | Procesando: P02:1
+2025-08-09 18:10:55,915 | PanelControlView | DEBUG | TX: DISP:1 -> 50
+2025-08-09 18:10:55,975 | PanelControlView | DEBUG | RX COM3-> b'DISP:1\nOK:DISP:1'
+2025-08-09 18:10:55,975 | PanelControlView | DEBUG | Procesando: DISP:1
+2025-08-09 18:10:55,975 | PanelControlView | DEBUG | Procesando: OK:DISP:1
+2025-08-09 18:10:56,581 | PanelControlView | DEBUG | RX COM3-> b'P02:1'
+2025-08-09 18:10:56,581 | PanelControlView | DEBUG | Procesando: P02:1
+2025-08-09 18:10:56,585 | PanelControlView | DEBUG | TX: DISP:1 -> 50
+2025-08-09 18:10:56,642 | PanelControlView | DEBUG | RX COM3-> b'DISP:1\nOK:DISP:1'
+2025-08-09 18:10:56,643 | PanelControlView | DEBUG | Procesando: DISP:1
+2025-08-09 18:10:56,643 | PanelControlView | DEBUG | Procesando: OK:DISP:1
+2025-08-09 18:10:57,501 | PanelControlView | DEBUG | RX COM3-> b'P02:1'
+2025-08-09 18:10:57,501 | PanelControlView | DEBUG | Procesando: P02:1
+2025-08-09 18:10:57,504 | PanelControlView | DEBUG | TX: DISP:1 -> 50
+2025-08-09 18:10:57,556 | PanelControlView | DEBUG | RX COM3-> b'DISP:1'
+2025-08-09 18:10:57,557 | PanelControlView | DEBUG | Procesando: DISP:1
+2025-08-09 18:10:57,557 | PanelControlView | DEBUG | RX COM3-> b'OK:DISP:1'
+2025-08-09 18:10:57,558 | PanelControlView | DEBUG | Procesando: OK:DISP:1
+2025-08-09 18:11:09,716 | PanelControlView | DEBUG | RX COM3-> b'P02:1'
+2025-08-09 18:11:09,717 | PanelControlView | DEBUG | Procesando: P02:1
+2025-08-09 18:11:09,723 | PanelControlView | DEBUG | TX: DISP:1 -> 50
+2025-08-09 18:11:09,778 | PanelControlView | DEBUG | RX COM3-> b'DISP:1\nOK:DISP:1'
+2025-08-09 18:11:09,779 | PanelControlView | DEBUG | Procesando: DISP:1
+2025-08-09 18:11:09,779 | PanelControlView | DEBUG | Procesando: OK:DISP:1
+2025-08-09 18:11:13,236 | PanelControlView | DEBUG | RX COM3-> b'P02:1'
+2025-08-09 18:11:13,237 | PanelControlView | DEBUG | Procesando: P02:1
+2025-08-09 18:11:13,243 | PanelControlView | DEBUG | TX: DISP:1 -> 50
+2025-08-09 18:11:13,305 | PanelControlView | DEBUG | RX COM3-> b'DISP:1'
+2025-08-09 18:11:13,305 | PanelControlView | DEBUG | Procesando: DISP:1
+2025-08-09 18:11:13,305 | PanelControlView | DEBUG | RX COM3-> b'OK:DISP:1'
+2025-08-09 18:11:13,306 | PanelControlView | DEBUG | Procesando: OK:DISP:1
+2025-08-09 18:11:14,101 | PanelControlView | DEBUG | RX COM3-> b'P02:1'
+2025-08-09 18:11:14,101 | PanelControlView | DEBUG | Procesando: P02:1
+2025-08-09 18:11:14,107 | PanelControlView | DEBUG | TX: DISP:1 -> 50
+2025-08-09 18:11:14,157 | PanelControlView | DEBUG | RX COM3-> b'DISP:1'
+2025-08-09 18:11:14,157 | PanelControlView | DEBUG | Procesando: DISP:1
+2025-08-09 18:11:14,157 | PanelControlView | DEBUG | RX COM3-> b'OK:DISP:1'
+2025-08-09 18:11:14,158 | PanelControlView | DEBUG | Procesando: OK:DISP:1
+2025-08-09 18:11:14,941 | PanelControlView | DEBUG | RX COM3-> b'P02:1'
+2025-08-09 18:11:14,941 | PanelControlView | DEBUG | Procesando: P02:1
+2025-08-09 18:11:14,945 | PanelControlView | DEBUG | TX: DISP:1 -> 50
+2025-08-09 18:11:15,004 | PanelControlView | DEBUG | RX COM3-> b'DISP:1'
+2025-08-09 18:11:15,005 | PanelControlView | DEBUG | Procesando: DISP:1
+2025-08-09 18:11:15,005 | PanelControlView | DEBUG | RX COM3-> b'OK:DISP:1'
+2025-08-09 18:11:15,006 | PanelControlView | DEBUG | Procesando: OK:DISP:1
+2025-08-09 18:11:15,726 | PanelControlView | DEBUG | RX COM3-> b'P02:1'
+2025-08-09 18:11:15,726 | PanelControlView | DEBUG | Procesando: P02:1
+2025-08-09 18:11:15,729 | PanelControlView | DEBUG | TX: DISP:1 -> 50
+2025-08-09 18:11:15,770 | PanelControlView | DEBUG | RX COM3-> b'DISP:1\nOK:DISP:1'
+2025-08-09 18:11:15,770 | PanelControlView | DEBUG | Procesando: DISP:1
+2025-08-09 18:11:15,771 | PanelControlView | DEBUG | Procesando: OK:DISP:1
+2025-08-09 18:12:09,595 | InicioView | INFO | Vista de inicio configurada correctamente
+2025-08-09 18:12:09,749 | PanelControlView | INFO | Vista de inicio configurada correctamente
+2025-08-09 18:12:09,787 | ReporteView | INFO | Vista de inicio configurada correctamente
+2025-08-09 18:12:12,868 | PanelControlView | INFO | status uart Panel: True
+2025-08-09 18:12:14,116 | PanelControlView | INFO | Programa iniciado a las 18:12:14
+2025-08-09 18:12:14,116 | PanelControlView | DEBUG | TX: LED1:OFF -> 10
+2025-08-09 18:12:14,117 | PanelControlView | DEBUG | TX: LED2:OFF -> 50
+2025-08-09 18:12:14,117 | PanelControlView | INFO | Config Led-01: ModoLuz.APAGADO, Led-02: ModoLuz.APAGADO
+2025-08-09 18:12:14,117 | PanelControlView | INFO | Config Pal-01: ModoPalanca.CRF, Pal-02: ModoPalanca.CRF
+2025-08-09 18:12:14,137 | PanelControlView | DEBUG | RX COM3-> b'ESP-ROM:esp32s3-20210327\r\nL01:0\r\nL02:0\r\nLED1:OFF'
+2025-08-09 18:12:14,137 | PanelControlView | DEBUG | Procesando: ESP-ROM:esp32s3-20210327
+2025-08-09 18:12:14,138 | PanelControlView | DEBUG | Procesando: L01:0
+2025-08-09 18:12:14,141 | PanelControlView | DEBUG | Procesando: L02:0
+2025-08-09 18:12:14,142 | PanelControlView | DEBUG | Procesando: LED1:OFF
+2025-08-09 18:12:14,143 | PanelControlView | DEBUG | RX COM3-> b'L01:0'
+2025-08-09 18:12:14,143 | PanelControlView | DEBUG | Procesando: L01:0
+2025-08-09 18:12:14,168 | PanelControlView | DEBUG | RX COM3-> b'LED2:OFF'
+2025-08-09 18:12:14,168 | PanelControlView | DEBUG | Procesando: LED2:OFF
+2025-08-09 18:12:14,168 | PanelControlView | DEBUG | RX COM3-> b'L02:0'
+2025-08-09 18:12:14,169 | PanelControlView | DEBUG | Procesando: L02:0
+2025-08-09 18:12:16,994 | PanelControlView | DEBUG | RX COM3-> b'P02:1'
+2025-08-09 18:12:16,994 | PanelControlView | DEBUG | Procesando: P02:1
+2025-08-09 18:12:16,998 | PanelControlView | DEBUG | TX: DISP:1 -> 50
+2025-08-09 18:12:17,039 | PanelControlView | DEBUG | RX COM3-> b'DISP:1'
+2025-08-09 18:12:17,040 | PanelControlView | DEBUG | Procesando: DISP:1
+2025-08-09 18:12:17,040 | PanelControlView | DEBUG | RX COM3-> b'OK:DISP:1'
+2025-08-09 18:12:17,040 | PanelControlView | DEBUG | Procesando: OK:DISP:1
+2025-08-09 18:12:17,804 | PanelControlView | DEBUG | RX COM3-> b'P02:1'
+2025-08-09 18:12:17,805 | PanelControlView | DEBUG | Procesando: P02:1
+2025-08-09 18:12:17,811 | PanelControlView | DEBUG | TX: DISP:1 -> 50
+2025-08-09 18:12:17,859 | PanelControlView | DEBUG | RX COM3-> b'DISP:1'
+2025-08-09 18:12:17,859 | PanelControlView | DEBUG | Procesando: DISP:1
+2025-08-09 18:12:17,860 | PanelControlView | DEBUG | RX COM3-> b'OK:DISP:1'
+2025-08-09 18:12:17,860 | PanelControlView | DEBUG | Procesando: OK:DISP:1
+2025-08-09 18:12:18,610 | PanelControlView | DEBUG | RX COM3-> b'P02:1'
+2025-08-09 18:12:18,611 | PanelControlView | DEBUG | Procesando: P02:1
+2025-08-09 18:12:18,617 | PanelControlView | DEBUG | TX: DISP:1 -> 50
+2025-08-09 18:12:18,657 | PanelControlView | DEBUG | RX COM3-> b'DISP:1\nOK:DISP:1'
+2025-08-09 18:12:18,657 | PanelControlView | DEBUG | Procesando: DISP:1
+2025-08-09 18:12:18,657 | PanelControlView | DEBUG | Procesando: OK:DISP:1
+2025-08-09 18:12:19,315 | PanelControlView | DEBUG | RX COM3-> b'P02:1'
+2025-08-09 18:12:19,316 | PanelControlView | DEBUG | Procesando: P02:1
+2025-08-09 18:12:19,322 | PanelControlView | DEBUG | TX: DISP:1 -> 50
+2025-08-09 18:12:19,367 | PanelControlView | DEBUG | RX COM3-> b'DISP:1'
+2025-08-09 18:12:19,368 | PanelControlView | DEBUG | Procesando: DISP:1
+2025-08-09 18:12:19,368 | PanelControlView | DEBUG | RX COM3-> b'OK:DISP:1'
+2025-08-09 18:12:19,368 | PanelControlView | DEBUG | Procesando: OK:DISP:1
+2025-08-09 18:12:20,039 | PanelControlView | DEBUG | RX COM3-> b'P02:1'
+2025-08-09 18:12:20,039 | PanelControlView | DEBUG | Procesando: P02:1
+2025-08-09 18:12:20,042 | PanelControlView | DEBUG | TX: DISP:1 -> 50
+2025-08-09 18:12:20,093 | PanelControlView | DEBUG | RX COM3-> b'DISP:1'
+2025-08-09 18:12:20,093 | PanelControlView | DEBUG | Procesando: DISP:1
+2025-08-09 18:12:20,093 | PanelControlView | DEBUG | RX COM3-> b'OK:DISP:1'
+2025-08-09 18:12:20,094 | PanelControlView | DEBUG | Procesando: OK:DISP:1
+2025-08-09 18:12:20,784 | PanelControlView | DEBUG | RX COM3-> b'P02:1'
+2025-08-09 18:12:20,784 | PanelControlView | DEBUG | Procesando: P02:1
+2025-08-09 18:12:20,788 | PanelControlView | DEBUG | TX: DISP:1 -> 50
+2025-08-09 18:12:20,839 | PanelControlView | DEBUG | RX COM3-> b'DISP:1'
+2025-08-09 18:12:20,839 | PanelControlView | DEBUG | Procesando: DISP:1
+2025-08-09 18:12:20,839 | PanelControlView | DEBUG | RX COM3-> b'OK:DISP:1'
+2025-08-09 18:12:20,840 | PanelControlView | DEBUG | Procesando: OK:DISP:1
+2025-08-09 18:12:48,077 | InicioView | INFO | Vista de inicio configurada correctamente
+2025-08-09 18:12:48,215 | PanelControlView | INFO | Vista de inicio configurada correctamente
+2025-08-09 18:12:48,262 | ReporteView | INFO | Vista de inicio configurada correctamente
+2025-08-09 18:12:51,693 | PanelControlView | INFO | status uart Panel: True
+2025-08-09 18:12:53,357 | PanelControlView | INFO | Programa iniciado a las 18:12:53
+2025-08-09 18:12:53,358 | PanelControlView | DEBUG | TX: LED1:OFF -> 10
+2025-08-09 18:12:53,358 | PanelControlView | DEBUG | TX: LED2:OFF -> 50
+2025-08-09 18:12:53,359 | PanelControlView | INFO | Config Led-01: ModoLuz.APAGADO, Led-02: ModoLuz.APAGADO
+2025-08-09 18:12:53,359 | PanelControlView | INFO | Config Pal-01: ModoPalanca.CRF, Pal-02: ModoPalanca.CRF
+2025-08-09 18:12:53,376 | PanelControlView | DEBUG | RX COM3-> b'ESP-ROM:esp32s3-20210327\r\nL01:0\r\nL02:0\r\nLED1:OFF\nL01:0'
+2025-08-09 18:12:53,376 | PanelControlView | DEBUG | Procesando: ESP-ROM:esp32s3-20210327
+2025-08-09 18:12:53,376 | PanelControlView | DEBUG | Procesando: L01:0
+2025-08-09 18:12:53,380 | PanelControlView | DEBUG | Procesando: L02:0
+2025-08-09 18:12:53,380 | PanelControlView | DEBUG | Procesando: LED1:OFF
+2025-08-09 18:12:53,380 | PanelControlView | DEBUG | Procesando: L01:0
+2025-08-09 18:12:53,410 | PanelControlView | DEBUG | RX COM3-> b'LED2:OFF\nL02:0'
+2025-08-09 18:12:53,411 | PanelControlView | DEBUG | Procesando: LED2:OFF
+2025-08-09 18:12:53,411 | PanelControlView | DEBUG | Procesando: L02:0
+2025-08-09 18:12:56,509 | PanelControlView | DEBUG | RX COM3-> b'P02:1'
+2025-08-09 18:12:56,510 | PanelControlView | DEBUG | Procesando: P02:1
+2025-08-09 18:12:56,514 | PanelControlView | DEBUG | TX: DISP:1 -> 50
+2025-08-09 18:12:56,560 | PanelControlView | DEBUG | RX COM3-> b'DISP:1'
+2025-08-09 18:12:56,560 | PanelControlView | DEBUG | Procesando: DISP:1
+2025-08-09 18:12:56,561 | PanelControlView | DEBUG | RX COM3-> b'OK:DISP:1'
+2025-08-09 18:12:56,561 | PanelControlView | DEBUG | Procesando: OK:DISP:1
+2025-08-09 18:12:57,185 | PanelControlView | DEBUG | RX COM3-> b'P02:1'
+2025-08-09 18:12:57,186 | PanelControlView | DEBUG | Procesando: P02:1
+2025-08-09 18:12:57,193 | PanelControlView | DEBUG | TX: DISP:1 -> 50
+2025-08-09 18:12:57,238 | PanelControlView | DEBUG | RX COM3-> b'DISP:1\nOK:DISP:1'
+2025-08-09 18:12:57,238 | PanelControlView | DEBUG | Procesando: DISP:1
+2025-08-09 18:12:57,238 | PanelControlView | DEBUG | Procesando: OK:DISP:1
+2025-08-09 18:12:57,824 | PanelControlView | DEBUG | RX COM3-> b'P02:1'
+2025-08-09 18:12:57,825 | PanelControlView | DEBUG | Procesando: P02:1
+2025-08-09 18:12:57,830 | PanelControlView | DEBUG | TX: DISP:1 -> 50
+2025-08-09 18:12:57,875 | PanelControlView | DEBUG | RX COM3-> b'DISP:1\nOK:DISP:1'
+2025-08-09 18:12:57,875 | PanelControlView | DEBUG | Procesando: DISP:1
+2025-08-09 18:12:57,876 | PanelControlView | DEBUG | Procesando: OK:DISP:1
+2025-08-09 18:12:58,459 | PanelControlView | DEBUG | RX COM3-> b'P02:1'
+2025-08-09 18:12:58,459 | PanelControlView | DEBUG | Procesando: P02:1
+2025-08-09 18:12:58,462 | PanelControlView | DEBUG | TX: DISP:1 -> 50
+2025-08-09 18:12:58,512 | PanelControlView | DEBUG | RX COM3-> b'DISP:1\nOK:DISP:1'
+2025-08-09 18:12:58,513 | PanelControlView | DEBUG | Procesando: DISP:1
+2025-08-09 18:12:58,513 | PanelControlView | DEBUG | Procesando: OK:DISP:1
+2025-08-09 18:12:59,238 | PanelControlView | DEBUG | RX COM3-> b'P02:1'
+2025-08-09 18:12:59,239 | PanelControlView | DEBUG | Procesando: P02:1
+2025-08-09 18:12:59,241 | PanelControlView | DEBUG | TX: DISP:1 -> 50
+2025-08-09 18:12:59,280 | PanelControlView | DEBUG | RX COM3-> b'DISP:1'
+2025-08-09 18:12:59,281 | PanelControlView | DEBUG | Procesando: DISP:1
+2025-08-09 18:12:59,281 | PanelControlView | DEBUG | RX COM3-> b'OK:DISP:1'
+2025-08-09 18:12:59,281 | PanelControlView | DEBUG | Procesando: OK:DISP:1
+2025-08-09 18:12:59,953 | PanelControlView | DEBUG | RX COM3-> b'P02:1'
+2025-08-09 18:12:59,954 | PanelControlView | DEBUG | Procesando: P02:1
+2025-08-09 18:12:59,957 | PanelControlView | DEBUG | TX: DISP:1 -> 50
+2025-08-09 18:12:59,996 | PanelControlView | DEBUG | RX COM3-> b'DISP:1\nOK:DISP:1'
+2025-08-09 18:12:59,997 | PanelControlView | DEBUG | Procesando: DISP:1
+2025-08-09 18:12:59,997 | PanelControlView | DEBUG | Procesando: OK:DISP:1
+2025-08-09 18:13:00,563 | PanelControlView | DEBUG | RX COM3-> b'P02:1'
+2025-08-09 18:13:00,564 | PanelControlView | DEBUG | Procesando: P02:1
+2025-08-09 18:13:00,566 | PanelControlView | DEBUG | TX: DISP:1 -> 50
+2025-08-09 18:13:00,616 | PanelControlView | DEBUG | RX COM3-> b'DISP:1\nOK:DISP:1'
+2025-08-09 18:13:00,617 | PanelControlView | DEBUG | Procesando: DISP:1
+2025-08-09 18:13:00,617 | PanelControlView | DEBUG | Procesando: OK:DISP:1
+2025-08-09 18:13:01,134 | PanelControlView | DEBUG | RX COM3-> b'P02:1'
+2025-08-09 18:13:01,136 | PanelControlView | DEBUG | Procesando: P02:1
+2025-08-09 18:13:01,142 | PanelControlView | DEBUG | TX: DISP:1 -> 50
+2025-08-09 18:13:01,187 | PanelControlView | DEBUG | RX COM3-> b'DISP:1'
+2025-08-09 18:13:01,187 | PanelControlView | DEBUG | Procesando: DISP:1
+2025-08-09 18:13:01,188 | PanelControlView | DEBUG | RX COM3-> b'OK:DISP:1'
+2025-08-09 18:13:01,188 | PanelControlView | DEBUG | Procesando: OK:DISP:1
+2025-08-09 18:13:01,698 | PanelControlView | DEBUG | RX COM3-> b'P02:1'
+2025-08-09 18:13:01,699 | PanelControlView | DEBUG | Procesando: P02:1
+2025-08-09 18:13:01,704 | PanelControlView | DEBUG | TX: DISP:1 -> 50
+2025-08-09 18:13:01,753 | PanelControlView | DEBUG | RX COM3-> b'DISP:1'
+2025-08-09 18:13:01,753 | PanelControlView | DEBUG | Procesando: DISP:1
+2025-08-09 18:13:01,754 | PanelControlView | DEBUG | RX COM3-> b'OK:DISP:1'
+2025-08-09 18:13:01,754 | PanelControlView | DEBUG | Procesando: OK:DISP:1
+2025-08-09 18:13:03,102 | PanelControlView | INFO | Programa detenido a las 18:13:03
+2025-08-09 18:13:03,106 | PanelControlView | DEBUG | TX: LED2:OFF -> 50
+2025-08-09 18:13:03,114 | PanelControlView | INFO | Registro de sesión guardado en sesion_20250809_181303.csv
+2025-08-09 18:13:03,132 | PanelControlView | DEBUG | RX COM3-> b'LED1:OFF\nL01:0'
+2025-08-09 18:13:03,132 | PanelControlView | WARNING | Program not runing, ignore all data
+2025-08-09 18:13:03,157 | PanelControlView | DEBUG | RX COM3-> b'LED2:OFF\nL02:0'
+2025-08-09 18:13:03,158 | PanelControlView | WARNING | Program not runing, ignore all data
+2025-08-09 18:15:05,101 | InicioView | INFO | Vista de inicio configurada correctamente
+2025-08-09 18:15:05,275 | PanelControlView | INFO | Vista de inicio configurada correctamente
+2025-08-09 18:15:05,315 | ReporteView | INFO | Vista de inicio configurada correctamente
+2025-08-09 18:15:08,043 | PanelControlView | INFO | status uart Panel: True
+2025-08-09 18:15:09,156 | PanelControlView | INFO | Programa iniciado a las 18:15:09
+2025-08-09 18:15:09,157 | PanelControlView | DEBUG | TX: LED1:OFF -> 10
+2025-08-09 18:15:09,158 | PanelControlView | DEBUG | TX: LED2:OFF -> 50
+2025-08-09 18:15:09,158 | PanelControlView | INFO | Config Led-01: ModoLuz.APAGADO, Led-02: ModoLuz.APAGADO
+2025-08-09 18:15:09,158 | PanelControlView | INFO | Config Pal-01: ModoPalanca.CRF, Pal-02: ModoPalanca.CRF
+2025-08-09 18:15:09,181 | PanelControlView | DEBUG | RX COM3-> b'ESP-ROM:esp32s3-20210327\r\nL01:0\r\nL02:0\r\nLED1:OFF\nL01:0'
+2025-08-09 18:15:09,181 | PanelControlView | DEBUG | Procesando: ESP-ROM:esp32s3-20210327
+2025-08-09 18:15:09,182 | PanelControlView | DEBUG | Procesando: L01:0
+2025-08-09 18:15:09,185 | PanelControlView | DEBUG | Procesando: L02:0
+2025-08-09 18:15:09,186 | PanelControlView | DEBUG | Procesando: LED1:OFF
+2025-08-09 18:15:09,186 | PanelControlView | DEBUG | Procesando: L01:0
+2025-08-09 18:15:09,209 | PanelControlView | DEBUG | RX COM3-> b'LED2:OFF\nL02:0'
+2025-08-09 18:15:09,209 | PanelControlView | DEBUG | Procesando: LED2:OFF
+2025-08-09 18:15:09,210 | PanelControlView | DEBUG | Procesando: L02:0
+2025-08-09 18:15:12,364 | PanelControlView | DEBUG | RX COM3-> b'P02:1'
+2025-08-09 18:15:12,365 | PanelControlView | DEBUG | Procesando: P02:1
+2025-08-09 18:15:12,368 | PanelControlView | DEBUG | TX: DISP:1 -> 50
+2025-08-09 18:15:12,411 | PanelControlView | DEBUG | RX COM3-> b'DISP:1\nOK:DISP:1'
+2025-08-09 18:15:12,411 | PanelControlView | DEBUG | Procesando: DISP:1
+2025-08-09 18:15:12,412 | PanelControlView | DEBUG | Procesando: OK:DISP:1
+2025-08-09 18:15:46,214 | PanelControlView | DEBUG | RX COM3-> b'P02:1'
+2025-08-09 18:15:46,214 | PanelControlView | DEBUG | Procesando: P02:1
+2025-08-09 18:15:46,217 | PanelControlView | DEBUG | TX: DISP:1 -> 50
+2025-08-09 18:15:46,273 | PanelControlView | DEBUG | RX COM3-> b'DISP:1\nOK:DISP:1'
+2025-08-09 18:15:46,274 | PanelControlView | DEBUG | Procesando: DISP:1
+2025-08-09 18:15:46,274 | PanelControlView | DEBUG | Procesando: OK:DISP:1
+2025-08-09 18:15:48,049 | PanelControlView | DEBUG | RX COM3-> b'P02:1'
+2025-08-09 18:15:48,049 | PanelControlView | DEBUG | Procesando: P02:1
+2025-08-09 18:15:48,053 | PanelControlView | DEBUG | TX: DISP:1 -> 50
+2025-08-09 18:15:48,104 | PanelControlView | DEBUG | RX COM3-> b'DISP:1\nOK:DISP:1'
+2025-08-09 18:15:48,104 | PanelControlView | DEBUG | Procesando: DISP:1
+2025-08-09 18:15:48,105 | PanelControlView | DEBUG | Procesando: OK:DISP:1
+2025-08-09 18:17:19,526 | InicioView | INFO | Vista de inicio configurada correctamente
+2025-08-09 18:17:19,665 | PanelControlView | INFO | Vista de inicio configurada correctamente
+2025-08-09 18:17:19,710 | ReporteView | INFO | Vista de inicio configurada correctamente
+2025-08-09 18:17:28,240 | PanelControlView | INFO | status uart Panel: True
+2025-08-09 18:17:34,018 | PanelControlView | DEBUG | RX COM3-> b'ESP-ROM:esp32s3-20210327\r\nL01:0\r\nL02:0\r\nP02:1'
+2025-08-09 18:17:34,019 | PanelControlView | WARNING | Program not runing, ignore all data
+2025-08-09 18:17:36,228 | PanelControlView | INFO | Programa iniciado a las 18:17:36
+2025-08-09 18:17:36,228 | PanelControlView | DEBUG | TX: LED1:OFF -> 10
+2025-08-09 18:17:36,228 | PanelControlView | DEBUG | TX: LED2:OFF -> 50
+2025-08-09 18:17:36,229 | PanelControlView | INFO | Config Led-01: ModoLuz.APAGADO, Led-02: ModoLuz.APAGADO
+2025-08-09 18:17:36,229 | PanelControlView | INFO | Config Pal-01: ModoPalanca.CRF, Pal-02: ModoPalanca.CRF
+2025-08-09 18:17:36,254 | PanelControlView | DEBUG | RX COM3-> b'LED1:OFF\nL01:0'
+2025-08-09 18:17:36,254 | PanelControlView | DEBUG | Procesando: LED1:OFF
+2025-08-09 18:17:36,254 | PanelControlView | DEBUG | Procesando: L01:0
+2025-08-09 18:17:36,279 | PanelControlView | DEBUG | RX COM3-> b'LED2:OFF\nL02:0'
+2025-08-09 18:17:36,279 | PanelControlView | DEBUG | Procesando: LED2:OFF
+2025-08-09 18:17:36,280 | PanelControlView | DEBUG | Procesando: L02:0
+2025-08-09 18:17:38,915 | PanelControlView | DEBUG | RX COM3-> b'P02:1'
+2025-08-09 18:17:38,916 | PanelControlView | DEBUG | Procesando: P02:1
+2025-08-09 18:17:38,929 | PanelControlView | DEBUG | TX: DISP:1 -> 50
+2025-08-09 18:17:38,981 | PanelControlView | DEBUG | RX COM3-> b'DISP:1\nOK:DISP:1'
+2025-08-09 18:17:38,982 | PanelControlView | DEBUG | Procesando: DISP:1
+2025-08-09 18:17:38,982 | PanelControlView | DEBUG | Procesando: OK:DISP:1
+2025-08-09 18:17:41,250 | PanelControlView | DEBUG | RX COM3-> b'P02:1'
+2025-08-09 18:17:41,250 | PanelControlView | DEBUG | Procesando: P02:1
+2025-08-09 18:17:41,253 | PanelControlView | DEBUG | TX: DISP:1 -> 50
+2025-08-09 18:17:41,303 | PanelControlView | DEBUG | RX COM3-> b'DISP:1'
+2025-08-09 18:17:41,303 | PanelControlView | DEBUG | Procesando: DISP:1
+2025-08-09 18:17:41,304 | PanelControlView | DEBUG | RX COM3-> b'OK:DISP:1'
+2025-08-09 18:17:41,304 | PanelControlView | DEBUG | Procesando: OK:DISP:1
+2025-08-09 18:17:42,241 | PanelControlView | DEBUG | RX COM3-> b'P02:1'
+2025-08-09 18:17:42,241 | PanelControlView | DEBUG | Procesando: P02:1
+2025-08-09 18:17:42,246 | PanelControlView | DEBUG | TX: DISP:1 -> 50
+2025-08-09 18:17:42,290 | PanelControlView | DEBUG | RX COM3-> b'DISP:1\nOK:DISP:1'
+2025-08-09 18:17:42,291 | PanelControlView | DEBUG | Procesando: DISP:1
+2025-08-09 18:17:42,291 | PanelControlView | DEBUG | Procesando: OK:DISP:1
+2025-08-09 18:17:43,054 | PanelControlView | DEBUG | RX COM3-> b'P02:1'
+2025-08-09 18:17:43,055 | PanelControlView | DEBUG | Procesando: P02:1
+2025-08-09 18:17:43,059 | PanelControlView | DEBUG | TX: DISP:1 -> 50
+2025-08-09 18:17:43,102 | PanelControlView | DEBUG | RX COM3-> b'DISP:1'
+2025-08-09 18:17:43,102 | PanelControlView | DEBUG | Procesando: DISP:1
+2025-08-09 18:17:43,103 | PanelControlView | DEBUG | RX COM3-> b'OK:DISP:1'
+2025-08-09 18:17:43,103 | PanelControlView | DEBUG | Procesando: OK:DISP:1
+2025-08-09 18:17:43,826 | PanelControlView | DEBUG | RX COM3-> b'P02:1'
+2025-08-09 18:17:43,827 | PanelControlView | DEBUG | Procesando: P02:1
+2025-08-09 18:17:43,837 | PanelControlView | DEBUG | TX: DISP:1 -> 50
+2025-08-09 18:17:43,889 | PanelControlView | DEBUG | RX COM3-> b'DISP:1\nOK:DISP:1'
+2025-08-09 18:17:43,890 | PanelControlView | DEBUG | Procesando: DISP:1
+2025-08-09 18:17:43,890 | PanelControlView | DEBUG | Procesando: OK:DISP:1
+2025-08-09 18:17:44,770 | PanelControlView | DEBUG | RX COM3-> b'P02:1'
+2025-08-09 18:17:44,770 | PanelControlView | DEBUG | Procesando: P02:1
+2025-08-09 18:17:44,774 | PanelControlView | DEBUG | TX: DISP:1 -> 50
+2025-08-09 18:17:44,811 | PanelControlView | DEBUG | RX COM3-> b'DISP:1'
+2025-08-09 18:17:44,811 | PanelControlView | DEBUG | Procesando: DISP:1
+2025-08-09 18:17:44,811 | PanelControlView | DEBUG | RX COM3-> b'OK:DISP:1'
+2025-08-09 18:17:44,812 | PanelControlView | DEBUG | Procesando: OK:DISP:1
+2025-08-09 18:17:45,691 | PanelControlView | DEBUG | RX COM3-> b'P02:1'
+2025-08-09 18:17:45,691 | PanelControlView | DEBUG | Procesando: P02:1
+2025-08-09 18:17:45,694 | PanelControlView | DEBUG | TX: DISP:1 -> 50
+2025-08-09 18:17:45,740 | PanelControlView | DEBUG | RX COM3-> b'DISP:1\nOK:DISP:1'
+2025-08-09 18:17:45,741 | PanelControlView | DEBUG | Procesando: DISP:1
+2025-08-09 18:17:45,741 | PanelControlView | DEBUG | Procesando: OK:DISP:1
+2025-08-09 18:17:46,525 | PanelControlView | DEBUG | RX COM3-> b'P02:1'
+2025-08-09 18:17:46,525 | PanelControlView | DEBUG | Procesando: P02:1
+2025-08-09 18:17:46,528 | PanelControlView | DEBUG | TX: DISP:1 -> 50
+2025-08-09 18:17:46,578 | PanelControlView | DEBUG | RX COM3-> b'DISP:1\nOK:DISP:1'
+2025-08-09 18:17:46,578 | PanelControlView | DEBUG | Procesando: DISP:1
+2025-08-09 18:17:46,579 | PanelControlView | DEBUG | Procesando: OK:DISP:1
+2025-08-09 18:17:47,325 | PanelControlView | DEBUG | RX COM3-> b'P02:1'
+2025-08-09 18:17:47,325 | PanelControlView | DEBUG | Procesando: P02:1
+2025-08-09 18:17:47,329 | PanelControlView | DEBUG | TX: DISP:1 -> 50
+2025-08-09 18:17:47,377 | PanelControlView | DEBUG | RX COM3-> b'DISP:1\nOK:DISP:1'
+2025-08-09 18:17:47,377 | PanelControlView | DEBUG | Procesando: DISP:1
+2025-08-09 18:17:47,378 | PanelControlView | DEBUG | Procesando: OK:DISP:1
+2025-08-09 18:17:48,075 | PanelControlView | DEBUG | RX COM3-> b'P02:1'
+2025-08-09 18:17:48,075 | PanelControlView | DEBUG | Procesando: P02:1
+2025-08-09 18:17:48,078 | PanelControlView | DEBUG | TX: DISP:1 -> 50
+2025-08-09 18:17:48,130 | PanelControlView | DEBUG | RX COM3-> b'DISP:1\nOK:DISP:1'
+2025-08-09 18:17:48,131 | PanelControlView | DEBUG | Procesando: DISP:1
+2025-08-09 18:17:48,131 | PanelControlView | DEBUG | Procesando: OK:DISP:1
+2025-08-09 18:17:48,940 | PanelControlView | DEBUG | RX COM3-> b'P02:1'
+2025-08-09 18:17:48,940 | PanelControlView | DEBUG | Procesando: P02:1
+2025-08-09 18:17:48,943 | PanelControlView | DEBUG | TX: DISP:1 -> 50
+2025-08-09 18:17:48,990 | PanelControlView | DEBUG | RX COM3-> b'DISP:1\nOK:DISP:1'
+2025-08-09 18:17:48,990 | PanelControlView | DEBUG | Procesando: DISP:1
+2025-08-09 18:17:48,991 | PanelControlView | DEBUG | Procesando: OK:DISP:1
+2025-08-09 18:17:49,955 | PanelControlView | DEBUG | RX COM3-> b'P02:1'
+2025-08-09 18:17:49,956 | PanelControlView | DEBUG | Procesando: P02:1
+2025-08-09 18:17:49,962 | PanelControlView | DEBUG | TX: DISP:1 -> 50
+2025-08-09 18:17:50,009 | PanelControlView | DEBUG | RX COM3-> b'DISP:1\nOK:DISP:1'
+2025-08-09 18:17:50,014 | PanelControlView | DEBUG | Procesando: DISP:1
+2025-08-09 18:17:50,025 | PanelControlView | DEBUG | Procesando: OK:DISP:1
+2025-08-09 18:17:50,776 | PanelControlView | DEBUG | RX COM3-> b'P02:1'
+2025-08-09 18:17:50,776 | PanelControlView | DEBUG | Procesando: P02:1
+2025-08-09 18:17:50,779 | PanelControlView | DEBUG | TX: DISP:1 -> 50
+2025-08-09 18:17:50,826 | PanelControlView | DEBUG | RX COM3-> b'DISP:1\nOK:DISP:1'
+2025-08-09 18:17:50,826 | PanelControlView | DEBUG | Procesando: DISP:1
+2025-08-09 18:17:50,826 | PanelControlView | DEBUG | Procesando: OK:DISP:1
+2025-08-09 18:17:53,911 | PanelControlView | DEBUG | RX COM3-> b'P02:1'
+2025-08-09 18:17:53,912 | PanelControlView | DEBUG | Procesando: P02:1
+2025-08-09 18:17:53,925 | PanelControlView | DEBUG | TX: DISP:1 -> 50
+2025-08-09 18:17:53,977 | PanelControlView | DEBUG | RX COM3-> b'DISP:1'
+2025-08-09 18:17:53,977 | PanelControlView | DEBUG | Procesando: DISP:1
+2025-08-09 18:17:53,977 | PanelControlView | DEBUG | RX COM3-> b'OK:DISP:1'
+2025-08-09 18:17:53,978 | PanelControlView | DEBUG | Procesando: OK:DISP:1
+2025-08-09 18:17:55,000 | PanelControlView | DEBUG | RX COM3-> b'P02:1'
+2025-08-09 18:17:55,000 | PanelControlView | DEBUG | Procesando: P02:1
+2025-08-09 18:17:55,006 | PanelControlView | DEBUG | TX: DISP:1 -> 50
+2025-08-09 18:17:55,058 | PanelControlView | DEBUG | RX COM3-> b'DISP:1\nOK:DISP:1'
+2025-08-09 18:17:55,058 | PanelControlView | DEBUG | Procesando: DISP:1
+2025-08-09 18:17:55,058 | PanelControlView | DEBUG | Procesando: OK:DISP:1
+2025-08-09 18:17:55,954 | PanelControlView | DEBUG | RX COM3-> b'P02:1'
+2025-08-09 18:17:55,955 | PanelControlView | DEBUG | Procesando: P02:1
+2025-08-09 18:17:55,958 | PanelControlView | DEBUG | TX: DISP:1 -> 50
+2025-08-09 18:17:56,007 | PanelControlView | DEBUG | RX COM3-> b'DISP:1'
+2025-08-09 18:17:56,007 | PanelControlView | DEBUG | Procesando: DISP:1
+2025-08-09 18:17:56,008 | PanelControlView | DEBUG | RX COM3-> b'OK:DISP:1'
+2025-08-09 18:17:56,008 | PanelControlView | DEBUG | Procesando: OK:DISP:1
+2025-08-09 18:17:56,774 | PanelControlView | DEBUG | RX COM3-> b'P02:1'
+2025-08-09 18:17:56,775 | PanelControlView | DEBUG | Procesando: P02:1
+2025-08-09 18:17:56,778 | PanelControlView | DEBUG | TX: DISP:1 -> 50
+2025-08-09 18:17:56,815 | PanelControlView | DEBUG | RX COM3-> b'DISP:1'
+2025-08-09 18:17:56,816 | PanelControlView | DEBUG | Procesando: DISP:1
+2025-08-09 18:17:56,816 | PanelControlView | DEBUG | RX COM3-> b'OK:DISP:1'
+2025-08-09 18:17:56,816 | PanelControlView | DEBUG | Procesando: OK:DISP:1
+2025-08-09 18:17:57,744 | PanelControlView | DEBUG | RX COM3-> b'P02:1'
+2025-08-09 18:17:57,745 | PanelControlView | DEBUG | Procesando: P02:1
+2025-08-09 18:17:57,748 | PanelControlView | DEBUG | TX: DISP:1 -> 50
+2025-08-09 18:17:57,794 | PanelControlView | DEBUG | RX COM3-> b'DISP:1\nOK:DISP:1'
+2025-08-09 18:17:57,795 | PanelControlView | DEBUG | Procesando: DISP:1
+2025-08-09 18:17:57,795 | PanelControlView | DEBUG | Procesando: OK:DISP:1
+2025-08-09 18:17:58,519 | PanelControlView | DEBUG | RX COM3-> b'P02:1'
+2025-08-09 18:17:58,520 | PanelControlView | DEBUG | Procesando: P02:1
+2025-08-09 18:17:58,523 | PanelControlView | DEBUG | TX: DISP:1 -> 50
+2025-08-09 18:17:58,562 | PanelControlView | DEBUG | RX COM3-> b'DISP:1\nOK:DISP:1'
+2025-08-09 18:17:58,562 | PanelControlView | DEBUG | Procesando: DISP:1
+2025-08-09 18:17:58,562 | PanelControlView | DEBUG | Procesando: OK:DISP:1
+2025-08-09 18:17:59,424 | PanelControlView | DEBUG | RX COM3-> b'P02:1'
+2025-08-09 18:17:59,425 | PanelControlView | DEBUG | Procesando: P02:1
+2025-08-09 18:17:59,427 | PanelControlView | DEBUG | TX: DISP:1 -> 50
+2025-08-09 18:17:59,473 | PanelControlView | DEBUG | RX COM3-> b'DISP:1\nOK:DISP:1'
+2025-08-09 18:17:59,474 | PanelControlView | DEBUG | Procesando: DISP:1
+2025-08-09 18:17:59,474 | PanelControlView | DEBUG | Procesando: OK:DISP:1
+2025-08-09 18:18:00,199 | PanelControlView | DEBUG | RX COM3-> b'P02:1'
+2025-08-09 18:18:00,200 | PanelControlView | DEBUG | Procesando: P02:1
+2025-08-09 18:18:00,203 | PanelControlView | DEBUG | TX: DISP:1 -> 50
+2025-08-09 18:18:00,242 | PanelControlView | DEBUG | RX COM3-> b'DISP:1'
+2025-08-09 18:18:00,243 | PanelControlView | DEBUG | Procesando: DISP:1
+2025-08-09 18:18:00,243 | PanelControlView | DEBUG | RX COM3-> b'OK:DISP:1'
+2025-08-09 18:18:00,243 | PanelControlView | DEBUG | Procesando: OK:DISP:1
+2025-08-09 18:18:00,884 | PanelControlView | DEBUG | RX COM3-> b'P02:1'
+2025-08-09 18:18:00,885 | PanelControlView | DEBUG | Procesando: P02:1
+2025-08-09 18:18:00,888 | PanelControlView | DEBUG | TX: DISP:1 -> 50
+2025-08-09 18:18:00,932 | PanelControlView | DEBUG | RX COM3-> b'DISP:1'
+2025-08-09 18:18:00,933 | PanelControlView | DEBUG | Procesando: DISP:1
+2025-08-09 18:18:00,933 | PanelControlView | DEBUG | RX COM3-> b'OK:DISP:1'
+2025-08-09 18:18:00,933 | PanelControlView | DEBUG | Procesando: OK:DISP:1
+2025-08-09 18:18:01,981 | PanelControlView | DEBUG | RX COM3-> b'P02:1'
+2025-08-09 18:18:01,982 | PanelControlView | DEBUG | Procesando: P02:1
+2025-08-09 18:18:01,995 | PanelControlView | DEBUG | TX: DISP:1 -> 50
+2025-08-09 18:18:02,048 | PanelControlView | DEBUG | RX COM3-> b'DISP:1\nOK:DISP:1'
+2025-08-09 18:18:02,048 | PanelControlView | DEBUG | Procesando: DISP:1
+2025-08-09 18:18:02,048 | PanelControlView | DEBUG | Procesando: OK:DISP:1
+2025-08-09 18:18:02,854 | PanelControlView | DEBUG | RX COM3-> b'P02:1'
+2025-08-09 18:18:02,855 | PanelControlView | DEBUG | Procesando: P02:1
+2025-08-09 18:18:02,858 | PanelControlView | DEBUG | TX: DISP:1 -> 50
+2025-08-09 18:18:02,897 | PanelControlView | DEBUG | RX COM3-> b'DISP:1\nOK:DISP:1'
+2025-08-09 18:18:02,898 | PanelControlView | DEBUG | Procesando: DISP:1
+2025-08-09 18:18:02,898 | PanelControlView | DEBUG | Procesando: OK:DISP:1
+2025-08-09 18:18:03,729 | PanelControlView | DEBUG | RX COM3-> b'P02:1'
+2025-08-09 18:18:03,730 | PanelControlView | DEBUG | Procesando: P02:1
+2025-08-09 18:18:03,732 | PanelControlView | DEBUG | TX: DISP:1 -> 50
+2025-08-09 18:18:03,779 | PanelControlView | DEBUG | RX COM3-> b'DISP:1\nOK:DISP:1'
+2025-08-09 18:18:03,779 | PanelControlView | DEBUG | Procesando: DISP:1
+2025-08-09 18:18:03,779 | PanelControlView | DEBUG | Procesando: OK:DISP:1
+2025-08-09 18:18:04,744 | PanelControlView | DEBUG | RX COM3-> b'P02:1'
+2025-08-09 18:18:04,744 | PanelControlView | DEBUG | Procesando: P02:1
+2025-08-09 18:18:04,747 | PanelControlView | DEBUG | TX: DISP:1 -> 50
+2025-08-09 18:18:04,785 | PanelControlView | DEBUG | RX COM3-> b'DISP:1\nOK:DISP:1'
+2025-08-09 18:18:04,785 | PanelControlView | DEBUG | Procesando: DISP:1
+2025-08-09 18:18:04,785 | PanelControlView | DEBUG | Procesando: OK:DISP:1
+2025-08-09 18:18:06,015 | PanelControlView | DEBUG | RX COM3-> b'P02:1'
+2025-08-09 18:18:06,015 | PanelControlView | DEBUG | Procesando: P02:1
+2025-08-09 18:18:06,021 | PanelControlView | DEBUG | TX: DISP:1 -> 50
+2025-08-09 18:18:06,063 | PanelControlView | DEBUG | RX COM3-> b'DISP:1\nOK:DISP:1'
+2025-08-09 18:18:06,063 | PanelControlView | DEBUG | Procesando: DISP:1
+2025-08-09 18:18:06,064 | PanelControlView | DEBUG | Procesando: OK:DISP:1
+2025-08-09 18:18:07,352 | PanelControlView | DEBUG | RX COM3-> b'P02:1'
+2025-08-09 18:18:07,353 | PanelControlView | DEBUG | Procesando: P02:1
+2025-08-09 18:18:07,368 | PanelControlView | DEBUG | TX: DISP:1 -> 50
+2025-08-09 18:18:07,420 | PanelControlView | DEBUG | RX COM3-> b'DISP:1\nOK:DISP:1'
+2025-08-09 18:18:07,421 | PanelControlView | DEBUG | Procesando: DISP:1
+2025-08-09 18:18:07,421 | PanelControlView | DEBUG | Procesando: OK:DISP:1
+2025-08-09 18:18:09,150 | PanelControlView | DEBUG | RX COM3-> b'P02:1'
+2025-08-09 18:18:09,151 | PanelControlView | DEBUG | Procesando: P02:1
+2025-08-09 18:18:09,161 | PanelControlView | DEBUG | TX: DISP:1 -> 50
+2025-08-09 18:18:09,209 | PanelControlView | DEBUG | RX COM3-> b'DISP:1\nOK:DISP:1'
+2025-08-09 18:18:09,209 | PanelControlView | DEBUG | Procesando: DISP:1
+2025-08-09 18:18:09,209 | PanelControlView | DEBUG | Procesando: OK:DISP:1
+2025-08-09 18:18:10,199 | PanelControlView | DEBUG | RX COM3-> b'P02:1'
+2025-08-09 18:18:10,199 | PanelControlView | DEBUG | Procesando: P02:1
+2025-08-09 18:18:10,202 | PanelControlView | DEBUG | TX: DISP:1 -> 50
+2025-08-09 18:18:10,254 | PanelControlView | DEBUG | RX COM3-> b'DISP:1'
+2025-08-09 18:18:10,254 | PanelControlView | DEBUG | Procesando: DISP:1
+2025-08-09 18:18:10,254 | PanelControlView | DEBUG | RX COM3-> b'OK:DISP:1'
+2025-08-09 18:18:10,255 | PanelControlView | DEBUG | Procesando: OK:DISP:1
+2025-08-09 18:18:11,859 | PanelControlView | DEBUG | RX COM3-> b'P02:1'
+2025-08-09 18:18:11,860 | PanelControlView | DEBUG | Procesando: P02:1
+2025-08-09 18:18:11,864 | PanelControlView | DEBUG | TX: DISP:1 -> 50
+2025-08-09 18:18:11,916 | PanelControlView | DEBUG | RX COM3-> b'DISP:1\nOK:DISP:1'
+2025-08-09 18:18:11,916 | PanelControlView | DEBUG | Procesando: DISP:1
+2025-08-09 18:18:11,917 | PanelControlView | DEBUG | Procesando: OK:DISP:1
+2025-08-09 18:18:12,764 | PanelControlView | DEBUG | RX COM3-> b'P02:1'
+2025-08-09 18:18:12,764 | PanelControlView | DEBUG | Procesando: P02:1
+2025-08-09 18:18:12,768 | PanelControlView | DEBUG | TX: DISP:1 -> 50
+2025-08-09 18:18:12,814 | PanelControlView | DEBUG | RX COM3-> b'DISP:1'
+2025-08-09 18:18:12,814 | PanelControlView | DEBUG | Procesando: DISP:1
+2025-08-09 18:18:12,814 | PanelControlView | DEBUG | RX COM3-> b'OK:DISP:1'
+2025-08-09 18:18:12,815 | PanelControlView | DEBUG | Procesando: OK:DISP:1
+2025-08-09 18:18:13,384 | PanelControlView | DEBUG | RX COM3-> b'P02:1'
+2025-08-09 18:18:13,384 | PanelControlView | DEBUG | Procesando: P02:1
+2025-08-09 18:18:13,387 | PanelControlView | DEBUG | TX: DISP:1 -> 50
+2025-08-09 18:18:13,434 | PanelControlView | DEBUG | RX COM3-> b'DISP:1\nOK:DISP:1'
+2025-08-09 18:18:13,434 | PanelControlView | DEBUG | Procesando: DISP:1
+2025-08-09 18:18:13,434 | PanelControlView | DEBUG | Procesando: OK:DISP:1
+2025-08-09 18:18:14,704 | PanelControlView | DEBUG | RX COM3-> b'P02:1'
+2025-08-09 18:18:14,705 | PanelControlView | DEBUG | Procesando: P02:1
+2025-08-09 18:18:14,708 | PanelControlView | DEBUG | TX: DISP:1 -> 50
+2025-08-09 18:18:14,755 | PanelControlView | DEBUG | RX COM3-> b'DISP:1'
+2025-08-09 18:18:14,756 | PanelControlView | DEBUG | Procesando: DISP:1
+2025-08-09 18:18:14,756 | PanelControlView | DEBUG | RX COM3-> b'OK:DISP:1'
+2025-08-09 18:18:14,756 | PanelControlView | DEBUG | Procesando: OK:DISP:1
+2025-08-09 18:18:15,650 | PanelControlView | DEBUG | RX COM3-> b'P02:1'
+2025-08-09 18:18:15,650 | PanelControlView | DEBUG | Procesando: P02:1
+2025-08-09 18:18:15,657 | PanelControlView | DEBUG | TX: DISP:1 -> 50
+2025-08-09 18:18:15,698 | PanelControlView | DEBUG | RX COM3-> b'DISP:1'
+2025-08-09 18:18:15,698 | PanelControlView | DEBUG | Procesando: DISP:1
+2025-08-09 18:18:15,699 | PanelControlView | DEBUG | RX COM3-> b'OK:DISP:1'
+2025-08-09 18:18:15,699 | PanelControlView | DEBUG | Procesando: OK:DISP:1
+2025-08-09 18:18:17,010 | PanelControlView | DEBUG | RX COM3-> b'P02:1'
+2025-08-09 18:18:17,010 | PanelControlView | DEBUG | Procesando: P02:1
+2025-08-09 18:18:17,019 | PanelControlView | DEBUG | TX: DISP:1 -> 50
+2025-08-09 18:18:17,057 | PanelControlView | DEBUG | RX COM3-> b'DISP:1\nOK:DISP:1'
+2025-08-09 18:18:17,058 | PanelControlView | DEBUG | Procesando: DISP:1
+2025-08-09 18:18:17,058 | PanelControlView | DEBUG | Procesando: OK:DISP:1
+2025-08-09 18:18:18,094 | PanelControlView | DEBUG | RX COM3-> b'P02:1'
+2025-08-09 18:18:18,094 | PanelControlView | DEBUG | Procesando: P02:1
+2025-08-09 18:18:18,098 | PanelControlView | DEBUG | TX: DISP:1 -> 50
+2025-08-09 18:18:18,143 | PanelControlView | DEBUG | RX COM3-> b'DISP:1\nOK:DISP:1'
+2025-08-09 18:18:18,143 | PanelControlView | DEBUG | Procesando: DISP:1
+2025-08-09 18:18:18,143 | PanelControlView | DEBUG | Procesando: OK:DISP:1
+2025-08-09 18:18:19,229 | PanelControlView | DEBUG | RX COM3-> b'P02:1'
+2025-08-09 18:18:19,229 | PanelControlView | DEBUG | Procesando: P02:1
+2025-08-09 18:18:19,232 | PanelControlView | DEBUG | TX: DISP:1 -> 50
+2025-08-09 18:18:19,273 | PanelControlView | DEBUG | RX COM3-> b'DISP:1\nOK:DISP:1'
+2025-08-09 18:18:19,273 | PanelControlView | DEBUG | Procesando: DISP:1
+2025-08-09 18:18:19,274 | PanelControlView | DEBUG | Procesando: OK:DISP:1
+2025-08-09 18:18:20,204 | PanelControlView | DEBUG | RX COM3-> b'P02:1'
+2025-08-09 18:18:20,204 | PanelControlView | DEBUG | Procesando: P02:1
+2025-08-09 18:18:20,207 | PanelControlView | DEBUG | TX: DISP:1 -> 50
+2025-08-09 18:18:20,258 | PanelControlView | DEBUG | RX COM3-> b'DISP:1\nOK:DISP:1'
+2025-08-09 18:18:20,258 | PanelControlView | DEBUG | Procesando: DISP:1
+2025-08-09 18:18:20,259 | PanelControlView | DEBUG | Procesando: OK:DISP:1
+2025-08-09 18:18:21,260 | PanelControlView | DEBUG | RX COM3-> b'P02:1'
+2025-08-09 18:18:21,261 | PanelControlView | DEBUG | Procesando: P02:1
+2025-08-09 18:18:21,269 | PanelControlView | DEBUG | TX: DISP:1 -> 50
+2025-08-09 18:18:21,312 | PanelControlView | DEBUG | RX COM3-> b'DISP:1\nOK:DISP:1'
+2025-08-09 18:18:21,312 | PanelControlView | DEBUG | Procesando: DISP:1
+2025-08-09 18:18:21,312 | PanelControlView | DEBUG | Procesando: OK:DISP:1
+2025-08-09 18:18:23,179 | PanelControlView | DEBUG | RX COM3-> b'P02:1'
+2025-08-09 18:18:23,179 | PanelControlView | DEBUG | Procesando: P02:1
+2025-08-09 18:18:23,183 | PanelControlView | DEBUG | TX: DISP:1 -> 50
+2025-08-09 18:18:23,230 | PanelControlView | DEBUG | RX COM3-> b'DISP:1'
+2025-08-09 18:18:23,230 | PanelControlView | DEBUG | Procesando: DISP:1
+2025-08-09 18:18:23,231 | PanelControlView | DEBUG | RX COM3-> b'OK:DISP:1'
+2025-08-09 18:18:23,231 | PanelControlView | DEBUG | Procesando: OK:DISP:1
+2025-08-09 18:19:08,345 | PanelControlView | INFO | Programa detenido a las 18:19:08
+2025-08-09 18:19:08,354 | PanelControlView | DEBUG | TX: LED2:OFF -> 50
+2025-08-09 18:19:08,362 | PanelControlView | INFO | Registro de sesión guardado en sesion_20250809_181908.csv
+2025-08-09 18:19:08,380 | PanelControlView | DEBUG | RX COM3-> b'LED1:OFF\nL01:0'
+2025-08-09 18:19:08,381 | PanelControlView | WARNING | Program not runing, ignore all data
+2025-08-09 18:19:08,403 | PanelControlView | DEBUG | RX COM3-> b'LED2:OFF'
+2025-08-09 18:19:08,404 | PanelControlView | WARNING | Program not runing, ignore all data
+2025-08-09 18:19:08,404 | PanelControlView | DEBUG | RX COM3-> b'L02:0'
+2025-08-09 18:19:08,404 | PanelControlView | WARNING | Program not runing, ignore all data
+2025-08-09 18:23:08,474 | PanelControlView | INFO | Programa iniciado a las 18:23:08
+2025-08-09 18:23:08,475 | PanelControlView | DEBUG | TX: LED1:OFF -> 10
+2025-08-09 18:23:08,475 | PanelControlView | DEBUG | TX: LED2:OFF -> 50
+2025-08-09 18:23:08,476 | PanelControlView | INFO | Config Led-01: ModoLuz.APAGADO, Led-02: ModoLuz.APAGADO
+2025-08-09 18:23:08,476 | PanelControlView | INFO | Config Pal-01: ModoPalanca.CRF, Pal-02: ModoPalanca.CRF
+2025-08-09 18:23:08,495 | PanelControlView | DEBUG | RX COM3-> b'LED1:OFF\nL01:0'
+2025-08-09 18:23:08,495 | PanelControlView | DEBUG | Procesando: LED1:OFF
+2025-08-09 18:23:08,496 | PanelControlView | DEBUG | Procesando: L01:0
+2025-08-09 18:23:08,537 | PanelControlView | DEBUG | RX COM3-> b'LED2:OFF\nL02:0'
+2025-08-09 18:23:08,537 | PanelControlView | DEBUG | Procesando: LED2:OFF
+2025-08-09 18:23:08,538 | PanelControlView | DEBUG | Procesando: L02:0
+2025-08-09 18:23:09,342 | PanelControlView | INFO | Programa detenido a las 18:23:09
+2025-08-09 18:23:09,351 | PanelControlView | DEBUG | TX: LED2:OFF -> 50
+2025-08-09 18:23:09,355 | PanelControlView | INFO | Registro de sesión guardado en sesion_20250809_182309.csv
+2025-08-09 18:23:09,379 | PanelControlView | DEBUG | RX COM3-> b'LED1:OFF\nL01:0'
+2025-08-09 18:23:09,380 | PanelControlView | WARNING | Program not runing, ignore all data
+2025-08-09 18:23:09,404 | PanelControlView | DEBUG | RX COM3-> b'LED2:OFF'
+2025-08-09 18:23:09,404 | PanelControlView | WARNING | Program not runing, ignore all data
+2025-08-09 18:23:09,405 | PanelControlView | DEBUG | RX COM3-> b'L02:0'
+2025-08-09 18:23:09,405 | PanelControlView | WARNING | Program not runing, ignore all data
+2025-08-09 18:23:13,547 | PanelControlView | INFO | Programa iniciado a las 18:23:13
+2025-08-09 18:23:13,547 | PanelControlView | DEBUG | TX: LED1:ON -> 10
+2025-08-09 18:23:13,548 | PanelControlView | DEBUG | TX: LED2:ON -> 50
+2025-08-09 18:23:13,548 | PanelControlView | INFO | Config Led-01: ModoLuz.ENCENDIDO, Led-02: ModoLuz.ENCENDIDO
+2025-08-09 18:23:13,548 | PanelControlView | INFO | Config Pal-01: ModoPalanca.CRF, Pal-02: ModoPalanca.CRF
+2025-08-09 18:23:13,559 | PanelControlView | DEBUG | RX COM3-> b'LED1:ON\nL01:1'
+2025-08-09 18:23:13,560 | PanelControlView | DEBUG | Procesando: LED1:ON
+2025-08-09 18:23:13,560 | PanelControlView | DEBUG | Procesando: L01:1
+2025-08-09 18:23:13,600 | PanelControlView | DEBUG | RX COM3-> b'LED2:ON\nL02:1'
+2025-08-09 18:23:13,600 | PanelControlView | DEBUG | Procesando: LED2:ON
+2025-08-09 18:23:13,600 | PanelControlView | DEBUG | Procesando: L02:1
+2025-08-09 18:23:18,019 | PanelControlView | INFO | Programa detenido a las 18:23:18
+2025-08-09 18:23:18,027 | PanelControlView | DEBUG | TX: LED2:OFF -> 50
+2025-08-09 18:23:18,031 | PanelControlView | INFO | Registro de sesión guardado en sesion_20250809_182318.csv
+2025-08-09 18:23:18,050 | PanelControlView | DEBUG | RX COM3-> b'LED1:OFF\nL01:0'
+2025-08-09 18:23:18,051 | PanelControlView | WARNING | Program not runing, ignore all data
+2025-08-09 18:23:18,074 | PanelControlView | DEBUG | RX COM3-> b'LED2:OFF\nL02:0'
+2025-08-09 18:23:18,075 | PanelControlView | WARNING | Program not runing, ignore all data
+2025-08-09 18:24:31,082 | PanelControlView | INFO | Programa iniciado a las 18:24:31
+2025-08-09 18:24:31,082 | PanelControlView | DEBUG | TX: LED1:ON -> 10
+2025-08-09 18:24:31,083 | PanelControlView | DEBUG | TX: LED2:ON -> 50
+2025-08-09 18:24:31,083 | PanelControlView | INFO | Config Led-01: ModoLuz.ENCENDIDO, Led-02: ModoLuz.ENCENDIDO
+2025-08-09 18:24:31,083 | PanelControlView | INFO | Config Pal-01: ModoPalanca.CRF, Pal-02: ModoPalanca.CRF
+2025-08-09 18:24:31,108 | PanelControlView | DEBUG | RX COM3-> b'LED1:ON\nL01:1'
+2025-08-09 18:24:31,108 | PanelControlView | DEBUG | Procesando: LED1:ON
+2025-08-09 18:24:31,108 | PanelControlView | DEBUG | Procesando: L01:1
+2025-08-09 18:24:31,148 | PanelControlView | DEBUG | RX COM3-> b'LED2:ON\nL02:1'
+2025-08-09 18:24:31,148 | PanelControlView | DEBUG | Procesando: LED2:ON
+2025-08-09 18:24:31,149 | PanelControlView | DEBUG | Procesando: L02:1
+2025-08-09 18:25:17,371 | InicioView | INFO | Vista de inicio configurada correctamente
+2025-08-09 18:25:17,504 | PanelControlView | INFO | Vista de inicio configurada correctamente
+2025-08-09 18:25:17,551 | ReporteView | INFO | Vista de inicio configurada correctamente
+2025-08-09 18:25:26,459 | PanelControlView | INFO | status uart Panel: True
+2025-08-09 18:25:28,927 | PanelControlView | INFO | Programa iniciado a las 18:25:28
+2025-08-09 18:25:28,927 | PanelControlView | DEBUG | TX: LED1:OFF -> 50
+2025-08-09 18:25:28,927 | PanelControlView | DEBUG | TX: LED2:OFF -> 100
+2025-08-09 18:25:28,928 | PanelControlView | INFO | Config Led-01: ModoLuz.APAGADO, Led-02: ModoLuz.APAGADO
+2025-08-09 18:25:28,928 | PanelControlView | INFO | Config Pal-01: ModoPalanca.CRF, Pal-02: ModoPalanca.CRF
+2025-08-09 18:25:28,977 | PanelControlView | DEBUG | RX COM3-> b'ESP-ROM:esp32s3-20210327\r\nL01:0\r\nL02:0\r\nLED1:OFF\nL01:0'
+2025-08-09 18:25:28,977 | PanelControlView | DEBUG | Procesando: ESP-ROM:esp32s3-20210327
+2025-08-09 18:25:28,977 | PanelControlView | DEBUG | Procesando: L01:0
+2025-08-09 18:25:28,979 | PanelControlView | DEBUG | Procesando: L02:0
+2025-08-09 18:25:28,979 | PanelControlView | DEBUG | Procesando: LED1:OFF
+2025-08-09 18:25:28,979 | PanelControlView | DEBUG | Procesando: L01:0
+2025-08-09 18:25:29,028 | PanelControlView | DEBUG | RX COM3-> b'LED2:OFF\nL02:0'
+2025-08-09 18:25:29,029 | PanelControlView | DEBUG | Procesando: LED2:OFF
+2025-08-09 18:25:29,029 | PanelControlView | DEBUG | Procesando: L02:0
+2025-08-09 18:25:30,847 | PanelControlView | INFO | Programa detenido a las 18:25:30
+2025-08-09 18:25:30,855 | PanelControlView | DEBUG | TX: LED2:OFF -> 50
+2025-08-09 18:25:30,866 | PanelControlView | INFO | Registro de sesión guardado en sesion_20250809_182530.csv
+2025-08-09 18:25:30,887 | PanelControlView | DEBUG | RX COM3-> b'LED1:OFF\nL01:0'
+2025-08-09 18:25:30,887 | PanelControlView | WARNING | Program not runing, ignore all data
+2025-08-09 18:25:30,904 | PanelControlView | DEBUG | RX COM3-> b'LED2:OFF\nL02:0'
+2025-08-09 18:25:30,904 | PanelControlView | WARNING | Program not runing, ignore all data
+2025-08-09 18:25:36,307 | PanelControlView | INFO | Programa iniciado a las 18:25:36
+2025-08-09 18:25:36,308 | PanelControlView | DEBUG | TX: LED1:ON -> 50
+2025-08-09 18:25:36,308 | PanelControlView | DEBUG | TX: LED2:ON -> 100
+2025-08-09 18:25:36,308 | PanelControlView | INFO | Config Led-01: ModoLuz.ENCENDIDO, Led-02: ModoLuz.ENCENDIDO
+2025-08-09 18:25:36,309 | PanelControlView | INFO | Config Pal-01: ModoPalanca.CRF, Pal-02: ModoPalanca.CRF
+2025-08-09 18:25:36,354 | PanelControlView | DEBUG | RX COM3-> b'LED1:ON\nL01:1'
+2025-08-09 18:25:36,354 | PanelControlView | DEBUG | Procesando: LED1:ON
+2025-08-09 18:25:36,354 | PanelControlView | DEBUG | Procesando: L01:1
+2025-08-09 18:25:36,409 | PanelControlView | DEBUG | RX COM3-> b'LED2:ON'
+2025-08-09 18:25:36,410 | PanelControlView | DEBUG | Procesando: LED2:ON
+2025-08-09 18:25:36,410 | PanelControlView | DEBUG | RX COM3-> b'L02:1'
+2025-08-09 18:25:36,410 | PanelControlView | DEBUG | Procesando: L02:1
+2025-08-09 18:31:18,958 | InicioView | INFO | Vista de inicio configurada correctamente
+2025-08-09 18:31:19,102 | PanelControlView | INFO | Vista de inicio configurada correctamente
+2025-08-09 18:31:19,142 | ReporteView | INFO | Vista de inicio configurada correctamente
+2025-08-09 18:31:21,498 | PanelControlView | INFO | status uart Panel: True
+2025-08-09 18:31:22,355 | PanelControlView | INFO | Programa iniciado a las 18:31:22
+2025-08-09 18:31:22,356 | PanelControlView | DEBUG | TX: LED1:OFF -> 50
+2025-08-09 18:31:22,356 | PanelControlView | DEBUG | TX: LED2:OFF -> 100
+2025-08-09 18:31:22,356 | PanelControlView | INFO | Config Led-01: ModoLuz.APAGADO, Led-02: ModoLuz.APAGADO
+2025-08-09 18:31:22,357 | PanelControlView | INFO | Config Pal-01: ModoPalanca.CRF, Pal-02: ModoPalanca.CRF
+2025-08-09 18:31:22,405 | PanelControlView | DEBUG | RX COM3-> b'ESP-ROM:esp32s3-20210327\r\nL01:0\r\nL02:0\r\nLED1:OFF\nL01:0'
+2025-08-09 18:31:22,405 | PanelControlView | DEBUG | Procesando: ESP-ROM:esp32s3-20210327
+2025-08-09 18:31:22,405 | PanelControlView | DEBUG | Procesando: L01:0
+2025-08-09 18:31:22,407 | PanelControlView | DEBUG | Procesando: L02:0
+2025-08-09 18:31:22,409 | PanelControlView | DEBUG | Procesando: LED1:OFF
+2025-08-09 18:31:22,409 | PanelControlView | DEBUG | Procesando: L01:0
+2025-08-09 18:31:22,458 | PanelControlView | DEBUG | RX COM3-> b'LED2:OFF\nL02:0'
+2025-08-09 18:31:22,458 | PanelControlView | DEBUG | Procesando: LED2:OFF
+2025-08-09 18:31:22,458 | PanelControlView | DEBUG | Procesando: L02:0
+2025-08-09 18:31:25,389 | PanelControlView | INFO | Programa detenido a las 18:31:25
+2025-08-09 18:31:25,396 | PanelControlView | DEBUG | TX: LED2:OFF -> 50
+2025-08-09 18:31:25,403 | PanelControlView | INFO | Registro de sesión guardado en sesion_20250809_183125.csv
+2025-08-09 18:31:25,421 | PanelControlView | DEBUG | RX COM3-> b'LED1:OFF\nL01:0'
+2025-08-09 18:31:25,421 | PanelControlView | WARNING | Program not runing, ignore all data
+2025-08-09 18:31:25,445 | PanelControlView | DEBUG | RX COM3-> b'LED2:OFF\nL02:0'
+2025-08-09 18:31:25,445 | PanelControlView | WARNING | Program not runing, ignore all data
+2025-08-09 18:31:37,502 | PanelControlView | INFO | Programa iniciado a las 18:31:37
+2025-08-09 18:31:37,503 | PanelControlView | DEBUG | TX: LED1:ON -> 50
+2025-08-09 18:31:37,503 | PanelControlView | DEBUG | TX: LED2:ON -> 100
+2025-08-09 18:31:37,504 | PanelControlView | INFO | Config Led-01: ModoLuz.ENCENDIDO, Led-02: ModoLuz.ENCENDIDO
+2025-08-09 18:31:37,504 | PanelControlView | INFO | Config Pal-01: ModoPalanca.CRF, Pal-02: ModoPalanca.CRF
+2025-08-09 18:31:37,554 | PanelControlView | DEBUG | RX COM3-> b'LED1:ON'
+2025-08-09 18:31:37,554 | PanelControlView | DEBUG | Procesando: LED1:ON
+2025-08-09 18:31:37,555 | PanelControlView | DEBUG | RX COM3-> b'L01:1'
+2025-08-09 18:31:37,555 | PanelControlView | DEBUG | Procesando: L01:1
+2025-08-09 18:31:37,605 | PanelControlView | DEBUG | RX COM3-> b'LED2:ON\nL02:1'
+2025-08-09 18:31:37,605 | PanelControlView | DEBUG | Procesando: LED2:ON
+2025-08-09 18:31:37,605 | PanelControlView | DEBUG | Procesando: L02:1
+2025-08-09 18:32:01,943 | PanelControlView | INFO | Programa detenido a las 18:32:01
+2025-08-09 18:32:01,952 | PanelControlView | DEBUG | TX: LED2:OFF -> 50
+2025-08-09 18:32:01,957 | PanelControlView | INFO | Registro de sesión guardado en sesion_20250809_183201.csv
+2025-08-09 18:32:01,981 | PanelControlView | DEBUG | RX COM3-> b'LED1:OFF\nL01:0'
+2025-08-09 18:32:01,981 | PanelControlView | WARNING | Program not runing, ignore all data
+2025-08-09 18:32:02,004 | PanelControlView | DEBUG | RX COM3-> b'LED2:OFF\nL02:0'
+2025-08-09 18:32:02,004 | PanelControlView | WARNING | Program not runing, ignore all data
+2025-08-09 18:32:07,704 | PanelControlView | INFO | Programa iniciado a las 18:32:07
+2025-08-09 18:32:07,704 | PanelControlView | DEBUG | TX: LED1:ON -> 50
+2025-08-09 18:32:07,705 | PanelControlView | DEBUG | TX: LED2:ON -> 100
+2025-08-09 18:32:07,705 | PanelControlView | INFO | Config Led-01: ModoLuz.ENCENDIDO, Led-02: ModoLuz.ENCENDIDO
+2025-08-09 18:32:07,706 | PanelControlView | INFO | Config Pal-01: ModoPalanca.CRF, Pal-02: ModoPalanca.CRF
+2025-08-09 18:32:07,755 | PanelControlView | DEBUG | RX COM3-> b'LED1:ON\nL01:1'
+2025-08-09 18:32:07,756 | PanelControlView | DEBUG | Procesando: LED1:ON
+2025-08-09 18:32:07,756 | PanelControlView | DEBUG | Procesando: L01:1
+2025-08-09 18:32:07,806 | PanelControlView | DEBUG | RX COM3-> b'LED2:ON\nL02:1'
+2025-08-09 18:32:07,807 | PanelControlView | DEBUG | Procesando: LED2:ON
+2025-08-09 18:32:07,807 | PanelControlView | DEBUG | Procesando: L02:1
+2025-08-09 18:36:21,827 | InicioView | INFO | Vista de inicio configurada correctamente
+2025-08-09 18:36:21,962 | PanelControlView | INFO | Vista de inicio configurada correctamente
+2025-08-09 18:36:22,006 | ReporteView | INFO | Vista de inicio configurada correctamente
+2025-08-09 18:36:33,202 | PanelControlView | INFO | status uart Panel: True
+2025-08-09 18:36:38,288 | PanelControlView | INFO | Programa iniciado a las 18:36:38
+2025-08-09 18:36:38,289 | PanelControlView | DEBUG | TX: LED1:ON -> 50
+2025-08-09 18:36:38,289 | PanelControlView | DEBUG | TX: LED2:ON -> 100
+2025-08-09 18:36:38,289 | PanelControlView | INFO | Config Led-01: ModoLuz.ENCENDIDO, Led-02: ModoLuz.ENCENDIDO
+2025-08-09 18:36:38,290 | PanelControlView | INFO | Config Pal-01: ModoPalanca.CRF, Pal-02: ModoPalanca.CRF
+2025-08-09 18:36:38,327 | PanelControlView | DEBUG | RX COM3-> b'ESP-ROM:esp32s3-20210327\r\nL01:0\r\nL02:0\r\nLED1:ON\nL01:1'
+2025-08-09 18:36:38,328 | PanelControlView | DEBUG | Procesando: ESP-ROM:esp32s3-20210327
+2025-08-09 18:36:38,328 | PanelControlView | DEBUG | Procesando: L01:0
+2025-08-09 18:36:38,330 | PanelControlView | DEBUG | Procesando: L02:0
+2025-08-09 18:36:38,332 | PanelControlView | DEBUG | Procesando: LED1:ON
+2025-08-09 18:36:38,333 | PanelControlView | DEBUG | Procesando: L01:1
+2025-08-09 18:36:38,391 | PanelControlView | DEBUG | RX COM3-> b'LED2:ON\nL02:1'
+2025-08-09 18:36:38,391 | PanelControlView | DEBUG | Procesando: LED2:ON
+2025-08-09 18:36:38,391 | PanelControlView | DEBUG | Procesando: L02:1
+2025-08-09 18:36:42,396 | PanelControlView | INFO | Programa detenido a las 18:36:42
+2025-08-09 18:36:42,405 | PanelControlView | DEBUG | TX: LED2:OFF -> 50
+2025-08-09 18:36:42,415 | PanelControlView | INFO | Registro de sesión guardado en sesion_20250809_183642.csv
+2025-08-09 18:36:42,432 | PanelControlView | DEBUG | RX COM3-> b'LED1:OFF\nL01:0'
+2025-08-09 18:36:42,432 | PanelControlView | WARNING | Program not runing, ignore all data
+2025-08-09 18:36:42,454 | PanelControlView | DEBUG | RX COM3-> b'LED2:OFF\nL02:0'
+2025-08-09 18:36:42,454 | PanelControlView | WARNING | Program not runing, ignore all data
+2025-08-09 18:36:44,076 | PanelControlView | INFO | Programa iniciado a las 18:36:44
+2025-08-09 18:36:44,076 | PanelControlView | DEBUG | TX: LED1:ON -> 50
+2025-08-09 18:36:44,077 | PanelControlView | DEBUG | TX: LED2:ON -> 100
+2025-08-09 18:36:44,077 | PanelControlView | INFO | Config Led-01: ModoLuz.ENCENDIDO, Led-02: ModoLuz.ENCENDIDO
+2025-08-09 18:36:44,077 | PanelControlView | INFO | Config Pal-01: ModoPalanca.CRF, Pal-02: ModoPalanca.CRF
+2025-08-09 18:36:44,121 | PanelControlView | DEBUG | RX COM3-> b'LED1:ON\nL01:1'
+2025-08-09 18:36:44,121 | PanelControlView | DEBUG | Procesando: LED1:ON
+2025-08-09 18:36:44,122 | PanelControlView | DEBUG | Procesando: L01:1
+2025-08-09 18:36:44,178 | PanelControlView | DEBUG | RX COM3-> b'LED2:ON\nL02:1'
+2025-08-09 18:36:44,179 | PanelControlView | DEBUG | Procesando: LED2:ON
+2025-08-09 18:36:44,179 | PanelControlView | DEBUG | Procesando: L02:1
+2025-08-09 18:40:18,229 | InicioView | INFO | Vista de inicio configurada correctamente
+2025-08-09 18:40:18,312 | PanelControlView | ERROR | Error al configurar contenido: type object 'IndicatorKey' has no attribute 'LATENCY'
+2025-08-09 18:40:18,313 | PanelControlView | ERROR | Error al configurar vista de inicio: type object 'IndicatorKey' has no attribute 'LATENCY'
+2025-08-09 18:40:42,654 | InicioView | INFO | Vista de inicio configurada correctamente
+2025-08-09 18:40:42,784 | PanelControlView | INFO | Vista de inicio configurada correctamente
+2025-08-09 18:40:42,825 | ReporteView | INFO | Vista de inicio configurada correctamente
+2025-08-09 18:40:45,844 | PanelControlView | INFO | status uart Panel: True
+2025-08-09 18:40:47,906 | PanelControlView | INFO | Programa iniciado a las 18:40:47
+2025-08-09 18:40:47,907 | PanelControlView | DEBUG | TX: LED1:OFF -> 50
+2025-08-09 18:40:47,907 | PanelControlView | DEBUG | TX: LED2:OFF -> 100
+2025-08-09 18:40:47,908 | PanelControlView | INFO | Config Led-01: ModoLuz.APAGADO, Led-02: ModoLuz.APAGADO
+2025-08-09 18:40:47,908 | PanelControlView | INFO | Config Pal-01: ModoPalanca.CRF, Pal-02: ModoPalanca.CRF
+2025-08-09 18:40:47,958 | PanelControlView | DEBUG | RX COM3-> b'ESP-ROM:esp32s3-20210327\r\nL01:0\r\nL02:0\r\nLED1:OFF'
+2025-08-09 18:40:47,958 | PanelControlView | DEBUG | Procesando: ESP-ROM:esp32s3-20210327
+2025-08-09 18:40:47,959 | PanelControlView | DEBUG | Procesando: L01:0
+2025-08-09 18:40:47,960 | PanelControlView | DEBUG | Procesando: L02:0
+2025-08-09 18:40:47,962 | PanelControlView | DEBUG | Procesando: LED1:OFF
+2025-08-09 18:40:47,962 | PanelControlView | DEBUG | RX COM3-> b'L01:0'
+2025-08-09 18:40:47,962 | PanelControlView | DEBUG | Procesando: L01:0
+2025-08-09 18:40:48,009 | PanelControlView | DEBUG | RX COM3-> b'LED2:OFF\nL02:0'
+2025-08-09 18:40:48,009 | PanelControlView | DEBUG | Procesando: LED2:OFF
+2025-08-09 18:40:48,010 | PanelControlView | DEBUG | Procesando: L02:0
+2025-08-09 18:40:50,593 | PanelControlView | INFO | Programa detenido a las 18:40:50
+2025-08-09 18:40:50,602 | PanelControlView | DEBUG | TX: LED2:OFF -> 50
+2025-08-09 18:40:50,612 | PanelControlView | INFO | Registro de sesión guardado en sesion_20250809_184050.csv
+2025-08-09 18:40:50,633 | PanelControlView | DEBUG | RX COM3-> b'LED1:OFF\nL01:0'
+2025-08-09 18:40:50,633 | PanelControlView | WARNING | Program not runing, ignore all data
+2025-08-09 18:40:50,641 | PanelControlView | DEBUG | RX COM3-> b'LED2:OFF\nL02:0'
+2025-08-09 18:40:50,641 | PanelControlView | WARNING | Program not runing, ignore all data
+2025-08-09 18:40:51,827 | PanelControlView | INFO | Programa iniciado a las 18:40:51
+2025-08-09 18:40:51,827 | PanelControlView | DEBUG | TX: LED1:OFF -> 50
+2025-08-09 18:40:51,828 | PanelControlView | DEBUG | TX: LED2:OFF -> 100
+2025-08-09 18:40:51,828 | PanelControlView | INFO | Config Led-01: ModoLuz.APAGADO, Led-02: ModoLuz.APAGADO
+2025-08-09 18:40:51,828 | PanelControlView | INFO | Config Pal-01: ModoPalanca.CRF, Pal-02: ModoPalanca.CRF
+2025-08-09 18:40:51,877 | PanelControlView | DEBUG | RX COM3-> b'LED1:OFF\nL01:0'
+2025-08-09 18:40:51,878 | PanelControlView | DEBUG | Procesando: LED1:OFF
+2025-08-09 18:40:51,878 | PanelControlView | DEBUG | Procesando: L01:0
+2025-08-09 18:40:51,929 | PanelControlView | DEBUG | RX COM3-> b'LED2:OFF\nL02:0'
+2025-08-09 18:40:51,929 | PanelControlView | DEBUG | Procesando: LED2:OFF
+2025-08-09 18:40:51,929 | PanelControlView | DEBUG | Procesando: L02:0
+2025-08-09 18:42:38,872 | InicioView | INFO | Vista de inicio configurada correctamente
+2025-08-09 18:42:39,015 | PanelControlView | INFO | Vista de inicio configurada correctamente
+2025-08-09 18:42:39,065 | ReporteView | INFO | Vista de inicio configurada correctamente

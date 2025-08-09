@@ -11,10 +11,20 @@ from main.enums.program_enums import ModoLuz, ModoPalanca
 
 
 class ProgramControlBox(QGroupBox):
-    def __init__(self):
+    def __init__(self, uart_connected: bool = False):
         super().__init__("Modo de operación:")
         self.setStyleSheet(AppStyles.groupbox_style("#2c3e50"))        
         self._init_ui()
+        
+        if uart_connected:
+            self.enable_config()
+            self.btn_start.setEnabled(True)
+            self.btn_stop.setEnabled(False)
+            
+        else:
+            self.disable_config()
+            self.btn_start.setEnabled(False)
+            self.btn_stop.setEnabled(False)
 
     def _init_ui(self):
         layout = QVBoxLayout()
@@ -165,23 +175,44 @@ class ProgramControlBox(QGroupBox):
     def disable_config(self):
         """Deshabilita todos los controles de configuración."""
         self.cmb_mode_l1.setEnabled(False)
+        self.cmb_mode_l1.setStyleSheet(AppStyles.CMBOX_STYLE_DISABLED)
+        
         self.spbox_l1.setEnabled(False)
+        
         self.cmb_mode_l2.setEnabled(False)
+        self.cmb_mode_l2.setStyleSheet(AppStyles.CMBOX_STYLE_DISABLED)
+        
         self.spbox_l2.setEnabled(False)
+        
         self.cmb_mode_p1.setEnabled(False)
+        self.cmb_mode_p1.setStyleSheet(AppStyles.CMBOX_STYLE_DISABLED)
+        
         self.spbox_p1.setEnabled(False)
+        
         self.cmb_mode_p2.setEnabled(False)
+        self.cmb_mode_p2.setStyleSheet(AppStyles.CMBOX_STYLE_DISABLED)
+        
         self.spbox_p2.setEnabled(False)
     
     def enable_config(self):
         """Habilita todos los controles de configuración."""
         self.cmb_mode_l1.setEnabled(True)
+        self.cmb_mode_l1.setStyleSheet(AppStyles.CMBOX_PLNC_STYLE)
+        
         self.spbox_l1.setEnabled(True)
         self.cmb_mode_l2.setEnabled(True)
+        self.cmb_mode_l2.setStyleSheet(AppStyles.CMBOX_PLNC_STYLE)
+        
         self.spbox_l2.setEnabled(True)
+        
         self.cmb_mode_p1.setEnabled(True)
+        self.cmb_mode_p1.setStyleSheet(AppStyles.CMBOX_PLNC_STYLE)
+        
         self.spbox_p1.setEnabled(True)
+        
         self.cmb_mode_p2.setEnabled(True)
+        self.cmb_mode_p2.setStyleSheet(AppStyles.CMBOX_PLNC_STYLE)
+        
         self.spbox_p2.setEnabled(True)
     
     

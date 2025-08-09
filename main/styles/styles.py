@@ -231,6 +231,7 @@ class AppStyles:
             selection-color: black;
         }
     """
+    
     CMBOX_PLNC_STYLE = """
         QComboBox {
             background-color: #2c3e50;
@@ -296,8 +297,8 @@ class AppStyles:
             background-color: #A1A1A1;
             border-left-color: #A1A1A1;
         }
-
     """
+    
     LABEL_SECONDARY_STYLE = """
         QLabel {
             font-size: 14px;
@@ -306,59 +307,142 @@ class AppStyles:
         }
     """
     
+    # SPINBOX_STYLE = f"""
+    #     QSpinBox {{
+    #         background-color: {PRIMARY_COLOR};
+    #         color: white;
+    #         border: 1px solid {ACCENT_COLOR};
+    #         border-radius: 4px;
+    #         padding: 1px 4px 1px 4px;  
+    #         font-size: 12px;            
+    #         min-width: 65px;            
+    #         min-height: 20px;               
+    #     }}
+
+    #     QSpinBox::up-button {{
+    #         width: 12px;
+    #         height: 10px;                
+    #         subcontrol-position: top right;
+    #         margin-right: 1px;          
+    #         image: url(:/icons/up-png);
+    #         border-left: 1px solid {ACCENT_COLOR};
+    #         border-bottom: 1px solid {ACCENT_COLOR};
+    #         background-color: transparent;  
+    #     }}
+
+    #     QSpinBox::down-button {{
+    #         width: 12px;
+    #         height: 10px;
+    #         subcontrol-position: bottom right;
+    #         margin-right: 1px;
+    #         image: url(:/icons/down-png);
+    #         border-top: 1px solid {ACCENT_COLOR};
+    #         border-left: 1px solid {ACCENT_COLOR};
+    #         background-color: transparent;
+    #     }}
+
+    #     QSpinBox::up-button:hover, 
+    #     QSpinBox::down-button:hover {{
+    #         background-color: rgba(255, 255, 255, 0.2);
+    #     }}
+
+
+    #     QSpinBox::up-button:pressed, 
+    #     QSpinBox::down-button:pressed {{
+    #         background-color: {ACCENT_COLOR};
+    #         border-left: 1px solid {PRIMARY_HOVER};
+    #         border-bottom: 1px solid {PRIMARY_HOVER};
+    #     }}
+
+    #     QSpinBox::text {{
+    #         padding-top: 1px;
+    #         padding-bottom: 1px;
+    #     }}
+    # """
+
     SPINBOX_STYLE = f"""
-    QSpinBox {{
-        background-color: {PRIMARY_COLOR};
-        color: white;
-        border: 1px solid {ACCENT_COLOR};
-        border-radius: 4px;
-        padding: 1px 4px 1px 4px;  
-        font-size: 12px;            
-        min-width: 65px;            
-        min-height: 20px;               
-    }}
-
-    QSpinBox::up-button {{
-        width: 12px;
-        height: 10px;                
-        subcontrol-position: top right;
-        margin-right: 1px;          
-        image: url(:/icons/up-png);
-        border-left: 1px solid {ACCENT_COLOR};
-        border-bottom: 1px solid {ACCENT_COLOR};
-        background-color: transparent;  
-    }}
-
-    QSpinBox::down-button {{
-        width: 12px;
-        height: 10px;
-        subcontrol-position: bottom right;
-        margin-right: 1px;
-        image: url(:/icons/down-png);
-        border-top: 1px solid {ACCENT_COLOR};
-        border-left: 1px solid {ACCENT_COLOR};
-        background-color: transparent;
-    }}
-
-    QSpinBox::up-button:hover, 
-    QSpinBox::down-button:hover {{
-        background-color: rgba(255, 255, 255, 0.2);
-    }}
-
-
-    QSpinBox::up-button:pressed, 
-    QSpinBox::down-button:pressed {{
-        background-color: {ACCENT_COLOR};
-        border-left: 1px solid {PRIMARY_HOVER};
-        border-bottom: 1px solid {PRIMARY_HOVER};
-    }}
-
-    QSpinBox::text {{
-        padding-top: 1px;
-        padding-bottom: 1px;
-    }}
-"""
-
+        /* Estilo base */
+        QSpinBox {{
+            background-color: {PRIMARY_COLOR};
+            color: white;
+            border: 1px solid {ACCENT_COLOR};
+            border-radius: 4px;
+            padding: 1px 4px 1px 4px;
+            font-size: 12px;
+            min-width: 65px;
+            min-height: 20px;
+        }}
+        
+        /* Estilo cuando está deshabilitado */
+        QSpinBox:disabled {{
+            background-color: {SECONDARY_BG};  /* Usar tu color secundario o un gris */
+            color: #c0c0c0;                      /* Texto gris claro */
+            border: 1px solid #606060;
+        }}
+        
+        /* Botón de incremento - estado normal */
+        QSpinBox::up-button {{
+            width: 12px;
+            height: 10px;
+            subcontrol-position: top right;
+            margin-right: 1px;
+            image: url(:/icons/up-png);
+            border-left: 1px solid {ACCENT_COLOR};
+            border-bottom: 1px solid {ACCENT_COLOR};
+            background-color: transparent;
+        }}
+        
+        /* Botón de incremento - estado deshabilitado */
+        QSpinBox::up-button:disabled {{
+            image: url(:/icons/up-disabled.png);  /* Icono alternativo para deshabilitado */
+            border-left: 1px solid #606060;
+            border-bottom: 1px solid #606060;
+        }}
+        
+        /* Botón de decremento - estado normal */
+        QSpinBox::down-button {{
+            width: 12px;
+            height: 10px;
+            subcontrol-position: bottom right;
+            margin-right: 1px;
+            image: url(:/icons/down-png);
+            border-top: 1px solid {ACCENT_COLOR};
+            border-left: 1px solid {ACCENT_COLOR};
+            background-color: transparent;
+        }}
+        
+        /* Botón de decremento - estado deshabilitado */
+        QSpinBox::down-button:disabled {{
+            image: url(:/icons/down-disabled.png);  /* Icono alternativo para deshabilitado */
+            border-top: 1px solid #606060;
+            border-left: 1px solid #606060;
+        }}
+        
+        /* Efectos hover (solo cuando está habilitado) */
+        QSpinBox::up-button:hover:enabled, 
+        QSpinBox::down-button:hover:enabled {{
+            background-color: rgba(255, 255, 255, 0.2);
+        }}
+        
+        /* Efectos pressed (solo cuando está habilitado) */
+        QSpinBox::up-button:pressed:enabled, 
+        QSpinBox::down-button:pressed:enabled {{
+            background-color: {ACCENT_COLOR};
+            border-left: 1px solid {PRIMARY_HOVER};
+            border-bottom: 1px solid {PRIMARY_HOVER};
+        }}
+        
+        /* Estilo del texto */
+        QSpinBox::text {{
+            padding-top: 1px;
+            padding-bottom: 1px;
+        }}
+        
+        /* Texto cuando está deshabilitado */
+        QSpinBox:disabled::text {{
+            color: #a0a0a0;
+        }}
+    """
     BUTTON_STYLE = """
         QPushButton {
             background-color: #2c3e50;
