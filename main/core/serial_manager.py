@@ -154,14 +154,25 @@ class SerialManager(QObject):
             data = bytes(self.serial.readAll())
             self.data_received.emit(data, self.port_name)
 
+    # def _handle_error(self, error):
+    #     if error == QSerialPort.SerialPortError.NoError:
+    #         return
+    #     self.error_occurred.emit(
+    #         self.ERROR_MAP.get(error, f"Error desconocido ({error})"),
+    #         self.port_name
+    #     )
     def _handle_error(self, error):
         if error == QSerialPort.SerialPortError.NoError:
             return
-        self.error_occurred.emit(
-            self.ERROR_MAP.get(error, f"Error desconocido ({error})"),
-            self.port_name
-        )
-
+        
+        error_msg = self.ERROR_MAP.get(error, f"Error desconocido ({error})")
+        self.error_occurred.emit(error_msg, self.port_name)
+        
+        # Cerrar automáticamente en errores críticos
+        if error in (QSerialPort.SerialPortError.ResourceError,
+                    QSerialPort.SerialPortError.DeviceNotFoundError):
+            self.close_port()
+        
     def is_connected(self) -> bool:
         return self.serial is not None and self.serial.isOpen()
 

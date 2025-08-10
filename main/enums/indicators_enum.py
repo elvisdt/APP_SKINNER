@@ -29,5 +29,5 @@ class IndicatorKey(Enum):
     LEVER_02_COUNT = "Palanca 02"
     LED_01_STATE = "LED 01"
     LED_02_STATE = "LED 02"
-    FOOD_COUNT = "Recompensas"
-    TRIAL_COUNT = "Intentos"
+    RECONPENSA_COUNT = "Recompensas"
+    DISPENSA_COUNT = "Dispensador"

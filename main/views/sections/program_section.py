@@ -11,21 +11,15 @@ from main.enums.program_enums import ModoLuz, ModoPalanca
 
 
 class ProgramControlBox(QGroupBox):
-    def __init__(self, uart_connected: bool = False):
+    def __init__(self, uart_connected: bool = False, isrunig: bool = False):
         super().__init__("Modo de operación:")
         self.setStyleSheet(AppStyles.groupbox_style("#2c3e50"))        
         self._init_ui()
+        self.is_runing = isrunig
         
-        if uart_connected:
-            self.enable_config()
-            self.btn_start.setEnabled(True)
-            self.btn_stop.setEnabled(False)
-            
-        else:
-            self.disable_config()
-            self.btn_start.setEnabled(False)
-            self.btn_stop.setEnabled(False)
-
+        self.set_runing_state(isrunig)
+        self.update_uart_status(uart_connected)
+        
     def _init_ui(self):
         layout = QVBoxLayout()
         layout.setContentsMargins(0, 0, 0, 0)
@@ -155,7 +149,7 @@ class ProgramControlBox(QGroupBox):
 
         spbox = QSpinBox()
         spbox.setStyleSheet(AppStyles.SPINBOX_STYLE)
-        spbox.setRange(1, 999)
+        spbox.setRange(3, 999)
         spbox.setFixedWidth(100)
 
         return lbl_01, cmb, lbl_02, spbox
@@ -172,6 +166,33 @@ class ProgramControlBox(QGroupBox):
         layout.addStretch()
         return layout
 
+    def update_uart_status(self, connected: bool):
+        """Actualiza el estado de conexión UART"""
+        if connected:
+            self.enable_config()
+            self.btn_start.setEnabled(True)
+            self.btn_stop.setEnabled(False)
+        else:
+            self.disable_config()
+            self.btn_start.setEnabled(False)
+            self.btn_stop.setEnabled(False)
+            
+    def set_runing_state(self, is_running: bool):
+        """Actualiza el estado de ejecución del programa."""
+        self.is_runing = is_running
+        if is_running:
+            self.btn_start.setEnabled(False)
+            self.btn_stop.setEnabled(True)
+            self.disable_config()
+        else:
+            self.btn_start.setEnabled(True)
+            self.btn_stop.setEnabled(False)
+            self.enable_config()
+            
+    def get_runing_state(self) -> bool:
+        """Obtiene el estado de ejecución del programa."""
+        return self.is_runing
+            
     def disable_config(self):
         """Deshabilita todos los controles de configuración."""
         self.cmb_mode_l1.setEnabled(False)

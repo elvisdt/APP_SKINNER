@@ -29,30 +29,253 @@ from main.utils.resource_path import get_resource_path
 from main.core.serial_manager import SerialManager
 from main.enums.program_enums import ModoLuz, ModoPalanca
 
-
-#--------------------------------------------------------------##
-led_keys = {
-    "L01": IndicatorKey.LED_01_STATE,
-    "L02": IndicatorKey.LED_02_STATE,
-}
-
-
-value_led_map = {
-    "1": "ON",
-    "0": "OFF",
-    "ON": "ON",
-    "OFF": "OFF"
-}
-
-palanca_keys = {
-    "P01": IndicatorKey.LEVER_01_COUNT,
-    "P02": IndicatorKey.LEVER_02_COUNT,
-}
-
-
+from main.core.mean_generator import MeanTimeGeneratorMS, MeanTimeGeneratorSeconds, MeanTimeGeneratorInt
 
 
 ##-------------------------------------------------------------##
+
+
+def seconds_to_hhmmss(total_seconds: int) -> str:
+    """Convierte segundos a formato 'hh:mm:ss'.
+    
+    Args:
+        total_seconds: Segundos a convertir (entero positivo o cero).
+    
+    Returns:
+        str: Cadena en formato 'hh:mm:ss'.
+    
+    Ejemplos:
+        >>> seconds_to_hhmmss(70)
+        '00:01:10'
+        >>> seconds_to_hhmmss(3665)
+        '01:01:05'
+    """
+    hours = total_seconds // 3600
+    remaining_seconds = total_seconds % 3600
+    minutes = remaining_seconds // 60
+    seconds = remaining_seconds % 60
+    
+    return f"{hours:02d}:{minutes:02d}:{seconds:02d}"
+
+
+class ProgramEngine:
+    """
+    Lógica principal del programa: estados, modos y procesamiento de comandos recibidos por UART.
+    """
+    def __init__(self, 
+                 send_cmd_callback, 
+                 check_event_palanc,
+                 prog_section:ProgramControlBox,
+                 info_group:IndicatorsSectionBox,
+                 
+                 logger):
+        self.send_cmd = send_cmd_callback
+        self.prog_section = prog_section
+        self.info_group = info_group
+        self.check_event_palanc = check_event_palanc
+        self.logger = logger
+
+            
+
+    def process_uart_line(self, line):
+        """
+        Procesa un mensaje recibido por UART.
+        """
+        # Ejemplo básico de parseo
+        parts = line.split()
+        #self.logger.debug(f"[ProgramEngine] Process Line: {line}")
+        
+        for part in parts:
+            self.logger.debug(f"[ProgramEngine] RX part: {part}")
+            
+            if part.startswith("L01:"):
+                value = part.split(":")[1].strip()
+                if value.isdigit():
+                    self.info_group.update_value(IndicatorKey.LED_01_STATE, value, increment=False)
+                
+            elif part.startswith("L02:"):
+                value = part.split(":")[1].strip()
+                if value.isdigit():
+                    self.info_group.update_value(IndicatorKey.LED_02_STATE, value, increment=False)
+                
+                # Aquí actualizas UI o estado interno
+            elif part.startswith("P01:"):
+                value = part.split(":")[1].strip()
+                if value.isdigit():
+                    self._handle_palanca(IndicatorKey.LEVER_01_COUNT, int(value))
+                    
+            elif part.startswith("P02:"):
+                value = part.split(":")[1].strip()
+                if value.isdigit():
+                    self._handle_palanca(IndicatorKey.LEVER_02_COUNT, int(value))
+                    
+            elif part.startswith("IR1:"):
+                value = part.split(":")[1].strip()
+                if value.isdigit():
+                    self._handle_recompensa_food(value)
+                    
+            else:
+                self.logger.warning(f"unknow command: {part}")
+                continue
+                
+        #----ACCIONES LUEGO DE PROCESAR ---------                
+    def _handle_palanca(self,key,value):
+        
+        if key == IndicatorKey.LEVER_01_COUNT:            
+ 
+            modo = self.prog_section.get_pal1_mode()   
+            if modo in [ModoPalanca.CRF , ModoPalanca.FI, ModoPalanca.FR, ModoPalanca.VI, ModoPalanca.VR]:
+                # self.plt_group.graph_left.register_pulse(self.name_plt_lf_l1)
+                self.info_group.update_value(key, value, increment=True)
+                
+            if modo in [ModoPalanca.CRF, ModoPalanca.FR, ModoPalanca.VR]:
+                self.check_event_palanc(1)
+                
+        elif key == IndicatorKey.LEVER_02_COUNT:            
+ 
+            modo = self.prog_section.get_pal2_mode()   
+            if modo in [ModoPalanca.CRF , ModoPalanca.FI, ModoPalanca.FR, ModoPalanca.VI, ModoPalanca.VR]:
+                # self.plt_group.graph_left.register_pulse(self.name_plt_lf_l1)
+                self.info_group.update_value(key, value, increment=True)
+                
+            if modo in [ModoPalanca.CRF, ModoPalanca.FR, ModoPalanca.VR]:
+                self.check_event_palanc(2)
+
+    
+    def _handle_disp_food(self, value):
+        #self.logger.info(f"Comando DISP recibido: {value}")
+        if value.isdigit():
+            self.info_group.update_value(IndicatorKey.DISPENSA_COUNT, value, increment=True)
+            
+            # Agregar más comandos aquí
+    def _handle_recompensa_food(self, value):
+        if value.isdigit():
+            self.info_group.update_value(IndicatorKey.RECONPENSA_COUNT  , value, increment=True)
+
+# SerialReceiver.py
+from queue import Queue
+
+class SerialReceiver:
+    """
+    Se encarga de recibir datos crudos de UART y guardarlos en una cola para su posterior procesamiento.
+    """
+    def __init__(self, logger=None):
+        self.queue = Queue()
+        self.logger = logger
+
+    def on_data_received(self, data: bytes, port_name: str = ""):
+        """
+        Llamado cuando llega data desde el puerto serial.
+        """
+        try:
+            if self.logger:
+                self.logger.debug(f"Data RX {port_name}: {data}")
+                
+            line = data.decode(errors='ignore').strip()
+            if line:
+                self.queue.put(line)
+                
+        except Exception as e:
+            if self.logger:
+                self.logger.error(f"Error al decodificar datos: {e}")
+                
+# DataProcessor.py
+class DataProcessor:
+    """
+    Extrae mensajes de la cola y los envía al motor del programa para su interpretación.
+    """
+    def __init__(self, program_engine: ProgramEngine, logger=None):
+        self.engine = program_engine
+        self.logger = logger
+
+    def process_pending(self, queue):
+        """
+        Procesa todos los mensajes que haya en la cola.
+        """
+        while not queue.empty():
+            try:
+                line = queue.get_nowait()
+                self.engine.process_uart_line(line)
+            except Exception as e:
+                if self.logger:
+                    self.logger.error(f"Error process line: {e}")
+                # print(f"[DataProcessor] Error procesando línea: {e}")
+                
+##-------------------------------------------------------------##
+from PyQt6.QtCore import QThread, pyqtSignal, QObject 
+
+from PyQt6.QtCore import (
+    QObject, 
+    QThread, 
+    QMetaObject, 
+    Qt, 
+    pyqtSignal, 
+    Q_ARG
+)
+
+from PyQt6.QtCore import QObject, QThread, pyqtSignal, QMutex, pyqtSlot
+
+class GeneratorManager(QObject):
+    value_ready = pyqtSignal(int, int)  # palanca_num, value
+    
+    def __init__(self):
+        super().__init__()
+        self.generators = {
+            1: MeanTimeGeneratorInt(),
+            2: MeanTimeGeneratorInt()
+        }
+        self.mutex = QMutex()
+        self.current_values = {1: 0, 2: 0}
+        
+    def get_value(self, palanca_num):
+        """Obtiene el último valor generado (thread-safe)"""
+        self.mutex.lock()
+        value = self.current_values[palanca_num]
+        self.mutex.unlock()
+        return value
+    
+    @pyqtSlot(int, result=int)
+    def get_total_value(self, palanca_num):
+        self.mutex.lock()
+        try:
+            return self.generators[palanca_num].get_total_value()
+        finally:
+            self.mutex.unlock()
+    
+    @pyqtSlot(int)  # <-- Añade este decorador
+    def generate_next(self, palanca_num):
+        """Genera el siguiente valor (ejecutar en hilo secundario)"""
+        self.mutex.lock()
+        new_value = self.generators[palanca_num].next_value()
+        self.current_values[palanca_num] = new_value
+        self.mutex.unlock()
+        self.value_ready.emit(palanca_num, new_value)
+
+    @pyqtSlot(int, int)  # <-- Añade este decorador
+    def reset_generator(self, palanca_num, target):
+        """Reinicia el generador (thread-safe)"""
+        self.mutex.lock()
+        self.generators[palanca_num].reset(target, 50, 1)
+        self.mutex.unlock()
+        
+    @pyqtSlot(int, int, int, int)  # palanca_num, target, range_pct, precision_s
+    def reset_generator(self, palanca_num, target, range_pct=50, precision_s=1):
+        """Reinicia el generador de manera thread-safe"""
+        self.mutex.lock()
+        try:
+            self.generators[palanca_num].reset(
+                target_s=target,
+                range_pct=range_pct,
+                precision_s=precision_s
+            )
+            # Generar un valor inicial inmediato
+            initial_value = self.generators[palanca_num].next_value()
+            self.current_values[palanca_num] = initial_value
+            self.value_ready.emit(palanca_num, initial_value)
+        finally:
+            self.mutex.unlock()
+            
+##-------------------------------------------------------------#
 class PanelControlView(BaseView):
     """Vista principal del panel de control"""
     
@@ -60,17 +283,120 @@ class PanelControlView(BaseView):
         super().__init__(serial_manager=serial_manager, parent=parent)
         
 
-        self.is_prog_running = False
-        
         self.timer = QTimer(self)
-        self.timer.timeout.connect(self._actualizar_duracion)
+        self.timer.timeout.connect(self._update_timer_events)
         self.start_time = None
         self.end_time = None    
-        self._setup_connections()
+        self.elapsed = 0
         
         self.name_plt_rh_l1="Presiones"
         self.name_plt_lf_l1="Presiones"
         
+        self.gen_pal01 = MeanTimeGeneratorInt()
+        self.gen_pal02 = MeanTimeGeneratorInt()
+        
+         # 1️⃣ Inicializar motor del programa
+        self.engine = ProgramEngine(
+            send_cmd_callback=self.send_uart_cmd,
+            check_event_palanc = self.check_palanca_num,
+            prog_section=self.prog_section,
+            info_group=self.info_group,
+            logger=self.logger
+        )
+        
+        
+        
+
+         # 2️⃣ Inicializar receptor de UART
+        self.receiver = SerialReceiver(logger=self.logger)
+
+        # 3️⃣ Inicializar procesador de datos
+        self.processor = DataProcessor(self.engine, logger=self.logger)
+
+        # 4️⃣ Configurar el serial manager
+        self._setup_connections()
+    
+
+        # 6️⃣ Timer para procesar datos UART (cada 100 ms)
+        self.timer_uart = QTimer()
+        self.timer_uart.timeout.connect(lambda: self.processor.process_pending(self.receiver.queue))
+        self.timer_uart.start(100)
+        
+         # Crear worker y thread
+        
+        self.setup_generators()
+        
+    # En tu PanelControlView
+    def setup_generators(self):
+        self.gen_manager = GeneratorManager()
+        self.gen_thread = QThread()
+
+        # Mover el manager al hilo secundario
+        self.gen_manager.moveToThread(self.gen_thread)
+
+        # Conectar señales
+        self.gen_manager.value_ready.connect(self.handle_generated_value)
+
+        # Iniciar el hilo
+        self.gen_thread.start()
+
+        # Generar valores iniciales
+        QMetaObject.invokeMethod(self.gen_manager, "generate_next", 
+                                Qt.ConnectionType.QueuedConnection,
+                                Q_ARG(int, 1))
+        
+        QMetaObject.invokeMethod(self.gen_manager, "generate_next", 
+                                Qt.ConnectionType.QueuedConnection,
+                                Q_ARG(int, 2))
+
+    def handle_generated_value(self, palanca_num, value):
+        """Maneja los valores generados (se ejecuta en el hilo principal)"""
+        self.logger.info(f"gen 01: {palanca_num}: {value}")
+            
+        
+
+    def reset_generators_config(self):
+        """Reinicia ambos generadores con la configuración actual"""
+        # Configuración palanca 1
+        if self.prog_section.get_pal1_mode() in [ModoPalanca.VI, ModoPalanca.VR]:
+            target = self.prog_section.get_pal1_time()
+            QMetaObject.invokeMethod(
+                self.gen_manager,
+                "reset_generator",
+                Qt.ConnectionType.QueuedConnection,
+                Q_ARG(int, 1),
+                Q_ARG(int, target),
+                Q_ARG(int, 50),  # range_pct
+                Q_ARG(int, 1)    # precision_s
+            )
+        
+        # Configuración palanca 2
+        if self.prog_section.get_pal2_mode() in [ModoPalanca.VI, ModoPalanca.VR]:
+            target = self.prog_section.get_pal2_time()
+            QMetaObject.invokeMethod(
+                self.gen_manager,
+                "reset_generator",
+                Qt.ConnectionType.QueuedConnection,
+                Q_ARG(int, 2),
+                Q_ARG(int, target),
+                Q_ARG(int, 50),  # range_pct
+                Q_ARG(int, 1)    # precision_s
+            )
+            
+    def request_new_value(self, palanca_num):
+        """Solicita un nuevo valor de manera thread-safe"""
+        try:
+            QMetaObject.invokeMethod(
+                self.gen_manager,
+                "generate_next",
+                Qt.ConnectionType.QueuedConnection,
+                Q_ARG(int, palanca_num)
+            )
+        except RuntimeError as e:
+            print(f"Error al invocar generate_next: {e}")
+            # Puedes agregar aquí un fallback síncrono si es necesario
+            return self.gen_manager.get_value(palanca_num)
+            
     def setup_ui(self):
         """Configura la interfaz de usuario de la vista de inicio"""
         try:
@@ -148,8 +474,6 @@ class PanelControlView(BaseView):
             # Asignar proporciones 2:3:1
             bot_layout.setStretch(0, 1)  # INFO
             bot_layout.setStretch(1, 3)  # PLOT
-        
-            
             
             top_container = QWidget()
             top_container.setLayout(top_layout)
@@ -178,39 +502,23 @@ class PanelControlView(BaseView):
         
         # Conectar señales del serial manager
         self.serial_manager.ports_updated.connect(self._on_ports_updated)
-        self.serial_manager.data_received.connect(self.handle_serial_data)
+        self.serial_manager.data_received.connect(self.receiver.on_data_received)
+        
         self.serial_manager.connection_changed.connect(self.update_uart_status)
-        
-        # self.uart_section.connect_btn.clicked.connect(self._handle_connect_btn_uart)
-        
-        # # Conectar señales del serial model
-        # self.serial_model.ports_list_updated.connect(self.uart_section.update_list_port)
-        # self.serial_model.connection_state_changed.connect(self.update_uart_status)
-        # self.serial_model.data_received.connect(self.handle_serial_data)
-
-        # self.prog_section.btn_start.clicked.connect(self.start_program)
-        # self.prog_section.btn_stop.clicked.connect(self.stop_program)
-
-        
-        # self.prog_section.btn_start.setEnabled(False)
-        # self.prog_section.btn_stop.setEnabled(False)
+        self.serial_manager.data_sent.connect(self.handle_serial_dsent)
+        self.serial_manager.error_occurred.connect(self._handle_error_uart)
     
     #--------------------------------------------------------
     def update_uart_status(self, connected: bool, port_name: str = ""):
         """Actualiza la UI según el estado de conexión"""
         self.logger.info(f"status uart Panel: {connected}")
         self.uart_section.update_uart_status(connected)
-        if connected:
-            self.prog_section.enable_config()
-            self.prog_section.btn_start.setEnabled(True)
-            self.prog_section.btn_stop.setEnabled(False)
-            
-        else :
+        self.prog_section.update_uart_status(connected)
+        
+        if not connected:
             self.stop_program()
-            
-            self.prog_section.disable_config()
-            self.prog_section.btn_start.setEnabled(False)
-            self.prog_section.btn_stop.setEnabled(False)
+            self.uart_section.update_list_port(self.serial_manager.get_list_ports())
+    
     def _toggle_uart(self):
         """Manejar clic en el botón de conexión"""
         if self.serial_manager.is_connected():
@@ -224,8 +532,14 @@ class PanelControlView(BaseView):
                 
     def _on_ports_updated(self, ports: list[str]):
         """Actualiza la lista de puertos en la UI."""
+        self.logger.info(f"Puertos actualizados: {ports}")
         self.uart_section.update_list_port(ports)
-    
+        
+    def _handle_error_uart(self, error: str, port_name: str = ""):
+        """Maneja errores de conexión UART"""
+        self.logger.error(f"Error UART: {error}")
+        
+        
     def _send_current_config(self):
         #------------------------------------#
         
@@ -250,11 +564,8 @@ class PanelControlView(BaseView):
             pass
         
         #config palanca 01 mode
-        pal_01_tx = self.prog_section.get_pal1_mode()
-        pal_02_tx = self.prog_section.get_pal2_mode()
+        self.reset_generators_config() 
         self.logger.info(f"Config Led-01: {led_01_tx}, Led-02: {led_02_tx}")
-        self.logger.info(f"Config Pal-01: {pal_01_tx}, Pal-02: {pal_02_tx}")
-        
         
         
         # self.serial_model.write_data("LED-STATUS")
@@ -263,7 +574,7 @@ class PanelControlView(BaseView):
           
     #--------------------------------------------------------
     def start_program(self):
-        if self.is_prog_running:
+        if self.prog_section.get_runing_state():
             return  # Ya está en ejecución
 
         self.info_group.reset_all()
@@ -273,24 +584,33 @@ class PanelControlView(BaseView):
             'time': QDateTime.currentDateTime().toString("dd/MM/yyyy HH:mm:ss"),
         })
         
+        self.elapsed = 0
+        self.logger.info("Iniciando programa...")
         
         # LIMPIAR LABELS
         self.info_group.reset_all()
-        self.plt_group.graph_left.reset_graph()
-        self.plt_group.graph_right.reset_graph()
+        self.plt_group.reset_graphs()
         
-        #--- AGREGAR SERIES ---
-        self.plt_group.graph_right.add_series(self.name_plt_rh_l1, "#3498db")
-        self.plt_group.graph_left.add_series(self.name_plt_lf_l1, "#2ecc71")
+        mode_p1 = self.prog_section.get_pal1_mode()
+        if mode_p1 in [ModoPalanca.CRF , ModoPalanca.FI, ModoPalanca.FR, ModoPalanca.VI, ModoPalanca.VR]:
+            self.plt_group.graph_left.add_series(self.name_plt_lf_l1, "#2ecc71")
+            self.plt_group.graph_left.add_data_point(self.name_plt_lf_l1,0,0)
+        
+        mode_p2 = self.prog_section.get_pal2_mode()
+        if mode_p2 in [ModoPalanca.CRF , ModoPalanca.FI, ModoPalanca.FR, ModoPalanca.VI, ModoPalanca.VR]:
+            self.plt_group.graph_right.add_series(self.name_plt_rh_l1, "#3498db")
+            self.plt_group.graph_right.add_data_point(self.name_plt_rh_l1,0,0)
+            
+        
         
         #--- INICIAR GRAFICA
-        self.plt_group.graph_left.start_timer()
-        self.plt_group.graph_right.start_timer()
+        # self.plt_group.graph_left.start_timer()
+        # self.plt_group.graph_right.start_timer()
         
         # INICIAR TIMER DE CONTEO
-        self.is_prog_running = True
-        self.start_time = QDateTime.currentDateTime()
+        self.prog_section.set_runing_state(True)
         
+        self.start_time = QDateTime.currentDateTime()
         self.info_group.set_start_time(self.start_time)
         
         
@@ -303,23 +623,23 @@ class PanelControlView(BaseView):
         self._send_current_config()
        
         self.prog_section.disable_config()
-        # self.serial_model.write_data("IR-STATUS")
+        
 
     def stop_program(self):
-        if not self.is_prog_running:
+        if not self.prog_section.get_runing_state():
             return  # Ya está detenido
         
         self.info_group.end_session()
+        self.prog_section.set_runing_state(False)
         
-        self.is_prog_running = False
         self.end_time = QDateTime.currentDateTime()
         self.info_group.set_end_time(self.end_time)
         
         
-        self.logger.info(f"Programa detenido a las {self.end_time.toString('hh:mm:ss')}")
+        self.logger.info(f"Program stop -> {self.end_time.toString('hh:mm:ss')}")
 
         self.timer.stop()
-        self._actualizar_duracion(final=True)
+        self._update_timer_events(final=True)
         self.prog_section.btn_start.setEnabled(True)
         self.prog_section.btn_stop.setEnabled(False)
         self.prog_section.enable_config()
@@ -333,147 +653,187 @@ class PanelControlView(BaseView):
         
         self.logger.info(f"Registro de sesión guardado en {filename}")
 
-    def _actualizar_duracion(self, final=False):
+    def _update_timer_events(self, final=False):
+        """Actualiza eventos basados en tiempo cada segundo"""
         if self.start_time:
             now = self.end_time if final else QDateTime.currentDateTime()
-            elapsed = self.start_time.secsTo(now)
-
-            horas = elapsed // 3600
-            minutos = (elapsed % 3600) // 60
-            segundos = elapsed % 60
-
-            time_str = f"{horas:02}:{minutos:02}:{segundos:02}"
-            # self.logger.info(time_str)
-            self.info_group.set_run_time(time_str)
+            self.elapsed = self.start_time.secsTo(now)
+            self.info_group.set_run_time(seconds_to_hhmmss(self.elapsed))
+            
+            # #--------------------------------------------------------
+            mode_pal1 = self.prog_section.get_pal1_mode()
+            mode_pal2 = self.prog_section.get_pal2_mode()
+            
+            if mode_pal1 in [ModoPalanca.FI, ModoPalanca.VI]:
+                self.check_palanca_num(1)
+                    
+            if mode_pal2 in [ModoPalanca.FI, ModoPalanca.VI]:
+                self.check_palanca_num(2)
+            
     
     def send_uart_cmd(self, command: str, delay_ms: int = 50):
         """Envía un comando con un delay mínimo"""
-        self.logger.debug(f"TX: {command} -> {delay_ms}")
         if not self.serial_manager or not self.serial_manager.is_connected():
             return
-            
         QTimer.singleShot(delay_ms, lambda: self.serial_manager.send_data_str(command))
+
         
-        
-    def handle_serial_data(self, data: bytes, port_name: str):
-        """Inicia el procesamiento en otro hilo"""
-        #self.logger.debug(f"RX (crudo): {repr(data)}")
-        data_rx =  data.decode(errors='ignore').strip()
-        if not data_rx:
+    
+    def handle_serial_dsent(self, data: bytes, port_name: str):
+        """Maneja los datos enviados (solo para logging)"""
+        self.logger.debug(f"TX {port_name}-> {data}")
+        data_tx =  data.decode(errors='ignore').strip()
+        if not data_tx:
             self.logger.warning(f"Data null en: {port_name}")
             return
         
-        self.logger.debug(f"RX {port_name}-> {bytes(data_rx, 'utf-8')}")
-        
-        if not self.is_prog_running:
+        if not self.prog_section.get_runing_state():
             self.logger.warning("Program not runing, ignore all data")
             return
         # Procesar datos en un hilo separado
-        palabras = data_rx.split()
+        palabras = data_tx.split()
         
         # Procesar cada palabra
         for palabra in palabras:
-            self.logger.debug(f"Procesando: {palabra}")
-            # procesar cada palabra
-            self._process_single_line(palabra)
-        # Crea y configura el worker
-        
-        
-    def _process_single_line(self, line: str):
-        """Procesa una línea individual de datos"""
-        try:
-            if 'OK:' in line or 'ERROR:' in line:
-                self._process_response(line)
-            else:
-                self._process_command_block(line)
-        except Exception as e:
-            self.logger.error(f"Error procesando línea '{line}': {str(e)}")
             
-    def _on_data_processed(self, result: dict):
-        """Recibe los datos procesados desde el hilo"""
-        if 'error' in result:
-            self.logger.error(f"Error en worker: {result['error']}")
+            if 'DISP:' in palabra:
+                try:
+                    _, value = palabra.split(':', 1)
+                    value = value.strip()
+                    if value.isdigit():
+                        self.engine._handle_disp_food(value)
+                except Exception as e:
+                    self.logger.error(f"Error procesando DISP: {str(e)}")
+  
+    
+    def check_palanca_num(self, num: int):
+        # Solicitar generación de nuevo valor
+        
+        if num not in [1,2]:
             return
+        
+        # Obtener el último valor disponible (puede ser el anterior hasta que se actualice)
+        if num==1:
+            self.actions_palanca_01()
+        else:
+            self.actions_palanca_02()
+                    
+    def actions_palanca_01(self):
+                
+        if self.prog_section.get_runing_state() is False:
+            return
+        
+        mode_fun  =  self.prog_section.get_pal1_mode()
+        last_event = self.info_group.get_last_p01_event()
+        
+        last_count_val = self.info_group.get_val_pal01_count()
+        if last_event and mode_fun in [ModoPalanca.CRF , ModoPalanca.FI, ModoPalanca.FR, ModoPalanca.VI, ModoPalanca.VR]:
+                self.plt_group.graph_left.add_data_point(self.name_plt_rh_l1,self.elapsed,last_count_val)
+                
+                
+        match mode_fun:
+            case ModoPalanca.CRF:
+                if last_event:
+                    self.send_uart_cmd(f"DISP:1", 10)
+                    self.info_group.set_last_p01_event(False)
             
-        for block in result['blocks']:
-            try:
-                if 'OK:' in block or 'ERROR:' in block:
-                    self._process_response(block)
+            case ModoPalanca.FI:
+                interval = self.prog_section.get_pal1_time()
+                count_val = self.elapsed
+                if last_event and ( count_val % interval == 0) and count_val != 0:
+                    self.send_uart_cmd("DISP:1", 10)
+                    self.info_group.set_last_p01_event(False)
+            
+            case ModoPalanca.FR:
+                interval = self.prog_section.get_pal1_time()
+                count_val = self.info_group.get_val_pal01_count()
+                if last_event and (count_val % interval == 0) and count_val != 0:
+                    self.send_uart_cmd("DISP:1", 10)
+                    self.info_group.set_last_p01_event(False)
+            
+            case ModoPalanca.VI:
+                interval = self.gen_manager.get_value(1) 
+                count_val = self.elapsed
+                           
+                if count_val > interval:
+                    self.gen_manager.generate_next(1)
                 else:
-                    self._process_command_block(block)
-            except Exception as e:
-                self.logger.error(f"Error process block: {str(e)}")
-                
-    def _check_pending_data(self):
-        """Verifica si hay datos pendientes por procesar"""
-        # if self.pending_data:
-        #     next_data = self.pending_data.pop(0)
-        #     self.handle_serial_data(next_data)
-            
-            
-    def _process_command_block(self, block: str):
-        """Procesa bloques de comandos como 'L01:1,L02:0'"""
-        items = [item.strip() for item in block.split(',') if item.strip()]
-        #self.logger.debug(f"cmd blok: {items}")
-        
-        for item in items:
-            try:
-                if ':' not in item:
-                    self.logger.warning(f"Format invalid cmd: {item}")
-                    continue
-                    
-                key, value = item.split(':', 1)
-                key = key.strip().upper()
-                value = value.strip()
-                
-                # Aquí tu lógica existente para LEDs y palancas
-                if key in led_keys:
-                    self._control_led(key, value)
-                elif key in palanca_keys:
-                    self._handle_palanca(key, value)
-                    
-                    
-            except Exception as e:
-                self.logger.error(f"Error procesando comando '{item}': {str(e)}")
-
-    def _process_response(self, response: str):
-        """Procesa respuestas como 'OK:LED-STATUS'"""
-        try:
-            _, content = response.split(':', 1)
-            content = content.strip()
-            
-            if content == 'LED-STATUS':
-                self.logger.info("Solicitud de estado de LEDs")
-                # Aquí implementa la lógica para responder el estado
-            elif content == 'IR-STATUS':
-                self.logger.info("Solicitud de estado IR recibida")
-                # Lógica para estado IR
-            
-        except Exception as e:
-            self.logger.error(f"Error procesando respuesta '{response}': {str(e)}")
-        
-    
-    
-    #----ACCIONES LUEGO DE PROCESAR ---------
-    
-    def _control_led(self,key,value):
-        if key in led_keys:
-            value = value_led_map.get(value.strip().upper(), value)
-            if value in ["ON", "OFF"]:
-                self.info_group.update_value(led_keys[key], value, increment=False)
-                
-    def _handle_palanca(self,key,value):
-        if key in palanca_keys:            
-            if key == "P01":
-                if value.isdigit():
-                    self.plt_group.graph_right.register_pulse(self.name_plt_lf_l1)
-                    self.info_group.update_value(palanca_keys[key], value, increment=True)
-                    if self.prog_section.get_pal1_mode() == ModoPalanca.CRF:
-                        self.send_uart_cmd("DISP:1",50)
-            elif key == "P02":
-                if value.isdigit():
-                    self.plt_group.graph_left.register_pulse(self.name_plt_rh_l1)
-                    self.info_group.update_value(palanca_keys[key], value, increment=True)
-                    if self.prog_section.get_pal2_mode() == ModoPalanca.CRF:
-                        self.send_uart_cmd("DISP:1",50)
+                    if last_event and (count_val % interval == 0) and count_val != 0:
+                        self.send_uart_cmd("DISP:1", 10)
+                        self.info_group.set_last_p01_event(False)
                         
+            case ModoPalanca.VR:
+                interval = self.gen_manager.get_value(1) 
+                count_val = self.info_group.get_val_pal01_count()
+                            
+                if count_val > interval:
+                    self.gen_manager.generate_next(1)
+                else:
+                    if last_event and (count_val % interval == 0) and count_val != 0:
+                        self.send_uart_cmd("DISP:1", 10)
+                        self.info_group.set_last_p01_event(False)
+                        
+            case _:
+                self.logger.warning(f"Mode not found {mode_fun} -> state:{last_event}")  
+                
+    def actions_palanca_02(self):
+        if self.prog_section.get_runing_state() is False:
+            return
+        
+        mode_fun  =  self.prog_section.get_pal2_mode()
+        last_event = self.info_group.get_last_p02_event()
+        
+        last_count_val = self.info_group.get_val_pal02_count()
+        
+        if last_event and mode_fun in [ModoPalanca.CRF , ModoPalanca.FI, ModoPalanca.FR, ModoPalanca.VI, ModoPalanca.VR]:
+                self.plt_group.graph_left.add_data_point(self.name_plt_rh_l1,self.elapsed,last_count_val)
+                
+                
+        
+        
+        self.logger.warning(f"Mode not found {mode_fun} -> state:{last_event}")   
+        match mode_fun:
+            case ModoPalanca.CRF:
+                if last_event:
+                    self.send_uart_cmd(f"DISP:1", 10)
+                    self.info_group.set_last_p02_event(False)
+            
+            case ModoPalanca.FI:
+                interval = self.prog_section.get_pal1_time()
+                count_val = self.elapsed
+                if last_event and ( count_val % interval == 0) and count_val != 0:
+                    self.send_uart_cmd("DISP:1", 10)
+                    self.info_group.set_last_p02_event(False)
+            
+            case ModoPalanca.FR:
+                interval = self.prog_section.get_pal2_time()
+                count_val = self.info_group.get_val_pal02_count()
+                if last_event and (count_val % interval == 0) and count_val != 0:
+                    self.send_uart_cmd("DISP:1", 10)
+                    self.info_group.set_last_p02_event(False)
+            
+            case ModoPalanca.VI:
+                interval = self.gen_manager.get_value(2) 
+                count_val = self.elapsed
+                           
+                if count_val > interval:
+                    self.gen_manager.generate_next(2)
+                else:
+                    if last_event and (count_val % interval == 0) and count_val != 0:
+                        self.send_uart_cmd("DISP:1", 10)
+                        self.info_group.set_last_p02_event(False)
+                        
+            case ModoPalanca.VR:
+                interval = self.gen_manager.get_value(2) 
+                count_val = self.info_group.get_val_pal02_count()
+                            
+                if count_val > interval:
+                    self.gen_manager.generate_next(2)
+                else:
+                    if last_event and (count_val % interval == 0) and count_val != 0:
+                        self.send_uart_cmd("DISP:1", 10)
+                        self.info_group.set_last_p02_event(False)    
+            case _:
+                self.logger.warning(f"Mode not found {mode_fun} -> state:{last_event}")         
+          
+    

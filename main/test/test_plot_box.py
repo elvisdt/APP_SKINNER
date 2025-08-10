@@ -5,6 +5,7 @@ from PyQt6.QtGui import QPalette, QColor
 from main.views.sections.plot_section import PlotGroupBox
 
 
+
 def main():
     app = QApplication(sys.argv)
 
