@@ -6,6 +6,7 @@ from functools import partial
 from main.components.menu_button import MenuButton
 from main.styles.styles import AppStyles
 from main.enums.menu_sections import MenuSection
+from PyQt6.QtCore import QPropertyAnimation
 
 class SideMenu(QWidget):
     """Menú lateral con 'Salir' anclado abajo"""
@@ -77,8 +78,13 @@ class SideMenu(QWidget):
         btn.clicked.connect(partial(self.on_button_clicked, section))
         layout.addWidget(btn)
         self.buttons[section] = btn
+        
+        # Ocultar el botón de reportes por defecto
+        if section == MenuSection.REPORTS:
+            btn.setVisible(False)
 
-    
+        if section == MenuSection.SETTINGS:
+            btn.setVisible(False)
     
     def on_button_clicked(self, section_enum: MenuSection):
         self.select_section(section_enum)
@@ -94,7 +100,64 @@ class SideMenu(QWidget):
             self.current_section = section_enum
 
 
+    def set_section_enabled(self, section: MenuSection, enabled: bool):
+        """Habilita o deshabilita una sección del menú"""
+        if section in self.buttons:
+            self.buttons[section].setEnabled(enabled)
+            
+            # Si lo deshabilitamos y está seleccionado, seleccionamos Home en su lugar
+            if not enabled and self.current_section == section:
+                self.select_section(MenuSection.HOME)
+                self.menu_clicked.emit(MenuSection.HOME)
+    
+    def is_section_enabled(self, section: MenuSection) -> bool:
+        """Verifica si una sección está habilitada"""
+        return self.buttons[section].isEnabled() if section in self.buttons else False
+    
+    
 
+    def set_section_visible(self, section: MenuSection, visible: bool):
+        """Muestra u oculta una sección del menú"""
+        if section in self.buttons:
+            self.buttons[section].setVisible(visible)
+            
+            # Si lo ocultamos y está seleccionado, seleccionamos Home en su lugar
+            if not visible and self.current_section == section:
+                self.select_section(MenuSection.HOME)
+                self.menu_clicked.emit(MenuSection.HOME)
+
+    def is_section_visible(self, section: MenuSection) -> bool:
+        """Verifica si una sección está visible"""
+        return self.buttons[section].isVisible() if section in self.buttons else False
+    
+
+    
+
+    def set_section_visible(self, section: MenuSection, visible: bool, animated=True):
+        """Muestra u oculta una sección del menú con animación opcional"""
+        if section not in self.buttons:
+            return
+
+        btn = self.buttons[section]
+        
+        if not animated:
+            btn.setVisible(visible)
+            return
+            
+        anim = QPropertyAnimation(btn, b"maximumHeight")
+        anim.setDuration(300)
+        
+        if visible:
+            btn.setVisible(True)
+            anim.setStartValue(0)
+            anim.setEndValue(btn.sizeHint().height())
+        else:
+            anim.setStartValue(btn.height())
+            anim.setEndValue(0)
+            anim.finished.connect(lambda: btn.setVisible(False))
+        
+        anim.start()
+    
 # from PyQt6.QtWidgets import QWidget, QVBoxLayout, QLabel, QSizePolicy
 # from PyQt6.QtCore import Qt, pyqtSignal
 

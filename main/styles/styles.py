@@ -718,6 +718,60 @@ class AppStyles:
             color: #737373;
         }
     """
+    
+    BUTTON_PLAY_01 = """
+        QPushButton {
+            background-color: qlineargradient(x1:0, y1:0, x2:0, y2:1,
+                            stop:0 #27ae60, stop:1 #2ecc71);
+            color: white;
+            border: none;
+            border-radius: 5px;
+            padding: 6px 8px;
+            font-weight: demibold;
+            font-size: 13px;
+            min-width: 80px;
+            margin: 4px;
+        }
+        QPushButton:hover {
+            background-color: qlineargradient(x1:0, y1:0, x2:0, y2:1,
+                            stop:0 #2ecc71, stop:1 #27ae60);
+        }
+        QPushButton:pressed {
+            background-color: #219653;
+        }
+        QPushButton:disabled {
+            background-color: #bdc3c7;
+            color: #737373;
+        }
+    """
+    
+    
+    BUTTON_STOP_01 = """
+        QPushButton {
+             background-color: qlineargradient(x1:0, y1:0, x2:0, y2:1,
+                            stop:0 #e74c3c, stop:1 #c0392b);
+            color: white;
+            border: none;
+            padding: 6px 8px;
+            margin: 10px;
+            border-radius: 5px;
+            font-size: 13px;
+            min-width: 80px;
+            font-weight: demibold;
+            margin: 4px;
+        }
+        QPushButton:hover {
+            background-color: qlineargradient(x1:0, y1:0, x2:0, y2:1,
+                            stop:0 #c0392b, stop:1 #e74c3c);
+        }
+        QPushButton:pressed {
+            background-color: #a53125;
+        }
+        QPushButton:disabled {
+            background-color: #bdc3c7;
+            color: #737373;
+        }
+    """
     MESSAGEBOX_STYLE = """
             QMessageBox {
                 background-color: #2c3e50;
@@ -736,6 +790,29 @@ class AppStyles:
                 background-color: #2980b9;
             }
         """
+    LIST_WIDGET_STYLE = """
+        QListWidget {
+            background-color: #ecf0f1;
+            border: 1px solid #2c3e50;
+            border-radius: 5px;
+            padding: 5px;
+            color: #2c3e50;
+            font-size: 13px;
+        }
+        QListWidget::item {
+            padding: 6px 10px;
+            margin: 2px 0;
+            border-radius: 4px;
+        }
+        QListWidget::item:selected {
+            background-color: #3498db;
+            color: white;
+        }
+        QListWidget::item:hover {
+            background-color: #2980b9;
+            color: white;
+        }
+    """
     
     @staticmethod
     def groupbox_style(border_color):

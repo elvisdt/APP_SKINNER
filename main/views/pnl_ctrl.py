@@ -6,7 +6,9 @@ from PyQt6.QtGui import QPixmap, QPainter, QPainterPath, QFont
 from fpdf import FPDF
 from PyQt6.QtCore import QTimer, QTime, QDateTime
 
-
+from PyQt6.QtWidgets import QFileDialog
+from PyQt6.QtCore import QDateTime
+import os
 import csv
 
 from main.views.base_view import BaseView
@@ -81,6 +83,9 @@ class ProgramEngine:
         """
         Procesa un mensaje recibido por UART.
         """
+        if self.prog_section.get_runing_state is False:
+            return
+        
         # Ejemplo básico de parseo
         parts = line.split()
         #self.logger.debug(f"[ProgramEngine] Process Line: {line}")
@@ -276,13 +281,15 @@ class GeneratorManager(QObject):
             self.mutex.unlock()
             
 ##-------------------------------------------------------------#
+from main.core.event_logger import EventType, EventLogger, DeviceID
+
 class PanelControlView(BaseView):
-    """Vista principal del panel de control"""
-    
-    def __init__(self, serial_manager: SerialManager = None, parent=None):
-        super().__init__(serial_manager=serial_manager, parent=parent)
+    def __init__(self, serial_manager: SerialManager = None, event_logger: EventLogger = None, parent=None):
+        super().__init__(serial_manager=serial_manager, event_logger=event_logger, parent=parent)
+
         
 
+        # 2. Configuración de temporizadores
         self.timer = QTimer(self)
         self.timer.timeout.connect(self._update_timer_events)
         self.start_time = None
@@ -295,7 +302,7 @@ class PanelControlView(BaseView):
         self.gen_pal01 = MeanTimeGeneratorInt()
         self.gen_pal02 = MeanTimeGeneratorInt()
         
-         # 1️⃣ Inicializar motor del programa
+         # 1️ Inicializar motor del programa
         self.engine = ProgramEngine(
             send_cmd_callback=self.send_uart_cmd,
             check_event_palanc = self.check_palanca_num,
@@ -307,25 +314,28 @@ class PanelControlView(BaseView):
         
         
 
-         # 2️⃣ Inicializar receptor de UART
+         # 2️ Inicializar receptor de UART
         self.receiver = SerialReceiver(logger=self.logger)
 
-        # 3️⃣ Inicializar procesador de datos
+        # 3️ Inicializar procesador de datos
         self.processor = DataProcessor(self.engine, logger=self.logger)
 
-        # 4️⃣ Configurar el serial manager
+        # 4️ Configurar el serial manager
         self._setup_connections()
     
 
-        # 6️⃣ Timer para procesar datos UART (cada 100 ms)
+        # 5 Timer para procesar datos UART (cada 100 ms)
         self.timer_uart = QTimer()
         self.timer_uart.timeout.connect(lambda: self.processor.process_pending(self.receiver.queue))
         self.timer_uart.start(100)
         
          # Crear worker y thread
-        
         self.setup_generators()
         
+    def refresh_data(self, session_id: int):
+        """Actualiza todos los datos de la vista con la sesión especificada"""
+        pass
+    
     # En tu PanelControlView
     def setup_generators(self):
         self.gen_manager = GeneratorManager()
@@ -464,7 +474,10 @@ class PanelControlView(BaseView):
             bot_layout.setContentsMargins(0, 0, 0, 0)
             bot_layout.setSpacing(5)
             
-            self.info_group = IndicatorsSectionBox()
+            # Pasar el event_logger al IndicatorsSectionBox
+            # Usa self.event_logger que ahora está inicializado
+            self.info_group = IndicatorsSectionBox(event_logger=self.event_logger)
+        
             self.plt_group = PlotGroupBox()
 
             bot_layout.addWidget(self.info_group)
@@ -499,6 +512,7 @@ class PanelControlView(BaseView):
         self.uart_section.connect_btn.clicked.connect(self._toggle_uart)
         self.prog_section.btn_start.clicked.connect(self.start_program)
         self.prog_section.btn_stop.clicked.connect(self.stop_program)
+        self.actions_group.btn_export.clicked.connect(self._btn_export_csv)
         
         # Conectar señales del serial manager
         self.serial_manager.ports_updated.connect(self._on_ports_updated)
@@ -508,6 +522,28 @@ class PanelControlView(BaseView):
         self.serial_manager.data_sent.connect(self.handle_serial_dsent)
         self.serial_manager.error_occurred.connect(self._handle_error_uart)
     
+    def _btn_export_csv(self):
+        
+        
+        
+        timestamp = QDateTime.currentDateTime().toString("yyyyMMdd_hhmmss")
+        suggested_name = f"sesion_{timestamp}.csv"
+
+        # Carpeta base donde quieres que empiece
+        base_dir = os.getcwd()  # O tu carpeta de exportación preferida
+
+        # Cuadro de diálogo para elegir dónde guardar
+        file_path, _ = QFileDialog.getSaveFileName(
+            self,
+            "Guardar archivo CSV",
+            os.path.join(base_dir, suggested_name),  # Ruta sugerida
+            "Archivos CSV (*.csv)"
+        )
+
+        # Si el usuario no canceló
+        if file_path:
+            self.event_logger.save_to_csv(file_path)
+            self.logger.info(f"Registro guardado en {file_path}")
     #--------------------------------------------------------
     def update_uart_status(self, connected: bool, port_name: str = ""):
         """Actualiza la UI según el estado de conexión"""
@@ -567,28 +603,25 @@ class PanelControlView(BaseView):
         self.reset_generators_config() 
         self.logger.info(f"Config Led-01: {led_01_tx}, Led-02: {led_02_tx}")
         
-        
-        # self.serial_model.write_data("LED-STATUS")
-        # self.serial_manager.send_data_str("LED-STATUS")
-        
-          
-    #--------------------------------------------------------
+
     def start_program(self):
+        if self.serial_manager.is_connected() is False:
+            return
+        
         if self.prog_section.get_runing_state():
             return  # Ya está en ejecución
 
+        # Limpia todo antes de iniciar sesión
         self.info_group.reset_all()
-        self.info_group.start_session({
-            'experiment': 'Experimento Skinner',
-            'config': "test config",
-            'time': QDateTime.currentDateTime().toString("dd/MM/yyyy HH:mm:ss"),
-        })
+
+        # Inicia la sesión
+        #self.info_group.start_session(self.prog_section.get_program_config())
+        self.event_logger.start_session(self.prog_section.get_program_config())
         
         self.elapsed = 0
         self.logger.info("Iniciando programa...")
-        
-        # LIMPIAR LABELS
-        self.info_group.reset_all()
+
+        # Limpia gráficas pero sin resetear indicadores (para no cerrar sesión)
         self.plt_group.reset_graphs()
         
         mode_p1 = self.prog_section.get_pal1_mode()
@@ -601,57 +634,57 @@ class PanelControlView(BaseView):
             self.plt_group.graph_right.add_series(self.name_plt_rh_l1, "#3498db")
             self.plt_group.graph_right.add_data_point(self.name_plt_rh_l1,0,0)
             
-        
-        
-        #--- INICIAR GRAFICA
-        # self.plt_group.graph_left.start_timer()
-        # self.plt_group.graph_right.start_timer()
-        
-        # INICIAR TIMER DE CONTEO
+        # Inicia temporizador
         self.prog_section.set_runing_state(True)
-        
         self.start_time = QDateTime.currentDateTime()
         self.info_group.set_start_time(self.start_time)
         
-        
-        # Actualiza el campo de hora de inicio (si lo tienes)
         self.logger.info(f"Programa iniciado a las {self.start_time.toString('hh:mm:ss')}")
-        self.timer.start(1000)  # Actualizar cada 1 segundo
+        self.timer.start(1000)
         
         self.prog_section.btn_start.setEnabled(False)
         self.prog_section.btn_stop.setEnabled(True)
         self._send_current_config()
-       
-        self.prog_section.disable_config()
-        
 
+  
+        if self.event_logger.is_session_active():
+            sesion_id = self.event_logger.get_current_session_id()
+            val_id_txt = f"{sesion_id:03d}"
+            # Aquí usamos setText directamente para no loguear nada
+            self.info_group.labels[IndicatorKey.SESSION_ID].setText(val_id_txt)
+
+    
     def stop_program(self):
         if not self.prog_section.get_runing_state():
             return  # Ya está detenido
         
-        self.info_group.end_session()
-        self.prog_section.set_runing_state(False)
         
+        
+        self.prog_section.set_runing_state(False)
         self.end_time = QDateTime.currentDateTime()
         self.info_group.set_end_time(self.end_time)
         
-        
-        self.logger.info(f"Program stop -> {self.end_time.toString('hh:mm:ss')}")
-
+        self.logger.info(f"Program stop -> {self.end_time.toString('hh:mm:ss')}")        
+        # Cierra la sesión si está activa
+        if self.event_logger.is_session_active():
+            self.event_logger.end_session()
+            
+            
         self.timer.stop()
         self._update_timer_events(final=True)
-        self.prog_section.btn_start.setEnabled(True)
-        self.prog_section.btn_stop.setEnabled(False)
-        self.prog_section.enable_config()
+        self.prog_section.update_uart_status(self.serial_manager.is_connected())
         
-        self.serial_manager.send_data_str("LED1:OFF")
-        self.send_uart_cmd("LED2:OFF")
+        if self.elapsed < 60:
+            val_in_rpm = self.info_group.get_val_response_rate()
+            val_cp1 = self.info_group.get_val_pal01_count()
+            val_cp2 = self.info_group.get_val_pal02_count()
+            value_end_RPM = (val_cp1 + val_cp2) - val_in_rpm
+            self.info_group.update_value(IndicatorKey.RESPONSE_RATE_VAL, int(value_end_RPM))
         
-        timestamp = QDateTime.currentDateTime().toString("yyyyMMdd_hhmmss")
-        filename = f"sesion_{timestamp}.csv"
-        self.info_group.save_to_csv(filename)
-        
-        self.logger.info(f"Registro de sesión guardado en {filename}")
+        self.send_uart_cmd("LED1:OFF", 0)
+        self.send_uart_cmd("LED2:OFF", 20)
+
+       
 
     def _update_timer_events(self, final=False):
         """Actualiza eventos basados en tiempo cada segundo"""
@@ -660,6 +693,15 @@ class PanelControlView(BaseView):
             self.elapsed = self.start_time.secsTo(now)
             self.info_group.set_run_time(seconds_to_hhmmss(self.elapsed))
             
+            
+            if self.elapsed % 60==0:
+                val_in_rpm = self.info_group.get_val_response_rate()
+                val_cp1 = self.info_group.get_val_pal01_count()
+                val_cp2 = self.info_group.get_val_pal02_count()
+                
+                value_end_RPM = (val_cp1 + val_cp2) - val_in_rpm
+                self.info_group.update_value(IndicatorKey.RESPONSE_RATE_VAL, int(value_end_RPM))
+                 
             # #--------------------------------------------------------
             mode_pal1 = self.prog_section.get_pal1_mode()
             mode_pal2 = self.prog_section.get_pal2_mode()
@@ -719,7 +761,7 @@ class PanelControlView(BaseView):
             self.actions_palanca_02()
                     
     def actions_palanca_01(self):
-                
+        
         if self.prog_section.get_runing_state() is False:
             return
         
@@ -727,9 +769,30 @@ class PanelControlView(BaseView):
         last_event = self.info_group.get_last_p01_event()
         
         last_count_val = self.info_group.get_val_pal01_count()
-        if last_event and mode_fun in [ModoPalanca.CRF , ModoPalanca.FI, ModoPalanca.FR, ModoPalanca.VI, ModoPalanca.VR]:
-                self.plt_group.graph_left.add_data_point(self.name_plt_rh_l1,self.elapsed,last_count_val)
+        last_point = self.plt_group.graph_left.get_last_point(self.name_plt_lf_l1)
+
+        if last_point is None or last_count_val != last_point[1]:
+            if last_event and mode_fun in [
+                ModoPalanca.CRF,
+                ModoPalanca.FI,
+                ModoPalanca.FR,
+                ModoPalanca.VI,
+                ModoPalanca.VR
+            ]:
+                self.plt_group.graph_left.add_data_point(
+                    self.name_plt_lf_l1,
+                    self.elapsed,
+                    last_count_val
+                )
+                self.logger.info(f"PLOT NEW DATA P1: {self.elapsed},{last_count_val}")
                 
+                val_latency = self.info_group.get_val_latency()
+                if val_latency<=0:
+                    now = QDateTime.currentDateTime()
+                    pas_time_ms = self.start_time.msecsTo(now)
+                    past_time_sec_txt = f"{pas_time_ms/1000:.2f}" 
+                    self.info_group.update_value(IndicatorKey.LATENCY_VAL, past_time_sec_txt)
+                    
                 
         match mode_fun:
             case ModoPalanca.CRF:
@@ -784,14 +847,30 @@ class PanelControlView(BaseView):
         last_event = self.info_group.get_last_p02_event()
         
         last_count_val = self.info_group.get_val_pal02_count()
-        
-        if last_event and mode_fun in [ModoPalanca.CRF , ModoPalanca.FI, ModoPalanca.FR, ModoPalanca.VI, ModoPalanca.VR]:
-                self.plt_group.graph_left.add_data_point(self.name_plt_rh_l1,self.elapsed,last_count_val)
+        last_point = self.plt_group.graph_right.get_last_point(self.name_plt_rh_l1)
+
+        if last_point is None or last_count_val != last_point[1]:
+            if last_event and mode_fun in [
+                ModoPalanca.CRF,
+                ModoPalanca.FI,
+                ModoPalanca.FR,
+                ModoPalanca.VI,
+                ModoPalanca.VR
+            ]:
+                self.plt_group.graph_right.add_data_point(
+                    self.name_plt_rh_l1,
+                    self.elapsed,
+                    last_count_val
+                )
+                self.logger.info(f"PLOT NEW DATA P2: {self.elapsed},{last_count_val}")
                 
+                val_latency = self.info_group.get_val_latency()
+                if val_latency<=0:
+                    now = QDateTime.currentDateTime()
+                    pas_time_ms = self.start_time.msecsTo(now)
+                    self.info_group.update_value(IndicatorKey.LATENCY_VAL, pas_time_ms)
                 
         
-        
-        self.logger.warning(f"Mode not found {mode_fun} -> state:{last_event}")   
         match mode_fun:
             case ModoPalanca.CRF:
                 if last_event:
@@ -799,8 +878,9 @@ class PanelControlView(BaseView):
                     self.info_group.set_last_p02_event(False)
             
             case ModoPalanca.FI:
-                interval = self.prog_section.get_pal1_time()
+                interval = self.prog_section.get_pal2_time()
                 count_val = self.elapsed
+                
                 if last_event and ( count_val % interval == 0) and count_val != 0:
                     self.send_uart_cmd("DISP:1", 10)
                     self.info_group.set_last_p02_event(False)

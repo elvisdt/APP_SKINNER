@@ -172,8 +172,26 @@ class CustomScatterPlot(QWidget):
         self.max_x = max_x
         self.plot_widget.setXRange(min_x, max_x)
     
+    
+    def get_last_point(self, name: str):
+        """
+        Devuelve el último punto (x, y) añadido a la serie indicada.
+        """
+        if name not in self.data:
+            raise ValueError(f"La serie '{name}' no existe")
+        
+        if not self.data[name]["x"]:
+            return None  # La serie está vacía
+        
+        return (
+            self.data[name]["x"][-1],
+            self.data[name]["y"][-1]
+        )
+
+
     def _block_mouse_events(self, evt):
         """Bloquea eventos de mouse no deseados"""
         pass
 
 
+    

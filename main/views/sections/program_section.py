@@ -3,6 +3,7 @@ from PyQt6.QtWidgets import (
     QLabel, QComboBox, QPushButton, QSpinBox
 )
 from PyQt6.QtCore import Qt
+from PyQt6.QtCore import QDateTime
 
 from main.styles.styles import AppStyles
 from main.enums.program_enums import ModoLuz, ModoPalanca
@@ -32,7 +33,7 @@ class ProgramControlBox(QGroupBox):
         self.lbl_mode_p2, self.cmb_mode_p2, self.lbl_spbox_p2, self.spbox_p2 = self._crear_seccion_pln("Palanca-02", "Tiempo(s)-P02")
 
         # crear Boton de inicio o detenido
-        self.btn_start = QPushButton("Iniciar Porgrama")
+        self.btn_start = QPushButton("Iniciar Pragrama")
         self.btn_start.setStyleSheet(AppStyles.BUTTON_START)
         self.btn_start.setMinimumWidth(120)
         self.btn_start.setMaximumWidth(200)
@@ -273,3 +274,18 @@ class ProgramControlBox(QGroupBox):
     def get_pal2_time(self) -> int:
         """Obtiene el tiempo/configuración para la Palanca-02"""
         return self.spbox_p2.value()
+    
+    def get_program_config(self) -> dict:
+        """Devuelve toda la configuración actual como diccionario."""
+        return {
+            'experiment': 'Skinnerv01',
+            'time': QDateTime.currentDateTime().toString("dd/MM/yyyy HH:mm:ss"),
+            'led_1c': self.get_led1_mode().value,
+            'led_1v': self.get_led1_time(),
+            'led_2c': self.get_led2_mode().value,
+            'led_2v': self.get_led2_time(),
+            'pal_1c': self.get_pal1_mode().value,
+            'pal_1v': self.get_pal1_time(),
+            'pal_2c': self.get_pal2_mode().value,
+            'pal_2v': self.get_pal2_time()
+        }
