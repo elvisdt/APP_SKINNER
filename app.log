@@ -9217,3 +9217,23 @@
 2025-08-13 05:31:34,221 | PanelControlView | WARNING | Program not runing, ignore all data
 2025-08-13 05:31:34,264 | PanelControlView | DEBUG | TX COM1-> b'LED2:OFF\n'
 2025-08-13 05:31:34,264 | PanelControlView | WARNING | Program not runing, ignore all data
+2025-08-19 17:16:27,568 | InicioView | INFO | Vista de inicio configurada correctamente
+2025-08-19 17:16:27,666 | PanelControlView | INFO | Vista de inicio configurada correctamente
+2025-08-19 17:16:27,680 | ReporteView | INFO | Vista de reportes configurada correctamente
+2025-08-19 17:16:27,698 | PanelControlView | INFO | gen 01: 1: 7
+2025-08-19 17:16:27,699 | PanelControlView | INFO | gen 01: 2: 6
+2025-08-19 17:16:29,115 | PanelControlView | INFO | Puertos actualizados: ['COM6', 'COM7']
+2025-08-19 17:19:39,869 | InicioView | WARNING | No se encontró el archivo de logo
+2025-08-19 17:19:39,923 | InicioView | INFO | Vista de inicio configurada correctamente
+2025-08-19 17:19:39,924 | PanelControlView | WARNING | No se encontró el archivo de logo
+2025-08-19 17:19:39,990 | PanelControlView | INFO | Vista de inicio configurada correctamente
+2025-08-19 17:19:40,004 | ReporteView | INFO | Vista de reportes configurada correctamente
+2025-08-19 17:19:40,021 | PanelControlView | INFO | gen 01: 1: 3
+2025-08-19 17:19:40,021 | PanelControlView | INFO | gen 01: 2: 4
+2025-08-19 17:19:41,703 | PanelControlView | INFO | Puertos actualizados: ['COM6', 'COM7']
+2025-08-19 17:19:43,897 | PanelControlView | ERROR | Error UART: Permiso denegado
+2025-08-19 17:19:43,897 | MainWindow | ERROR | COM6: Permiso denegado
+2025-08-19 17:19:45,950 | PanelControlView | ERROR | Error UART: Error al abrir COM6
+2025-08-19 17:19:45,950 | MainWindow | ERROR | COM6: Error al abrir COM6
+2025-08-19 17:19:46,951 | PanelControlView | ERROR | Error UART: Dispositivo no abierto
+2025-08-19 17:19:46,951 | MainWindow | ERROR | COM6: Dispositivo no abierto
